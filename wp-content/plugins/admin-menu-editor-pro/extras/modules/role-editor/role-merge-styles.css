@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/*
+Standard WordPress admin colors.
+
+Announcement post:
+https://make.wordpress.org/core/2021/02/23/standardization-of-wp-admin-colors-in-wordpress-5-7/
+
+Source:
+https://codepen.io/ryelle/pen/WNGVEjw
+
+A "wp" prefix has been added to avoid name conflicts with other code in this plugin.
+ */
+.rex-rm-role-options .rex-rm-checkbox-col {
+  padding: 11px 0 0 3px;
+  width: 1.8em;
+  vertical-align: top;
+}
+.rex-rm-role-options thead .rex-rm-checkbox-col {
+  padding-top: 4px;
+  vertical-align: middle;
+}
+.rex-rm-role-options label {
+  vertical-align: baseline;
+}
+.rex-rm-role-options .rex-rm-name-col {
+  width: 35%;
+}
+.rex-rm-role-options #rex-rm-toggle-all[type=checkbox]:indeterminate:before {
+  content: "■";
+  color: #1e8cbe;
+  margin: -3px 0 0 -1px;
+  font: 400 14px/1 dashicons;
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+@media screen and (max-width: 782px) {
+  .rex-rm-role-options #rex-rm-toggle-all[type=checkbox]:indeterminate:before {
+    height: 1.5625rem;
+    width: 1.5625rem;
+    line-height: 1.5625rem;
+    margin: -1px;
+    font-size: 18px;
+    font-family: unset;
+    font-weight: normal;
+  }
+}
+
+.rex-rm-change {
+  font-weight: 600;
+}
+
+.rex-rm-positive-change, .rex-rm-added-caps li {
+  color: green;
+}
+
+.rex-rm-negative-change, .rex-rm-removed-caps li {
+  color: red;
+}
+
+.rex-rm-no-changes {
+  color: #8c8f94;
+  font-weight: normal;
+}
+
+.rex-rm-section {
+  margin-bottom: 1em;
+}
+
+.rex-rm-role-merging-settings h4 {
+  margin: 0 0 6px 0;
+}
+.rex-rm-role-merging-settings p {
+  margin: 0 0 4px 0;
+}
+
+.rex-rm-has-details .rex-rm-change-texts {
+  cursor: pointer;
+}
+
+.rex-rm-change-expand-indicator {
+  color: #8c8f94;
+  line-height: 1;
+  font-size: 92.3076923077%;
+}
+.rex-rm-change-texts:hover .rex-rm-change-expand-indicator {
+  color: #23282d;
+}
+.rex-rm-change-expand-indicator:after {
+  content: "▶";
+}
+.rex-rm-panel-open .rex-rm-change-expand-indicator:after {
+  content: "▲";
+}
+
+.rex-rm-cap-details-panel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 2em;
+  row-gap: 4px;
+  border: 1px solid #dcdcde;
+  border-radius: 4px;
+  background: #fff;
+  margin-top: 8px;
+}
+.rex-rm-cap-details-panel h4 {
+  display: none;
+  margin-top: 0;
+}
+.rex-rm-cap-details-panel ul {
+  line-height: 1.5em;
+  list-style: none;
+  margin: 0;
+}
+.rex-rm-cap-details-panel li {
+  margin: 0 0 6px 0;
+}
+
+.rex-rm-removed-caps li:before {
+  content: "− ";
+  font-weight: 600;
+}
+
+.rex-rm-added-caps li:before {
+  content: "+ ";
+  font-weight: 600;
+}
+
+.rex-rm-cap-details-section {
+  padding: 8px 12px;
+}
+
+.rex-rm-other-change-list {
+  margin: 0;
+  border-spacing: 0;
+}
+.rex-rm-other-change-list td {
+  padding: 0 0 6px 0;
+  line-height: 1.5em;
+}
+.rex-rm-other-change-list td.rex-rm-cap-name {
+  padding-right: 1em;
+}
+.rex-rm-other-change-list .rex-rm-cap-old-state, .rex-rm-other-change-list .rex-rm-cap-new-state {
+  text-align: center;
+  font-variant: small-caps;
+}
+.rex-rm-other-change-list .rex-rm-cap-state-enabled {
+  color: green;
+}
+.rex-rm-other-change-list .rex-rm-cap-state-denied {
+  color: red;
+}
+.rex-rm-other-change-list .rex-rm-cap-change-indicator {
+  width: 1.5em;
+  text-align: center;
+  font-weight: 600;
+  font-size: 120%;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=role-merge-styles.css.map */

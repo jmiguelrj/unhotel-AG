@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'hug.reed/jet-form-builder-address-autocomplete',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'd553730d7f0af36db9df19936e2a332220a92a37',
+        'type' => 'project',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'crocoblock/jfb-addon-core' => array(
+            'pretty_version' => '1.1.13',
+            'version' => '1.1.13.0',
+            'reference' => '02c5b26aefe11a93f911a0d22777316206de7418',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../crocoblock/jfb-addon-core',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'crocoblock/jfb-addon-core-dev' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'reference' => '39ab4f0b9cff78ff721eaea2207f2842ac99441f',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../crocoblock/jfb-addon-core-dev',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'hug.reed/jet-form-builder-address-autocomplete' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'd553730d7f0af36db9df19936e2a332220a92a37',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

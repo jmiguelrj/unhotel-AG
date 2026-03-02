@@ -1,0 +1,177 @@
+{
+	"apiVersion": 2,
+	"name": "jet-forms/drag-and-drop-file-upload",
+	"category": "jet-form-builder-fields",
+	"description": "Upload as many media files to the site as needed via drag-and-drop. Other options include WP Media Library and a hard drive.",
+	"icon": "<svg width=\"56\" height=\"56\" viewBox=\"0 0 56 56\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0 3.91304C0 1.75193 1.79086 0 4 0H42C44.2091 0 46 1.75193 46 3.91304V27H44V3.91304C44 2.83249 43.1046 1.95652 42 1.95652H4C2.89543 1.95652 2 2.83249 2 3.91304V41.087C2 42.1675 2.89543 43.0435 4 43.0435H20V45H4C1.79086 45 0 43.2481 0 41.087V3.91304Z\" fill=\"currentColor\"/><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M56 29.6923V53.2308C56 54.7602 54.7602 56 53.2308 56H22.7692C21.2398 56 20 54.7602 20 53.2308V29.6923C20 28.1629 21.2398 26.9231 22.7692 26.9231H53.2308C54.7602 26.9231 56 28.1629 56 29.6923ZM53.2308 28.8178H22.7692C22.2863 28.8178 21.8947 29.2093 21.8947 29.6923V53.2308C21.8947 53.7137 22.2863 54.1053 22.7692 54.1053H53.2308C53.7137 54.1053 54.1053 53.7137 54.1053 53.2308V29.6923C54.1053 29.2093 53.7137 28.8178 53.2308 28.8178Z\" fill=\"currentColor\"/><path d=\"M5 34V32.083H7V34C7 34.5523 7.44772 35 8 35H9.875V37H8C6.34315 37 5 35.6569 5 34ZM17.375 35V37H13.625V35H17.375ZM7 24.417V28.25H5V24.417H7ZM41 24.417V28.25H39V24.417H41ZM7 16.75V20.583H5V16.75H7ZM41 16.75V20.583H39V16.75H41ZM5 11C5 9.34315 6.34315 8 8 8H9.875V10H8C7.44772 10 7 10.4477 7 11V12.917H5V11ZM39 11C39 10.4477 38.5523 10 38 10H36.125V8H38C39.6569 8 41 9.34315 41 11V12.917H39V11ZM17.375 8V10H13.625V8H17.375ZM24.875 8V10H21.125V8H24.875ZM32.375 8V10H28.625V8H32.375Z\" fill=\"currentColor\"/><path d=\"M37 45V36.85L34.4 39.45L33 38L38 33L43 38L41.6 39.45L39 36.85V45H37ZM32 49C31.45 49 30.9792 48.8042 30.5875 48.4125C30.1958 48.0208 30 47.55 30 47V44H32V47H44V44H46V47C46 47.55 45.8042 48.0208 45.4125 48.4125C45.0208 48.8042 44.55 49 44 49H32Z\" fill=\"currentColor\"/></svg>",
+	"keywords": [
+		"jetformbuilder",
+		"field",
+		"media",
+		"upload",
+		"files",
+		"images",
+		"videos",
+		"audio",
+		"documents",
+		"drag-and-drop"
+	],
+	"textdomain": "jet-form-builder-advanced-media",
+	"editorScript": "jet-form-builder-advanced-media-editor",
+	"editorStyle": "jet-form-builder-advanced-media-editor-styles",
+	"style": "jet-form-builder-advanced-media-field-styles",
+	"supports": {
+		"customClassName": false,
+		"html": false
+	},
+	"attributes": {
+		"validation": {
+			"type": "object",
+			"default": {
+				"messages": {
+					"max_size": "Maximum file size: %max_size%",
+					"allowed_mimes": "Allowed file types: %allowed_mimes%"
+				}
+			}
+		},
+		"label": {
+			"type": "string",
+			"default": "",
+			"jfb": {
+				"rich": true
+			}
+		},
+		"name": {
+			"type": "string",
+			"default": "field_name"
+		},
+		"desc": {
+			"type": "string",
+			"default": "",
+			"jfb": {
+				"rich": true
+			}
+		},
+		"allowed_user_cap": {
+			"type": "string",
+			"default": "manage_options"
+		},
+		"insert_attachment": {
+			"type": "boolean",
+			"default": false
+		},
+		"value_format": {
+			"type": "string",
+			"default": "url"
+		},
+		"upload_mode": {
+			"type": "string",
+			"default": "on_submit",
+			"options": [ "instant", "on_submit" ]
+		},
+		"reset_label": {
+			"type": "string",
+			"default": "Reset"
+		},
+		"field_label": {
+			"type": "string",
+			"default": "Media Field",
+			"jfb": {
+				"rich": true
+			}
+		},
+		"is_preview_mode": {
+			"type": "boolean",
+			"default": true
+		},
+		"allowed_mimes": {
+			"type": "array",
+			"default": []
+		},
+		"drag_n_drop": {
+			"type": "boolean",
+			"default": true
+		},
+		"wp_media_library": {
+			"type": "boolean",
+			"default": false
+		},
+		"save_uploaded_file": {
+			"type": "boolean",
+			"default": true
+		},
+		"max_files": {
+			"type": "string",
+			"default": "1"
+		},
+		"max_size": {
+			"type": "string",
+			"default": "25"
+		},
+		"max_image_width": {
+			"type": "string",
+			"default": ""
+		},
+		"max_image_height": {
+			"type": "string",
+			"default": ""
+		},
+		"image_quality": {
+			"type": "number",
+			"default": 100
+		},
+		"drag_n_drop_label": {
+			"type": "string",
+			"default": "Drag and drop media files to upload"
+		},
+		"wp_media_library_label": {
+			"type": "string",
+			"default": "Select from Media Library"
+		},
+		"select_media_files_label": {
+			"type": "string",
+			"default": "Select files"
+		},
+		"drag_n_drop_separator": {
+			"type": "string",
+			"default": "or"
+		},
+		"required": {
+			"type": "boolean",
+			"default": false
+		},
+		"add_prev": {
+			"type": "boolean",
+			"default": false
+		},
+		"prev_label": {
+			"type": "string",
+			"default": "",
+			"jfb": {
+				"rich": true
+			}
+		},
+		"visibility": {
+			"type": "string",
+			"default": ""
+		},
+		"class_name": {
+			"type": "string",
+			"default": ""
+		},
+		"className": {
+			"type": "string",
+			"default": ""
+		},
+		"isPreview": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"usesContext": [
+		"jet-forms/repeater-field--name",
+		"jet-forms/repeater-row--default",
+		"jet-forms/repeater-row--current-index"
+	],
+	"title": "Drag and Drop File Upload"
+}

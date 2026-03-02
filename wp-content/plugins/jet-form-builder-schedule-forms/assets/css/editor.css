@@ -1,0 +1,17 @@
+.jet-datepicker-control {
+    background-color: aliceblue;
+}
+
+.jet-datepicker-control:not(:first-child) {
+    margin: 1.5em 0;
+}
+
+.jet-datepicker-control .components-base-control__label {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    background: var(--wp-admin-theme-color);
+    color: #fff;
+    padding: 0.2em;
+    border-radius: 2px;
+}

@@ -1,0 +1,973 @@
+<?php
+/**
+ * @package     VikBooking
+ * @subpackage  com_vikbooking
+ * @author      Alessio Gaggii - E4J srl
+ * @copyright   Copyright (C) 2024 E4J srl. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE
+ * @link        https://vikwp.com
+ */
+
+defined('ABSPATH') or die('No script kiddies please!');
+
+/**
+ * Helper class to render specific param types.
+ * 
+ * @since   1.16.9 (J) - 1.6.9 (WP)
+ */
+final class VBOParamsRendering
+{
+    /**
+     * @var  array
+     */
+    private $params = [];
+
+    /**
+     * @var  array
+     */
+    private $settings = [];
+
+    /**
+     * @var  array
+     */
+    private $scripts = [];
+
+    /**
+     * @var  array
+     */
+    private $assets = [];
+
+    /**
+     * @var  string
+     */
+    private $inputName = 'vboparams';
+
+    /**
+     * @var     int
+     */
+    private static $instance_counter = -1;
+
+    /**
+     * Class constructor is protected.
+     * 
+     * @param   array    $params   The form params to bind.
+     * @param   array    $settings The form settings to bind.
+     * 
+     * @see     getInstance()
+     */
+    private function __construct(array $params, array $settings)
+    {
+        // bind values
+        $this->params   = $params;
+        $this->settings = $settings;
+
+        // increase instance counter
+        static::$instance_counter++;
+    }
+
+    /**
+     * Proxy for immediately accessing the object and bind data.
+     * 
+     * @param   array    $params   The form params to bind.
+     * @param   array    $settings The form settings to bind.
+     * 
+     * @return  VBOParamsRendering
+     */
+    public static function getInstance(array $params = [], array $settings = [])
+    {
+        return new static($params, $settings);
+    }
+
+    /**
+     * Sets the name to be used for rendering the param fields.
+     * 
+     * @param   string  $name   The name to use.
+     * 
+     * @return  self
+     */
+    public function setInputName($name)
+    {
+        $this->inputName = (string) $name;
+
+        return $this;
+    }
+
+    /**
+     * Renders the injected form params and returns the HTML code.
+     * 
+     * @param   bool    $load_assets    Whether to load the necessary assets.
+     * 
+     * @return  string
+     */
+    public function getHtml($load_assets = true)
+    {
+        if (!$this->params) {
+            return '';
+        }
+
+        // build the HTML params string
+        $html = '';
+
+        // list of conditional field rules
+        $js_conditional_fields = [];
+
+        // scan all field params
+        foreach ($this->params as $param_name => $param_config) {
+            if (empty($param_name)) {
+                continue;
+            }
+
+            $labelparts = explode('//', (isset($param_config['label']) ? $param_config['label'] : ''));
+            $label = $labelparts[0];
+            $labelhelp = isset($labelparts[1]) ? $labelparts[1] : '';
+            if (!empty($param_config['help'])) {
+                $labelhelp = $param_config['help'];
+            }
+
+            $nested_style   = (isset($param_config['nested']) && $param_config['nested']);
+            $hidden_wrapper = $param_config['type'] === 'hidden';
+            if (!empty($param_config['conditional'])) {
+                /**
+                 * The conditional property can specify the value to check from the parent field
+                 * i.e. "test_mode:1" means that the value should be equal to 1. Alternative,
+                 * "test_mode!:1" means that the value should be different than 1.
+                 * 
+                 * @since   1.18.2 (J) - 1.8.2 (WP)
+                 */
+                $check_cond_field = $param_config['conditional'];
+                $check_cond_oper  = null;
+                $check_cond_value = null;
+                if (preg_match('/^([a-z0-9_\-]+)(!?:)(.*?)$/i', (string) $check_cond_field, $cond_matches)) {
+                    // conditional instruction detected
+                    $check_cond_field = $cond_matches[1];
+                    $check_cond_oper  = $cond_matches[2];
+                    $check_cond_value = $cond_matches[3];
+                }
+
+                if (isset($this->params[$check_cond_field])) {
+                    // get current value of the conditional parent field
+                    $check_cond = $this->params[$check_cond_field]['default'] ?? null;
+                    $check_cond = $this->settings[$check_cond_field] ?? $check_cond;
+                    if (!is_null($check_cond)) {
+                        // legacy syntax "conditional" => "test_mode"
+                        if (!$check_cond_oper && (!$check_cond || !strcasecmp((string) $check_cond, 'off'))) {
+                            // hide current field because the field to who this is dependant is "off" or disabled (i.e. 0)
+                            $hidden_wrapper = true;
+                        }
+                        // conditional (equal) syntax "conditional" => "test_mode:1"
+                        if ($check_cond_oper === ':' && $check_cond != $check_cond_value) {
+                            // equal condition not met, hide the field
+                            $hidden_wrapper = true;
+                        }
+                        // conditional (different) syntax "conditional" => "test_mode!:0"
+                        if ($check_cond_oper === '!:' && $check_cond == $check_cond_value) {
+                            // different condition not met, hide the field
+                            $hidden_wrapper = true;
+                        }
+                    }
+                }
+
+                if (!is_null($check_cond_value)) {
+                    // the field is dependant on another through a syntax, memorize the condition for JS
+                    $js_conditional_fields[$check_cond_field][] = [
+                        'field'    => $param_name,
+                        'oper'     => $check_cond_oper,
+                        'value'    => $check_cond_value,
+                        'multiple' => !empty($param_config['multiple']),
+                        'custom'   => $param_config['type'] === 'custom',
+                    ];
+                }
+            }
+
+            $html .= '<div class="vbo-param-container' . (in_array($param_config['type'], ['textarea', 'visual_html']) ? ' vbo-param-container-full' : '') . ($nested_style ? ' vbo-param-nested' : '') . '"' . ($hidden_wrapper ? ' style="display: none;"' : '') . '>';
+            if (strlen($label) && (!isset($param_config['hidden']) || $param_config['hidden'] != true)) {
+                $html .= '<div class="vbo-param-label">' . $label . '</div>';
+            }
+            $html .= '<div class="vbo-param-setting"' . ($param_config['type'] === 'custom' ? ' data-custom="' . $this->inputName . '[' . $param_name . ']' . '"' : '') . '>';
+
+            // render field
+            $html .= $this->getField($param_name, $param_config);
+
+            // check for assets to be loaded, only once to obtain individual setups
+            if ($load_assets) {
+                if ((VBOPlatformDetection::isWordPress() && wp_doing_ajax()) || (!VBOPlatformDetection::isWordPress() && !strcasecmp((string) JFactory::getApplication()->input->server->get('HTTP_X_REQUESTED_WITH', ''), 'xmlhttprequest'))) {
+                    // concatenate script(s) to HTML string when doing an AJAX request
+                    $html .= "\n" . '<script>' . implode("\n", $this->buildScriptAssets($load_once = true)) . '</script>';
+                } else {
+                    // add script declaration(s) to document
+                    $this->loadAssets($load_once = true);
+                }
+            }
+
+            if ($labelhelp) {
+                $html .= '<span class="vbo-param-setting-comment">' . $labelhelp . '</span>';
+            }
+
+            $html .= '</div>';
+            $html .= '</div>';
+        }
+
+        if ($js_conditional_fields) {
+            // build the JS script for handling contional field changes
+            $js_conditional_fields_json = json_encode($js_conditional_fields);
+            $base_input_name = $this->inputName;
+            $html .= 
+<<<HTML
+<script>
+    VBOCore.DOMLoaded(() => {
+        let js_conditional_fields = $js_conditional_fields_json;
+        let base_input_name = "$base_input_name";
+
+        // scan all parent fields
+        Object.keys(js_conditional_fields).forEach((field_name) => {
+            let parent_fields = Array.from(document.querySelectorAll('[name="' + base_input_name + '[' + field_name + ']"]')).filter((field_input) => {
+                // get only valid input fields
+                return (field_input.matches('input') || field_input.matches('select') || field_input.matches('textarea')) && !field_input.matches('input[type="hidden"]');
+            });
+
+            let parent_field = parent_fields[0] || null;
+            if (!parent_field) {
+                // invalid input field selected
+                return;
+            }
+
+            if (!Array.isArray(js_conditional_fields[field_name])) {
+                // invalid parent conditions
+                return;
+            }
+
+            // add change event listener
+            parent_field.addEventListener('change', (e) => {
+                // get the parent field current value
+                let parent_value = e.target.value;
+                if (e.target.matches('input[type="checkbox"]')) {
+                    // checkbox fields should rely on their checked status
+                    parent_value = e.target.checked ? '1' : '0';
+                }
+
+                // scan all dependant fields
+                js_conditional_fields[field_name].forEach((condition) => {
+                    let field_selector = condition?.multiple ? '[name="' + base_input_name + '[' + condition.field + '][]"]' : '[name="' + base_input_name + '[' + condition.field + ']"]';
+                    if (condition.custom === true) {
+                        field_selector = '[data-custom="' + base_input_name + '[' + condition.field + ']"]';
+                    }
+                    let cond_fields = Array.from(document.querySelectorAll(field_selector)).filter((input_field) => {
+                        // get only valid input fields or custom containers
+                        if (input_field.matches('input[type="hidden"][data-type="file_upload"]')) {
+                            return true;
+                        }
+                        if (condition.custom === true && input_field.matches('.vbo-param-setting[data-custom]')) {
+                            return true;
+                        }
+                        return (input_field.matches('input') || input_field.matches('select') || input_field.matches('textarea')) && !input_field.matches('input[type="hidden"]');
+                    });
+
+                    let cond_field = cond_fields[0] || null;
+                    if (!cond_field) {
+                        // invalid conditional field selected
+                        return;
+                    }
+
+                    // find the conditional field container
+                    let cond_field_target = cond_field.closest('.vbo-param-container');
+                    if (!cond_field_target) {
+                        // conditional field container not found
+                        return;
+                    }
+
+                    // validate condition syntax
+                    if ((condition.oper == ':' && parent_value != condition.value) || (condition.oper == '!:' && parent_value == condition.value)) {
+                        // hide conditional field not matching the condition syntax
+                        cond_field_target.style.display = 'none';
+                    } else {
+                        // show conditional field
+                        cond_field_target.style.display = '';
+                    }
+                });
+            });
+        });
+
+    });
+</script>
+HTML;
+        }
+
+        // JS helper functions
+        $html .= $this->getScripts();
+
+        return $html;
+    }
+
+    /**
+     * Builds the requested script assets, if any.
+     * 
+     * @param   bool    $load_once  True to unset the assets after loading.
+     * 
+     * @return  array
+     * 
+     * @since   1.18.0 (J) - 1.8.0 (WP)
+     */
+    public function buildScriptAssets($load_once = false)
+    {
+        $scripts = [];
+
+        foreach ($this->assets as $asset_type => $asset_elements) {
+            if ($asset_type === 'select2') {
+                // build list of selectors
+                $ids_list = implode(', ', array_map(function($el) {
+                    return "#{$el}";
+                }, $asset_elements));
+
+                // check for asset options
+                $asset_options = $this->assets['select2_options'] ?? null;
+                $asset_options_str = $asset_options ? json_encode($asset_options) : '';
+
+                // always attempt to load assets
+                VikBooking::getVboApplication()->loadSelect2();
+
+                // build and push script
+                $scripts[] =
+<<<JAVASCRIPT
+jQuery(function() {
+    jQuery('$ids_list').select2($asset_options_str);
+});
+JAVASCRIPT;
+            }
+
+            if ($load_once) {
+                unset($this->assets[$asset_type]);
+            }
+        }
+
+        return $scripts;
+    }
+
+    /**
+     * Loads the requested assets, if any.
+     * 
+     * @param   bool    $load_once  True to unset the assets after loading.
+     * 
+     * @return  void
+     */
+    public function loadAssets($load_once = false)
+    {
+        $doc = JFactory::getDocument();
+
+        foreach ($this->buildScriptAssets($load_once) as $script) {
+            $doc->addScriptDeclaration($script);
+        }
+    }
+
+    /**
+     * Gets the necessary script tags.
+     * 
+     * @return  string
+     */
+    public function getScripts()
+    {
+        $html = '';
+
+        if (in_array('password', $this->scripts)) {
+            // toggle the password fields
+            $html .= "\n" . '<script>' . "\n";
+            $html .= 'function vboParamTogglePwd(elem) {' . "\n";
+            $html .= '  var btn = jQuery(elem), inp = btn.parent().find("input").first();' . "\n";
+            $html .= '  if (!inp || !inp.length) {return false;}' . "\n";
+            $html .= '  var inp_type = inp.attr("type");' . "\n";
+            $html .= '  inp.attr("type", (inp_type == "password" ? "text" : "password"));' . "\n";
+            $html .= '}' . "\n";
+            $html .= "\n" . '</script>' . "\n";
+        }
+
+        return $html;
+    }
+
+    /**
+     * Renders the given param name according to config.
+     * Eventually populates the assets and scripts to be loaded.
+     * 
+     * @param   string  $param_name     The param name.
+     * @param   array   $param_config   The param configuration.
+     * 
+     * @return  string
+     */
+    public function getField($param_name, $param_config)
+    {
+        $html = '';
+
+        $inp_attr = '';
+        if (isset($param_config['attributes']) && is_array($param_config['attributes'])) {
+            foreach ($param_config['attributes'] as $inpk => $inpv) {
+                $inp_attr .= $inpk . '="' . $inpv . '" ';
+            }
+            $inp_attr = ' ' . rtrim($inp_attr);
+        }
+
+        $default_paramv = $param_config['default'] ?? null;
+
+        switch ($param_config['type']) {
+            case 'custom':
+                $html .= $param_config['html'];
+                break;
+            case 'select':
+                $options    = isset($param_config['options']) && is_array($param_config['options']) ? $param_config['options'] : [];
+                $is_assoc   = (array_keys($options) !== range(0, count($options) - 1));
+                $element_id = 'vik-select-' . static::$instance_counter . '-' . preg_replace("/[^A-Z0-9]+/i", '', $param_name);
+                $set_attr   = true;
+                if (isset($param_config['attributes']) && is_array($param_config['attributes']) && isset($param_config['attributes']['id'])) {
+                    $element_id = $param_config['attributes']['id'];
+                    $set_attr   = false;
+                }
+                if (isset($param_config['assets']) && $param_config['assets']) {
+                    if (!isset($this->assets['select2'])) {
+                        $this->assets['select2'] = [];
+                    }
+                    $this->assets['select2'][] = $element_id;
+                    $this->assets['select2_options'] = $param_config['asset_options'] ?? null;
+                }
+                if (isset($param_config['multiple']) && $param_config['multiple']) {
+                    $html .= '<select name="' . $this->inputName . '[' . $param_name . '][]" multiple="multiple"' . $inp_attr . ($set_attr ? ' id="' . $element_id . '"' : '') . '>' . "\n";
+                } else {
+                    $html .= '<select name="' . $this->inputName . '[' . $param_name . ']"' . $inp_attr . ($set_attr ? ' id="' . $element_id . '"' : '') . '>' . "\n";
+                }
+                foreach ($options as $optind => $optval) {
+                    // support nested array values for the option-group tags
+                    $group = null;
+                    $sel_opts = [$optind => $optval];
+                    if (is_array($optval)) {
+                        $group = $optind;
+                        $sel_opts = $optval;
+                    }
+                    if ($group) {
+                        $html .= '<optgroup label="' . JHtml::_('esc_attr', JText::_($group)) . '">' . "\n";
+                    }
+                    foreach ($sel_opts as $optkey => $poption) {
+                        $checkval = $is_assoc ? $optkey : $poption;
+                        $selected = false;
+                        if (isset($this->settings[$param_name])) {
+                            if (is_array($this->settings[$param_name])) {
+                                $selected = in_array($checkval, $this->settings[$param_name]);
+                            } else {
+                                $selected = ($checkval == $this->settings[$param_name]);
+                            }
+                        } elseif (isset($default_paramv)) {
+                            if (is_array($default_paramv)) {
+                                $selected = in_array($checkval, $default_paramv);
+                            } else {
+                                $selected = ($checkval == $default_paramv);
+                            }
+                        }
+                        $html .= '<option value="' . ($is_assoc ? $optkey : $poption) . '"'.($selected ? ' selected="selected"' : '').'>'.$poption.'</option>' . "\n";
+                    }
+                    if ($group) {
+                        $html .= '</optgroup>' . "\n";
+                    }
+                }
+                $html .= '</select>' . "\n";
+                break;
+            case 'listings':
+                // build attributes list
+                $element_id = 'vik-select-' . static::$instance_counter . '-' . preg_replace("/[^A-Z0-9]+/i", '', $param_name);
+                $elements_attr = [
+                    'name' => $this->inputName . '[' . $param_name . ']',
+                ];
+                if ($param_config['multiple'] ?? null) {
+                    $elements_attr['multiple'] = 'multiple';
+                    $elements_attr['name'] .= '[]';
+                }
+                $custom_attr = (array) ($param_config['attributes'] ?? []);
+                unset($custom_attr['id'], $custom_attr['name']);
+                $elements_attr = array_merge($elements_attr, $custom_attr);
+
+                $wrapped = false;
+                $style_selection = false;
+                if ($param_config['inline'] ?? true) {
+                    // wrap the select within an additional div
+                    $html .= '<div class="' . (($param_config['multiple'] ?? null) ? 'vbo-multiselect-inline-elems-wrap' : 'vbo-singleselect-inline-elems-wrap') . '">';
+                    $wrapped = true;
+                    $style_selection = (bool) ($param_config['multiple'] ?? null);
+                } elseif ($param_config['wrapdivcls'] ?? null) {
+                    // wrap the select within a custom div
+                    $html .= '<div class="' . $param_config['wrapdivcls'] . '">';
+                    $wrapped = true;
+                }
+
+                // obtain the necessary HTML code for rendering
+                $html .= VikBooking::getVboApplication()->renderElementsDropDown([
+                    'id'              => $element_id,
+                    'elements'        => 'listings',
+                    'placeholder'     => ($param_config['asset_options']['placeholder'] ?? null),
+                    'allow_clear'     => ($param_config['asset_options']['allowClear'] ?? $param_config['asset_options']['allow_clear'] ?? null),
+                    'attributes'      => $elements_attr,
+                    'selected_value'  => (is_scalar($this->settings[$param_name] ?? null) ? $this->settings[$param_name] : (is_scalar($default_paramv ?? null) ? $default_paramv : null)),
+                    'selected_values' => (is_array($this->settings[$param_name] ?? null) ? $this->settings[$param_name] : (is_array($default_paramv ?? null) ? $default_paramv : null)),
+                    'style_selection' => $style_selection,
+                ]);
+
+                if ($wrapped) {
+                    // close the select div wrapper
+                    $html .= '</div>';
+                }
+                break;
+            case 'elements':
+                // build attributes list
+                $element_id = 'vik-select-' . static::$instance_counter . '-' . preg_replace("/[^A-Z0-9]+/i", '', $param_name);
+                $elements_attr = [
+                    'name' => $this->inputName . '[' . $param_name . ']',
+                ];
+                if ($param_config['multiple'] ?? null) {
+                    $elements_attr['multiple'] = 'multiple';
+                    $elements_attr['name'] .= '[]';
+                }
+                $custom_attr = (array) ($param_config['attributes'] ?? []);
+                unset($custom_attr['id'], $custom_attr['name']);
+                $elements_attr = array_merge($elements_attr, $custom_attr);
+
+                $wrapped = false;
+                $style_selection = false;
+                if ($param_config['inline'] ?? true) {
+                    // wrap the select within an additional div
+                    $html .= '<div class="' . (($param_config['multiple'] ?? null) ? 'vbo-multiselect-inline-elems-wrap' : 'vbo-singleselect-inline-elems-wrap') . '">';
+                    $wrapped = true;
+                    $style_selection = (bool) ($param_config['multiple'] ?? null);
+                } elseif ($param_config['wrapdivcls'] ?? null) {
+                    // wrap the select within a custom div
+                    $html .= '<div class="' . $param_config['wrapdivcls'] . '">';
+                    $wrapped = true;
+                }
+
+                // obtain the necessary HTML code for rendering
+                $html .= VikBooking::getVboApplication()->renderElementsDropDown([
+                    'id'                  => $element_id,
+                    'placeholder'         => ($param_config['asset_options']['placeholder'] ?? null),
+                    'allow_clear'         => ($param_config['asset_options']['allowClear'] ?? $param_config['asset_options']['allow_clear'] ?? null),
+                    'attributes'          => $elements_attr,
+                    'element_def_img_uri' => ($param_config['element_def_img_uri'] ?? ''),
+                    'style_selection'     => ($param_config['style_selection'] ?? $style_selection),
+                    'selected_value'      => (is_scalar($this->settings[$param_name] ?? null) ? $this->settings[$param_name] : (is_scalar($default_paramv ?? null) ? $default_paramv : null)),
+                    'selected_values'     => (is_array($this->settings[$param_name] ?? null) ? $this->settings[$param_name] : (is_array($default_paramv ?? null) ? $default_paramv : null)),
+                ], (array) ($param_config['elements'] ?? []), (array) ($param_config['groups'] ?? []));
+
+                if ($wrapped) {
+                    // close the select div wrapper
+                    $html .= '</div>';
+                }
+                break;
+            case 'tags':
+                // build attributes list
+                $element_id = 'vik-select-' . static::$instance_counter . '-' . preg_replace("/[^A-Z0-9]+/i", '', $param_name);
+                $elements_attr = [
+                    'name' => $this->inputName . '[' . $param_name . ']',
+                ];
+                if ($param_config['multiple'] ?? null) {
+                    $elements_attr['multiple'] = 'multiple';
+                    $elements_attr['name'] .= '[]';
+                }
+                $custom_attr = (array) ($param_config['attributes'] ?? []);
+                unset($custom_attr['id'], $custom_attr['name']);
+                $elements_attr = array_merge($elements_attr, $custom_attr);
+
+                $wrapped = false;
+                $style_selection = (bool) ($param_config['style_selection'] ?? null);
+                if ($param_config['inline'] ?? true) {
+                    // wrap the select within an additional div
+                    $html .= '<div class="' . (($param_config['multiple'] ?? null) ? 'vbo-multiselect-inline-elems-wrap' : 'vbo-singleselect-inline-elems-wrap') . '">';
+                    $wrapped = true;
+                    $style_selection = (bool) ($param_config['multiple'] ?? null);
+                } elseif ($param_config['wrapdivcls'] ?? null) {
+                    // wrap the select within a custom div
+                    $html .= '<div class="' . $param_config['wrapdivcls'] . '">';
+                    $wrapped = true;
+                }
+
+                // obtain the necessary HTML code for rendering
+                $html .= VikBooking::getVboApplication()->renderTagsDropDown([
+                    'id'                  => $element_id,
+                    'placeholder'         => ($param_config['asset_options']['placeholder'] ?? null),
+                    'allow_clear'         => ($param_config['asset_options']['allowClear'] ?? $param_config['asset_options']['allow_clear'] ?? null),
+                    'attributes'          => $elements_attr,
+                    'selected_value'      => (is_scalar($this->settings[$param_name] ?? null) ? $this->settings[$param_name] : (is_scalar($default_paramv ?? null) ? $default_paramv : null)),
+                    'selected_values'     => (is_array($this->settings[$param_name] ?? null) ? $this->settings[$param_name] : (is_array($default_paramv ?? null) ? $default_paramv : null)),
+                    'style_selection'     => $style_selection,
+                ], (array) ($param_config['tags'] ?? []), (array) ($param_config['groups'] ?? []));
+
+                if ($wrapped) {
+                    // close the select div wrapper
+                    $html .= '</div>';
+                }
+                break;
+            case 'datetime':
+                // build attributes list
+                $element_id = 'vik-dtp-' . static::$instance_counter . '-' . preg_replace("/[^A-Z0-9]+/i", '', $param_name);
+                $elements_attr = [
+                    'name'  => $this->inputName . '[' . $param_name . ']',
+                    'value' => $this->settings[$param_name] ?? $default_paramv ?: '',
+                ];
+                $custom_attr = (array) ($param_config['attributes'] ?? []);
+                unset($custom_attr['id'], $custom_attr['name'], $custom_attr['value']);
+                $elements_attr = array_merge($elements_attr, $custom_attr);
+
+                // obtain the necessary HTML code for rendering
+                $html .= VikBooking::getVboApplication()->renderDateTimePicker([
+                    'id'         => $element_id,
+                    'attributes' => $elements_attr,
+                ]);
+                break;
+            case 'time':
+                // build attributes list
+                $element_id = 'vik-tp-' . static::$instance_counter . '-' . preg_replace("/[^A-Z0-9]+/i", '', $param_name);
+                $elements_attr = [
+                    'name'  => $this->inputName . '[' . $param_name . ']',
+                    'value' => $this->settings[$param_name] ?? $default_paramv ?: '',
+                ];
+                $custom_attr = (array) ($param_config['attributes'] ?? []);
+                unset($custom_attr['id'], $custom_attr['name'], $custom_attr['value']);
+                $elements_attr = array_merge($elements_attr, $custom_attr);
+
+                // obtain the necessary HTML code for rendering
+                $html .= VikBooking::getVboApplication()->renderTimePicker([
+                    'id'         => $element_id,
+                    'attributes' => $elements_attr,
+                ]);
+                break;
+            case 'password':
+                $html .= '<div class="btn-wrapper input-append">';
+                $html .= '<input type="password" name="' . $this->inputName . '[' . $param_name . ']" value="'.(isset($this->settings[$param_name]) ? JHtml::_('esc_attr', $this->settings[$param_name]) : JHtml::_('esc_attr', $default_paramv)).'" autocomplete="new-password" size="20"' . $inp_attr . '/>';
+                $html .= '<button type="button" class="btn btn-primary" onclick="vboParamTogglePwd(this);"><i class="' . VikBookingIcons::i('eye') . '"></i></button>';
+                $html .= '</div>';
+                // set flag for JS helper
+                $this->scripts[] = $param_config['type'];
+                break;
+            case 'number':
+                $number_attr = [];
+                if (isset($param_config['min'])) {
+                    $number_attr[] = 'min="' . JHtml::_('esc_attr', $param_config['min']) . '"';
+                }
+                if (isset($param_config['max'])) {
+                    $number_attr[] = 'max="' . JHtml::_('esc_attr', $param_config['max']) . '"';
+                }
+                if (isset($param_config['step'])) {
+                    $number_attr[] = 'step="' . JHtml::_('esc_attr', $param_config['step']) . '"';
+                }
+                $html .= '<input type="number" name="' . $this->inputName . '[' . $param_name . ']" value="'.(isset($this->settings[$param_name]) ? JHtml::_('esc_attr', $this->settings[$param_name]) : JHtml::_('esc_attr', $default_paramv)).'" ' . implode(' ', $number_attr) . $inp_attr . '/>';
+                break;
+            case 'textarea':
+                $html .= '<textarea name="' . $this->inputName . '[' . $param_name . ']"' . $inp_attr . '>'.(isset($this->settings[$param_name]) ? JHtml::_('esc_textarea', $this->settings[$param_name]) : JHtml::_('esc_textarea', $default_paramv)).'</textarea>';
+                break;
+            case 'visual_html':
+                $tarea_cont = isset($this->settings[$param_name]) ? JHtml::_('esc_textarea', $this->settings[$param_name]) : JHtml::_('esc_textarea', $default_paramv);
+                $tarea_attr = isset($param_config['attributes']) && is_array($param_config['attributes']) ? $param_config['attributes'] : [];
+                $editor_opts = isset($param_config['editor_opts']) && is_array($param_config['editor_opts']) ? $param_config['editor_opts'] : [];
+                $editor_btns = isset($param_config['editor_btns']) && is_array($param_config['editor_btns']) ? $param_config['editor_btns'] : [];
+                $html .= VikBooking::getVboApplication()->renderVisualEditor($this->inputName . '[' . $param_name . ']', $tarea_cont, $tarea_attr, $editor_opts, $editor_btns);
+                break;
+            case 'codemirror':
+                $editor = JEditor::getInstance('codemirror');
+                $e_options = isset($param_config['options']) && is_array($param_config['options']) ? $param_config['options'] : [];
+                $e_name = $this->inputName . '[' . $param_name . ']';
+                $e_value = isset($this->settings[$param_name]) ? $this->settings[$param_name] : $default_paramv;
+                $e_width = isset($e_options['width']) ? $e_options['width'] : '100%';
+                $e_height = isset($e_options['height']) ? $e_options['height'] : 300;
+                $e_col = isset($e_options['col']) ? $e_options['col'] : 70;
+                $e_row = isset($e_options['row']) ? $e_options['row'] : 20;
+                $e_buttons = isset($e_options['buttons']) ? (bool)$e_options['buttons'] : true;
+                $e_id = isset($e_options['id']) ? $e_options['id'] : $this->inputName . '_' . $param_name;
+                $e_params = isset($e_options['params']) && is_array($e_options['params']) ? $e_options['params'] : [];
+                if (interface_exists('Throwable')) {
+                    /**
+                     * With PHP >= 7 supporting throwable exceptions for Fatal Errors
+                     * we try to avoid issues with third party plugins that make use
+                     * of the WP native function get_current_screen().
+                     * 
+                     * @wponly
+                     */
+                    try {
+                        $html .= $editor->display($e_name, $e_value, $e_width, $e_height, $e_col, $e_row, $e_buttons, $e_id, $e_asset = null, $e_autor = null, $e_params);
+                    } catch (Throwable $t) {
+                        $html .= $t->getMessage() . ' in ' . $t->getFile() . ':' . $t->getLine() . '<br/>';
+                        $html .= '<textarea name="' . $this->inputName . '[' . $param_name . ']"' . $inp_attr . '>' . (isset($this->settings[$param_name]) ? JHtml::_('esc_textarea', $this->settings[$param_name]) : JHtml::_('esc_textarea', $default_paramv)) . '</textarea>';
+                    }
+                } else {
+                    $html .= $editor->display($e_name, $e_value, $e_width, $e_height, $e_col, $e_row, $e_buttons, $e_id, $e_asset = null, $e_autor = null, $e_params);
+                }
+                break;
+            case 'hidden':
+                $html .= '<input type="hidden" name="' . $this->inputName . '[' . $param_name . ']" value="'.(isset($this->settings[$param_name]) ? JHtml::_('esc_attr', $this->settings[$param_name]) : JHtml::_('esc_attr', $default_paramv)).'"' . $inp_attr . '/>';
+                break;
+            case 'checkbox':
+                // always display a hidden input value turned off before the actual checkbox to support the "off" (0) status
+                $html .= '<input type="hidden" name="' . $this->inputName . '[' . $param_name . ']" value="0" />';
+                $html .= VikBooking::getVboApplication()->printYesNoButtons($this->inputName . '['.$param_name.']', JText::_('VBYES'), JText::_('VBNO'), (isset($this->settings[$param_name]) ? (int)$this->settings[$param_name] : (int)$default_paramv), 1, 0);
+                break;
+            case 'calendar':
+                $e_options = isset($param_config['options']) && is_array($param_config['options']) ? $param_config['options'] : [];
+                $e_id = isset($e_options['id']) ? $e_options['id'] : $this->inputName . '_' . $param_name;
+                $html .= VikBooking::getVboApplication()->getCalendar($this->settings[$param_name] ?? $default_paramv, $this->inputName . '['.$param_name.']', $e_id, $e_options['df'] ?? null, $e_options['attributes'] ?? []);
+                break;
+            case 'file_upload':
+                /**
+                 * File upload (AJAX) field, for single or multiple files uploading.
+                 * 
+                 * @since   1.18.3 (J) - 1.8.3 (WP)
+                 */
+                $element_id = 'vik-fileupload-' . static::$instance_counter . '-' . preg_replace("/[^A-Z0-9]+/i", '', $param_name);
+                $element_nm = $this->inputName . '[' . $param_name . ']';
+                $multiple   = '';
+                if ($param_config['multiple'] ?? null) {
+                    $multiple = 'multiple';
+                    $element_nm .= '[]';
+                }
+
+                // site root URI
+                $site_uri = JUri::root();
+
+                // CSRF token for safe AJAX requests
+                $csrf = addslashes(JSession::getFormToken());
+
+                // default file icon class
+                $file_icon_class = VikBookingIcons::i('file');
+
+                // JSON upload options
+                $upload_options = [
+                    'element_id' => $element_id,
+                    'csrf_token' => $csrf,
+                    'field_name' => 'vbo_files',
+                    'param_name' => $element_nm,
+                    'upload_url' => VikBooking::ajaxUrl('index.php?option=com_vikbooking&task=service.upload'),
+                    'allowed_types'  => (string) ($param_config['allowed_types'] ?? ''),
+                    'safe_file_name' => (int) ($param_config['safe_file_name'] ?? 0),
+                    'return_type'    => (string) ($param_config['return_type'] ?? 'path'),
+                    'file_icon_class' => $file_icon_class,
+                    'loading_icon_class' => VikBookingIcons::i('circle-notch', 'fa-spin fa-fw'),
+                ];
+                $json_upload_options = json_encode($upload_options);
+
+                // upload or drag & drop text
+                $help_text = sprintf('<a href="JavaScript: void(0);">%s</a> %s', JText::_('VBOMANUALUPLOAD'), JText::_('VBODROPFILES'));
+
+                // uploaded files
+                $uploaded_files = array_values(array_filter((array) ($this->settings[$param_name] ?? null)));
+                $uploaded_html = '';
+                foreach ($uploaded_files as $uploaded_file) {
+                    if (strpos($uploaded_file, VBO_ADMIN_PATH) !== false && !is_file($uploaded_file)) {
+                        // file value is an internal path, but it no longer exists
+                        continue;
+                    }
+                    $uploaded_file_val  = htmlspecialchars((string) $uploaded_file, ENT_QUOTES, 'UTF-8');
+                    $uploaded_file_name = basename((string) $uploaded_file);
+                    $uploaded_file_cont = $uploaded_file_name;
+                    if (strpos($uploaded_file, $site_uri) !== false) {
+                        // make it a link
+                        $uploaded_file_cont = '<a href="' . $uploaded_file . '" target="_blank">' . $uploaded_file_name . '</a>';
+                    }
+                    // render current file
+                    $uploaded_html .= <<<HTML
+<div class="file-elem">
+    <div class="file-elem-inner">
+        <div class="file-summary">
+            <i class="{$file_icon_class}"></i>
+            <div class="filename">{$uploaded_file_cont}</div>
+            <input type="hidden" name="{$element_nm}" value="{$uploaded_file_val}" data-type="file_upload" />
+        </div>
+    </div>
+</div>
+HTML;
+                }
+
+                if (!$uploaded_files) {
+                    // display an empty input hidden element to let any conditional rule work
+                    $uploaded_html = <<<HTML
+<input type="hidden" name="{$element_nm}" value="" data-type="file_upload" data-empty="1" />
+HTML;
+                }
+
+                // visible element
+                $html .= <<<HTML
+<div class="vbo-param-file-upload-wrap vbo-dropfiles-target">
+    <div class="vbo-uploaded-files">{$uploaded_html}</div>
+    <div class="vbo-param-file-upload-loading"></div>
+    <div class="lead">{$help_text}</div>
+    <input type="file" id="{$element_id}" data-upload="{$multiple}" hidden {$multiple}/>
+</div>
+<script>
+    function vboParamFieldRenderUploads(result, options) {
+        if (!options?.inputElement) {
+            throw new Error('Missing target');
+        }
+
+        if (!result?.processed) {
+            throw new Error('No files were processed');
+        }
+
+        if (!result?.paths || !result.paths.length) {
+            alert('No valid files were uploaded');
+            return;
+        }
+
+        // define the default file-uploaded icon element class list
+        let fileIconClassList = [];
+        if (options?.file_icon_class) {
+            fileIconClassList = options.file_icon_class.split(' ');
+        }
+
+        // target the current list of files uploaded and make it empty
+        const filesPool = options.inputElement.closest('.vbo-param-file-upload-wrap').querySelector('.vbo-uploaded-files');
+        filesPool.innerHTML = '';
+
+        // iterate over each file uploaded
+        result.fileNames.forEach((name, index) => {
+            // build uploaded file nodes
+            let fileNode = document.createElement('div');
+            fileNode.classList.add('file-elem');
+            let fileInner = document.createElement('div');
+            fileInner.classList.add('file-elem-inner');
+            let fileSummary = document.createElement('div');
+            fileSummary.classList.add('file-summary');
+            let fileIcon = document.createElement('i');
+            if (fileIconClassList.length) {
+                fileIcon.classList.add(...fileIconClassList);
+            }
+            let fileName = document.createElement('div');
+            fileName.classList.add('filename');
+            fileName.innerText = name;
+            let fileInput = document.createElement('input');
+            fileInput.setAttribute('type', 'hidden');
+            fileInput.setAttribute('name', options?.param_name);
+            if (options?.return_type == 'url') {
+                fileInput.value = result.urls[index] || name;
+                // make the file name element a link
+                fileName.innerText = '';
+                let fileLink = document.createElement('a');
+                fileLink.setAttribute('href', fileInput.value);
+                fileLink.setAttribute('target', '_blank');
+                fileLink.innerText = name;
+                fileName.append(fileLink);
+            } else if (options?.return_type == 'name') {
+                fileInput.value = name;
+            } else {
+                fileInput.value = result.paths[index] || name;
+            }
+
+            // append nodes to files pool
+            fileSummary.append(fileIcon, fileName, fileInput);
+            fileInner.append(fileSummary);
+            fileNode.append(fileInner);
+            filesPool.append(fileNode);
+        });
+    }
+
+    async function vboParamFieldUploadFiles(files, options) {
+        const fieldBaseName = options?.field_name;
+        const formData = new FormData();
+        for (let i = 0; i < files.length; i++) {
+            formData.append(fieldBaseName + '[]', files[i]);
+        }
+
+        if (options?.allowed_types) {
+            // comma separated string of allowed file extension types
+            formData.append('allowed_types', options.allowed_types);
+        }
+
+        if (options?.safe_file_name) {
+            // whether to keep the original file name or randomize it
+            formData.append('safe_file_name', options.safe_file_name);
+        }
+
+        // define the default upload-loading icon element class list
+        let loadingIconClassList = [];
+        let loadingElement = null;
+        if (options?.loading_icon_class) {
+            loadingIconClassList = options.loading_icon_class.split(' ');
+        }
+
+        if (loadingIconClassList.length && options?.inputElement) {
+            // build loading icon element
+            loadingElement = document.createElement('i');
+            loadingElement.classList.add(...loadingIconClassList);
+            // append loading element
+            options
+                .inputElement
+                .closest('.vbo-param-file-upload-wrap')
+                .querySelector('.vbo-param-file-upload-loading')
+                .append(loadingElement);
+        }
+
+        try {
+            const response = await fetch(options?.upload_url, {
+                method: 'POST',
+                headers: {
+                    'X-CSRF-Token': options?.csrf_token,
+                },
+                body: formData,
+            });
+
+            const result = await response.json().catch(() => null);
+
+            if (response.ok) {
+                // render files uploaded
+                vboParamFieldRenderUploads(result, options);
+            } else {
+                alert('Upload failed: ' + response.statusText);
+            }
+        } catch (error) {
+            console.error('Upload error:', error);
+            alert('An error occurred during upload.');
+        }
+
+        if (options?.inputElement) {
+            // reset file input element value to allow additional uploads
+            options.inputElement.value = '';
+        }
+
+        if (loadingElement) {
+            // remove loading animation
+            loadingElement.remove();
+        }
+    }
+
+    function vboParamFieldUploadSetup(options) {
+        // target elements
+        const fileInput = document.getElementById(options?.element_id);
+        const dropTarget = fileInput.closest('.vbo-param-file-upload-wrap');
+
+        // open file dialog by simulating the click on hidden file input
+        dropTarget.addEventListener('click', () => fileInput.click());
+
+        // drop target drag and drop events
+        dropTarget.addEventListener('dragover', e => {
+            e.preventDefault();
+            dropTarget.classList.add('drag-over', 'drag-enter');
+        });
+        dropTarget.addEventListener('dragleave', () => {
+            dropTarget.classList.remove('drag-over', 'drag-enter');
+        });
+        dropTarget.addEventListener('drop', async e => {
+            e.preventDefault();
+            dropTarget.classList.remove('drag-over', 'drag-enter');
+            const files = e.dataTransfer.files;
+            if (files.length) {
+                await vboParamFieldUploadFiles(files, Object.assign({}, options, {inputElement: fileInput}));
+            }
+        });
+
+        // input file element change event
+        fileInput.addEventListener('change', async e => {
+            if (e.target.files.length) {
+                await vboParamFieldUploadFiles(e.target.files, Object.assign({}, options, {inputElement: fileInput}));
+            }
+        });
+    }
+
+    // configure field
+    vboParamFieldUploadSetup({$json_upload_options});
+</script>
+HTML;
+                break;
+            default:
+                $html .= '<input type="text" name="' . $this->inputName . '[' . $param_name . ']" value="'.(isset($this->settings[$param_name]) ? JHtml::_('esc_attr', $this->settings[$param_name]) : JHtml::_('esc_attr', $default_paramv)).'" size="20"' . $inp_attr . '/>';
+                break;
+        }
+
+        return $html;
+    }
+}

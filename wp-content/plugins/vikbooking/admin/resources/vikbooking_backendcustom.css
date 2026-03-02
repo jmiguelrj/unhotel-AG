@@ -1,0 +1,46 @@
+/* This CSS file will be loaded at last. Any CSS customization for the BACK-END should be placed here */
+.vbo-menu-right {
+	background: #FA4676 !important;
+border-radius: 30px !important;
+}
+.vbo-menu-parent-li-active > span {
+    background: #cccc !important;
+}
+.vbo-menu-parent-li:not(.vbo-menu-parent-li-active) > span:hover, .vbo-menu-parent-li-opened:not(.vbo-menu-parent-li-active) > span {
+    background: #FF7F9B !important;
+border-radius: 15px !important;
+}
+body #content .btn.btn-primary:hover, body #wpcontent .btn.btn-primary:hover, body .vbo-checkin-update-wrap .btn.btn-primary:hover, .vbo-modal-overlay-content .btn.btn-primary:hover {
+    color: #fff;
+    background-color: #FF7F9B;
+    border: 1px solid #FF7F9B;
+}
+.vbo-notifications-center-handler {
+    background: #cccccc;  
+    border: 1px solid #cccccc;
+}
+.vbo-menu-updates .vbo-reviews-btnbadge {
+    background: #333333;
+    border-color: #333333;
+}
+.vbo-menu-updates > button {
+    background: #cccccc;
+    border: 1px solid #cccccc;
+}
+.btn.vbo-config-btn, .vbo-link-add {
+    background-color: #FA4676;
+    border: #FA4676;
+    border-radius: 30px;
+}
+.vbo-widget-today-checkout-tristate .vik-multiswitch-noanimation .vik-multiswitch-radiobtn.vik-multiswitch-text input:checked + .vik-multiswitch-trigger, .vbo-widget-today-checkin-tristate .vik-multiswitch-noanimation .vik-multiswitch-radiobtn.vik-multiswitch-text input:checked + .vik-multiswitch-trigger {
+    background-color: #FA4676;
+}
+body #content .btn.btn-primary, body #wpcontent .btn.btn-primary, body .vbo-checkin-update-wrap .btn.btn-primary, .vbo-modal-overlay-content .btn.btn-primary {
+    color: #fff;
+    background-color: #FA4676;
+    border: 1px solid #FA4676;
+    border-radius: 30px;
+}
+.vbo-submenu-wrap li:hover a, .vbo-submenu-wrap li .vmenulinkactive a, .vbo-submenu-wrap li:hover a *, .vbo-submenu-wrap li .vmenulinkactive a * {
+    color: #fa4676 !important;
+}

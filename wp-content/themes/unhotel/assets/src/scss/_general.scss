@@ -1,0 +1,261 @@
+@use "variables" as *;
+
+// Page-specific styles
+
+.home {
+    .site-header {
+        height: 700px;
+        margin: 0;
+        position: relative;
+        padding-top: 0;
+        overflow: hidden; //used for parallax effect
+
+        &:before {
+            opacity: 0.2;
+            content: " ";
+            background-color: #000;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+    .hero-content {
+        @media (min-width: $breakpoint-tablet) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+    .widget_mod_vikbooking_horizontalsearch {
+        .widget-title {
+            display: none;
+        }
+    }
+    @media (min-width: $breakpoint-tablet) {
+        #custom_html-4,
+        #custom_html-5,
+        #custom_html-3 {
+            display: none;
+        }
+    }
+    .wp-block-latest-posts__post-excerpt{
+        text-align: left;
+    }
+    .vblistcontainer{
+        padding: 0;
+    }
+}
+
+body.custom-vk_page_room-details {
+    background-color: #f7f8f9;
+
+    .custom-vk_room-info {
+        p {
+            font-size: 16px !important;
+        }
+        ul {
+            padding-left: 30px;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+// Page-specific fixes
+.container-page-reservation {
+    ul {
+        background: #fdfdfd;
+        border-left: 3px solid #e63952;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        border-radius: 0 4px 4px 0;
+        li {
+            list-style: none;
+        }
+    }
+}
+.page-apartamentos {
+    .article-main .article-detail.block-body {
+        padding: 0;
+    }
+    .text-left {
+        text-align: left !important;
+    }
+    .owl-dots {
+        margin-top: 0;
+    }
+
+    .hero-appartments {
+        @media (min-width: $breakpoint-tablet) {
+            .unhotel-hero-content {
+                top: -35px;
+                left: 119px;
+            }
+        }
+        @media (max-width: $breakpoint-tablet) {
+            min-height: 350px !important;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+    .unhotel-section.fullwidth {
+        padding-top: 0;
+        .section-inner-container {
+            background: #fff;
+            @media (min-width: $breakpoint-tablet) {
+                padding: $spacing-medium;
+                .wp-block-heading {
+                    padding-top: 0;
+                    display: block;
+                    margin-top: 18px;
+                    margin-bottom: 0;
+                    padding-left: $spacing-small;
+                }
+            }
+        }
+    }
+}
+body.about-page {
+    .blog-container-about {
+        @media (min-width: $breakpoint-wide) {
+            .section-inner-container {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                .is-grid {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    .article-detail.block-body {
+        padding: 0;
+    }
+
+    .section-inner-container {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        .wp-block-columns {
+            padding-left: 0;
+            padding-right: 0;
+            .wp-block-heading {
+                padding: 0px;
+                font-size: 18px;
+            }
+        }
+        .wp-block-heading {
+            padding: 0px;
+        }
+        p {
+            line-height: 180%;
+            font-weight: 400;
+            font-size: 15px;
+            @media (min-width: $breakpoint-tablet) {
+                font-size: 18px;
+            }
+        }
+        .team-section {
+            p {
+                font-size: 18px;
+                line-height: 150%;
+                padding-top: 16px;
+                padding-bottom: 0;
+                margin: 0;
+            }
+        }
+    }
+    .about-team-section {
+        text-align: center;
+        img {
+            margin: 0 auto;
+        }
+        @media (min-width: $breakpoint-tablet) {
+            text-align: left;
+        }
+    }
+}
+.page-privacy {
+    article {
+        .article-detail {
+            padding-top: 0px !important;
+            .section-inner-container {
+                padding: 40px;
+            }
+        }
+    }
+}
+// Remove padding from article-detail when page title is hidden
+body.page-title-hidden {
+    .article-detail.block-body {
+        padding: 0 !important;
+    }
+}
+body.custom-vk_page article.custom-vk_room-details-wrapper .article-detail {
+    padding: 40px !important;
+}
+
+.pagination {
+    text-align: center;
+}
+// body.custom-vk_order-details {
+//     .main-content-area{
+//         padding-bottom: 30px;
+//     }
+//     .page-room-details {
+//         background: #fff;
+//         padding:20px 40px;
+//     }
+// }
+body .blog-cards {
+    @media (min-width: $breakpoint-desktop) {
+        .blog-container {
+            .section-inner-container {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+        }
+    }
+}
+
+.home {
+    @media (max-width: $breakpoint-tablet) {
+        .blog-container {
+            .wp-block-buttons,
+            .wp-block-columns.blog-flex-header {
+                text-align: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.export-controls {
+    .form-wrapper label {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    #primary {
+        .title-page-visible {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            .post-title {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+.form-profile-image {
+    .wp-block-jet-engine-dynamic-image {
+        position: relative;
+    }
+}
+
+

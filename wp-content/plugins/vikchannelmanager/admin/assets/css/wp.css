@@ -1,0 +1,597 @@
+/* WP Adapter */
+.wp-core-ui select, .wp-admin select {
+  line-height: 2em;
+  min-height: 40px;
+  padding: 5px 34px 5px 10px !important;
+  border-radius: var(--vcm-field-radius);
+  border: 1px solid var(--vcm-config-border-color) !important;
+  outline-width: 0px;
+}
+.wp-core-ui select:focus, .wp-admin select:focus {
+	border: 1px solid var(--vcm-config-border-color) !important;
+}
+
+.btn-toolbar {
+	display: inline-block;
+}
+/*** Bootstrap ***/
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+
+/*** No box-shadow for input ***/
+input[type="text"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input[type="password"],
+input[type="checkbox"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+select,textarea {
+	box-shadow: unset !important;
+	border: 1px solid var(--vcm-config-border-color);
+	border-radius: var(--vcm-field-radius);
+	padding: 5px 10px;
+}
+
+/*** Safari (webkit) fix for Checkboxes ***/
+input[type="checkbox"] {
+	-webkit-appearance: checkbox !important;
+}
+input[type=checkbox]:checked:before {
+	content: "" !important;
+	margin: 0 !important;
+	color: initial !important;
+}
+
+/*** Global ***/
+a {
+	text-decoration: none;
+}
+.admintable.table, .adminform {
+	width: 100%;
+}
+.admintable.table {
+	border-collapse: separate;
+	border-spacing: 2px;
+}
+#menu-management .menu-edit, #menu-settings-column .accordion-container, .comment-ays, .feature-filter, .imgedit-group, .manage-menus, .menu-item-handle, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, .wp-editor-container, p.popular-tags, table.widefat, .widefat thead td, .widefat thead th {
+	border-color: var(--vcm-config-border-color);
+}
+.alternate, .striped > tbody > :nth-child(2n+1), ul.striped > :nth-child(2n+1) {
+	background-color: var(--vcm-config-child-bg-color);
+}
+th.title i {
+	margin-left: 3px;
+}
+#adminForm legend {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	padding: 10px 12px;
+	font-size: 14px;
+	line-height: 18px;
+	border-radius: var(--vcm-field-radius);
+	transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	cursor: pointer;
+}
+.btn:focus, .btn:hover {
+	text-decoration: none;
+}
+.vcm-admin-container button.btn:not(.btn-small),
+.vcm-admin-container .vcm-param-container .vcm-param-setting .vcm-managemultiacc-btn .btn:not(.btn-small) {
+	padding: 9px 14px;
+	height: 40px;
+}
+.btn-small {
+    padding: 2px 10px;
+    font-size: 12px;
+    -webkit-border-radius: var(--vcm-field-radius);
+    -moz-border-radius: var(--vcm-field-radius);
+    border-radius: var(--vcm-field-radius);
+}
+.input-append .btn {
+	border: 1px solid #b3b3b3;
+	border-radius: var(--vcm-field-radius);
+	padding: 9px 14px;
+	font-size: 14px;
+	cursor: pointer;
+	vertical-align: top;
+	height: 40px;
+}
+a.btn {
+	text-decoration: none;
+}
+.input-append .hasDatepicker {
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+	border-color: var(--vcm-config-border-color);
+}
+#ui-datepicker-div .ui-datepicker-header select {
+	padding: 5px 22px 5px 8px !important;
+}
+
+/*** Menu ***/
+.vcm-menu-ul li {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+ul.vcmuladminmenu > li {
+	margin-bottom: 0;
+}
+ul.vcmuladminmenu > li.highlight:hover {
+	background: #3887AF;
+}
+ul.vcmuladminmenu a {
+	text-decoration: none;
+}
+
+/*** Inputs ***/
+input[type="number"] {
+	width: 80px;
+}
+
+/*** Tables ***/
+
+.wp-list-table thead th {
+	font-weight: bold;
+}
+.wp-list-table td.center, .wp-list-table th.center {
+	text-align: center;
+}
+.wp-list-table th:first-child,
+.table th:first-child {
+	text-align: left;
+	padding: 0 4px;
+	vertical-align: middle;
+}
+.table th.title.left,
+.table th.left,
+.table td.left {
+	text-align: left;
+}
+.table th.title.center,
+.table th.center,
+.table td.center {
+	text-align: center;
+}
+.table th.title.right,
+.table th.right,
+.table td.right {
+	text-align: right;
+}
+.table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+table.vcm-list-table {
+	table-layout: initial;
+	border: 0;
+}
+.vcm-list-table th, .vcm-list-table td {
+	border-top: 1px solid #ddd;
+	border-bottom: 0 !important;
+	line-height: 18px;
+	text-align: left;
+}
+.table-responsive > .vcm-list-table > thead > tr > th, .table-responsive > .vcm-list-table > tbody > tr > th, .table-responsive > .vcm-list-table > tfoot > tr > th, .table-responsive > .vcm-list-table > thead > tr > td, .table-responsive > .vcm-list-table > tbody > tr > td, .table-responsive > .vcm-list-table > tfoot > tr > td {
+    white-space: nowrap;
+}
+.vcm-list-table caption + thead tr:first-child th, .vcm-list-table caption + thead tr:first-child td, .vcm-list-table colgroup + thead tr:first-child th, .vcm-list-table colgroup + thead tr:first-child td, .vcm-list-table thead:first-child tr:first-child th, .vcm-list-table thead:first-child tr:first-child td {
+    border-top: 0;
+}
+
+/*** Settings ***/
+
+.vcmconfigbottom h3 {
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+/*** Hotels ***/
+.vbotasp {
+	text-align: center;
+}
+
+/*** Overview ***/
+.vcmoverviewtablerowone .vcmdatepicker {
+	width: 110px;
+}
+.vcm-dialog-tab-btn a:hover, .vcm-dialog-tab-btn a:active, .vcm-dialog-tab-btn a:focus {
+	outline: none;
+	box-shadow: none;
+}
+.vcm-overview-datecmd-date .input-append .btn {
+	margin-left: 0;
+	padding: 10px 14px;
+	height: auto;
+}
+.vcm-info-overlay-content input[type="text"] {
+	height: 40px;
+}
+
+/*** Bulk Actions ***/
+.vcmavpush-dpick-cont {
+	margin-right: 0;
+	margin-bottom: 4px;
+	width: 100%;
+}
+.vcmavpush-dpick-cont label {
+	min-width: 85px;
+	display: inline-block;
+}
+.vcmratespush-td-rplans > div {
+	padding-bottom: 6px;	
+}
+.vcmavpush-dpick-totdays {
+	margin-top: 10px;
+}
+.vcm-ratespush-advdata > input[type="checkbox"] {
+	margin: 3px 0 0 5px;
+}
+
+/*** Sortable Grid Columns ***/
+#adminForm table thead th i.fa {
+	margin-left: 5px;
+}
+#adminForm table thead th i.fa.fa-sort-desc {
+	vertical-align: top;
+}
+#adminForm table thead th, #adminForm table thead th a:not(.activesort) {
+	color: var(--vcm-config-titles-color-light);
+}
+#adminForm table thead th a.activesort,
+#adminForm table thead th a:hover {
+	color: #02679A;
+	text-decoration: none;
+}
+
+/*** Promotions ***/
+.vcm-promotions-container .flat-table-header {
+	display: inline-block;
+	width: 100%;
+}
+.vcm-promotions-list > li {
+	display: inline-block;
+	width: 100%;
+}
+.vcm-promotions-list > li, .vcm-promotions-list > li:nth-of-type(2n+1) {
+	background: var(--vcm-config-bg-color);
+}
+.vcm-mngpromo-wday-block label {
+	display: block;
+}
+
+/*** Manage Contents - Hotel Contents ***/
+#vcm-bcah-tab-header .vcm-bcah-tab:hover {
+	background-color: #5692B1;
+}
+#vcm-bcah-tab-header .vcm-bcah-active, #vcm-bcah-tab-header .vcm-bcah-active:hover {
+	background-color: #336699;
+	color: #fff;
+}
+/*** Mobile App Configuration ***/
+.vcm-appaccounts-container {
+	background: #fff;
+	padding: 20px;
+}
+.vcm-appaccounts-remove a {
+	font-size: 17px;
+	padding: 10px 12px;
+	line-height: 18px;
+}
+
+.vcm-appaccountsacl-container .vcm-appaccountsacl-row:last-child {
+	border:0;
+}
+.vcm-appaccountsacl-container .vcm-appaccountsacl-row .vcm-appaccountsacl-element:first-child {
+	margin-top: 5px;
+}
+.vcm-bcah-entry-detail label, .vcm-bcah-entry-contents label, .vcm-bcah-textarea-details span {
+	display: block;
+	margin-bottom: 5px;
+}
+.vcm-bcah-start-time, .vcm-bcah-end-time {
+	display: inline-block;
+	vertical-align: top;
+}
+.vcm-bcah-container-content .vcm-bcah-entry-contents > div {
+	margin: 5px 10px;
+}
+
+/*** Rooms Relation ***/
+div.vcmrelationshema {
+	width: 70%;
+}
+.vcmshowinfo::after {
+	font-size: 6px;
+	top: -4px;
+}
+table.vcmtableschema .vcmtrmediumheader-separe td {
+	height: 18px;
+}
+#jmodal-vcm-notification-details {
+	background: var(--vcm-body-bg-color);
+}
+
+/*** Trivago and TripAdvisor box override ***/
+.vcmtacallrooms .vcmtacroomdiv, .vcmtriallrooms .vcmtriroomdiv {
+	width: calc(33% - 34px);
+}
+
+@media screen and (max-width: 1400px) {
+	.vcmavpush-roominfo .vcm-oversight-roomname {
+		display: block;
+		margin-top: 5px;
+	}
+}
+
+/** Bulk Action Rates Push **/
+.vcmratespush-warndefrate i.wp-quest-popover {
+	color: #ff9800;
+}
+
+/** Opportunities **/
+.vcm-opps-description p {
+	font-size: 1em;
+}
+
+/* Dashboard */
+.vcmnotifymessblock {
+	padding: 10px;	
+}
+#jmodal-vcm-notification-details .modal-body .vcm-bookingdet-summary .table {
+	width: 100%;
+}
+
+/* Hotel Contents */
+.vcm-bcah-container-header span, .vcm-bcah-entry-header span {
+	cursor: pointer;
+}
+.vcm-btn-toolbar input[type="text"], .vcm-btn-toolbar .vcm-multi-select.select2-container-multi .select2-choices .select2-search-field input {
+	padding: 5px 10px;
+}
+.vcm-btn-toolbar .vcm-multi-select.select2-container-multi .select2-choices .select2-search-field input {
+	font-size: 14px;
+}
+.wp-calendar-box {
+	background: var(--vcm-input-style);
+	border: 1px solid var(--vcm-config-border-color);
+	border-radius: 0;
+	padding: 4px 6px;
+	display: flex;
+	vertical-align: top;
+}
+.vcm-param-setting .wp-calendar-box {
+	background: var(--vcm-input-style) !important;
+}
+.wp-calendar-box input::placeholder {
+	color: var(--vcm-config-title-color);
+}
+.wp-calendar-box i {
+	margin-top: 4px;
+}
+.wp-calendar-box input, .wp-calendar-box input[type="text"], .vcm-admin-container .vcm-param-container .vcm-param-setting .wp-calendar-box input[type="text"] {
+	outline: none;
+	border: 0 !important;
+	box-shadow: none;
+	background: transparent;
+	padding: 0;
+}
+.wp-calendar-box input, .wp-calendar-box input[type="text"] {
+	flex: 1;
+}
+#filter-bar.btn-toolbar {
+	margin-bottom: 0;
+}
+#filter-bar.btn-toolbar > .btn-group {
+	margin: 2px 5px;
+}
+#vcm-download-reviews {
+	padding: 8.5px 15px;
+}
+
+/* Icons fixes */
+i[class^="icon-"],
+span.icon-calendar {
+	font-family: 'vboicomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	margin-right: 0.25em;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+i.icon-remove:before {
+	content: "\ea0f";
+}
+i.icon-calendar:before,
+span.icon-calendar:before {
+	content: "\e953";
+}
+i.icon-save:before {
+	content: "\ea10";
+}
+i.icon-new:before {
+	content: "+";
+	background: #444;
+	border-radius: 50%;
+	padding: 0px 0 0 1px;
+	width: 15px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: top;
+	color: #fff;
+	font-weight: bold;
+	line-height: 10px;
+	text-align: center;
+}
+
+.input-append .btn i[class^="icon-"] {
+	margin-right: 0;
+}
+.input-append > input#vcmdatepicker:focus + .btn {
+	border-left-width: 1px;
+}
+input#vcmdatepicker {
+	font-weight: normal;
+	padding-left: 6px;
+}
+.postbox {
+	background-color: var(--vcm-config-bg-color);
+	border-color: var(--vcm-config-border-color);
+}
+#screen-meta-links .show-settings {
+	background-color: var(--vcm-config-bg-color) !important;
+	border-color: var(--vcm-light-color-btn);
+}
+#wpbody-content #screen-meta {
+	background-color: var(--vcm-config-bg-color);
+	border-color: var(--vcm-light-color-btn);
+}
+/* Toolbar */
+.vcm-btn-toolbar .select2-container .select2-choice {
+	height: 38px !important;
+}
+.vcm-btn-toolbar .select2-container .select2-choice .select2-chosen {
+    line-height: 38px;
+}
+.vcm-btn-toolbar .btn[type="submit"], .vcm-btn-toolbar .btn[type="button"] {
+	padding: 10px 15px;
+}
+
+/* Reviews */
+.vcm-tabs-selector-container > div {
+	border-bottom: 3px solid var(--vcm-config-bg-color);
+}
+#vcm-tab-reviews .vcm-list-form {
+	border-top: 1px solid var(--vcm-config-border-color);
+}
+
+/* Configuration new layout */
+.vcm-admin-container .adminform {
+	box-sizing: border-box;
+	width: auto;
+}
+.vcm-info-overlay-password .vcm-info-overlay-pass-element {
+	margin: 15px 0;
+}
+.vcm-info-overlay-password .vcm-info-overlay-pass-element .vcm-info-overlay-pass-desc {
+	display: block;
+	margin-bottom: 5px;
+}
+.input-append > input {
+	height: 40px !important;
+}
+
+/* Photo API */
+.vcm-bphotos-gallery-inner .vcm-bphotos-gallery-thumbs .vcm-bphotos-gallery-thumb {
+	flex-basis: 18%;
+}
+.vcm-bphotos-gallery-upload h4, .vcm-bphotos-gallery-thumbs h4 span, .vcm-bphotos-gallery-thumbs-queued h4 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.vcm-bphotos-gallery-actions-inner .vcm-bphotos-gallery-upload-file-inner > label, .vcm-bphotos-gallery-upload-drag label {
+	margin-bottom: 5px;
+	display: inline-block;
+	width: 100%;
+}
+.vcm-bphotos-gallery-inner .vcm-bphotos-gallery-actions .vcm-uploaded-files .file-elem-inner img {
+	max-width: 100%;
+}
+.vcm-bphoto-tags-manager .select2-container-multi .select2-search-field .select2-input {
+	min-height: inherit;
+	padding: 6px 10px;
+}
+.vcm-bphotos-gallery-thumbs-queued .vcm-bphotos-gallery-thumb .badge {
+	display: inline-block;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #fff;
+	vertical-align: baseline;
+	white-space: nowrap;
+	padding: 2px 9px;
+	border-radius: 9px;
+}
+.vikfxg-overlay {
+	z-index: 10000 !important;
+}
+.vikfxg-wrapper .vikfxg-close {
+	top: 50px !important;
+}
+.vikfxg-wrapper .vikfxg-image {
+	z-index: 100000 !important;
+}
+.vcm-dotslider-modal {
+	background: #fff;
+}
+.vcm-cfgimpwizard-import-toggle {
+	margin-top: 20px;
+}
+.vcmdivmiddle {
+	flex-basis: 30%;
+}
+
+@media screen and (max-width: 1470px) {
+	.vcm-btn-toolbar #filter-bar .btn-group.pull-right {
+		float: none;
+	}
+	img.vcmvbroomimg {
+		max-width: 75px;
+	}
+}
+@media screen and (max-width: 782px) {
+	input[type="date"], input[type="datetime-local"], input[type="datetime"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+		min-height: inherit;
+	}
+	#filter-bar.btn-toolbar > .btn-group {
+		position: relative;
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+	.wp-list-table tr:not(.inline-edit-row):not(.no-items) td:not(.check-column) {
+    	position: relative;
+    	clear: initial;
+    	display: table-cell;
+    	width: inherit !important;
+	}
+	/* Fix sizes in responsive mode applied by the default CSS of wp */
+	input[type="checkbox"], input[type="radio"] {
+		height: initial;
+		width: initial;
+	}
+}
+@media screen and (max-width: 680px) {
+	.vcm-admin-container .vcm-param-container .vcm-param-setting select {
+		max-width: 100% !important;
+	}
+}

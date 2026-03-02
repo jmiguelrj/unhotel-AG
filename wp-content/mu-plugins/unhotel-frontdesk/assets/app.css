@@ -1,0 +1,11 @@
+/* minimal styles */
+.unfd-wrap { font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+.unfd-toolbar { display:flex; gap:.5rem; margin: .5rem 0; }
+.unfd-row { display:grid; grid-template-columns: 70px 80px 160px 80px 100px 160px 120px 1fr 70px; gap:.4rem; padding:.35rem .4rem; border-bottom:1px solid #eee; align-items:center; }
+.unfd-head { font-weight:600; background:#f7f7f7; position:sticky; top:0; z-index:1; }
+.unfd-row textarea { width:100%; min-height:36px; }
+.unfd-row select, .unfd-row input[type=time] { width:100%; }
+.unfd-ok { background:#e9f7ef; }
+.unfd-err { background:#fdecea; }
+.unfd-pager { display:flex; gap:.5rem; align-items:center; margin:.6rem 0; }
+.unfd-error { color:#a00; }

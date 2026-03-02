@@ -1,0 +1,146 @@
+/* Joomla 2.5 */
+
+#filter-bar {
+    height: 29px;
+}
+.btn-toolbar {
+    margin-bottom: 5px;
+}
+.btn-toolbar {
+    margin-bottom: 9px;
+    margin-top: 9px;
+}
+.pull-left {
+    float: left;
+}
+.btn-group + .btn-group {
+    margin-left: 5px;
+}
+.pull-right {
+    float: right;
+}
+.btn-group {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+input[type="text"], input[type="number"], input[type="file"], textarea {
+	background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    border-radius: 3px;
+    color: #555;
+    display: inline-block;
+    font-size: 13px;
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 9px;
+    padding: 4px 6px;
+    vertical-align: middle;
+}
+input[type="file"] {
+	height: 21px;
+}
+select {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: auto;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 3px;
+    color: #555;
+    display: inline-block;
+    font-size: 13px;
+    margin-bottom: 9px;
+    padding: 4px 6px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to bottom, #fff, #e6e6e6);
+    background-repeat: repeat-x;
+    border-color: #bbb #bbb #a2a2a2;
+    border-image: none;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+.btn-group > .btn {
+    border-radius: 0;
+    position: relative;
+   	margin-top:0;
+}
+.btn-group > .btn + .btn {
+    margin-left: -1px;
+}
+.btn-group > .btn:first-child {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    margin-left: 0;
+}
+.btn-group > .btn:last-child {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+legend.adminlegend {
+    color: #333;
+    display: block;
+    font-size: 19.5px;
+    font-weight: normal;
+    padding: 5px !important;
+}
+.table {
+    margin-bottom: 18px;
+    width: 100%;
+}
+table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+}
+table.admintable td.adminparamcol {
+    background-color: #f7f7f7;
+    border-right: 1px solid #ddd;
+    text-align: right;
+    vertical-align: middle;
+}
+table.admintable td {
+    border-bottom: 1px solid #ddd;
+}
+.table th, .table td {
+    border-top: 1px solid #ddd;
+    line-height: 18px;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+fieldset label, fieldset span.faux-label {
+	clear: none !important;
+	min-width: 20px !important;
+}
+/*
+fieldset input, fieldset textarea, fieldset select, fieldset img, fieldset button {
+	display: inline-block !important;
+	float: left !important;
+}
+*/

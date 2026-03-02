@@ -1,0 +1,66 @@
+<?php
+/**
+ * Template Name: Homey WooCommerce
+ */
+get_header();
+global $post;
+
+$sidebar_meta = homey_get_sidebar_meta($post->ID);
+$sticky_sidebar = homey_option('sticky_sidebar');
+
+if($sidebar_meta['homey_sidebar'] != 'yes') {
+    $content_classes = 'col-xs-12 col-sm-12 col-md-12 col-lg-12';
+
+} elseif($sidebar_meta['homey_sidebar'] == 'yes' && $sidebar_meta['sidebar_position'] == 'right') {
+    $content_classes = 'col-xs-12 col-sm-12 col-md-8 col-lg-8';
+    $sidebar_classes = 'col-xs-12 col-sm-12 col-md-4 col-lg-4';
+
+} elseif($sidebar_meta['homey_sidebar'] == 'yes' && $sidebar_meta['sidebar_position'] == 'left') {
+    $content_classes = 'col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-push-4 col-lg-push-4';
+    $sidebar_classes = 'col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-pull-8 col-lg-pull-8';
+}
+?>
+
+<section class="main-content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                <div class="page-title">
+                    <div class="block-top-title">
+                        <?php get_template_part('template-parts/breadcrumb'); ?>
+                        <h1 class="listing-title"><?php echo esc_html__(the_title('', '', false), 'homey'); ?></h1>
+                    </div><!-- block-top-title -->
+                </div><!-- page-title -->
+            </div>
+        </div><!-- .row -->
+    </div><!-- .container -->
+
+    <div class="container">
+        <div class="row">
+            <div class="<?php echo esc_attr($content_classes); ?>">
+
+                <div class="page-wrap">
+                    <div class="article-main">
+                    	<?php
+						// Start the loop.
+						while ( have_posts() ) : the_post();
+
+							the_content();
+
+							// End the loop.
+						endwhile;
+						?>
+                    </div>
+                </div><!-- grid-listing-page -->
+
+            </div>
+
+
+        </div><!-- .row -->
+    </div>   <!-- .container -->
+    
+    
+</section><!-- main-content-area listing-page grid-listing-page -->
+
+
+<?php get_footer(); ?>

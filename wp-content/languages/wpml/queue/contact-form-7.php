@@ -1,0 +1,2 @@
+<?php
+return ['items'=>['Contact Form 7\\4block title'=>['urls'=>[],'names'=>[],'cmp'=>['contact-form-7',1]],'URL'=>['urls'=>[],'names'=>[],'cmp'=>['contact-form-7',1]],'tel'=>['urls'=>[],'names'=>[],'cmp'=>['contact-form-7',1]],'quiz'=>['urls'=>[],'names'=>[],'cmp'=>['contact-form-7',1]],'Sender&#8217;s message was sent successfully'=>['urls'=>[],'names'=>[],'cmp'=>['contact-form-7',1]],'Sender&#8217;s message failed to send'=>['urls'=>[],'names'=>[],'cmp'=>['contact-form-7',1]]]];

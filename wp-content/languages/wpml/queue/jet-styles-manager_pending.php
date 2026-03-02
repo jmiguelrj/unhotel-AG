@@ -1,0 +1,2 @@
+<?php
+return ['items'=>['Mobile Landscape'=>['saveStringInDb'=>true,'cmp'=>['jet-style-manager',1],'names'=>[],'urls'=>[]],'Tablet'=>['saveStringInDb'=>true,'cmp'=>['jet-style-manager',1],'names'=>[],'urls'=>[]],'Desktop'=>['saveStringInDb'=>true,'cmp'=>['jet-style-manager',1],'names'=>[],'urls'=>[]],'Desktop Large'=>['saveStringInDb'=>true,'cmp'=>['jet-style-manager',1],'names'=>[],'urls'=>[]]]];

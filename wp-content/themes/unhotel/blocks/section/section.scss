@@ -1,0 +1,43 @@
+/**
+ * Section Block Styles
+ */
+ @use 'variables' as *;
+
+.unhotel-section {
+    position: relative;
+    padding-top: $spacing-large;
+    padding-bottom: $spacing-large;
+   &.fullwidth {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+    }
+
+ 
+    // Content inside section uses container by default (unless fullwidth)
+    &:not(.fullwidth) {
+        max-width: $max-width;
+        margin: 0 auto;
+        padding-left: $container-padding-left;
+        padding-right: $container-padding-right;
+    }
+}
+
+// Editor styles
+.unhotel-section-editor {
+    min-height: 100px;
+}
+
+.section-inner-container {
+    max-width: var(--container-max-width, $max-width);
+    margin: 0 auto;
+    padding-left: $container-padding-left;
+    padding-right: $container-padding-right;
+}
+
+.section-inner-full {
+    width: 100%;
+    padding: 0;
+}
+
+// Responsive padding handled in _responsive.scss for consistency across all containers

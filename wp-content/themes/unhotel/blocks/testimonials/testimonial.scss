@@ -1,0 +1,778 @@
+/* Testimonials Carousel Block Styles */
+@use 'variables' as *;
+
+// Shared styles for text-only testimonials
+%testimonial-text-only-base {
+    border: 1px solid #fff;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    background: #fff;
+    border-radius: 8px;
+    min-height: 300px; // Slightly less for text-only
+    
+    .testimonial-content {
+        margin-bottom: 1rem;
+        
+        .testimonial-text-wrapper {
+            p, div {
+                margin-bottom: 0.75rem;
+                
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    
+    .testimonial-rating {
+        margin-bottom: 1rem;
+    }
+    
+    .testimonial-author {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid #f0f0f0;
+        
+        .testimonial-author-name {
+            font-size: 0.9rem;
+        }
+        
+        .testimonial-author-meta {
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+        }
+    }
+}
+
+.unhotel-testimonials-carousel {
+    position: relative;
+    width: 100%;
+    padding: 2rem 0;
+
+    // Grid Layout - 1 row with 4 columns
+    &.testimonials-grid {
+        .testimonials-grid-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1.2rem;
+            align-items: stretch;
+            width: 100%;
+            
+            @media (min-width: $breakpoint-tablet) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                padding: 28px  4px;
+            }
+
+            @media (min-width: $breakpoint-desktop) {
+                // Exactly 1 row with 4 columns - no wrapping
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr;
+                grid-auto-rows: 0; // Hide extra rows beyond the first
+                gap: 1.2rem;
+                overflow: visible; 
+            }
+
+            .testimonial-item {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                width: 100%;
+                margin-right: 0;
+                min-height: auto; // Auto height for single column (mobile)
+                align-self: stretch;
+                padding: 1rem;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                
+                // Fixed height when multiple columns
+                @media (min-width: $breakpoint-tablet) {
+                    min-height: 350px;
+                }
+                
+
+                &:hover {
+                    transform: translateY(-4px);
+                    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+                }
+
+                // Ensure content fills the card properly
+                .testimonial-content {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 0;
+
+                    .testimonial-text-wrapper {
+                        flex: 1;
+                        min-height: 0;
+                    }
+                }
+
+                .testimonial-author {
+                    margin-top: auto;
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .testimonial-author-info{
+                    text-align: center;
+                }
+                // Text-only testimonial styling in grid mode
+                &.testimonial-text-only {
+                    @extend %testimonial-text-only-base;
+                    padding: 2rem; // Grid uses more padding
+                }
+            }
+        }
+    }
+
+    &.fullwidth { 
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+    }
+
+    &.has-background { 
+        padding: 2rem;
+        border-radius: 8px;
+    }
+
+    .testimonials-carousel-track { 
+        width: 100%; 
+        position: relative;
+        padding-bottom: 50px;
+        padding-left: 20px; 
+        padding-right: 20px; 
+        padding-top: 20px; 
+        
+        overflow: visible;
+
+        // Show content before Flickity loads - ensure it's visible
+        .testimonial-item {
+            display: block;
+            visibility: visible;
+            opacity: 1;
+            position: relative;
+            height: auto;
+        }
+
+        // Flickity Overrides - Testimonials Carousel Specific
+        &.flickity-enabled {
+            display: block;
+        }
+
+        &.flickity-viewport {
+            transition: height 0.2s;
+            // Allow viewport to expand with content - NO RESTRICTIONS
+            // Must use !important to override Flickity's default styles
+            height: auto !important;
+            min-height: auto !important;
+            max-height: none !important;
+            overflow: visible !important;
+            padding: 20px; // Add padding for box shadow visibility
+        }
+
+        &.flickity-slider {
+            height: auto !important;
+            max-height: none !important;
+        }
+
+        // Flickity carousel items - Base styles
+        &.flickity-enabled .testimonial-item {
+            position: absolute;
+            left: 0;
+            margin-right: 20px;
+            top: 0;
+            width: 100%;
+            visibility: visible;
+            opacity: 1;
+            display: flex;
+            flex-direction: column;
+            white-space: normal;
+            box-sizing: border-box;
+
+            &.is-selected {
+                visibility: visible;
+                opacity: 1;
+                position: relative;
+            }
+
+            &:not(.is-selected) {
+                pointer-events: none;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        // Fallback when Flickity not loaded
+        &:not(.flickity-enabled) {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+
+            .testimonial-item {
+                scroll-snap-align: start;
+                flex-shrink: 0;
+                position: relative;
+                display: block;
+            }
+        }
+
+        .testimonial-item {
+            width: 100%;
+            min-width: 300px;
+            min-height: auto; // Auto height - will be set to 350px for multiple items
+            padding: 2rem;
+            margin-right: 1rem;
+            margin-left: 10px; // Add left margin for shadow visibility
+            margin-top: 10px; // Add top margin for shadow visibility
+            margin-bottom: 10px; // Add bottom margin for shadow visibility
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            flex-shrink: 0;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            display: flex;
+            flex-direction: column;
+            visibility: visible;
+            opacity: 1;
+            box-sizing: border-box;
+            overflow: hidden; // Prevent content from overflowing
+
+            &:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+            }
+            
+            // Text-only testimonial styling (no image)
+            &.testimonial-text-only {
+                @extend %testimonial-text-only-base;
+                padding: 10px; // Carousel uses less padding
+                box-shadow: 1px 20px 16px 8px #f7f8f9; // Carousel specific shadow
+            }
+        }
+    }
+
+    // Mobile First - Always 1 item on mobile (default)
+    &.items-1 .testimonials-carousel-track.flickity-enabled .testimonial-item {
+        width: 100%;
+        min-height: auto; // Auto height when showing only 1 item
+    }
+    
+    &.items-2 .testimonials-carousel-track.flickity-enabled .testimonial-item,
+    &.items-3 .testimonials-carousel-track.flickity-enabled .testimonial-item,
+    &.items-4 .testimonials-carousel-track.flickity-enabled .testimonial-item {
+        width: 100%;
+    }
+
+    // Tablet and up - 2 items per slide
+    @media (min-width: $breakpoint-tablet) {
+        &.items-2 .testimonials-carousel-track.flickity-enabled .testimonial-item,
+        &.items-3 .testimonials-carousel-track.flickity-enabled .testimonial-item,
+        &.items-4 .testimonials-carousel-track.flickity-enabled .testimonial-item {
+            width: calc(50% - 10px);
+            min-height: 350px; // Fixed height when showing multiple items
+        }
+        
+        // Also set fixed height for base testimonial-item when multiple items
+        .testimonials-carousel-track .testimonial-item {
+            min-height: 350px;
+        }
+    }
+
+    // Desktop - 3 items per slide
+    @media (min-width: $breakpoint-desktop) {
+        &.items-3 .testimonials-carousel-track.flickity-enabled .testimonial-item {
+            width: calc(33.333% - 14px);
+            min-height: 350px; // Fixed height when showing multiple items
+        }
+        
+        &.items-4 .testimonials-carousel-track.flickity-enabled .testimonial-item {
+            width: calc(33.333% - 14px);
+            min-height: 350px; // Fixed height when showing multiple items
+        }
+    }
+
+    // Wide Desktop - 4 items per slide
+    @media (min-width: $breakpoint-wide) {
+        &.items-4 .testimonials-carousel-track.flickity-enabled {
+            .testimonial-item {
+                width: calc(25% - 15px);
+                min-height: 350px; // Fixed height when showing multiple items
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                
+                .testimonial-content {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 0;
+                    
+                    .testimonial-text-wrapper {
+                        flex: 1;
+                        min-height: 0;
+                    }
+                }
+                
+                .testimonial-author {
+                    margin-top: auto;
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+    // Flickity Navigation Buttons - Testimonials Specific Overrides
+    .flickity-prev-next-button {
+        position: absolute;
+        top: 50%;
+        width: 44px;
+        height: 44px;
+        border: none;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.9);
+        cursor: pointer;
+        transform: translateY(-50%);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        &:active {
+            transform: translateY(-50%) scale(0.95);
+        }
+
+        &:disabled {
+            opacity: 0.25;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        &.previous {
+            left: 10px;
+        }
+
+        &.next {
+            right: 10px;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .arrow {
+            fill: #333;
+        }
+    }
+
+    // Flickity Page Dots - Testimonials Specific Overrides
+    .flickity-page-dots {
+        position: absolute;
+        width: 100%;
+        bottom: -40px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        line-height: 1;
+        z-index: 5;
+
+        .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin: 0 6px;
+            background: #ccc;
+            border-radius: 50%;
+            opacity: 0.5;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+
+            &:hover {
+                opacity: 0.8;
+                transform: scale(1.2);
+            }
+
+            &.is-selected {
+                opacity: 1;
+                background: #333;
+                border-color: #333;
+                transform: scale(1.3);
+            }
+        }
+    }
+
+    // Hide navigation when disabled via data attributes
+    &[data-arrows="false"] .flickity-prev-next-button {
+        display: none ;
+    }
+
+    &[data-dots="false"] .flickity-page-dots {
+        display: none ;
+    }
+
+    // Rating stars
+    .testimonial-rating {
+        margin-bottom: 1rem;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+
+        .star {
+            font-size: 20px;
+            color: #ddd;
+            line-height: 1;
+            transition: color 0.2s ease;
+
+            &.filled {
+                color: #ffc107;
+            }
+        }
+    }
+
+    // Testimonial content - With truncation support
+    .testimonial-content {
+        margin: 0 0 1.5rem 0;
+        padding: 0;
+        border: none;
+        font-size: 1.125rem;
+        line-height: 1.8;
+        font-style: italic;
+        color: #333;
+        position: relative;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        visibility: visible;
+        opacity: 1;
+        max-width: 100%;
+        min-height: 0; // Allow content to shrink
+        overflow: hidden; // Prevent text overflow
+
+        .testimonial-text-wrapper {
+            position: relative;
+            z-index: 1;
+            flex: 1;
+            min-height: 0;
+            overflow: hidden; // Prevent text overflow
+
+            p,
+            div {
+                margin: 0 0 1rem 0;
+                position: relative;
+                z-index: 1;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                display: block;
+                visibility: visible;
+                opacity: 1;
+                color: #000;
+                white-space: normal;
+                hyphens: auto;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    // Author section
+    .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        margin-top: auto;
+        padding-top: 1rem; // Add spacing between content and author
+        flex-shrink: 0;
+        position: relative;
+        z-index: 2; // Ensure author section is above content
+
+        .testimonial-author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            // border: 3px solid #f0f0f0;
+            flex-shrink: 0;
+        }
+
+        .testimonial-author-info {
+            flex: 1;
+            text-align: left;
+        }
+
+        .testimonial-author-name {
+            display: block;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonial-author-meta {
+            display: block;
+            font-size: 0.875rem;
+            color: #666;
+            line-height: 1.4;
+        }
+    }
+    // Center alignment specific styles
+    &[style*="text-align: center"] {
+        .testimonial-author {  
+            flex-direction: column; 
+            text-align: center;
+
+            .testimonial-author-image {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    // Responsive styles - Mobile
+    @media (max-width: $breakpoint-mobile-max) {
+        .testimonials-carousel-track .testimonial-item {
+            padding: 1.5rem;
+        }
+
+        .testimonial-content {
+            font-size: 1rem;
+        }
+
+        .testimonial-author {
+            flex-direction: column;
+            text-align: center;
+
+            .testimonial-author-image {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+// Legacy single testimonial styles (for backwards compatibility)
+.unhotel-testimonial {
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    margin: 1rem 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    &.fullwidth {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        border-radius: 0;
+    }
+
+    &.has-background {
+        padding: 2.5rem;
+    }
+
+    // Text alignment
+    &.text-align-left {
+        text-align: left;
+    }
+
+    &.text-align-center {
+        text-align: center;
+
+        .testimonial-author {
+            justify-content: center;
+        }
+    }
+
+    &.text-align-right {
+        text-align: right;
+
+        .testimonial-author {
+            justify-content: flex-end;
+        }
+    }
+
+    // Rating stars
+    .testimonial-rating {
+        margin-bottom: 1rem;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+
+        .star {
+            font-size: 20px;
+            color: #ddd;
+            line-height: 1;
+            transition: color 0.2s ease;
+
+            &.filled {
+                color: #ffc107;
+            }
+        }
+    }
+
+    // Testimonial content
+    .testimonial-content {
+        margin: 0 0 1.5rem 0;
+        padding: 0;
+        border: none;
+        font-size: 1.125rem;
+        line-height: 1.8;
+        font-style: italic;
+        color: #333;
+        position: relative;
+        overflow: visible;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        height: auto ;
+        min-height: auto;
+        max-height: none ;
+        white-space: normal;
+        text-overflow: unset;
+        line-clamp: none;
+        -webkit-line-clamp: none;
+        max-width: 100%;
+
+   
+        p,
+        div {
+            margin: 0 0 1rem 0;
+            position: relative;
+            z-index: 1;
+            overflow: visible ;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            display: block;
+            visibility: visible;
+            opacity: 1;
+            color: #333;
+            height: auto ;
+            min-height: auto;
+            max-height: none ;
+            white-space: normal; 
+            text-overflow: unset;
+            line-clamp: none;
+            -webkit-line-clamp: none;
+            hyphens: auto;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    // Author section
+    .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: auto;
+        padding-top: 1.5rem;
+        flex-shrink: 0;
+
+        .testimonial-author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #f0f0f0;
+            flex-shrink: 0;
+        }
+
+        .testimonial-author-info {
+            flex: 1;
+        }
+
+        .testimonial-author-name {
+            display: block;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonial-author-meta {
+            display: block;
+            font-size: 0.875rem;
+            color: #666;
+            line-height: 1.4;
+        }
+    }
+
+    // Center alignment specific styles
+    &.text-align-center {
+        .testimonial-author {
+            flex-direction: column;
+            text-align: center;
+
+            .testimonial-author-image {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    // Responsive styles - Mobile
+    @media (max-width: $breakpoint-mobile-max) {
+        padding: 1.5rem;
+
+        &.has-background {
+            padding: 2rem;
+        }
+
+        .testimonial-content {
+            font-size: 1rem;
+        }
+
+        .testimonial-author {
+            flex-direction: column;
+            text-align: center;
+
+            .testimonial-author-image {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+// Editor specific styles
+.unhotel-testimonial-editor {
+    .testimonial-rating .star {
+        cursor: pointer;
+    }
+}
+

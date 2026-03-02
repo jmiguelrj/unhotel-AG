@@ -1,0 +1,2 @@
+<?php
+return ['messages'=>['Back to homepage'=>'Voltar a página inicial','Oh oh! Page not found.'=>'Oh oh! Página não encontrada','We\'re sorry, but the page you are looking for doesn\'t exist.'=>'Lamentamos, mas a página que você está procurando não existe.','You can search your topic using the box below or return to the homepage.'=>'Você pode pesquisar o assunto desejado usando o campo abaixo ou retornar à página inicial.']];

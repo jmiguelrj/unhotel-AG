@@ -1,0 +1,528 @@
+.vbomodchrates-maindiv {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+.vbomodchrates-close-cont {
+	display: inline-block;
+	position: absolute;
+	top: -22px;
+	left: -8px;
+	cursor: pointer;
+}
+.vbomodchrates-close-cont i {
+	font-size: 18px;
+	color: #222;
+}
+.vbomodchrates-open-cont {
+	display: inline-block;
+	margin-right: 5px;
+	float: left;
+	margin-right: 5px;
+	margin-left: 10px;
+}
+.vbomodchrates-open-cont i {
+	font-size: 16px;
+	color: #222;
+	cursor: pointer;
+	border: 1px solid #fff;
+	height: 25px;
+	width: 25px;
+	text-align: center;
+	border-radius: 50%;
+	line-height: 22px;
+
+	transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+	transition-duration: 500ms;
+	transition-property: transform;
+}
+.vbomodchrates-fixed:not(.vbomodchrates-container-active):hover .vbomodchrates-open-cont i {
+	transform: translateY(-4px);
+	border: 1px solid #2ca61b;
+}
+.vbomodchrates-introtxt {
+	font-size: 1.1em;
+	font-weight: bold;
+	display: inline-block;
+	float: left;
+	flex: 1;
+	padding: 0 15px;
+	color: #444;
+}
+.vbomodchrates-dates-wrapper {
+	margin: 5px 0;
+	display: flex;
+}
+.vbomodchrates-fixed .vbomodchrates-dates-wrapper {
+	margin: 5px;
+}
+.vbomodchrates-dates-wrapper > div { 
+	display: inline-block;
+	margin: 5px 10px;
+	flex: 1;
+	border-radius: 8px;
+	padding: 10px 20px;
+}
+.vbomodchrates-fixed .vbomodchrates-dates-wrapper > div {
+	margin: 5px 7px;
+	padding: 0;
+}
+.vbomodchrates-fixed .vbomodchrates-roomsel .vbhsrnselsp {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.vbomodchrates-fixed .vbomodchrates-roomsel .vbhsrnselsp select {
+	width: 100%;
+}
+.vbomodchrates-fixed .vbomodchrates-roomdentrfirst {
+	display: flex;
+}
+.vbomodchrates-fixed .vbomodchrates-roomdentrfirst > div, .vbomodchrates-fixed .vbmoreroomscontmod .vbomodchrates-roomdentr > div {
+	flex: 1;
+}
+.vbomodchrates-fixed .horsrnum {
+	flex-basis: 80px;
+    flex-grow: 0;
+}
+.vbomodchrates-fixed .horsanumdiv span, .vbomodchrates-fixed .horscnumdiv span {
+	display: block;
+}
+.vbomodchrates-fixed .vbmoreroomscontmod .vbomodchrates-roomdentr .horsanumdiv {
+	display: flex;
+}
+.vbomodchrates-fixed .vbomodchrates-roomdentrfirst select, .vbomodchrates-fixed .vbmoreroomscontmod .vbomodchrates-roomdentr select {
+	width: 100%;
+}
+.vbomodchrates-dates-wrapper > div .input-group {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: left;
+	margin-bottom: 0;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 8px 8px 8px 10px;
+	color: #666;
+}
+.vbomodchrates-dates-wrapper > div .input-group input {
+	width: auto;
+	background: #fff;
+	border:0;
+	border-radius: 0;
+	box-shadow: none;
+	height: auto !important;
+	padding: 0;
+	margin-bottom: 0;
+	order: 1;
+	font-size: 15px;
+	flex: 1;
+	cursor: pointer;
+	color: #666;
+}
+.vbomodchrates-fixed .vbomodchrates-dates-wrapper > div .input-group input {
+	font-size: 1;
+}
+.vbomodchrates-dates-wrapper > div .input-group i {
+	margin-top: 2px;
+	color: #444;
+	font-size: 17px;
+	margin-right: 9px;
+}
+.vbomodchrates-dates-wrapper label {
+	font-size: .9em;
+	font-weight: bold;
+	margin: 0 0 5px;
+}
+.vbomodchrates-searchinfo {
+	display: flex;
+	cursor: pointer;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	margin: 0 10px;
+	padding: 10px 0;
+}
+.vbomodchrates-searchtoggle {
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+	cursor: pointer;
+	display: none;
+}
+.vbomodchrates-searchtoggle i {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	background: #598EA4;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	line-height: 16px;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 9px;
+}
+.vbomodchrates-searchinfo > div {
+	display: inline-block;
+	padding: 0 10px;
+	color: #333;
+	flex: 1;
+}
+.vbomodchrates-searchinfo > div:first-child {
+	padding-left: 20px;
+}
+.vbomodchrates-searchinfo > div:last-child {
+	padding-right: 20px;
+}
+.vbomodchrates-searchinfo-lbl {
+	font-weight: bold;
+	display: block;
+	font-size: .9em;
+}
+.vbomodchrates-searchinfo-val {
+	display: block;
+	position: relative;
+}
+.vbomodchrates-searchinfo-val:after {
+	content: '\f078';
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: #999;
+	position: absolute;
+	top: 2px;
+	right: 10px;
+	padding: 0 0px 0px 8px;
+	pointer-events: none;
+	font-size: 13px;
+}
+.vbomodchrates-rac {
+	text-align: left;
+	padding: 10px;
+	margin: 10px 10px 0;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+}
+.vbomodchrates-rac label {
+	display: block;
+	font-weight: bold;
+	display: block;
+	font-size: .9em;
+}
+.vbomodchrates-roomdentrfirst > *, .vbmoreroomscontmod .vbomodchrates-roomdentr > * {
+	display: inline-block;
+	vertical-align: top;
+}
+.vbomodchrates-rac .horsrnum {
+	margin: 0 5px 0 0;
+	color: #0277bd;
+	font-weight: bold;
+	padding: 2px 6px;
+}
+.vbomodchrates-roomdentrfirst .horsrnum {
+	margin: 14px 5px 0 0;
+	padding: 2px 6px;
+	float: left;
+	align-self: end;
+}
+.vbomodchrates-rac .horsrnum > i {
+	font-size: 12px;
+	margin: 0 3px 0 0;
+}
+.vbomodchrates-roomdentrfirst > div {
+	margin: 0 5px;
+}
+.vbmoreroomscontmod .vbomodchrates-roomdentr {
+	margin: 3px 0;
+	display: flex;
+}
+.vbmoreroomscontmod .vbomodchrates-roomdentr > div {
+	margin: 3px 0 0 0;
+}
+.vbmoreroomscontmod .vbomodchrates-roomdentr .horsanumdiv > * {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 5px;
+}
+.vbomodchrates-fixed .vbmoreroomscontmod .vbomodchrates-roomdentr .horsanumdiv > * {
+	flex: 1;
+}
+.vbmoreroomscontmod .vbomodchrates-roomdentr .horsanumdiv .horsanumsel {
+	margin: 0 5px;
+}
+.vbomodchrates-refresh-cont > span {
+	display: inline-block;
+	padding: 3px 10px;
+	background: #999;
+	color: #fff;
+	text-align: center;
+	border-radius: 4px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.vbomodchrates-refresh-cont > span:hover {
+	background: #888;
+}
+.vbomodchrates-refresh-cont > span i {
+	margin-right: 5px;
+}
+.vbomodchrates-rates-wrap {
+	margin-top: 10px;
+	padding: 5px 10px 0;
+}
+.vbomodchrates-bookdiv input {
+	color: #fff;
+	font-size: 16px;
+	margin: 8px 0 0;
+	padding: 8px 0;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	background: #365868;
+	cursor: pointer;
+	border-radius: 4px;
+	border:0;
+}
+.vbomodchrates-rate-val {
+	float: right;
+}
+.vbomodchrates-rate-website {
+	padding: 10px;
+	font-weight: bold;
+	font-size: 1.1em;
+	text-align: left;
+	color: #2da239;
+	border: 1px solid #5fb368;
+	background: #e8ffeb;
+	border-radius: 4px;
+	margin: 0 10px 7px;
+}
+.vbomodchrates-rate-website .vbomodchrates-rate-val {
+	font-size: 1.2em;
+}
+.vbomodchrates-rates-otas {
+	margin: 5px 10px 0;
+	text-align: left;
+	color: #444;
+	font-size: .9em;
+}
+.vbomodchrates-rate-ota {
+	margin: 5px 0;
+	border-radius: 4px;
+	border: 1px solid #eee;
+	padding: 10px;
+}
+.vbomodchrates-rate-ota .vbomodchrates-rate-ota-logo {
+	height: 20px;
+	max-width: 100%;
+}
+.vbomodchrates-contacts-wrap {
+	display: flex;
+	flex-basis: 100%;
+	margin-top: 10px;
+	border-top: 1px solid #ddd;
+	background: #eee;
+}
+.vbomodchrates-contacts-wrap > div {
+	flex: 1;  
+	text-align: center;
+}
+.vbomodchrates-contacts-wrap > div > a {
+	padding: 5px;
+	display: inline-block;
+	width: 100%;
+	font-size: 18px;
+}
+.vbomodchrates-contacts-wrap > div > a:hover {
+	background: #ddd;
+}
+.vbomodchrates-fixed {
+	position: fixed;
+	width: 350px;
+	min-height: 80px;
+	border-radius: 16px;
+	background: #fff;
+	border: 1px solid #eee;
+	right: 100px;
+	bottom: 10px;
+	padding-top: 15px;
+	box-shadow: 0 0 15px rgba(0,0,0, .1);
+	z-index: 10000;
+	transition: width 0.200s, min-height 0.200s;
+}
+.vbomodchrates-fixed.vbomodchrates-container-active {
+	width: 640px;
+	min-height: 240px;
+}
+.vbomodchrates-inner-cont {
+	flex: 100%;
+}
+.vbomodchrates-fixed .vbomodchrates-inner-cont > * {
+	color: #333;
+}
+.vbomodchrates-fixed .vbomodchrates-maindiv > .vbomodchrates-contacts-wrap {
+	padding: 0;
+}
+.vbomodchrates-roomdentr select {
+	width: auto;
+}
+.vbomodchrates-roomdentrfirst {
+	display: flex;
+	width: 100%;
+}
+.vbmoreroomscontmod {
+	width: 100%;
+	display: inline-block;
+}
+.vbomodchrates-fixed.vbomodchrates-container-active .vbomodchrates-inner-cont {
+	display: flex;
+	flex-wrap: wrap;
+}
+.vbomodchrates-fixed:not(.vbomodchrates-container-active) {
+	cursor: pointer;
+}
+.vbomodchrates-fixed:not(.vbomodchrates-container-active) .vbomodchrates-inner-cont > * {
+	display: none;
+}
+.vbomodchrates-fixed .vbomodchrates-inner-cont .vbomodchrates-rates-inner {
+	height: 0px;
+	opacity: 0;
+	transition: height .2s, opacity .2s;
+}
+.vbomodchrates-fixed.vbomodchrates-container-active .vbomodchrates-inner-cont .vbomodchrates-rates-inner {
+	opacity: 1;
+	transition: height .2s, opacity .2s;
+	height: auto;
+}
+.vbomodchrates-fixed.vbomodchrates-container-active .vbomodchrates-rates-wrap {
+	flex: 1;
+}
+.vbomodchrates-fixed.vbomodchrates-container-active .vbomodchrates-inner-cont > form {
+	padding-bottom: 10px;
+}
+.vbmoreroomscontmod .horsrnum {
+	margin: 5px 5px 0 0;
+	align-self: end;
+}
+.vbomodchrates-bookdiv {
+	margin: 0 10px;
+}
+.vbomodchrates-bookdiv input {
+	width: 100% !important;	
+}
+.vbomodchrates-refresh-cont {
+	margin-top: 5px;
+}
+.vbomodchrates-search-container select {
+	display: inline-block;
+	max-width: 100% !important;
+	height: 40px !important;
+	padding: 5px 30px 5px 7px;
+	line-height: 1.5;
+	color: #495057;
+	vertical-align: middle;
+	background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23555' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+	background-size: 8px 10px;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	min-width: unset;
+	margin-bottom: 0 !important;
+}
+.vbomodchrates-flat-vertical .vbomodchrates-search-container select {
+	min-width: 100px;
+}
+.vbomodchrates-flat-vertical .vbomodchrates-close-cont {
+	display: none;
+}
+.vbomodchrates-flat-vertical .vbomodchrates-dates-wrapper label {
+	display: block;
+	margin-bottom: 5px;
+	text-align: left;
+	line-height: 1em;
+}
+.vbomodchrates-flat-vertical .input-group {
+	display: inline-block;
+	width: auto;
+	/*! background: #fff; */
+	/*! padding: 7px 10px; */
+	border-radius: 2px;
+	display: flex;
+}
+.vbomodchrates-flat-vertical .input-group input {
+	border: 0 !important;
+	padding: 0 !important;
+}
+.vbomodchrates-flat-vertical .vbomodchrates-roomsel {
+	margin-right: 15px;
+}
+.vbomodchrates-flat-vertical .vbomodchrates-rac {
+	display: flex;
+	flex-wrap: wrap;
+}
+.vbomodchrates-flat-vertical .vbomodchrates-refresh-cont {
+	flex-basis: 100%;
+}
+.vbomodchrates-flat-vertical .vbomodchrates-roomdentrfirst .horsrnum {
+	margin: 0 5px 0 0;
+}
+.vbomodchrates-flat-vertical .vbmoreroomscontmod .horsrnum {
+	padding: 4px 6px;
+}
+
+/* jQuery Calendar */
+.vbo-horizsearch-humanformat-wrap .ui-state-highlight.date-tooltip {
+	border: 0 !important;
+	background-color: var(--vbo-light-grey-bg-color) !important;
+}
+
+@media screen and (max-width: 860px) {
+	.vbomodchrates-fixed {
+		position: fixed;
+		right: 0;
+		width: 90%;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.vbomodchrates-open-cont {
+		display: inline-block;
+	}
+}
+@media screen and (max-width: 690px) {
+	.vbomodchrates-fixed.vbomodchrates-container-active {
+		width: 90%;
+	}
+	.vbomodchrates-fixed:not(.vbomodchrates-container-active) {
+		min-height: 50px;
+	}
+	.vbomodchrates-fixed.vbomodchrates-container-active .vbomodchrates-inner-cont > form {
+		padding-bottom: 0;
+		flex-basis: 100%;
+	}
+}
+@media screen and (max-width: 640px) {
+	.vbomodchrates-rate-website {
+		box-sizing: border-box;
+	}
+}
+@media only screen and (max-width : 580px) {
+	.vbomodchrates-dates-wrapper {
+		flex-wrap: wrap;
+	}
+	.vbomodchrates-dates-wrapper > div {
+		flex-wrap: 100%;
+	}
+	.vbomodchrates-searchinfo {
+		flex-wrap: wrap;
+	}
+	.vbomodchrates-totadults {
+		flex-basis: 100%;
+	    padding: 0 10px 0px 20px;
+	    margin-bottom: 5px;
+	    margin-top: 5px;
+	}
+	.vbomodchrates-totchildren {
+		padding: 0 10px 0 20px;
+	}
+}

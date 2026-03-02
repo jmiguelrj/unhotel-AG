@@ -1,0 +1,66 @@
+@use "variables" as *;
+
+.faq-page {
+    .section-inner-container {
+        padding: 20px;
+        @media (min-width: $breakpoint-tablet) {
+           padding: 40px;
+        }
+    }
+    .wp-block-separator {
+        border-top: 1px solid #d8dce1;
+    }
+    .wp-block-columns{
+        padding: 0;
+    }
+    details {
+        summary {
+            list-style: none;
+            position: relative;
+            cursor: pointer;
+            padding-left: 30px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: left;
+
+            &::marker {
+                display: none;
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                display: block;
+                left: 8px;
+                position: absolute;
+                top: 50%;
+                box-sizing: border-box;
+                transform: translate(0, -50%);
+                background: #bababa;
+                border: 1px solid #acacac;
+            }
+
+            &::before {
+                height: 4px;
+                width: 10px;
+                left: 5px;
+            }
+
+            &::after {
+                width: 4px;
+                height: 10px;
+            }
+        }
+        > :not(summary) {
+            padding-left: 30px;
+        }
+
+        &[open] {
+            summary {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}

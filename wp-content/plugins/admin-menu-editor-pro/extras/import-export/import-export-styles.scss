@@ -1,0 +1,257 @@
+@use "../../css/ui-constants";
+@use "../../css/wp-admin-colors";
+
+$componentConfigHorizontalPadding: 10px;
+$componentConfigVerticalPadding: 10px;
+$configBorderRadius: 6px;
+
+.ame-import-component-item {
+	//Fix alignment of the "You may need to..." message when shown next to the label.
+	span.description {
+		vertical-align: middle;
+	}
+}
+
+.ame-import-component-config {
+	display: none;
+
+	margin-left: 1.5em;
+	margin-top: 4px;
+
+	padding: $componentConfigVerticalPadding $componentConfigHorizontalPadding;
+
+	border-radius: $configBorderRadius;
+	border: 1px solid wp-admin-colors.wpColor(gray-10);
+	background: wp-admin-colors.wpColor(gray-0);
+
+	.ame-has-expanded-import-config & {
+		display: block;
+	}
+}
+
+.ame-import-config-toggle {
+	cursor: pointer;
+	user-select: none;
+	display: inline-block;
+	vertical-align: middle; //Align with the label that's next to it.
+}
+
+.ame-import-config-toggle-separator {
+	vertical-align: middle;
+
+	&:after {
+		content: "|";
+	}
+}
+
+.ame-import-component-results, .ame-import-error-details {
+	list-style: disc inside;
+}
+
+.ame-import-error-details {
+	margin: 6px 0 0 1em;
+	color: wp-admin-colors.wpColor(red-60);
+}
+
+.ame-import-error-code {
+	font-family: ui-constants.$codeFontFamily;
+}
+
+//region Import configuration for "Enabled modules".
+#ame-import-enabled-modules-container {
+	$tabContentBackground: #fff;
+	$tabButtonBorderColor: wp-admin-colors.wpColor(gray-10);
+	$tabLeftPadding: 10px;
+
+	margin-left: -$componentConfigHorizontalPadding;
+	margin-right: -$componentConfigHorizontalPadding;
+	margin-bottom: -$componentConfigVerticalPadding;
+
+	.ui-tabs-nav {
+		display: flex;
+		flex-direction: row;
+		border-bottom: 1px solid $tabButtonBorderColor;
+
+		padding-left: $componentConfigHorizontalPadding;
+	}
+
+	.ui-tabs-tab {
+		flex-grow: 0;
+		text-align: center;
+		list-style: none;
+		margin: 0 0 -1px 0;
+
+		border: 1px solid transparent;
+		border-bottom-width: 0;
+	}
+
+	.ui-tabs-anchor {
+		display: inline-block;
+		padding: 4px $tabLeftPadding 10px;
+		text-decoration: none;
+	}
+
+	.ui-tabs-active {
+		border-color: $tabButtonBorderColor;
+		background: $tabContentBackground;
+
+		.ui-tabs-anchor {
+			color: wp-admin-colors.wpColor(gray-80);
+		}
+	}
+
+	.ui-tabs-panel {
+		padding: $tabLeftPadding $tabLeftPadding $tabLeftPadding ($tabLeftPadding + $componentConfigHorizontalPadding);
+		background: $tabContentBackground;
+
+		border-bottom-left-radius: $configBorderRadius;
+		border-bottom-right-radius: $configBorderRadius;
+
+		font-size: 14px;
+	}
+}
+
+//region Summary
+#ame-iem-summary-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1em 2em;
+}
+
+.ame-iem-summary-panel {
+	min-width: 12em;
+}
+
+.ame-iem-summary-title {
+	font-weight: 600;
+	font-size: 1.1em;
+	margin: 0.4em 0;
+}
+
+#ame-iem-summary-enabled-modules {
+	.ame-iem-module-title {
+		color: wp-admin-colors.wpColor(green-70);
+	}
+}
+
+#ame-iem-summary-disabled-modules {
+	.ame-iem-module-title {
+		color: wp-admin-colors.wpColor(red-70);
+	}
+}
+
+#ame-iem-summary-unchanged-modules {
+	.ame-iem-module-title {
+		color: wp-admin-colors.wpColor(gray-50);
+	}
+
+	.ame-iem-summary-list {
+		max-height: 14em;
+		overflow-y: auto;
+	}
+}
+
+.ame-iem-change-counter {
+	display: inline-block;
+	margin-left: 4px;
+
+	font-weight: 600;
+	font-size: 0.8em;
+	line-height: 1;
+	padding: 3px 8px;
+
+	color: wp-admin-colors.wpColor(gray-80);
+	background: wp-admin-colors.wpColor(gray-2);
+	border: 1px solid wp-admin-colors.wpColor(gray-10);
+	border-radius: 12px;
+}
+
+.ame-iem-empty-panel-message {
+	font-style: italic;
+	color: wp-admin-colors.wpColor(gray-50);
+	display: none;
+}
+
+.ame-iem-empty-panel {
+	.ame-iem-summary-title {
+		color: wp-admin-colors.wpColor(gray-40);
+	}
+
+	.ame-iem-empty-panel-message {
+		display: block;
+	}
+}
+
+//endregion
+
+//region Editable module list
+$maxModuleItemWidth: 28em;
+
+#ame-iem-editable-module-list {
+	columns: auto $maxModuleItemWidth;
+	column-gap: 1em;
+}
+
+.ame-iem-editable-module-item {
+	display: flex;
+	flex-direction: row;
+	max-width: $maxModuleItemWidth;
+	align-items: center;
+
+	margin: 0 0 3px 0;
+	padding: 3px 3px;
+
+	.ame-iem-module-title {
+		margin-right: 2em;
+	}
+
+	label {
+		flex-grow: 1;
+	}
+}
+
+.ame-iem-status-change {
+	margin-left: auto;
+}
+
+.ame-iem-state {
+	display: inline-block;
+
+	padding: 2px 6px;
+	border-radius: 4px;
+
+	font-weight: 500;
+	font-size: 12px;
+	text-align: center;
+
+	background: wp-admin-colors.wpColor(gray-2);
+}
+
+.ame-iem-new-state {
+	&.ame-iem-on {
+		background: wp-admin-colors.wpColor(green-5);
+		color: wp-admin-colors.wpColor(green-90);
+	}
+
+	&.ame-iem-off {
+		background: wp-admin-colors.wpColor(red-5);
+		color: wp-admin-colors.wpColor(red-90);
+	}
+}
+
+.ame-iem-will-change {
+	&.ame-iem-will-be-enabled {
+		background: wp-admin-colors.wpColor(green-0);
+	}
+
+	&.ame-iem-will-be-disabled {
+		background: wp-admin-colors.wpColor(red-0);
+	}
+}
+
+//endregion
+
+//endregion
+
+@import "../../extras/modules/role-editor/import-styles";

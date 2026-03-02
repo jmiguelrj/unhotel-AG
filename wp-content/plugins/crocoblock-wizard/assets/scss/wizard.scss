@@ -1,0 +1,22 @@
+$direction: ltr !default;
+
+@import "mixins/direction";
+
+@import "variables/colors";
+@import "variables/fonts";
+
+@import "common/main";
+@import "common/logger";
+@import "common/choices";
+@import "common/progress";
+
+@import "modules/skins";
+@import "modules/license";
+@import "modules/plugins";
+@import "modules/content";
+@import "modules/onboarding";
+@import "modules/welcome";
+@import "modules/theme";
+@import "modules/import-template";
+@import "modules/export-skin";
+@import "modules/popups";

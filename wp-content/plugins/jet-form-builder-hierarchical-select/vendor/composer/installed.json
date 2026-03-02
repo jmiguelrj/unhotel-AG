@@ -1,0 +1,89 @@
+{
+    "packages": [
+        {
+            "name": "crocoblock/jfb-addon-core",
+            "version": "1.1.6",
+            "version_normalized": "1.1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Crocoblock/jfb-addon-core.git",
+                "reference": "14b7176e39e6e9d4011186f8309dac202e4baed1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Crocoblock/jfb-addon-core/zipball/14b7176e39e6e9d4011186f8309dac202e4baed1",
+                "reference": "14b7176e39e6e9d4011186f8309dac202e4baed1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*"
+            },
+            "time": "2022-02-21T07:47:35+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JetHRSelectCore\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Oleksandr Ivanenko",
+                    "email": "sanko200065@gmail.com"
+                }
+            ],
+            "description": "Library for modifying JetFormBuilder & JetEngine",
+            "support": {
+                "issues": "https://github.com/Crocoblock/jfb-addon-core/issues",
+                "source": "https://github.com/Crocoblock/jfb-addon-core/tree/1.1.6"
+            },
+            "install-path": "../crocoblock/jfb-addon-core"
+        },
+        {
+            "name": "crocoblock/jfb-addon-core-dev",
+            "version": "1.0.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Crocoblock/jfb-addon-core-dev.git",
+                "reference": "39ab4f0b9cff78ff721eaea2207f2842ac99441f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Crocoblock/jfb-addon-core-dev/zipball/39ab4f0b9cff78ff721eaea2207f2842ac99441f",
+                "reference": "39ab4f0b9cff78ff721eaea2207f2842ac99441f",
+                "shasum": ""
+            },
+            "time": "2021-05-21T07:30:32+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "DevCoreJFB\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Oleksander Ivanenko",
+                    "email": "sanko200065@gmail.com"
+                }
+            ],
+            "description": "Dev package for working with crocoblock/jfb-addon-core",
+            "support": {
+                "issues": "https://github.com/Crocoblock/jfb-addon-core-dev/issues",
+                "source": "https://github.com/Crocoblock/jfb-addon-core-dev/tree/1.0.0"
+            },
+            "install-path": "../crocoblock/jfb-addon-core-dev"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

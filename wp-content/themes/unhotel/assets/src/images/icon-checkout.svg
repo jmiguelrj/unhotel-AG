@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="32.735" viewBox="0 0 42 32.735">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #fa4676;
+        stroke-width: 0.75px;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_57" data-name="Rectangle 57" class="cls-1" width="42" height="32.735"/>
+    </clipPath>
+  </defs>
+  <g id="Group_104" data-name="Group 104" transform="translate(0 0)">
+    <line id="Line_36" data-name="Line 36" class="cls-2" x2="14.478" transform="translate(10.558 3.284)"/>
+    <g id="Group_103" data-name="Group 103" transform="translate(0 0)">
+      <g id="Group_102" data-name="Group 102" class="cls-3">
+        <path id="Path_187" data-name="Path 187" class="cls-2" d="M29.909,3.652h2.1A3.3,3.3,0,0,1,35.294,6.94V29.477a3.3,3.3,0,0,1-3.288,3.288H3.663A3.3,3.3,0,0,1,.375,29.477V6.94A3.3,3.3,0,0,1,3.663,3.652H7.195" transform="translate(-0.038 -0.367)"/>
+        <line id="Line_37" data-name="Line 37" class="cls-2" x2="1.434" transform="translate(28.437 3.285)"/>
+        <path id="Path_188" data-name="Path 188" class="cls-2" d="M7.957.375h3.4V6.043a1.7,1.7,0,1,1-3.4,0Z" transform="translate(-0.8 -0.038)"/>
+        <path id="Path_189" data-name="Path 189" class="cls-2" d="M31.235,3.652V6.373a1.705,1.705,0,0,1-1.7,1.7h0a1.705,1.705,0,0,1-1.7-1.7V3.652" transform="translate(-2.799 -0.367)"/>
+        <path id="Path_190" data-name="Path 190" class="cls-2" d="M27.834.539V.375h3.4V3.322" transform="translate(-2.799 -0.038)"/>
+        <line id="Line_38" data-name="Line 38" class="cls-2" y1="2.783" transform="translate(25.035 0.502)"/>
+        <line id="Line_39" data-name="Line 39" class="cls-2" x2="34.919" transform="translate(0.337 11.694)"/>
+        <line id="Line_40" data-name="Line 40" class="cls-4" x1="24.121" y1="0.206" transform="translate(17.542 19.735)"/>
+        <line id="Line_41" data-name="Line 41" class="cls-4" x2="3.123" y2="4.236" transform="translate(38.54 15.704)"/>
+        <line id="Line_42" data-name="Line 42" class="cls-4" y1="4.182" x2="3.195" transform="translate(38.468 19.941)"/>
+      </g>
+    </g>
+  </g>
+</svg>

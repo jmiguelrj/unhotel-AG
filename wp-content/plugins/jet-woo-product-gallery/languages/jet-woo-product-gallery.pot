@@ -1,0 +1,2019 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jet WooBuilder for Elementor\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-16 18:40+0300\n"
+"PO-Revision-Date: 2018-05-18 18:31+0200\n"
+"Last-Translator: Vladimir Anokhin <ano.vladimir@gmail.com>\n"
+"Language-Team: JetImpex\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;__;_x;esc_html_e;esc_html__;esc_attr_e;"
+"esc_attr__;_x:1,2c;_n:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: cherry-framework\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:48
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:121
+msgid "Slider"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:50
+msgid "Direction"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:55
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:132
+msgid "Vertical"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:59
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:133
+msgid "Horizontal"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:68
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:168
+msgid "Enable Loop"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:77
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:176
+msgid "Enable Equal Slides Height"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:87
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:187
+msgid "Swipes Sensitivity"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:99
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:199
+msgid "Enable Centered Slides"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:115
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:511
+msgid "Desktop"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:120
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:516
+msgid "Tablet"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:125
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:521
+msgid "Mobile"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:136
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:161
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:186
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:532
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:557
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:582
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:210
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:523
+msgid "Slides Per View"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:147
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:172
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:197
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:543
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:568
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:593
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:225
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:541
+msgid "Space Between"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:213
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:240
+msgid "Transition Effect"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:218
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:242
+msgid "Slide"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:222
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:243
+msgid "Fade"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:226
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:244
+msgid "Cube"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:230
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:245
+msgid "Coverflow"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:234
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:246
+msgid "Flip"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:244
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:471
+msgid "Show Navigation"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:280
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:462
+msgid "Select Previous Arrow Icon"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:313
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:495
+msgid "Select Next Arrow Icon"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:322
+msgid "Show Pagination"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:332
+msgid "Choose Controller"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:337
+#: includes/components/blocks-views/block-types/gallery-slider.php:626
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:313
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:334
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1114
+msgid "Pagination"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:341
+#: assets/js/admin/blocks-views/src/components/navigation.js:29
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:163
+#: includes/components/blocks-views/block-types/gallery-slider.php:1066
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:111
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:328
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:338
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:458
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1600
+msgid "Thumbnails"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:351
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:331
+msgid "Pagination Type"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:356
+#: assets/js/admin/blocks-views/src/components/navigation.js:25
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:152
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:107
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:316
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:355
+msgid "Bullets"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:360
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:356
+msgid "Fraction"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:364
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:357
+msgid "Progressbar"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:375
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:371
+msgid "Dynamic Bullets"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:385
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:405
+#: assets/js/admin/blocks-views/src/components/navigation.js:63
+msgid "Controller Position"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:390
+#: assets/js/admin/blocks-views/src/components/navigation.js:69
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:301
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:416
+msgid "Start"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:394
+#: assets/js/admin/blocks-views/src/components/navigation.js:73
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:305
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:420
+msgid "End"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:410
+#: includes/class-jet-woo-product-gallery-tools.php:107
+#: includes/components/blocks-views/block-types/gallery-modern.php:144
+#: includes/components/blocks-views/block-types/gallery-modern.php:190
+#: includes/components/blocks-views/block-types/gallery-modern.php:236
+#: includes/components/blocks-views/block-types/gallery-modern.php:282
+#: includes/components/blocks-views/block-types/gallery-slider.php:337
+#: includes/components/blocks-views/block-types/gallery-slider.php:487
+#: includes/components/blocks-views/block-types/gallery-slider.php:1031
+#: includes/components/blocks-views/block-types/gallery-slider.php:1524
+#: includes/components/blocks-views/block-types/gallery-slider.php:1674
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:439
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:865
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:995
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1564
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2056
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2186
+msgid "Top"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:414
+#: includes/class-jet-woo-product-gallery-tools.php:115
+#: includes/components/blocks-views/block-types/gallery-modern.php:152
+#: includes/components/blocks-views/block-types/gallery-modern.php:198
+#: includes/components/blocks-views/block-types/gallery-modern.php:244
+#: includes/components/blocks-views/block-types/gallery-modern.php:290
+#: includes/components/blocks-views/block-types/gallery-slider.php:345
+#: includes/components/blocks-views/block-types/gallery-slider.php:495
+#: includes/components/blocks-views/block-types/gallery-slider.php:1039
+#: includes/components/blocks-views/block-types/gallery-slider.php:1532
+#: includes/components/blocks-views/block-types/gallery-slider.php:1682
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:443
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:867
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:997
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1572
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2058
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2188
+msgid "Bottom"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/blocks/gallery-slider/index.js:425
+msgid "Show Thumbnails Navigation"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:37
+#: includes/components/elementor-views/widget-base.php:85
+msgid "General"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:39
+#: includes/components/elementor-views/widget-base.php:94
+msgid "Source"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:75
+msgid "Select Gallery Images"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:86
+#: includes/components/elementor-views/widget-base.php:129
+msgid "Gallery Key"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:94
+#: includes/components/elementor-views/widget-base.php:143
+msgid "Enable Featured Image"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:107
+#: includes/components/elementor-views/widget-base.php:105
+msgid "Product id"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:115
+#: includes/components/elementor-views/widget-base.php:118
+msgid "Disable Featured Image"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:126
+#: includes/components/elementor-views/widget-base.php:171
+msgid "Enable Video"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:136
+#: includes/components/elementor-views/widget-base.php:183
+msgid "Video Type"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:141
+#: includes/components/elementor-views/widget-base.php:187
+msgid "YouTube"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:145
+#: includes/components/elementor-views/widget-base.php:188
+#: includes/integrations/class-jet-woo-gallery-video-integration.php:55
+msgid "Vimeo"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:149
+#: includes/components/elementor-views/widget-base.php:189
+#: includes/integrations/class-jet-woo-gallery-video-integration.php:56
+msgid "Self Hosted"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:161
+#: includes/components/elementor-views/widget-base.php:201
+msgid "YouTube URL"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:172
+#: includes/components/elementor-views/widget-base.php:220
+msgid "Vimeo URL"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:212
+msgid "Select Video"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:247
+msgid "Select Poster"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:255
+#: includes/components/elementor-views/widget-base.php:271
+msgid "Enable Zoom"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:265
+#: includes/components/elementor-views/widget-base.php:280
+msgid "Zoom Magnify"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/general.js:277
+#: includes/components/elementor-views/widget-base.php:295
+msgid "Enable Gallery"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/images.js:21
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:58
+#: includes/components/blocks-views/block-types/gallery-grid.php:75
+#: includes/components/blocks-views/block-types/gallery-modern.php:53
+#: includes/components/blocks-views/block-types/gallery-slider.php:56
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:63
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:162
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:65
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:200
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:64
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:102
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:63
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:565
+msgid "Images"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/images.js:23
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:72
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:72
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:72
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:71
+msgid "Image Size"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/images.js:35
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:82
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:80
+msgid "Thumbnails Size"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/images.js:49
+msgid "Columns Number"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/images.js:62
+msgid "Columns Number (Tablet)"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/images.js:75
+msgid "Columns Number (Mobile)"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/images.js:87
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:97
+msgid "Primary Gallery Image"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/images.js:99
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:131
+msgid "Grid Items Count"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/images.js:100
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:132
+msgid ""
+"Number of images to display in the grid. Set to 0 or -1 to show all images."
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/images.js:114
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:143
+msgid "Overlay Text"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/navigation.js:16
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:84
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:94
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:236
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:259
+msgid "Navigation"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/navigation.js:19
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:104
+msgid "Navigation Type"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/navigation.js:41
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:122
+msgid "Navigation Position"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/navigation.js:47
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:126
+msgid "Outside"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/navigation.js:51
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:127
+msgid "Inside"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:23
+#: includes/components/elementor-views/widget-base.php:319
+msgid "Gallery"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:25
+#: includes/components/elementor-views/widget-base.php:330
+msgid "Trigger Type"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:30
+#: includes/components/elementor-views/widget-base.php:332
+msgid "Button"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:34
+#: includes/components/elementor-views/widget-base.php:333
+#: includes/components/elementor-views/widget-base.php:630
+#: includes/components/elementor-views/widget-base.php:664
+msgid "Image"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:71
+msgid "Select Button Icon"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:78
+msgid "Button Position"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:83
+#: includes/components/elementor-views/widget-base.php:363
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:455
+msgid "Top Right"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:87
+#: includes/components/elementor-views/widget-base.php:364
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:458
+msgid "Bottom Right"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:91
+#: includes/components/elementor-views/widget-base.php:365
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:457
+msgid "Bottom Left"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:95
+#: includes/components/elementor-views/widget-base.php:366
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:454
+msgid "Top Left"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:99
+#: includes/components/blocks-views/block-types/base.php:766
+#: includes/components/blocks-views/block-types/gallery-slider.php:99
+#: includes/components/blocks-views/block-types/gallery-slider.php:341
+#: includes/components/blocks-views/block-types/gallery-slider.php:410
+#: includes/components/blocks-views/block-types/gallery-slider.php:491
+#: includes/components/blocks-views/block-types/gallery-slider.php:560
+#: includes/components/blocks-views/block-types/gallery-slider.php:1004
+#: includes/components/blocks-views/block-types/gallery-slider.php:1035
+#: includes/components/blocks-views/block-types/gallery-slider.php:1194
+#: includes/components/blocks-views/block-types/gallery-slider.php:1528
+#: includes/components/blocks-views/block-types/gallery-slider.php:1597
+#: includes/components/blocks-views/block-types/gallery-slider.php:1678
+#: includes/components/blocks-views/block-types/gallery-slider.php:1747
+#: includes/components/elementor-views/widget-base.php:1187
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:612
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:866
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:925
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:996
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1055
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1537
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1568
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1728
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2057
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2116
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2187
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2246
+msgid "Center"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:108
+msgid "Show on Hover"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:120
+#: includes/components/elementor-views/widget-base.php:403
+msgid "Show Caption"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:128
+#: includes/components/elementor-views/widget-base.php:411
+msgid "Show Full Screen"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:136
+#: includes/components/elementor-views/widget-base.php:420
+msgid "Show Zoom"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:144
+#: includes/components/elementor-views/widget-base.php:429
+msgid "Show Share"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:152
+#: includes/components/elementor-views/widget-base.php:438
+msgid "Show Counter"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/photoswipe.js:160
+#: includes/components/elementor-views/widget-base.php:447
+msgid "Show Arrows"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/video.js:23
+#: includes/components/blocks-views/block-types/base.php:432
+#: includes/components/elementor-views/widget-base.php:462
+msgid "Video"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/video.js:25
+#: includes/components/elementor-views/widget-base.php:484
+msgid "Display Video In"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/video.js:30
+#: includes/components/elementor-views/widget-base.php:488
+msgid "Content"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/video.js:34
+#: includes/components/elementor-views/widget-base.php:489
+msgid "Popup"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/video.js:43
+#: includes/components/elementor-views/widget-base.php:497
+msgid "Aspect Ratio"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/video.js:44
+#: includes/components/elementor-views/widget-base.php:498
+msgid "Worked just with youtube and vimeo video types."
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/video.js:83
+#: includes/components/elementor-views/widget-base.php:516
+msgid "Display Video at First Place"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/video.js:94
+#: includes/components/elementor-views/widget-base.php:536
+msgid "Autoplay"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/video.js:102
+#: includes/components/elementor-views/widget-base.php:544
+msgid "Mute"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/video.js:110
+#: includes/components/elementor-views/widget-base.php:552
+msgid "Loop"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/video.js:122
+#: includes/components/elementor-views/widget-base.php:609
+msgid "Show"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/video.js:157
+msgid "Select Play Button Icon"
+msgstr ""
+
+#: assets/js/admin/blocks-views/src/components/video.js:194
+msgid "Select Popup Button Icon"
+msgstr ""
+
+#: includes/class-jet-woo-product-gallery-tools.php:65
+#: includes/class-jet-woo-product-gallery-tools.php:70
+msgid "Full"
+msgstr ""
+
+#: includes/class-jet-woo-product-gallery-tools.php:111
+#: includes/components/blocks-views/block-types/gallery-modern.php:148
+#: includes/components/blocks-views/block-types/gallery-modern.php:194
+#: includes/components/blocks-views/block-types/gallery-modern.php:240
+#: includes/components/blocks-views/block-types/gallery-modern.php:286
+msgid "Middle"
+msgstr ""
+
+#: includes/class-jet-woo-product-gallery-tools.php:179
+msgid "Post Types"
+msgstr ""
+
+#: includes/class-jet-woo-product-gallery-tools.php:180
+msgid "Manual Select"
+msgstr ""
+
+#: includes/class-jet-woo-product-gallery-tools.php:184
+msgid "WooCommerce Products"
+msgstr ""
+
+#: includes/classes/embed.php:120
+#, php-format
+msgid "%s Video Player"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:125
+#: includes/components/blocks-views/block-types/base.php:177
+#: includes/components/blocks-views/block-types/base.php:211
+#: includes/components/blocks-views/block-types/base.php:243
+#: includes/components/blocks-views/block-types/base.php:340
+#: includes/components/blocks-views/block-types/base.php:372
+#: includes/components/blocks-views/block-types/base.php:512
+#: includes/components/blocks-views/block-types/base.php:544
+#: includes/components/blocks-views/block-types/base.php:665
+#: includes/components/blocks-views/block-types/base.php:697
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:344
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:398
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:464
+#: includes/components/blocks-views/block-types/gallery-grid.php:183
+#: includes/components/blocks-views/block-types/gallery-slider.php:192
+#: includes/components/blocks-views/block-types/gallery-slider.php:224
+#: includes/components/blocks-views/block-types/gallery-slider.php:267
+#: includes/components/blocks-views/block-types/gallery-slider.php:679
+#: includes/components/blocks-views/block-types/gallery-slider.php:700
+#: includes/components/blocks-views/block-types/gallery-slider.php:732
+#: includes/components/blocks-views/block-types/gallery-slider.php:1132
+#: includes/components/blocks-views/block-types/gallery-slider.php:1379
+#: includes/components/blocks-views/block-types/gallery-slider.php:1411
+#: includes/components/blocks-views/block-types/gallery-slider.php:1454
+#: includes/components/elementor-views/widget-base.php:848
+#: includes/components/elementor-views/widget-base.php:927
+#: includes/components/elementor-views/widget-base.php:1105
+#: includes/components/elementor-views/widget-base.php:1297
+#: includes/components/elementor-views/widget-base.php:1328
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:192
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:417
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:461
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:531
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:208
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:343
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:316
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:573
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:702
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:733
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:778
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1163
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1183
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1225
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1642
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1893
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1924
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1969
+msgid "Background Color"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:136
+#: includes/components/blocks-views/block-types/base.php:398
+#: includes/components/blocks-views/block-types/base.php:570
+#: includes/components/blocks-views/block-types/base.php:722
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:493
+#: includes/components/blocks-views/block-types/gallery-slider.php:293
+#: includes/components/blocks-views/block-types/gallery-slider.php:758
+#: includes/components/blocks-views/block-types/gallery-slider.php:1144
+#: includes/components/blocks-views/block-types/gallery-slider.php:1479
+msgid "Border"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:148
+#: includes/components/blocks-views/block-types/base.php:595
+#: includes/components/blocks-views/block-types/base.php:746
+#: includes/components/blocks-views/block-types/gallery-grid.php:200
+#: includes/components/blocks-views/block-types/gallery-slider.php:118
+#: includes/components/blocks-views/block-types/gallery-slider.php:308
+#: includes/components/blocks-views/block-types/gallery-slider.php:914
+#: includes/components/blocks-views/block-types/gallery-slider.php:1495
+#: includes/components/elementor-views/widget-base.php:1168
+#: includes/components/elementor-views/widget-base.php:1407
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:247
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:476
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:356
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:632
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:835
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1447
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2026
+msgid "Padding"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:167
+#: includes/components/elementor-views/widget-base.php:917
+msgid "Photoswipe Gallery"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:189
+#: includes/components/elementor-views/widget-base.php:938
+msgid "Photoswipe Controls"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:204
+#: includes/components/blocks-views/block-types/base.php:321
+#: includes/components/blocks-views/block-types/base.php:494
+#: includes/components/blocks-views/block-types/base.php:646
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:305
+#: includes/components/blocks-views/block-types/gallery-slider.php:173
+#: includes/components/blocks-views/block-types/gallery-slider.php:672
+#: includes/components/blocks-views/block-types/gallery-slider.php:1221
+#: includes/components/blocks-views/block-types/gallery-slider.php:1360
+#: includes/components/elementor-views/widget-base.php:799
+#: includes/components/elementor-views/widget-base.php:948
+#: includes/components/elementor-views/widget-base.php:1056
+#: includes/components/elementor-views/widget-base.php:1279
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:385
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:684
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1156
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1751
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1875
+msgid "Normal"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:223
+#: includes/components/blocks-views/block-types/base.php:255
+#: includes/components/elementor-views/widget-base.php:887
+#: includes/components/elementor-views/widget-base.php:967
+#: includes/components/elementor-views/widget-base.php:999
+#: includes/components/elementor-views/widget-base.php:1144
+#: includes/components/elementor-views/widget-base.php:1375
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:211
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:580
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:227
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:336
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:593
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:820
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1279
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1662
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2011
+msgid "Border Radius"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:236
+#: includes/components/blocks-views/block-types/base.php:353
+#: includes/components/blocks-views/block-types/base.php:526
+#: includes/components/blocks-views/block-types/base.php:678
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:359
+#: includes/components/blocks-views/block-types/gallery-slider.php:205
+#: includes/components/blocks-views/block-types/gallery-slider.php:693
+#: includes/components/blocks-views/block-types/gallery-slider.php:1252
+#: includes/components/blocks-views/block-types/gallery-slider.php:1392
+#: includes/components/elementor-views/widget-base.php:830
+#: includes/components/elementor-views/widget-base.php:980
+#: includes/components/elementor-views/widget-base.php:1087
+#: includes/components/elementor-views/widget-base.php:1310
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:430
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:715
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1176
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1778
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1906
+msgid "Hover"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:279
+msgid "Photoswipe Trigger Button"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:291
+#: includes/components/blocks-views/block-types/base.php:476
+#: includes/components/blocks-views/block-types/base.php:628
+#: includes/components/blocks-views/block-types/gallery-slider.php:139
+#: includes/components/blocks-views/block-types/gallery-slider.php:1326
+#: includes/components/elementor-views/widget-base.php:754
+#: includes/components/elementor-views/widget-base.php:1032
+#: includes/components/elementor-views/widget-base.php:1245
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:655
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1846
+msgid "Size"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:302
+#: includes/components/elementor-views/widget-base.php:776
+msgid "Icon Size"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:328
+#: includes/components/blocks-views/block-types/base.php:360
+#: includes/components/blocks-views/block-types/base.php:501
+#: includes/components/blocks-views/block-types/base.php:533
+#: includes/components/blocks-views/block-types/base.php:653
+#: includes/components/blocks-views/block-types/base.php:685
+#: includes/components/blocks-views/block-types/gallery-grid.php:150
+#: includes/components/blocks-views/block-types/gallery-slider.php:180
+#: includes/components/blocks-views/block-types/gallery-slider.php:212
+#: includes/components/blocks-views/block-types/gallery-slider.php:255
+#: includes/components/blocks-views/block-types/gallery-slider.php:898
+#: includes/components/blocks-views/block-types/gallery-slider.php:1367
+#: includes/components/blocks-views/block-types/gallery-slider.php:1399
+#: includes/components/blocks-views/block-types/gallery-slider.php:1442
+#: includes/components/elementor-views/widget-base.php:806
+#: includes/components/elementor-views/widget-base.php:837
+#: includes/components/elementor-views/widget-base.php:1063
+#: includes/components/elementor-views/widget-base.php:1094
+#: includes/components/elementor-views/widget-base.php:1286
+#: includes/components/elementor-views/widget-base.php:1317
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:294
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:339
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:691
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:722
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:767
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1432
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1882
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1913
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1958
+msgid "Color"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:383
+#: includes/components/blocks-views/block-types/base.php:555
+#: includes/components/blocks-views/block-types/base.php:708
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:411
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:477
+#: includes/components/blocks-views/block-types/gallery-slider.php:235
+#: includes/components/blocks-views/block-types/gallery-slider.php:278
+#: includes/components/blocks-views/block-types/gallery-slider.php:712
+#: includes/components/blocks-views/block-types/gallery-slider.php:744
+#: includes/components/blocks-views/block-types/gallery-slider.php:1422
+#: includes/components/blocks-views/block-types/gallery-slider.php:1465
+#: includes/components/elementor-views/widget-base.php:859
+#: includes/components/elementor-views/widget-base.php:1116
+#: includes/components/elementor-views/widget-base.php:1339
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:473
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:543
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:744
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:789
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1194
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1236
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1935
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1980
+msgid "Border Color"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:410
+#: includes/components/blocks-views/block-types/base.php:583
+#: includes/components/blocks-views/block-types/base.php:734
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:506
+#: includes/components/blocks-views/block-types/gallery-modern.php:128
+#: includes/components/blocks-views/block-types/gallery-modern.php:174
+#: includes/components/blocks-views/block-types/gallery-modern.php:220
+#: includes/components/blocks-views/block-types/gallery-modern.php:266
+#: includes/components/elementor-views/widget-base.php:899
+#: includes/components/elementor-views/widget-base.php:1156
+#: includes/components/elementor-views/widget-base.php:1395
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:601
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:177
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:216
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:257
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:297
+msgid "Margin"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:442
+#: includes/components/elementor-views/widget-base.php:582
+#: includes/components/elementor-views/widget-base.php:693
+msgid "Overlay Color"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:464
+msgid "Video Play Button"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:616
+#: includes/components/elementor-views/widget-base.php:1021
+msgid "Video Popup Button"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:759
+#: includes/components/blocks-views/block-types/gallery-slider.php:92
+#: includes/components/blocks-views/block-types/gallery-slider.php:996
+#: includes/components/blocks-views/block-types/gallery-slider.php:1027
+#: includes/components/blocks-views/block-types/gallery-slider.php:1187
+#: includes/components/elementor-views/widget-base.php:1179
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1529
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1560
+msgid "Alignment"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:762
+#: includes/components/blocks-views/block-types/gallery-slider.php:95
+#: includes/components/blocks-views/block-types/gallery-slider.php:406
+#: includes/components/blocks-views/block-types/gallery-slider.php:556
+#: includes/components/blocks-views/block-types/gallery-slider.php:1000
+#: includes/components/blocks-views/block-types/gallery-slider.php:1190
+#: includes/components/blocks-views/block-types/gallery-slider.php:1593
+#: includes/components/blocks-views/block-types/gallery-slider.php:1743
+#: includes/components/elementor-views/widget-base.php:1183
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:608
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:924
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1054
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1533
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1724
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2115
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2245
+msgid "Left"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:770
+#: includes/components/blocks-views/block-types/gallery-slider.php:103
+#: includes/components/blocks-views/block-types/gallery-slider.php:414
+#: includes/components/blocks-views/block-types/gallery-slider.php:564
+#: includes/components/blocks-views/block-types/gallery-slider.php:1008
+#: includes/components/blocks-views/block-types/gallery-slider.php:1198
+#: includes/components/blocks-views/block-types/gallery-slider.php:1601
+#: includes/components/blocks-views/block-types/gallery-slider.php:1751
+#: includes/components/elementor-views/widget-base.php:1191
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:616
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:926
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1056
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1541
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1732
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2117
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2247
+msgid "Right"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/base.php:873
+msgid "Gallery renderer class not found."
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:66
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:170
+msgid "Space Between Images"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:92
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:251
+#: includes/components/blocks-views/block-types/gallery-slider.php:1077
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:244
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:341
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1612
+msgid "Width"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:131
+msgid "Offset Top"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:174
+#: includes/components/blocks-views/block-types/gallery-grid.php:59
+#: includes/components/blocks-views/block-types/gallery-slider.php:1157
+#: includes/components/blocks-views/block-types/gallery-slider.php:1172
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:616
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:181
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1674
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1697
+msgid "Gutter"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:188
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:640
+msgid "Thumbnails Width"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:220
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:671
+msgid "Thumbnails Spacing"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:274
+#: includes/components/blocks-views/block-types/gallery-slider.php:65
+#: includes/components/blocks-views/block-types/gallery-slider.php:1109
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:362
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:142
+msgid "Height"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:312
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:366
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:432
+#: includes/components/blocks-views/block-types/gallery-slider.php:1228
+#: includes/components/blocks-views/block-types/gallery-slider.php:1259
+#: includes/components/blocks-views/block-types/gallery-slider.php:1290
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:393
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:438
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:508
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1759
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1786
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1813
+msgid "Opacity"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-anchor-nav.php:425
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:500
+msgid "Current"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-grid.php:50
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:173
+msgid "Columns"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-grid.php:83
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:111
+msgid "Primary Image Width (%)"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-grid.php:120
+#: includes/components/elementor-views/widget-base.php:570
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:265
+msgid "Overlay"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-grid.php:127
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1421
+msgid "Typography"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-grid.php:166
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:306
+msgid "Hover Color"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-modern.php:61
+msgid "First Proportion"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-modern.php:90
+msgid "Second Proportion"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-modern.php:121
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:155
+msgid "Image 2"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-modern.php:140
+#: includes/components/blocks-views/block-types/gallery-modern.php:186
+#: includes/components/blocks-views/block-types/gallery-modern.php:232
+#: includes/components/blocks-views/block-types/gallery-modern.php:278
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:165
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:205
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:245
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:285
+msgid "Vertical Alignment"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-modern.php:167
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:195
+msgid "Image 3"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-modern.php:213
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:235
+msgid "Image 4"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-modern.php:259
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:275
+msgid "Image 5"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-modern.php:304
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:368
+msgid "Outer Offset"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:129
+#: includes/components/blocks-views/block-types/gallery-slider.php:1316
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:644
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1834
+msgid "Prev/Next Arrows"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:248
+#: includes/components/blocks-views/block-types/gallery-slider.php:1435
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:760
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1951
+msgid "Disabled"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:323
+#: includes/components/blocks-views/block-types/gallery-slider.php:1510
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:850
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2040
+msgid "Prev Arrow"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:333
+#: includes/components/blocks-views/block-types/gallery-slider.php:483
+#: includes/components/blocks-views/block-types/gallery-slider.php:1520
+#: includes/components/blocks-views/block-types/gallery-slider.php:1670
+msgid "Vertical Position"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:366
+#: includes/components/blocks-views/block-types/gallery-slider.php:516
+#: includes/components/blocks-views/block-types/gallery-slider.php:928
+#: includes/components/blocks-views/block-types/gallery-slider.php:1553
+#: includes/components/blocks-views/block-types/gallery-slider.php:1703
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:887
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1017
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1462
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2078
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2208
+msgid "Top Indent"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:384
+#: includes/components/blocks-views/block-types/gallery-slider.php:534
+#: includes/components/blocks-views/block-types/gallery-slider.php:945
+#: includes/components/blocks-views/block-types/gallery-slider.php:1571
+#: includes/components/blocks-views/block-types/gallery-slider.php:1721
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:904
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1034
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1479
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2095
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2225
+msgid "Bottom Indent"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:402
+#: includes/components/blocks-views/block-types/gallery-slider.php:552
+#: includes/components/blocks-views/block-types/gallery-slider.php:1589
+#: includes/components/blocks-views/block-types/gallery-slider.php:1739
+msgid "Horizontal Position"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:436
+#: includes/components/blocks-views/block-types/gallery-slider.php:586
+#: includes/components/blocks-views/block-types/gallery-slider.php:1623
+#: includes/components/blocks-views/block-types/gallery-slider.php:1773
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:945
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1076
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2137
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2267
+msgid "Left Indent"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:454
+#: includes/components/blocks-views/block-types/gallery-slider.php:604
+#: includes/components/blocks-views/block-types/gallery-slider.php:1641
+#: includes/components/blocks-views/block-types/gallery-slider.php:1791
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:963
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1093
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2154
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2284
+msgid "Right Indent"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:473
+#: includes/components/blocks-views/block-types/gallery-slider.php:1660
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:980
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2170
+msgid "Next Arrow"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:637
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1126
+msgid "Bullet Size"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:725
+#: includes/components/blocks-views/block-types/gallery-slider.php:1283
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1218
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1805
+msgid "Active"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:774
+#: includes/components/blocks-views/block-types/gallery-slider.php:790
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1305
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1328
+msgid "Bullet Space"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:806
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1350
+msgid "Progressbar Height"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:831
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1371
+msgid "Progressbar Width"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:855
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1392
+msgid "Progressbar Color"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:870
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1406
+msgid "Progressbar Fill Color"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:962
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1496
+msgid "End Indent"
+msgstr ""
+
+#: includes/components/blocks-views/block-types/gallery-slider.php:979
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1513
+msgid "Start Indent"
+msgstr ""
+
+#: includes/components/blocks-views/manager.php:53
+#: includes/components/elementor-views/manager.php:157
+#: includes/settings/jet-dashboard-settings/manager.php:67
+msgid "JetProductGallery"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:155
+msgid "Add Images"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:204
+#: includes/components/elementor-views/widget-base.php:223
+msgid "Enter your URL"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:239
+msgid "Choose File"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:256
+msgid "Poster"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:342
+msgid "Button Icon"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:361
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:296
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:447
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:411
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:434
+msgid "Position"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:367
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:450
+msgid "Center Center"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:381
+msgid "Show On Hover"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:393
+msgid "Controls"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:527
+msgid "Options"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:596
+#: includes/components/elementor-views/widget-base.php:1212
+msgid "Play Button"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:621
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:403
+msgid "Type"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:626
+#: includes/components/elementor-views/widget-base.php:644
+#: includes/components/elementor-views/widget-base.php:719
+msgid "Icon"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:681
+msgid "Popup Overlay"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:707
+msgid "Popup Button"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:742
+msgid "Photoswipe Trigger"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:817
+#: includes/components/elementor-views/widget-base.php:955
+#: includes/components/elementor-views/widget-base.php:987
+#: includes/components/elementor-views/widget-base.php:1074
+msgid " Background Color"
+msgstr ""
+
+#: includes/components/elementor-views/widget-base.php:1263
+msgid "Image Border Radius"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:25
+msgid "Gallery Anchor Navigation"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-anchor-nav.php:275
+msgid "Offset Top (px)"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:26
+msgid "Gallery Grid"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:83
+msgid "Grid Columns"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:98
+msgid "On"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:99
+msgid "Off"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:144
+msgid "More Images"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:318
+msgid "Background Type"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:322
+msgid "Classic"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:326
+msgid "Gradient"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:353
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:385
+msgid "Location"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:371
+msgid "Second Color"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:406
+msgid "Linear"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:407
+msgid "Radial"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:421
+msgid "Angle"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:451
+msgid "Center Left"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:452
+msgid "Center Right"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:453
+msgid "Top Center"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-grid.php:456
+msgid "Bottom Center"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:25
+msgid "Gallery Modern"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:110
+msgid "Images Proportion 1 (%)"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-modern.php:133
+msgid "Images Proportion 2 (%)"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:24
+msgid "Gallery Slider"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:129
+msgid "Direction:"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:268
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:322
+msgid "Enable"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:277
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:482
+msgid "Arrow Previous"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:295
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:503
+msgid "Arrow Next"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:353
+msgid "Controller Type"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:384
+msgid "Pagination Height"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:604
+msgid "Image Alignment"
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:862
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:992
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2052
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2182
+msgid "Vertical Position by: "
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:921
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1051
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2111
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:2241
+msgid "Horizontal Position by: "
+msgstr ""
+
+#: includes/components/elementor-views/widgets/jet-woo-product-gallery-slider.php:1719
+msgid "Horizontal Alignment"
+msgstr ""
+
+#: includes/integrations/class-jet-woo-gallery-video-integration.php:42
+msgid "Jet Product Gallery Video"
+msgstr ""
+
+#: includes/integrations/class-jet-woo-gallery-video-integration.php:54
+msgid "Youtube"
+msgstr ""
+
+#: includes/integrations/class-jet-woo-gallery-video-integration.php:58
+msgid "Video Type:"
+msgstr ""
+
+#: includes/integrations/class-jet-woo-gallery-video-integration.php:62
+msgid "Video Poster:"
+msgstr ""
+
+#: includes/integrations/class-jet-woo-gallery-video-integration.php:65
+msgid "Choose Poster"
+msgstr ""
+
+#: includes/integrations/class-jet-woo-gallery-video-integration.php:70
+#: includes/integrations/class-jet-woo-gallery-video-integration.php:78
+msgid "Video URL:"
+msgstr ""
+
+#: includes/integrations/class-jet-woo-gallery-video-integration.php:86
+msgid "Video:"
+msgstr ""
+
+#: includes/integrations/class-jet-woo-gallery-video-integration.php:89
+msgid "Choose Video"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:46
+msgid "Go to docs"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:329
+#, javascript-format
+msgid "You can update <b>%s plugin</b>"
+msgid_plural "You can update <b>%s plugins</b>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:330
+msgid "All plugins updated"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:334
+msgid "Activate license to update your JetPlugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:341
+#, javascript-format
+msgid "You can install <b>%s more Plugin</b> with your licence"
+msgid_plural "You can install <b>%s more Plugins</b>  with your licence"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:342
+msgid "All available plugins are already installed"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:372
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:380
+msgid "Try quickstart installation"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:377
+msgid "Unpack Free All-inclusive items"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:451
+msgid "<b class=\"lifetime\">Lifetime</b>"
+msgstr ""
+
+#: includes/modules/jet-dashboard/assets/js/welcome-page.js:454
+#, javascript-format
+msgid "Licence expires <b class=\"expire-date\">%s</b>"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/data-manager.php:212
+#: includes/modules/jet-dashboard/inc/license-manager.php:76
+#: includes/modules/jet-dashboard/inc/plugin-manager.php:577
+msgid "Page has expired. Please reload this page."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/data-manager.php:221
+msgid "Sorry, you are not allowed to do that on this site."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:85
+msgid "Sorry, you are not allowed to manage license data on this site."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:292
+msgid "License expires soon!"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:293
+msgid ""
+"Your primary license will expire in 30 days. You can renew you current "
+"licese in your crocoblock account"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:296
+msgid "Go to account"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:486
+msgid "The site is not activated"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:487
+msgid ""
+"Your license key is not activated for this site. Go to the license manager "
+"and activate your key"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:490
+#: includes/modules/jet-dashboard/inc/license-manager.php:517
+msgid "Activate"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:513
+msgid "This site is not activated"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/license-manager.php:514
+msgid ""
+"This site is not activated for this license. Go to the license manager "
+"deactivate your license and activate your key again"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/license/module.php:37
+msgid "Plugin Manager"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/license/module.php:65
+#: includes/modules/jet-dashboard/inc/modules/license/module.php:66
+msgid "Update & Installation"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/license/module.php:84
+#: includes/modules/jet-dashboard/inc/modules/license/module.php:85
+msgid "License"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/settings/module.php:43
+msgid "Settings"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/settings/module.php:74
+#: includes/modules/jet-dashboard/inc/modules/settings/module.php:75
+msgid "JetPlugins Settings"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:49
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:176
+#: includes/modules/jet-dashboard/views/upsale/main.php:38
+msgid "Get Crocoblock"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:97
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:98
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:170
+msgid "Go Lifetime"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:115
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:116
+#: includes/modules/jet-dashboard/inc/modules/upsale/module.php:173
+msgid "Go All-Inclusive"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/welcome/dev-test.php:37
+msgid "Dev Test Page"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/modules/welcome/module.php:37
+msgid "Welcome"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/notice-manager.php:141
+msgid "Your site."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/notice-manager.php:142
+msgid "Your site database needs to be updated to the latest version."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/notice-manager.php:145
+#: includes/modules/jet-dashboard/views/welcome/main.php:35
+msgid "Update Now"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/notice-manager.php:188
+msgid "Dismiss this notice."
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/plugin-manager.php:224
+#, php-format
+msgid "More information about %s"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/plugin-manager.php:639
+#: includes/settings/class-jet-woo-product-gallery-settings.php:78
+msgid "Error"
+msgstr ""
+
+#: includes/modules/jet-dashboard/inc/plugin-manager.php:640
+msgid "Server error. Stop cheating!!!"
+msgstr ""
+
+#: includes/modules/jet-dashboard/jet-dashboard.php:253
+#: includes/modules/jet-dashboard/jet-dashboard.php:254
+msgid "Crocoblock"
+msgstr ""
+
+#: includes/modules/jet-dashboard/jet-dashboard.php:266
+#: includes/modules/jet-dashboard/jet-dashboard.php:267
+msgid "Dashboard"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/common/sidebar.php:28
+msgid "New to Crocoblock?"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/common/sidebar.php:29
+msgid "Start Here"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/common/sidebar.php:63
+msgid "Support & Info"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/common/sidebar.php:64
+msgid "Help Center"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:9
+msgid "JetPlugins License Activation"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:10
+msgid "Congratulations!"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:10
+msgid "Your license has been activated!"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:13
+msgid "Activate license for automatic updates and awesome support"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:32
+#: includes/modules/jet-dashboard/views/license/license-item.php:103
+#: includes/modules/jet-dashboard/views/license/main.php:146
+msgid "Activate License"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:33
+#: includes/modules/jet-dashboard/views/license/license-item.php:104
+msgid "Deactivate License"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:44
+msgid "License Key:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:48
+msgid "Product Name:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:52
+msgid "Status:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:56
+msgid "Type:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:60
+msgid "Expiration Date:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:64
+msgid "Included Plugins:"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:84
+msgid ""
+"This license will activate licenses for all plugins included in this set."
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/license-item.php:94
+#: includes/modules/jet-dashboard/views/license/main.php:35
+#: includes/modules/jet-dashboard/views/license/main.php:115
+msgid "License Manager"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:10
+msgid "Your Installed JetPlugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:22
+msgid "Check For Updates"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:54
+msgid "More included JetPlugins with your licence"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:70
+#: includes/modules/jet-dashboard/views/welcome/main.php:207
+msgid "Get More Plugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:105
+msgid "JetPlugins License Deactivation"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:108
+msgid ""
+"Your license includes several plugins within the package. License "
+"deactivation in one plugin disables it in the rest of them. You can manage "
+"it through the License Manager."
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:128
+msgid "JetPlugin’s Update"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:139
+msgid "Sorry, but you need to activate license to update your JetPlugin"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:160
+msgid "Your Licenses"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:169
+msgid "Add New License"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/license/main.php:174
+msgid ""
+"Add and Activate license for automatic updates, awesome support, useful "
+"features and more"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/upsale/main.php:12
+msgid "Dynamic"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/upsale/main.php:18
+msgid "E-commerce"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/upsale/main.php:24
+msgid "Design"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/upsale/main.php:27
+msgid "18 Advanced JetPlugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/upsale/main.php:28
+msgid ""
+"Unlock the ultimate website building toolkit for Elementor 150+ widgets and "
+"50+ templates"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:20
+msgid "Manage plugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:21
+msgid "Updates"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:45
+#: includes/modules/jet-dashboard/views/welcome/main.php:95
+msgid "Activate Now"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:60
+msgid "Manage license"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:61
+msgid "Active Licence"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:85
+msgid "License not active"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:94
+msgid "Manage Now"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:109
+msgid "Installed JetPlugins"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:135
+msgid "Install"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:168
+msgid "Install Wizard"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:179
+msgid "Activate Wizard"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:191
+msgid "Enjoy the perks of All-inclusive"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:223
+msgid "Get a JetPlugins bundle"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:224
+msgid "Save up to 60%"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:234
+msgid "See all plans"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/main.php:246
+msgid "Hot Deals"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/plugin-item-registered.php:29
+msgid "Documentation"
+msgstr ""
+
+#: includes/modules/jet-dashboard/views/welcome/plugin-item-registered.php:55
+msgid "Plugin pages"
+msgstr ""
+
+#: includes/render/base.php:304
+msgid "Gallery not found."
+msgstr ""
+
+#: includes/render/base.php:1010 includes/render/base.php:1014
+msgid "Play Video"
+msgstr ""
+
+#: includes/render/base.php:1072
+#: templates/jet-woo-product-gallery-anchor-nav/global/index.php:49
+#: templates/jet-woo-product-gallery-anchor-nav/global/thumbnails-controller.php:35
+#: templates/jet-woo-product-gallery-modern/global/index.php:28
+#: templates/jet-woo-product-gallery-slider/global/index.php:52
+#: templates/jet-woo-product-gallery-slider/global/thumbnails-pagination.php:38
+msgid "Placeholder"
+msgstr ""
+
+#: includes/rest-api/endpoints/plugin-settings.php:49
+msgid "Server Error"
+msgstr ""
+
+#: includes/rest-api/endpoints/plugin-settings.php:61
+msgid "Settings have been saved"
+msgstr ""
+
+#: includes/settings/class-jet-woo-product-gallery-settings.php:77
+msgid "Saved"
+msgstr ""
+
+#: includes/settings/jet-dashboard-settings/subpage-modules/avaliable-addons.php:36
+msgid "Widgets"
+msgstr ""
+
+#: jet-woo-product-gallery.php:204
+msgid "Go to settings"
+msgstr ""
+
+#: jet-woo-product-gallery.php:356
+#, php-format
+msgid ""
+"<strong>JetWooProductGallery</strong> requires <strong>Elementor</strong> "
+"version %s or greater."
+msgstr ""
+
+#: templates/admin-templates/avaliable-addons.php:4
+msgid "Available Widgets"
+msgstr ""
+
+#: templates/admin-templates/avaliable-addons.php:5
+msgid "List of widgets that will be available when editing the page"
+msgstr ""
+
+#: templates/jet-woo-product-gallery-anchor-nav/global/popup-video.php:30
+#: templates/jet-woo-product-gallery-grid/global/popup-video.php:34
+#: templates/jet-woo-product-gallery-modern/global/popup-video.php:34
+#: templates/jet-woo-product-gallery-slider/global/popup-video.php:34
+msgid "Open popup with video"
+msgstr ""
+
+#: templates/photoswipe.php:17
+msgid "Close (Esc)"
+msgstr ""
+
+#: templates/photoswipe.php:18
+msgid "Share"
+msgstr ""
+
+#: templates/photoswipe.php:19
+msgid "Toggle fullscreen"
+msgstr ""
+
+#: templates/photoswipe.php:20
+msgid "Zoom in/out"
+msgstr ""
+
+#: templates/photoswipe.php:32
+msgid "Previous (arrow left)"
+msgstr ""
+
+#: templates/photoswipe.php:33
+msgid "Next (arrow right)"
+msgstr ""

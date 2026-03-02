@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+.vbotasp {
+	display: inline-block;
+	min-width: 85px;
+	border-radius: 5px 5px 5px 5px;
+	margin: 0 3px 0 0;
+	padding: 5px 8px 5px 30px;
+	font-weight: bold;
+	position: relative;
+	border: 1px solid var(--vcm-config-border-color);
+	font-size: 13px;
+}
+.vbotasp:before {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	content: "";
+	left: 4px;
+	top: 4px;
+	background-size: 20px auto !important;
+}
+.vcm-relation-label-small {
+	display: inline-block;
+	min-width: 50px;
+	margin: 0 3px 0 0;
+	padding: 0 0 0 30px;
+	position: relative;
+}
+.vcm-relation-label-small:before {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	content: "";
+	left: 0;
+	top: 0;
+	background-size: 20px auto !important;
+}
+span[class*="tripconnect"]:before, .vcm-ratespush-request-esitnode[class*="tripconnect"]:before {
+	background: url('./channels/tripadvisor.png') left center no-repeat;
+}
+span[class*="hotels"]:before, .vcm-ratespush-request-esitnode[class*="hotels"]:before {
+	background: url('./channels/hotels.png') left center no-repeat;
+}
+span[class*="expedia"]:before, .vcm-ratespush-request-esitnode[class*="expedia"]:before {
+	background: url('./channels/expedia.png') left center no-repeat;
+}
+span[class*="trivago"]:before, .vcm-ratespush-request-esitnode[class*="trivago"]:before {
+	background: url('./channels/trivago.png') left center no-repeat;
+}
+span[class*="venere"]:before, .vcm-ratespush-request-esitnode[class*="venere"]:before {
+	background: url('./channels/venere.png') left center no-repeat;
+}
+span[class*="booking"]:before, .vcm-ratespush-request-esitnode[class*="booking"]:before {
+	background: url('./channels/booking.png') left center no-repeat;
+}
+span[class*="otelz"]:before, .vcm-ratespush-request-esitnode[class*="otelz"]:before {
+	background: url('./channels/otelz.png') left center no-repeat;
+}
+span[class*="gardapass"]:before, .vcm-ratespush-request-esitnode[class*="gardapass"]:before {
+	background: url('./channels/gardapass.png') left center no-repeat;
+}
+span[class*="bed-and-breakfast"]:before, .vcm-ratespush-request-esitnode[class*="bed-and-breakfast"]:before {
+	background: url('./channels/bedandbreakfastit.png') left center no-repeat;
+}
+span[class*="bedandbreakfast"]:before, .vcm-ratespush-request-esitnode[class*="bedandbreakfast"]:before {
+	background: url('./channels/bedandbreakfasteu.png') left center no-repeat;
+}
+span[class*="bedandbreakfastnl"]:before, .vcm-ratespush-request-esitnode[class*="bedandbreakfastnl"]:before, span[class*="bedandbreakfast.nl"]:before, .vcm-ratespush-request-esitnode[class*="bedandbreakfast.nl"]:before {
+	background: url('./channels/bedandbreakfastnl.png') left center no-repeat;
+}
+span[class*="agoda"]:before, .vcm-ratespush-request-esitnode[class*="agoda"]:before {
+	background: url('./channels/agoda.png') left center no-repeat;
+}
+span[class*="ycs50"]:before, .vcm-ratespush-request-esitnode[class*="ycs50"]:before {
+	background: url('./channels/agoda.png') left center no-repeat;
+}
+span[class*="orbitz"]:before, .vcm-ratespush-request-esitnode[class*="orbitz"]:before {
+	background: url('./channels/orbitz.png') left center no-repeat;
+}
+span[class*="lastminute"]:before, .vcm-ratespush-request-esitnode[class*="lastminute"]:before {
+	background: url('./channels/lastminute.png') left center no-repeat;
+}
+span[class*="airbnb"]:before, .vcm-ratespush-request-esitnode[class*="airbnb"]:before {
+	background: url('./channels/airbnb.png') left center no-repeat;
+}
+span[class*="googlehotel"]:before, .vcm-ratespush-request-esitnode[class*="googlehotel"]:before {
+	background: url('./channels/googlehotel.png') left center no-repeat;
+}
+span[class*="googlevr"]:before, .vcm-ratespush-request-esitnode[class*="googlevr"]:before {
+	background: url('./channels/googlevr.png') left center no-repeat;
+}
+span[class*="pitchup"]:before, .vcm-ratespush-request-esitnode[class*="pitchup"]:before {
+	background: url('./channels/pitchup.png') left center no-repeat;
+}
+span[class*="campsites"]:before, .vcm-ratespush-request-esitnode[class*="campsites"]:before {
+	background: url('./channels/campsites.png') left center no-repeat;
+}
+span[class*="ical"]:before, .vcm-ratespush-request-esitnode[class*="ical"]:before {
+	background: url('./channels/ical.png') left center no-repeat;
+}
+span[class*="hostelworld"]:before, .vcm-ratespush-request-esitnode[class*="hostelworld"]:before {
+	background: url('./channels/hostelworld.png') left center no-repeat;
+}
+span[class*="wimdu"]:before, .vcm-ratespush-request-esitnode[class*="wimdu"]:before {
+	background: url('./channels/wimdu.png') left center no-repeat;
+}
+span[class*="flipkey"]:before, .vcm-ratespush-request-esitnode[class*="flipkey"]:before {
+	background: url('./channels/flipkey.png') left center no-repeat;
+}
+span[class*="holidaylettings"]:before, .vcm-ratespush-request-esitnode[class*="holidaylettings"]:before {
+	background: url('./channels/holidaylettings.png') left center no-repeat;
+}
+span[class*="vrbo"]:before, .vcm-ratespush-request-esitnode[class*="vrbo"]:before {
+	background: url('./channels/vrbo.png') left center no-repeat;
+}
+span[class*="homeaway"]:before, .vcm-ratespush-request-esitnode[class*="homeaway"]:before {
+	background: url('./channels/homeaway.png') left center no-repeat;
+}
+span[class*="despegar"]:before, .vcm-ratespush-request-esitnode[class*="despegar"]:before {
+	background: url('./channels/despegar.png') left center no-repeat;
+}
+span[class*="feratel"]:before, .vcm-ratespush-request-esitnode[class*="feratel"]:before {
+	background: url('./channels/feratel.png') left center no-repeat;
+}
+span[class*="ctrip"]:before, .vcm-ratespush-request-esitnode[class*="ctrip"]:before {
+	background: url('./channels/ctrip.png') left center no-repeat;
+}
+span[class*="dac"]:before, .vcm-ratespush-request-esitnode[class*="dac"]:before {
+	background: url('./channels/dac.png') left center no-repeat;
+}

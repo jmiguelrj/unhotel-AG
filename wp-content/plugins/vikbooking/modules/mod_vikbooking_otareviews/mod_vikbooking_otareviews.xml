@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="4.0.0" client="site" method="upgrade">
+	<name>MOD_VIKBOOKING_OTAREVIEWS</name>
+	<author>E4J srl</author>
+	<creationDate>January 2024</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>tech@e4j.com</authorEmail>
+	<authorUrl>https://e4j.com</authorUrl>
+	<version>1.14.4</version>
+	<description>MOD_VIKBOOKING_OTAREVIEWS_DESC</description>
+
+	<config>
+		<fields name="params">
+			
+			<fieldset name="basic" addfieldpath="/modules/mod_vikbooking_otareviews/fields">
+
+				<field name="channelaccount" type="channelaccounts" default="" label="VBOMODOTAREVCHOOSECH" description="VBOMODOTAREVCHOOSECHHELP" required="true" />
+
+				<field name="revsorscore" type="list" default="1" label="VBOMODOTAREVORSCORE" description="VBOMODOTAREVORSCOREHELP">
+					<option value="1">VBOMODOTAREVSHOWREVS</option>
+					<option value="2">VBOMODOTAREVSHOWSCORE</option>
+				</field>
+
+				<field name="contents" type="list" default="standard" label="VBOMODOTAREVCONTENT" description="VBOMODOTAREVCONTENTHELP">
+					<option value="standard">VBOMODOTAREVCONTENTSTAND</option>
+					<option value="compact">VBOMODOTAREVCONTENTCOMPA</option>
+				</field>
+
+				<field name="sorting" type="list" default="score" label="VBOMODOTAREVSORTING">
+					<option value="score">VBOMODOTAREVSORTSCORE</option>
+					<option value="date">VBOMODOTAREVSORTDATE</option>
+				</field>
+
+				<field name="ordering" type="list" default="DESC" label="VBOMODOTAREVORDERING">
+					<option value="ASC">VBOMODOTAREVORDERASC</option>
+					<option value="DESC">VBOMODOTAREVORDERDESC</option>
+				</field>
+
+				<field name="lim" type="number" default="10" label="VBOMODOTAREVLIM" description="VBOMODOTAREVLIMHELP" />
+				
+				<field name="introtxt" type="editor" default="" label="VBOMODOTAREVINTROTXT" description="VBOMODOTAREVINTROTXTHELP" rows="10" cols="95" filter="raw" />
+				
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JLAYOUT"
+					description="JLAYOUT_DESC"
+				/>
+			</fieldset>
+			
+		</fields>
+	</config>
+
+</extension>

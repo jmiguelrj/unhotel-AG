@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0.0" client="site" method="upgrade">
+	<name>MOD_VIKBOOKING_ROOMS</name>
+	<author>E4J s.r.l.</author>
+	<creationDate>January 2024</creationDate>
+	<copyright>Copyright (C) 2024 E4J s.r.l. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>tech@extensionsforjoomla.com</authorEmail>
+	<authorUrl>https://vikwp.com</authorUrl>
+	<version>1.14.8</version>
+	<description>MOD_VIKBOOKING_ROOMS_DESC</description>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field
+					name="title"
+					type="text"
+					default=""
+					label="TITLE"
+				/>
+
+				<field name="layoutlist" type="list" default="1" label="JLAYOUT">
+					<option value="1">Scroll</option>
+					<option value="0">Grid</option>
+				</field>
+
+				<field
+					name="showcatname"
+					type="radio"
+					default="1"
+					label="VBROOMSCATEGORY"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="shownumbpeople"
+					type="radio"
+					default="1"
+					label="VBROOMSSHOWPEOPLE"
+					description="VBROOMSSHOWPEOPLEDESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="showdetailsbtn"
+					type="radio"
+					default="1"
+					label="VBROOMSSHOWDETAILSBTN"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="showroomdesc"
+					type="radio"
+					default="1"
+					label="SHOWROOMDESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="show_carats"
+					type="radio"
+					default="1"
+					label="SHOWCARATS"
+					description="SHOWCARATSDESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="currency" type="text" default="€" label="VBROOMSCURRENCY" description="VBROOMSCURRENCYDESC" size="5" filter="raw" />
+				
+				<field name="mod_desc" type="editor" default="" label="VBROOMSDESCLABEL"  width="300" filter="safehtml" />
+				
+				<field name="numb" type="number" default="20" min="0" max="20" step="1" label="VBROOMSNUMB" />
+				
+				<field name="numb_roomrow" type="number" default="4" min="0" max="10" step="1" label="VBROOMSNUMBROW" size="5" filter="integer"/>
+
+				<field
+					name="pagination"
+					type="radio"
+					default="1"
+					label="VBROOMSDOTNAV"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="navigation"
+					type="radio"
+					default="1"
+					label="VBROOMSARROWS"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="autoplay"
+					type="radio"
+					default="1"
+					label="VBROOMSAUTOPLAY"
+					description="VBROOMSAUTOPLAYDESC"
+					class="btn-group btn-group-yesno"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="query" type="list" default="price" label="VBROOMSORDERFILTER">
+					<option value="price">BYPRICE</option>
+					<option value="name">BYNAME</option>
+					<option value="category">BYCATEGORY</option>
+				</field>
+
+				<field name="order" type="list" default="asc" label="VBROOMSORDERTYPE">
+					<option value="asc">TYPEASC</option>
+					<option value="desc">TYPEDESC</option>
+				</field>
+
+				<field name="catid" type="sql" default="0" label="VBROOMSSELECTCAT" query="SELECT id, name FROM #__vikbooking_categories" key_field="id" value_field="name">
+					<option value="0">-----</option>
+				</field>
+				
+				<field name="querycat" type="list" default="price" label="ORDERING">
+					<option value="price">BYPRICE</option>
+					<option value="name">BYNAME</option>
+				</field>
+
+				<field
+					name="itemid"
+					type="menuitem"
+					prefix="vikbooking"
+					default=""
+					required="true"
+					label="JMENUITEM"
+					description="JMENUITEM_DESC"
+				/>
+			</fieldset>
+
+			<fieldset name="advanced">	
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JLAYOUT"
+					description="JLAYOUT_DESC"
+				/>
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,36 @@
+/**
+ * Section Block Styles
+ */
+.unhotel-section {
+  position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.unhotel-section.fullwidth {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+.unhotel-section:not(.fullwidth) {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: var(--container-padding-left);
+  padding-right: var(--container-padding-right);
+}
+
+.unhotel-section-editor {
+  min-height: 100px;
+}
+
+.section-inner-container {
+  max-width: var(--container-max-width, 1200px);
+  margin: 0 auto;
+  padding-left: var(--container-padding-left);
+  padding-right: var(--container-padding-right);
+}
+
+.section-inner-full {
+  width: 100%;
+  padding: 0;
+}
+/*# sourceMappingURL=section.css.map */

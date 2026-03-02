@@ -1,0 +1,4 @@
+.cx-vui-component--calendar-timezone .cx-vui-f-select__results {
+    max-height: 350px;
+    overflow-y: scroll;
+}

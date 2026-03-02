@@ -1,0 +1,246 @@
+<?php
+/**
+ * @package     VikBooking
+ * @subpackage  com_vikbooking
+ * @author      Alessio Gaggii - e4j - Extensionsforjoomla.com
+ * @copyright   Copyright (C) 2018 e4j - Extensionsforjoomla.com. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE
+ * @link        https://vikwp.com
+ */
+
+defined('ABSPATH') or die('No script kiddies please!');
+
+$row = $this->row;
+
+$vbo_app = VikBooking::getVboApplication();
+$vbo_app->loadSelect2();
+
+$dbo = JFactory::getDbo();
+
+$q = "SELECT * FROM `#__vikbooking_iva`;";
+$dbo->setQuery($q);
+$ivas = $dbo->loadAssocList();
+if ($ivas) {
+	$wiva = "<select name=\"praliq\">\n";
+	$wiva .= "<option value=\"\">-----</option>\n";
+	foreach ($ivas as $iv) {
+		$wiva .= "<option value=\"".$iv['id']."\"".($row && $iv['id'] == $row['idiva'] ? " selected=\"selected\"" : "").">".(empty($iv['name']) ? $iv['aliq']."%" : $iv['name']."-".$iv['aliq']."%")."</option>\n";
+	}
+	$wiva .= "</select>\n";
+} else {
+	$wiva = "<a href=\"index.php?option=com_vikbooking&task=iva\">".JText::_('NESSUNAIVA')."</a>";
+}
+
+/**
+ * Rate plans support included meal plans.
+ * 
+ * @since 	1.16.1 (J) - 1.6.1 (WP)
+ */
+$meal_plan_manager = VBOMealplanManager::getInstance();
+$meal_plans = $meal_plan_manager->getPlans();
+
+/**
+ * Derived Rate Plans.
+ * 
+ * @since 	1.16.10 (J) - 1.6.10 (WP)
+ */
+$is_derived = !empty($row['derived_id']) && isset($this->parent_rates[$row['derived_id']]);
+$derived_data = $is_derived ? json_decode($row['derived_data'], true) : [];
+$derived_data = is_array($derived_data) ? $derived_data : [];
+
+?>
+
+<script type="text/javascript">
+	function toggleFreeCancellation() {
+		if (jQuery('input[name="free_cancellation"]').is(':checked')) {
+			jQuery('#canc_deadline, #canc_policy').fadeIn();
+		} else {
+			jQuery('#canc_deadline, #canc_policy').hide();
+		}
+		return true;
+	}
+
+	function toggleDerivedData() {
+		if (jQuery('input[name="is_derived"]').is(':checked')) {
+			jQuery('[data-type="derived-info"]').fadeIn();
+		} else {
+			jQuery('[data-type="derived-info"]').hide();
+		}
+	}
+
+	jQuery(function() {
+		jQuery('#vbo-meal-plans').select2();
+	});
+</script>
+
+<form name="adminForm" id="adminForm" action="index.php" method="post">
+	<div class="vbo-admin-container">
+		<div class="vbo-config-maintab-left">
+			<fieldset class="adminform">
+				<div class="vbo-params-wrap">
+					<legend class="adminlegend"><?php echo JText::_('VBOADMINLEGENDDETAILS'); ?></legend>
+					<div class="vbo-params-container">
+						<div class="vbo-param-container">
+							<div class="vbo-param-label"><?php echo JText::_('VBNEWPRICEONE'); ?>*</div>
+							<div class="vbo-param-setting"><input type="text" name="price" value="<?php echo $row ? htmlspecialchars($row['name']) : ''; ?>" size="40"/></div>
+						</div>
+						<div class="vbo-param-container">
+							<div class="vbo-param-label"><?php echo $vbo_app->createPopover(array('title' => JText::_('VBNEWPRICETWO'), 'content' => JText::_('VBOPRICEATTRHELP'))); ?> <?php echo JText::_('VBNEWPRICETWO'); ?></div>
+							<div class="vbo-param-setting"><input type="text" name="attr" value="<?php echo $row ? htmlspecialchars((string)$row['attr']) : ''; ?>" size="40"/></div>
+						</div>
+						<div class="vbo-param-container">
+							<div class="vbo-param-label"><?php echo JText::_('VBNEWPRICETHREE'); ?></div>
+							<div class="vbo-param-setting"><?php echo $wiva; ?></div>
+						</div>
+						<div class="vbo-param-container">
+							<div class="vbo-param-label"><?php echo JText::_('VBO_IS_DERIVED_RATE'); ?></div>
+							<div class="vbo-param-setting">
+								<?php echo $vbo_app->printYesNoButtons('is_derived', JText::_('VBYES'), JText::_('VBNO'), ($is_derived ? 1 : 0), 1, 0, 'toggleDerivedData();'); ?>
+								<span class="vbo-param-setting-comment"><?php echo JText::_('VBO_DERIVED_RATE_HELP'); ?></span>
+							</div>
+						</div>
+						<div class="vbo-param-container vbo-param-nested" data-type="derived-info" style="<?php echo !$is_derived ? 'display: none;' : ''; ?>;">
+							<div class="vbo-param-label"><?php echo JText::_('VBO_PARENT_RATE'); ?></div>
+							<div class="vbo-param-setting">
+								<select name="derived_id">
+									<option value=""></option>
+								<?php
+								foreach ($this->parent_rates as $rpid => $rpname) {
+									?>
+									<option value="<?php echo $rpid; ?>"<?php echo $is_derived && $rpid == $row['derived_id'] ? ' selected="selected"' : ''; ?>><?php echo $rpname; ?></option>
+									<?php
+								}
+								?>
+								</select>
+							</div>
+						</div>
+						<div class="vbo-param-container vbo-param-nested" data-type="derived-info" style="<?php echo !$is_derived ? 'display: none;' : ''; ?>;">
+							<div class="vbo-param-label"><?php echo JText::_('VBO_MODIFICATION_MODE'); ?></div>
+							<div class="vbo-param-setting">
+								<select name="derived_data[mode]">
+									<option value="discount"<?php echo $is_derived && ($derived_data['mode'] ?? '') == 'discount' ? ' selected="selected"' : ''; ?>><?php echo JText::_('VBPSHOWSEASONSSIX'); ?></option>
+									<option value="charge"<?php echo $is_derived && ($derived_data['mode'] ?? '') == 'charge' ? ' selected="selected"' : ''; ?>><?php echo JText::_('VBPSHOWSEASONSFIVE'); ?></option>
+								</select>
+								<span class="vbo-param-setting-comment"><?php echo JText::_('VBO_MODIFICATION_MODE_HELP'); ?></span>
+							</div>
+						</div>
+						<div class="vbo-param-container vbo-param-nested" data-type="derived-info" style="<?php echo !$is_derived ? 'display: none;' : ''; ?>;">
+							<div class="vbo-param-label"><?php echo JText::_('VBO_MODIFICATION_TYPE'); ?></div>
+							<div class="vbo-param-setting">
+								<select name="derived_data[type]">
+									<option value="percent"<?php echo $is_derived && ($derived_data['type'] ?? '') == 'percent' ? ' selected="selected"' : ''; ?>><?php echo JText::_('VBO_PERCENT'); ?> (%)</option>
+									<option value="absolute"<?php echo $is_derived && ($derived_data['type'] ?? '') == 'absolute' ? ' selected="selected"' : ''; ?>><?php echo JText::_('VBO_ABSOLUTE'); ?> (<?php echo VikBooking::getCurrencySymb(); ?>)</option>
+								</select>
+							</div>
+						</div>
+						<div class="vbo-param-container vbo-param-nested" data-type="derived-info" style="<?php echo !$is_derived ? 'display: none;' : ''; ?>;">
+							<div class="vbo-param-label"><?php echo JText::_('VBPSHOWSEASONSFOUR'); ?></div>
+							<div class="vbo-param-setting">
+								<input name="derived_data[value]" type="number" step="any" value="<?php echo $is_derived ? ($derived_data['value'] ?? 0) : 0; ?>" min="0" />
+							</div>
+						</div>
+						<div class="vbo-param-container vbo-param-nested" data-type="derived-info" style="<?php echo !$is_derived ? 'display: none;' : ''; ?>;">
+							<div class="vbo-param-label"><?php echo JText::_('VBO_FOLLOW_RESTRICTIONS'); ?></div>
+							<div class="vbo-param-setting">
+								<?php echo $vbo_app->printYesNoButtons('derived_data[follow_restr]', JText::_('VBYES'), JText::_('VBNO'), ($is_derived ? (int) ($derived_data['follow_restr'] ?? 1) : 1), 1, 0); ?>
+								<span class="vbo-param-setting-comment"><?php echo JText::_('VBO_FOLLOW_RESTRICTIONS_HELP'); ?></span>
+							</div>
+						</div>
+					<?php
+					if (!$row) {
+						// allow to choose to populate the base rates for all rooms assigned to parent rates
+						?>
+						<div class="vbo-param-container vbo-param-nested" data-type="derived-info" style="display: none;">
+							<div class="vbo-param-label"><?php echo JText::_('VBINSERTFEE'); ?></div>
+							<div class="vbo-param-setting">
+								<?php echo $vbo_app->printYesNoButtons('set_derived_rates', JText::_('VBYES'), JText::_('VBNO'), 1, 1, 0, 'vboNewPriceToggleDerivedMaxNights(this.checked);'); ?>
+							</div>
+						</div>
+						<div class="vbo-param-container vbo-param-nested vbo-newprice-derived-setmaxnights" data-type="derived-info" style="display: none;">
+							<div class="vbo-param-label"><?php echo JText::_('VBORESTRMAXLOS'); ?></div>
+							<div class="vbo-param-setting">
+								<input type="number" name="set_max_nights" value="30" />
+							</div>
+						</div>
+						<script type="text/javascript">
+							function vboNewPriceToggleDerivedMaxNights(enabled) {
+								const elem = document.querySelector('.vbo-newprice-derived-setmaxnights');
+								if (enabled) {
+									elem.style.display = '';
+								} else {
+									elem.style.display = 'none';
+								}
+							}
+						</script>
+						<?php
+					}
+					?>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+		<div class="vbo-config-maintab-right">
+			<fieldset class="adminform">
+				<div class="vbo-params-wrap">
+					<legend class="adminlegend"><?php echo JText::_('VBOADMINLEGENDSETTINGS'); ?></legend>
+					<div class="vbo-params-container">
+						<div class="vbo-param-container">
+							<div class="vbo-param-label"><?php echo $vbo_app->createPopover(array('title' => JText::_('VBOPRICETYPEMINLOS'), 'content' => JText::_('VBOPRICETYPEMINLOSHELP'))); ?> <?php echo JText::_('VBOPRICETYPEMINLOS'); ?></div>
+							<div class="vbo-param-setting"><input type="number" name="minlos" min="0" value="<?php echo $row ? $row['minlos'] : '0'; ?>" /></div>
+						</div>
+						<div class="vbo-param-container">
+							<div class="vbo-param-label"><?php echo $vbo_app->createPopover(array('title' => JText::_('VBOPRICETYPEMINHADV'), 'content' => JText::_('VBOPRICETYPEMINHADVHELP'))); ?> <?php echo JText::_('VBOPRICETYPEMINHADV'); ?></div>
+							<div class="vbo-param-setting"><input type="number" name="minhadv" min="0" value="<?php echo $row ? $row['minhadv'] : '0'; ?>" /></div>
+						</div>
+						<div class="vbo-param-container">
+							<div class="vbo-param-label"><?php echo JText::_('VBO_MEAL_PLANS_INCL'); ?></div>
+							<div class="vbo-param-setting">
+								<select name="meal_plans[]" id="vbo-meal-plans" multiple="multiple">
+								<?php
+								foreach ($meal_plans as $meal_enum => $meal_name) {
+									$meal_included = false;
+									if ($row && $meal_plan_manager->ratePlanMealIncluded($row, $meal_enum)) {
+										$meal_included = true;
+									}
+									?>
+									<option value="<?php echo $meal_enum; ?>"<?php echo $meal_included ? ' selected="selected"' : ''; ?>><?php echo $meal_name; ?></option>
+									<?php
+								}
+								?>
+								</select>
+							</div>
+						</div>
+						<div class="vbo-param-container">
+							<div class="vbo-param-label"><?php echo JText::_('VBNEWPRICEFREECANC'); ?></div>
+							<div class="vbo-param-setting">
+								<?php echo $vbo_app->printYesNoButtons('free_cancellation', JText::_('VBYES'), JText::_('VBNO'), ($row && $row['free_cancellation'] == 1 ? 1 : 0), 1, 0, 'toggleFreeCancellation();'); ?>
+							</div>
+						</div>
+						<div class="vbo-param-container vbo-param-nested" id="canc_deadline" style="display: <?php echo $row && $row['free_cancellation'] == 1 ? 'flex' : 'none'; ?>;">
+							<div class="vbo-param-label"><?php echo JText::_('VBNEWPRICEFREECANCDLINE'); ?></div>
+							<div class="vbo-param-setting">
+								<input type="number" min="0" name="canc_deadline" value="<?php echo $row ? $row['canc_deadline'] : '7'; ?>" size="5"/>
+							</div>
+						</div>
+						<div class="vbo-param-container vbo-param-nested" id="canc_policy" style="display: <?php echo $row && $row['free_cancellation'] == 1 ? 'flex' : 'none'; ?>;">
+							<div class="vbo-param-label"><?php echo $vbo_app->createPopover(array('title' => JText::_('VBNEWPRICECANCPOLICY'), 'content' => JText::_('VBNEWPRICECANCPOLICYHELP'))); ?> <?php echo JText::_('VBNEWPRICECANCPOLICY'); ?></div>
+							<div class="vbo-param-setting">
+								<textarea name="canc_policy" rows="5" cols="200" style="width: 350px; height: 130px;"><?php echo $row ? htmlspecialchars((string)$row['canc_policy']) : ''; ?></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+	</div>
+	<input type="hidden" name="task" value="">
+<?php
+if ($row) {
+?>
+	<input type="hidden" name="whereup" value="<?php echo $row['id']; ?>">
+<?php
+}
+?>
+	<input type="hidden" name="option" value="com_vikbooking">
+	<?php echo JHtml::_('form.token'); ?>
+</form>

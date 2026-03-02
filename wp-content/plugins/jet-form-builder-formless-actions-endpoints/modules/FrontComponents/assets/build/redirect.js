@@ -1,0 +1,1 @@
+(()=>{const{addAction:o}=JetPlugins.hooks;o("jfb.formless.submit","core/redirect",(function(o){o?.data?.redirect?window.location=o.data.redirect:o?.data?.reload&&window.location.reload()})),(window.crocoblock=window.crocoblock||{}).frontComponents={}})();

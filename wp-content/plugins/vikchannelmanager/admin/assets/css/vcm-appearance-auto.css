@@ -1,0 +1,445 @@
+/*
+ * Vik Channel Manager - Colors adaptation for "Automatic Light/Dark" Appearance .
+ * Media queries should detect the OS/Browser preferences for the Dark Color Scheme
+ * and override the CSS variables within that preference.
+ * 
+ * @note 	the variables of this file should be identical to the ones of the file vcm-appearance-dark.css
+ */
+
+/* Variable declarations when a dark color scheme is preferred. */
+@media (prefers-color-scheme: dark) {
+		:root {
+
+		/* WordPress variables */
+		--wp-btn-color: #92c4ee;
+		--wp-btn-color-hover: #2e7aaf;
+
+		/* body color */
+		--vcm-body-bg-color: #0f1216;
+		--vcm-main-bg-color: #0f1216;
+		--vcm-body-text-color: rgba(255, 255, 255, 0.87);
+		
+		/* main bg and text color */
+		--vcm-container-text-color: inherit;
+		--vcm-contrast-text-color: rgba(255, 255, 255, 0.87);
+		--vcm-base-color: #4e8abb; /* #6096c2 */
+		--vcm-base-color-hover: #2c6fa5;
+		--vcm-link-text-color: #92c4ee;
+		--vcm-active-menu-color: #105F87;
+		--vcm-basic-btn: #181b22;
+		--vcm-basic-btn-hover: #215d8c;
+		--vcm-light-color-btn: #303942;
+		--vcm-middle-color-btn: #262f39;
+		--vcm-config-dark-text-color: #e1e1e1;
+
+		/* Config bg and text color */
+		--vcm-config-bg-color: #282b33;
+		--vcm-input-style: #282b33;
+		--vcm-config-text-color: inherit;
+		--vcm-config-border-color: #0f1216;
+		--vcm-config-titles-color-light: rgba(255, 255, 255, 0.77);
+		--vcm-config-child-bg-color: #181b22;
+		--vcm-config-text-color-light: rgba(255, 255, 255, 0.77);
+		--vcm-config-title-color: rgba(255, 255, 255, 0.60);
+		--vcm-config-text-color-light40: rgba(255, 255, 255, 0.44);
+
+		--vcm-grey-blue-bg: #424954;
+		--vcm-light-blue: #313f4d;
+
+		/* Input Style */
+		--vcm-input-style: #1e222b;
+		--vcm-input-style-deactive: #282b33;
+		--vcm-input-style-nested-deactive: #181b22;
+
+		/* Page Lists */
+		--vcm-toolbar-bg-color: rgba(212, 218, 229, 0.1);
+
+		/* General Colors */
+		--vcm-red-bg: #4B1A1A;
+		--vcm-red-color: #f47b7b;
+		--vcm-red-color-hover: #f38a8a;
+		--vcm-red-border: #733232;
+		
+		--vcm-orange-bg: #4D3923;
+		--vcm-orange-color: #f0b46d;
+		--vcm-orange-color-hover: #be8340;
+		--vcm-orange-border: #735027;
+		
+		--vcm-green-bg: #12321A;
+		--vcm-green-color: #9df49d;
+		--vcm-green-color-hover: #509e50;
+		--vcm-green-border: #22512E;
+		
+		--vcm-light-blue: #4e7891;
+		--vcm-blue-medium: #75B5DB;
+		--vcm-blue-color: #2f6f8e;
+		--vcm-blue-color-hover: #498fb3;
+
+		/* Notification Status */
+		--vcm-info-bg: #5488b0;
+		--vcm-info-border: #4e7891;
+		--vcm-warning-bg: #533012;
+		--vcm-warning-bg-txt: #df7212;
+		--vcm-warning-border: #845225;
+		--vcm-error-bg: #eab0b0;
+		--vcm-error-txt: #800;
+		--vcm-error-border: #ea6060;
+	}
+	body {
+		background: var(--vcm-body-bg-color) !important;
+		color: var(--vcm-body-text-color) !important;
+	}
+	.table th, .table td {
+		border-top: 0;
+		background: var(--vcm-config-bg-color);
+
+	}
+	/* Color action buttons */
+	.jtoolbar .page-title-action {
+		background: transparent;
+		color: var(--wp-btn-color);
+		border-color: var(--wp-btn-color);
+	}
+	.jtoolbar .page-title-action:hover {
+		background: transparent;
+		color: var(--wp-btn-color-hover);
+		border-color: var(--wp-btn-color-hover);
+	}
+	/* @WP stye */
+	/* Plugin name */
+	.wrap h1.wp-heading-inline {
+		color: var(--vcm-body-text-color)
+	}
+	/* Arrow active WP menu on the left */
+	ul#adminmenu a.wp-has-current-submenu::after, ul#adminmenu > li.current > a.current::after {
+		border-right-color: var(--vcm-body-bg-color);
+	}
+
+	.wp-core-ui select {
+		background: var(--vcm-input-style) url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23474c5b%22%2F%3E%3C%2Fsvg%3E') no-repeat right 5px top 55% !important;
+		color: inherit;
+		border-color: var(--vcm-config-border-color);
+	}
+	.wp-core-ui .button, .wp-core-ui .button-secondary {
+		background: var(--vcm-basic-btn) !important;
+		color: var(--vcm-config-title-color) !important;
+		border-color: var(--vcm-config-border-color);
+	}
+	.wp-core-ui .button-disabled, .wp-core-ui .button-secondary.disabled, .wp-core-ui .button-secondary:disabled, .wp-core-ui .button-secondary[disabled], .wp-core-ui .button.disabled, .wp-core-ui .button:disabled, .wp-core-ui .button[disabled] {
+		border: 1px solid var(--vcm-light-color-btn) !important;
+		background: var(--vcm-config-bg-color) !important;
+		border-color: var(--vcm-contrast-text-color);
+	}
+	.wp-core-ui .button-secondary:hover, .wp-core-ui .button.hover, .wp-core-ui .button:hover {
+		border-color: var(--wp-btn-color);
+		color: var(--wp-btn-color);
+	}
+	.wp-core-ui select.disabled, .wp-core-ui select:disabled {
+		background-color: var(--vcm-input-style-deactive);
+		color: var(--vcm-config-text-color-light);
+	}
+	.wp-core-ui select.disabled, .wp-core-ui select:disabled, input.disabled, input:disabled, select.disabled, select:disabled, textarea.disabled, textarea:disabled {
+		background: var(--vcm-config-bg-color);
+		border-color: var(--vcm-config-border-color);
+	}
+	/* @WP End */
+	.popover, .popover-title {
+		color: var(--vcm-body-text-color);
+	}
+	.popover.right .arrow::after {
+		border-right-color: var(--vcm-light-color-btn) !important;
+	}
+	input.readonly, input[readonly], textarea.readonly, textarea[readonly], input[type="color"], input[type="date"], input[type="datetime-local"], input[type="datetime"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], select, textarea {
+		background-color: var(--vcm-input-style) !important;
+		border-color: var(--vcm-config-border-color) !important;
+		color: inherit !important;
+	}
+	input[type="color"]:focus, input[type="date"]:focus, input[type="datetime-local"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, select:focus, textarea:focus {
+		background: var(--vcm-config-child-bg-color);
+	}
+	.comment-ays, .feature-filter, .imgedit-group, .popular-tags, .stuffbox, .widgets-holder-wrap, .wp-editor-container, p.popular-tags, table.widefat {
+		background: var(--vcm-config-bg-color);
+	}
+	.widefat tfoot tr td, .widefat tfoot tr th, .widefat thead tr td, .widefat thead tr th {
+		color: var(--vcm-config-text-color-light);
+	}
+	.widefat td, .widefat th {
+		color: inherit;
+	}
+	.vcm-btn-toolbar select, .vcm-admin-container .vcm-param-container:not(.vcm-param-container-tmp-disabled) .vcm-param-setting select {
+		background: var(--vcm-input-style) url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23474c5b%22%2F%3E%3C%2Fsvg%3E') no-repeat right 5px top 55% !important;
+		padding: 5px 30px 5px 10px;
+		appearance: none;
+	}
+	.vcm-param-container select[multiple] {
+		appearance: auto !important;
+		background-image: none !important;
+	}
+	.vcm-admin-container .vcm-param-container-tmp-disabled .vcm-param-setting select {
+		background: var(--vcm-input-style-deactive) url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23111%22%2F%3E%3C%2Fsvg%3E') no-repeat right 5px top 55% !important;
+		padding: 5px 30px 5px 10px;
+	}
+	.vcm-admin-container .vcm-param-nested.vcm-param-container-tmp-disabled .vcm-param-setting select {
+		background: var(--vcm-input-style-nested-deactive) url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23333%22%2F%3E%3C%2Fsvg%3E') no-repeat right 5px top 55% !important;
+		border-color: var(--vcm-input-style-deactive) !important;
+		padding: 5px 30px 5px 10px;
+	}
+	.vcm-admin-container .vcm-param-nested:not(.vcm-param-container-tmp-disabled) .vcm-param-setting select, .vcm-admin-container:not(.vcm-param-container-tmp-disabled) .vcm-param-setting .vcm-custom-chsettings-fields select {
+		background: var(--vcm-input-style) url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23474c5b%22%2F%3E%3C%2Fsvg%3E') no-repeat right 5px top 55% !important;
+		padding: 5px 30px 5px 10px;
+	}
+	.select2-container .select2-choice {
+		background: var(--vcm-input-style) !important;
+		border: 1px solid var(--vcm-config-border-color) !important;
+		color: var(--vcm-body-text-color) !important;
+	}
+	.select2-container .select2-choice .select2-arrow {
+		background-image: none !important;
+		background: #272c37 !important;
+		border-left: 1px solid #333 !important;
+	}
+	.notice, div.error, div.updated {
+		background: var(--vcm-config-bg-color);
+		border-top: 1px solid var(--vcm-light-color-btn);
+		border-right: 1px solid var(--vcm-light-color-btn);
+		border-bottom: 1px solid var(--vcm-light-color-btn);
+	}
+	body a {
+		color: var(--vcm-link-text-color);
+	}
+	body a:hover {
+		color: var(--vcm-base-color-hover);
+	}
+	body code, body pre {
+		background: var(--vcm-config-bg-color);
+		color: inherit;
+	}
+	/* Error Messages */
+	.warn {
+		border: 1px solid rgba(255, 144, 46, 0.5) !important;
+		background-color: rgba(249, 233, 169, 0.2) !important;	
+	}
+	.info {
+		border: 1px solid rgba(142, 227, 255, 0.6) !important;
+		background-color: rgba(223, 247, 255, 0.3) !important;
+	}
+	.err {
+		border: 1px solid rgba(228, 28, 39, 0.54) !important;
+		background-color: rgba(255, 216, 216, 0.2) !important;
+	}
+	.bluedays {
+		background: var(--vcm-light-color-btn) !important;
+	}
+	.bluedays.vcm-tablewday-wend {
+		background: var(--vcm-middle-color-btn) !important;
+	}
+	.block-picked-start, .block-picked-middle, .block-picked-end {
+		background-color: rgba(255, 196, 153, 0.5) !important;
+	}
+	.ui-widget-content a {
+		color: inherit;
+	}
+	.vcm-menunav-wrap ul.vcmuladminmenu {
+		background: #4886A7;
+	}
+	.vcm-menunav-wrap ul.vcmuladminmenu li:hover, .vcm-menunav-wrap ul.vcmuladminmenu li.highlight {
+		background: #347292;
+	}
+	.vcm-menunav-wrap ul.vcmuladminmenu ul {
+		background: rgb(19, 27, 42);
+	}
+	.vcm-menunav-wrap ul.vcmuladminmenu li ul li a {
+		color: var(--vcm-body-text-color) !important;
+	}
+	.vcm-dashboard-scorecard-score-summary-score-avgarea-val {
+		color: #3e7cad;
+	}
+	.vcm-promotions-container {
+		color: var(--vcm-body-text-color) !important;
+	}
+	.vcm-promo-row-name a, .vcm-promotions-container .flat-table-header, .vcm-mngpromo-typetitle h4, .vcm-mngpromo-targettitle h4 {
+		color: var(--vcm-config-title-color) !important;
+	}
+	.vcm-promo-row-col-details .vcm-promo-row-details-det::after {
+		background: var(--vcm-config-title-color) !important;
+	}
+	.vcm-mngpromo-typebox .vcm-mngpromo-typedescr {
+		background: var(--vcm-basic-btn);
+	}
+	td.vcm-detailsmod:after {
+		color: var(--vcm-config-titles-color-light);
+	}
+	.vcm-customa-changes span#vcm-totchanges {
+		background: var(--vcm-config-bg-color);
+	}
+	.vcmactivechannelscont > div {
+		background-color: rgba(255,255,255, .2);
+	}
+	.popover {
+		background: var(--vcm-light-color-btn) !important;
+	}
+	.popover.right > .bs-arrow::after {
+		border-right-color: var(--vcm-light-color-btn) !important;
+	}
+	.popover-title {
+		background-color: var(--vcm-config-child-bg-color) !important;
+		border-bottom: 1px solid var(--vcm-config-child-bg-color) !important;
+	}
+
+	/* Main Menu */
+	.vcm-submenu-wrap li .vcm-submenu-item-helper-avatar img {
+		border: 1px solid var(--vcm-body-bg-color);
+	}
+
+	/* AI channel */
+	.aitools-messages-action-wrapper .aitools-uploaded-files .file-attachment {
+		background: var(--vcm-grey-blue-bg) !important;
+		border-color: var(--vcm-config-bg-dark) !important;
+	}
+
+	/* @Joomla */
+	body.admin #status {
+		background: var(--vcm-config-bg-color);
+		color: var(--vcm-config-title-color);
+		border-color: var(--vcm-config-border-color);
+	}
+	body .btn {
+		background: var(--vcm-basic-btn);
+		border: 1px solid var(--vcm-config-border-color);
+		color: var(--vcm-body-text-color);
+	}
+	body.admin #content .btn:hover, body.admin #content .btn:focus {
+		background: var(--vcm-basic-btn-hover);
+		border: 1px solid var(--vcm-config-bg-color);
+		color: var(--vcm-body-text-color);
+	}
+	body.admin .pagination ul > li > a, .pagination ul > li > span {
+		background: var(--vcm-basic-btn) !important;
+		color: var(--vcm-config-title-color) !important;
+		border-color: var(--vcm-config-border-color);
+	}
+	body.admin .pagination ul > li.disabled > a, body.admin .pagination ul > li.disabled > span {
+		border: 1px solid var(--vcm-light-color-btn) !important;
+		background: var(--vcm-config-bg-color) !important;
+		border-color: var(--vcm-contrast-text-color);
+	}
+	body.admin .pagination ul > li.active > span, body.admin .pagination ul > li > a:hover, .pagination ul > li > span:hover {
+		border-color: var(--vcm-config-border-color);
+		background: var(--vcm-config-border-color) !important;
+	}
+	body.admin .calendar-container {
+		background: var(--vcm-config-bg-color) !important;
+	}
+	body.admin .calendar-container table tbody td.day.wn {
+		background: var(--vcm-config-bg-color);
+	}
+	body.admin .calendar-container table tbody td.disabled {
+		background: var(--vcm-input-style-deactive);
+	}
+	body.admin .input-append .add-on, .input-prepend .add-on {
+		background: var(--vcm-basic-btn);
+		border-color: var(--vcm-config-border-color);
+	}
+	body.admin .subhead {
+		background: var(--vcm-config-bg-color);
+		border-color: var(--vcm-config-border-color);
+		color: inherit;
+	}
+	body.admin #toolbar div:not(#toolbar-new, #toolbar-apply) [class^="icon-"], body.admin #toolbar div:not(#toolbar-new, #toolbar-apply) [class*=" icon-"] {
+		background: var(--vcm-basic-btn);
+		border-right: 1px solid var(--vcm-config-bg-color);
+	}
+	body.admin #toolbar div:not(#toolbar-new, #toolbar-apply) .btn:hover, body.admin #toolbar div:not(#toolbar-new, #toolbar-apply) .btn:focus {
+		background: var(--vcm-basic-btn-hover);
+		border: 1px solid var(--vcm-config-bg-color);
+	}
+	body.admin #toolbar .btn-success {
+		background: var(--vcm-green-color);
+	}
+	.table-responsive > .table > thead > tr > th, .table-responsive > .table > tbody > tr > th, .table-responsive > .table > tfoot > tr > th, .table-responsive > .table > thead > tr > td, .table-responsive > .table > tbody > tr > td, .table-responsive > .table > tfoot > tr > td {
+		color: var(--vcm-body-text-color);
+	}
+	body.admin .modal-header {
+		background: var(--vcm-body-bg-color);
+		border-bottom: 1px solid var(--vcm-config-bg-color) !important;
+	}
+	body.admin .modal-header .close {
+		color: #fff;
+	}
+	body.admin .label, .badge {
+		background: var(--vcm-config-bg-color) !important;
+	}
+	body.admin .label.label-info, .label.label-info, .badge.badge-info {
+		background: var(--vcm-info-bg) !important;
+		color: #fff;
+	}
+	body.admin .label-info:hover, .label-info:hover, .badge-info:hover {
+		color: #fff;
+	}
+	body.admin a.label-info:hover, a.label-info:hover, a.badge-info:hover {
+		background: var(--vcm-blue-color) !important;
+	}
+	body.admin .label-success, .label-success, .badge-success {
+		background-color: var(--vcm-success-bg) !important;
+	}
+	body.admin .label-danger, .label-danger, .badge-danger, body.admin .label-error, .label-error, .badge-error {
+		background-color: var(--vcm-error-bg) !important;
+	}
+	body.admin .label-warning, .label-warning, .badge-warning {
+		background-color: var(--vcm-warning-bg) !important;
+	}
+
+	/* Joomla4 */
+	body.admin.layout-default #jmodal-vcm-notification-details button.btn-close {
+		position: relative;
+		background: var(--vcm-config-bg-color);
+	}
+	body.admin.layout-default #jmodal-vcm-notification-details button.btn-close:after {
+		font-family: "Font Awesome 5 Free", FontAwesomes !important;
+		content: "\f00d";
+		font-weight: 900;
+		color: #fff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	body.admin.layout-default label {
+		color: var(--vcm-body-text-color);
+	}
+	body.admin.layout-default .h1, body.admin.layout-default .h2, body.admin.layout-default .h3, body.admin.layout-default .h4, body.admin.layout-default .h5, body.admin.layout-default .h6, body.admin.layout-default h1, body.admin.layout-default h2, body.admin.layout-default h3, body.admin.layout-default h4, body.admin.layout-default h5, body.admin.layout-default h6 {
+		color: var(--vcm-config-title-color);
+	}
+	body.admin.layout-default joomla-field-media .field-media-preview {
+		background: var(--vcm-input-style);
+	}
+	body.admin.layout-default .popover-header {
+		background-color: var(--vcm-config-child-bg-color) !important;
+		border-bottom: 1px solid var(--vcm-config-child-bg-color) !important;
+	}
+	body.admin.layout-default .bs-popover-auto[data-popper-placement^="top"] > .popover-arrow::after, body.admin.layout-default .bs-popover-top > .popover-arrow::after {
+		border-top-color: var(--vcm-light-color-btn) !important;
+	}
+	body.admin.layout-default .subhead #toolbar joomla-toolbar-button .btn {
+		background: var(--vcm-input-style);
+		color: inherit;
+		border-color: var(--vcm-config-border-color);
+	}
+	.btn.vcm-diagnostic-btn {
+		background-color: var(--vcm-base-color);
+	}
+	.btn.vcm-diagnostic-btn:hover {
+		background-color: var(--vcm-base-color-hover);
+	}
+
+	/* Airbnb Quality Dashboard */
+	.vcm-hosting-quality-tot-listings i {
+		color: var(--vcm-basic-btn);
+	}
+
+	/* Dashboard */
+	.vcmactivechannelscont > .vcmchlogovrbo.unactive-channel {
+		filter: grayscale(100%) brightness(2);
+		opacity: 0.4;
+	}
+}

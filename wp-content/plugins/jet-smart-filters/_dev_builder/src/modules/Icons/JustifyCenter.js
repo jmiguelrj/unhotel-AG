@@ -1,0 +1,5 @@
+const JustifyCenterIcon = (props) => (
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" {...props}><path d="M12.5 15v5H11v-5H4V9h7V4h1.5v5h7v6h-7Z"></path></svg>
+);
+
+export default JustifyCenterIcon;

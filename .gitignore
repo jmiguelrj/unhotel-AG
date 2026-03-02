@@ -1,0 +1,6 @@
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+unhotel-live-db.sql
+extracted-backup/
+wp-content/plugins/vikbooking/site/resources/uploads

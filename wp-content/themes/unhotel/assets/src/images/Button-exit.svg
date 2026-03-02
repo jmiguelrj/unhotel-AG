@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 33 33">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fa4676;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #fa4676;
+        stroke-width: 0.9px;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_54" data-name="Rectangle 54" class="cls-1" width="33" height="33"/>
+    </clipPath>
+  </defs>
+  <g id="Group_92" data-name="Group 92" class="cls-2">
+    <path id="Path_181" data-name="Path 181" class="cls-3" d="M5.13,5.13a16.235,16.235,0,1,0,22.96,0A16.236,16.236,0,0,0,5.13,5.13Z" transform="translate(-0.111 -0.11)"/>
+    <line id="Line_25" data-name="Line 25" class="cls-3" x2="11.546" y2="11.546" transform="translate(10.727 10.727)"/>
+    <line id="Line_26" data-name="Line 26" class="cls-3" x2="11.546" y2="11.546" transform="translate(10.727 10.727)"/>
+    <line id="Line_27" data-name="Line 27" class="cls-3" y1="11.546" x2="11.546" transform="translate(10.727 10.727)"/>
+  </g>
+</svg>

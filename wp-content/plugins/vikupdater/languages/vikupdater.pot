@@ -1,0 +1,179 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: VikUpdater\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-20 18:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.1\n"
+"X-Domain: vikupdater"
+
+#: libraries/MVC/Views/LicensesView.php:82
+msgid ""
+"<b>License code</b> — The license code required by the server to properly "
+"distribute the update to the requestor."
+msgstr ""
+
+#: libraries/MVC/Views/LicensesView.php:81
+msgid ""
+"<b>Product</b> — The product for which the license should be registered. "
+"Under this list you can find all the products that support the update "
+"channel provided by VikUpdater."
+msgstr ""
+
+#: libraries/MVC/Views/LicensesView.php:71
+msgid "<b>— For developers only</b>"
+msgstr ""
+
+#: libraries/MVC/Views/LicensesView.php:84
+msgid ""
+"Bear in mind that adding a new license code does not perform any validation "
+"check. You&#8217;ll figure out whether the entered license is valid only "
+"during the next update of the chosen product."
+msgstr ""
+
+#: libraries/MVC/Controller.php:115
+msgid "Cannot access a protected method of the controller."
+msgstr ""
+
+#: tmpl/licenses/edit.php:38
+msgid "Choose the product for which you want to register a license key."
+msgstr ""
+
+#: libraries/MVC/Views/LicensesView.php:70
+msgid ""
+"Commercial plugins might accept update requests only for valid licenses. In "
+"case one of your plugin is rejecting the download of the update, you might "
+"have to specify your license here."
+msgstr ""
+
+#: libraries/MVC/Views/LicensesView.php:72
+msgid ""
+"During the update of a product, in case the latter owns a license, this will "
+"be appended to the update URL as <code>&license={license}</code>."
+msgstr ""
+
+#. Author of the plugin
+msgid "E4J s.r.l."
+msgstr ""
+
+#: tmpl/licenses/edit.php:47
+msgid "Enter here the license key received after the purchase."
+msgstr ""
+
+#: libraries/MVC/Controller.php:114 libraries/MVC/Controller.php:163
+msgid "Fatal error"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://vikwp.com"
+msgstr ""
+
+#: libraries/MVC/Views/LicensesView.php:90
+msgid "https://vikwp.com/support/knowledge-base/vikupdater"
+msgstr ""
+
+#: tmpl/licenses/list.php:67
+msgid "Key"
+msgstr ""
+
+#: tmpl/licenses/edit.php:43
+msgid "License code"
+msgstr ""
+
+#: libraries/MVC/Controllers/LicensesController.php:121
+msgid "License deleted successfully."
+msgid_plural "Licenses deleted successfully."
+msgstr[0] ""
+msgstr[1] ""
+
+#: libraries/MVC/Controllers/LicensesController.php:78
+msgid "License registered successfully."
+msgstr ""
+
+#: tmpl/licenses/default.php:20
+msgid "Licenses"
+msgstr ""
+
+#: tmpl/licenses/list.php:91
+#, php-format
+msgctxt ""
+"Means the selection of a record from the table. The wildcard will be "
+"replaced by a product name"
+msgid "Select %s"
+msgstr ""
+
+#. page title
+#: libraries/WordPress/System/Builder.php:32
+msgctxt "Menu title"
+msgid "VikUpdater"
+msgstr ""
+
+#: tmpl/licenses/list.php:79
+msgid "No registered licenses."
+msgstr ""
+
+#: libraries/WordPress/System/Builder.php:31
+msgctxt "Page title"
+msgid "VikUpdater"
+msgstr ""
+
+#. Description of the plugin
+#: libraries/WordPress/API/UpdatesObserver.php:98
+msgid ""
+"Plugin used to update commercial plugins that are not part of the official "
+"wordpress.org repository."
+msgstr ""
+
+#: tmpl/licenses/edit.php:23 tmpl/licenses/list.php:63
+msgid "Product"
+msgstr ""
+
+#: tmpl/licenses/edit.php:18 tmpl/licenses/edit.php:51
+msgid "Register a new license"
+msgstr ""
+
+#: libraries/WordPress/API/Resources/PluginAPI.php:445
+#, php-format
+msgid "Release date - %s"
+msgstr ""
+
+#: tmpl/licenses/edit.php:26
+msgid "Select an option"
+msgstr ""
+
+#: libraries/WordPress/API/UpdateAware.php:73
+msgid ""
+"The API configuration must receive at least one information among <code>"
+"url</code> and <code>sku</code>."
+msgstr ""
+
+#: libraries/MVC/Controllers/LicensesController.php:37
+#: libraries/MVC/Controllers/LicensesController.php:99
+msgid ""
+"The most recent request was denied because it had an invalid security token. "
+"Please refresh the page and try again."
+msgstr ""
+
+#: libraries/MVC/View.php:141
+msgid "View not found!"
+msgstr ""
+
+#. Name of the plugin
+msgid "VikUpdater"
+msgstr ""
+
+#: libraries/MVC/Views/LicensesView.php:79
+msgid ""
+"When registering a new license on this screen, you&#8217;ll fill in the "
+"following fields."
+msgstr ""

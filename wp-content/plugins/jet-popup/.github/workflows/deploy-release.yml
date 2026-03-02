@@ -1,0 +1,49 @@
+name: Deploy release archives to account and API
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out the repo
+      uses: actions/checkout@v4.1.1
+
+    - name: Create dir to put created release ZIP here
+      run: |
+        mkdir dist
+
+    - name: Create release ZIP respecting .gitattributes
+      run: |
+        git archive --prefix=${{ github.event.repository.name }}/ -o dist/${{ github.event.repository.name }}.zip HEAD
+
+    - name: Deploy release to Account
+      env:
+        RSYNC_PASSWORD: ${{ secrets.RS_ACC_PWD }}
+      run: rsync -avz --progress dist/${{ github.event.repository.name }}.zip ${{ secrets.RS_ACC_PATH }}/${{ github.event.repository.name }}.zip
+
+    - name: Deploy release to API
+      env:
+        RSYNC_PASSWORD: ${{ secrets.RS_API_PWD }}
+      run: rsync -avz --progress dist/${{ github.event.repository.name }}.zip ${{ secrets.RS_API_PATH }}/${{ github.event.repository.name }}/${{ github.event.repository.name }}-${{ github.event.release.name }}.zip
+
+    - name: Encode Release Description for JSON
+      run: |
+        JSON_SAFE_DESCRIPTION=$(echo "${{ github.event.release.body }}" | jq -Rs .)
+        echo "JSON_SAFE_DESCRIPTION=$JSON_SAFE_DESCRIPTION" >> $GITHUB_ENV
+
+    - name: Update changelog on crocoblock.com
+      run: |
+        curl -X POST "https://crocoblock.com/wp-json/changelog/v1/edit/${{ secrets.CHANGELOG_ID }}" \
+             -u "${{ secrets.CHANGELOG_KEY }}" \
+             -H "Content-Type: application/json" \
+             -d "{\"version\": \"${{ github.event.release.name }}\", \"changelog\": $JSON_SAFE_DESCRIPTION}"
+
+    - name: Update version at account.crocoblock.com
+      run: |
+        curl -X POST "${{ secrets.UPDATE_VERSION_URL }}" \
+             -H "Content-Type: application/json" \
+             -d "{\"slug\": \"${{ github.event.repository.name }}\", \"version\": \"${{ github.event.release.name }}\"}"
+    

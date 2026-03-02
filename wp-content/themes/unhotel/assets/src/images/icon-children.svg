@@ -1,0 +1,35 @@
+<svg id="Group_84" data-name="Group 84" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="33.936" viewBox="0 0 42 33.936">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+        stroke-width: 0.75px;
+      }
+
+      .cls-1 {
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        stroke: #fa4676;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_51" data-name="Rectangle 51" class="cls-1" width="42" height="33.936"/>
+    </clipPath>
+  </defs>
+  <g id="Group_83" data-name="Group 83" class="cls-2">
+    <circle id="Ellipse_12" data-name="Ellipse 12" class="cls-3" cx="5.471" cy="5.471" r="5.471" transform="translate(15.529 10.604)"/>
+    <path id="Path_178" data-name="Path 178" class="cls-3" d="M31.742,33.266v4.158H13.986V33.266c0-3.021,3.976-5.471,8.877-5.471S31.742,30.245,31.742,33.266Z" transform="translate(-1.864 -3.704)"/>
+    <circle id="Ellipse_13" data-name="Ellipse 13" class="cls-3" cx="5.471" cy="5.471" r="5.471" transform="translate(3.623 0.216)"/>
+    <path id="Path_179" data-name="Path 179" class="cls-3" d="M15.563,25.44H.25V21.282c0-3.021,3.975-5.471,8.877-5.471a13.067,13.067,0,0,1,4.885.9" transform="translate(-0.033 -2.107)"/>
+    <circle id="Ellipse_14" data-name="Ellipse 14" class="cls-3" cx="5.471" cy="5.471" r="5.471" transform="translate(27.435 0.216)"/>
+    <path id="Path_180" data-name="Path 180" class="cls-3" d="M30.541,25.44H45.854V21.282c0-3.021-3.975-5.471-8.877-5.471a13.067,13.067,0,0,0-4.885.9" transform="translate(-4.07 -2.107)"/>
+  </g>
+</svg>

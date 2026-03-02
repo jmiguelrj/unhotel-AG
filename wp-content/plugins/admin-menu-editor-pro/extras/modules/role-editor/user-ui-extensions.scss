@@ -1,0 +1,121 @@
+@use "../../../css/wp-admin-colors";
+
+#ame-rex-other-roles-row .choices {
+	$itemBorderColor: wp-admin-colors.wpColor(gray-50); //Note: Secondary buttons usually use blue-50.
+	$itemTextColor: wp-admin-colors.wpColor(gray-80);
+	$removeIconColor: wp-admin-colors.wpColor(gray-60);
+	$itemBorderRadius: 4px;
+
+	$containerVerticalSpacing: 4px;
+	$fontSize: 14px;
+
+	margin-bottom: 0;
+
+	.choices__inner {
+		box-sizing: border-box;
+		background: #fff;
+		border-radius: 4px;
+		border: 1px solid wp-admin-colors.wpColor(gray-30);
+
+		padding: $containerVerticalSpacing 8px 0;
+		min-height: 20px;
+		font-size: inherit;
+	}
+
+	&.is-focused .choices__inner {
+		border-color: wp-admin-colors.wpColor(blue-50);
+		box-shadow: 0 0 0 1px wp-admin-colors.wpColor(blue-50);
+	}
+
+	//Internal textbox for searching/deleting. Should blend in and not have visible borders.
+	.choices__input {
+		border: none;
+		border-radius: 0;
+		padding: 0;
+		background-color: transparent;
+		color: wp-admin-colors.wpColor(gray-80);
+
+		margin-top: 0;
+		margin-bottom: $containerVerticalSpacing;
+		//This still doesn't align perfectly since WP gives inputs a min-height (30px in 6.9) and
+		//the items are smaller, but it's close enough in Firefox. I don't want to reduce the min-height
+		//in case it causes clipping of the text or the cursor in some cases.
+
+		&:focus {
+			box-shadow: none;
+		}
+	}
+
+	//Individual selected items.
+	.choices__list--multiple .choices__item {
+		display: inline-flex;
+		align-items: stretch;
+
+		border-color: $itemBorderColor;
+		color: $itemTextColor;
+		background-color: wp-admin-colors.wpColor(gray-0);
+		border-radius: $itemBorderRadius;
+
+		font-size: $fontSize;
+		line-height: 25px;
+		font-weight: normal;
+
+		padding: 0 0 0 10px;
+		margin: 0 4px $containerVerticalSpacing 0;
+	}
+
+	.choices__button {
+		align-self: stretch;
+		padding: 0 1px;
+		margin: 0 0 0 8px;
+		width: auto;
+		//Remove the default text indent that usually hides the button text.
+		text-indent: 0;
+
+		color: $itemTextColor;
+		border-left: 1px solid $itemBorderColor;
+		border-bottom-right-radius: $itemBorderRadius;
+		border-top-right-radius: $itemBorderRadius;
+
+		&:before {
+			font-family: "dashicons", sans-serif;
+			font-size: 16px;
+			line-height: $fontSize;
+			font-weight: normal;
+
+			content: "\f335"; //Thin "x" Dashicon. Bolder version: \f158
+			color: $removeIconColor;
+			vertical-align: middle;
+		}
+
+		&:hover {
+			background-color: wp-admin-colors.wpColor(white);
+		}
+	}
+}
+
+.ame-rex-tooltip-trigger {
+	display: inline-block;
+	vertical-align: middle; //Align with the label that's next to it.
+	line-height: 1;
+	flex-grow: 0;
+
+	.dashicons {
+		color: wp-admin-colors.wpColor(gray-50);
+		font-size: 18px;
+		line-height: 1;
+		width: auto;
+		height: auto;
+	}
+}
+
+#ame-rex-other-roles-field-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 8px;
+
+	.choices {
+		flex-grow: 1;
+	}
+}

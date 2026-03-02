@@ -1,0 +1,709 @@
+<?php
+/**
+ * @package     VikBooking
+ * @subpackage  com_vikbooking
+ * @author      Alessio Gaggii - e4j - Extensionsforjoomla.com
+ * @copyright   Copyright (C) 2018 e4j - Extensionsforjoomla.com. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE
+ * @link        https://vikwp.com
+ */
+
+defined('ABSPATH') or die('No script kiddies please!');
+
+/**
+ * Helper class originally introcued to get the hotel availability and rates.
+ */
+class TACVBO
+{
+	/**
+	 * @var  bool  whether to return an array.
+	 */
+	public static $getArray = false;
+
+	/**
+	 * @var  	bool 	flag to ignore booking restrictions.
+	 * 
+	 * @since 	1.15.0 (J) - 1.5.0 (WP)
+	 */
+	public static $ignoreRestrictions = false;
+
+	/**
+	 * @var  	bool 	flag to ignore rooms availability.
+	 * 
+	 * @since 	1.16.10 (J) - 1.6.10 (WP)
+	 */
+	public static $ignoreAvailability = false;
+
+	/**
+	 * @var  	int 	optional max rooms limit.
+	 * 
+	 * @since 	1.16.10 (J) - 1.6.10 (WP)
+	 */
+	public static $maxRoomsLimit = 0;
+
+	/**
+	 * @var  	array 	optional list of room ids involved.
+	 * 
+	 * @since 	1.16.10 (J) - 1.6.10 (WP)
+	 */
+	public static $forcedRoomIds = [];
+
+	/**
+	 * Error code identifier:
+	 * 
+	 * 1 = missing/invalid request options.
+	 * 2 = invalid authentication.
+	 * 3 = no rooms found for the given party.
+	 * 4 = not compliant with booking restrictions.
+	 * 5 = not compliant with global closing dates.
+	 * 6 = no rates defined for the given length of stay.
+	 * 7 = no availability for the dates requested (error code 8 might have occurred as well).
+	 * 8 = no rooms available due to restrictions at room or rate plan level.
+	 * 
+	 * @var  	int 	the error code identifier.
+	 * 
+	 * @since 	1.15.0 (J) - 1.5.0 (WP)
+	 */
+	protected static $errorCode = 0;
+
+	/**
+	 * Given the request or injected arguments, calulcates the availability and rates.
+	 * 
+	 * @param 	array 	$options 	forced options injected rather than request variables.
+	 * 
+	 * @return 	mixed 				array with values or error description if getArray=true, or void.
+	 * 
+	 * @since 	1.15.0 (J) - 1.5.0 (WP) added $options argument.
+	 */
+	public static function tac_av_l(array $options = [])
+	{
+		$dbo = JFactory::getDbo();
+		$vbo_tn = VikBooking::getTranslator();
+
+		$response = 'e4j.error';
+		$args = $options;
+
+		/**
+		 * All the calls to VikRequest's methods should not use 'request' as 3rd argument, 
+		 * but rather 'default' to get the right $input object in the VikRequest Class.
+		 * This will resolve issues after the setVar() method was called by other functions. 
+		 * POST and GET requests will still provide non-empty values by using 'default'.
+		 * 
+		 * @since 	1.10
+		 */
+		$args['hash'] 		= empty($args['hash']) ? VikRequest::getString('e4jauth', '', 'default') : $args['hash'];
+		$args['start_date'] = empty($args['start_date']) ? VikRequest::getString('start_date', '', 'default') : $args['start_date'];
+		$args['end_date'] 	= empty($args['end_date']) ? VikRequest::getString('end_date', '', 'default') : $args['end_date'];
+		$args['nights'] 	= empty($args['nights']) ? VikRequest::getInt('nights', 1, 'default') : $args['nights'];
+		$args['num_rooms'] 	= empty($args['num_rooms']) ? VikRequest::getInt('num_rooms', 1, 'default') : $args['num_rooms'];
+
+		$args['start_ts'] 	= strtotime($args['start_date']);
+		$args['end_ts'] 	= strtotime($args['end_date']);
+
+		$valid = true;
+		$mandatory_keys = array(
+			'start_date',
+			'end_date',
+			'nights',
+			'num_rooms',
+		);
+		foreach ($mandatory_keys as $man_key) {
+			$valid = $valid && isset($args[$man_key]) && !empty($args[$man_key]);
+		}
+
+		// request type
+		$req_type = VikRequest::getString('req_type', '', 'default');
+		$req_type = empty($req_type) && !empty($args['req_type']) ? $args['req_type'] : $req_type;
+
+		// API version
+		$tac_apiv = 4;
+		// API v4
+		$args['num_adults'] = empty($args['num_adults']) ? VikRequest::getInt('num_adults', 1, 'request') : $args['num_adults'];
+		// API v5
+		$args['adults'] = empty($args['adults']) ? VikRequest::getVar('adults', []) : $args['adults'];
+		$args['children'] = empty($args['children']) ? VikRequest::getVar('children', []) : $args['children'];
+		$args['children_age'] = empty($args['children_age']) ? VikRequest::getVar('children_age', []) : $args['children_age'];
+		if (!empty($args['adults']) && !empty($args['children'])) {
+			$tac_apiv = 5;
+		}
+
+		if ($tac_apiv == 4) {
+			$valid = !empty($args['num_adults']) ? $valid : false;
+		} elseif ($tac_apiv == 5) {
+			$valid = !empty($args['adults']) ? $valid : false;
+		}
+
+		/**
+		 * The back-end page Calendar can allow the admin to force bookings in case of
+		 * no-availability. Its AJAX requests will contain "only_rates=1" and we compose
+		 * an extra array-key with all the fully-booked rooms for the requested dates.
+		 * 
+		 * @since 	1.14 (J) - 1.4.0 (WP)
+		 */
+		$only_rates = VikRequest::getInt('only_rates', 0, 'request');
+		$only_rates = empty($only_rates) && !empty($args['only_rates']) ? $args['only_rates'] : $only_rates;
+		$fullybooked = [];
+
+		if (!$valid) {
+			// set error code
+			self::$errorCode = 1;
+
+			if (self::$getArray) {
+				return $response;
+			}
+			echo $response;
+			exit;
+		}
+
+		$checkauth = md5('vbo.e4j.vbo');
+		if ($checkauth != $args['hash'] && !$options) {
+			// set error code
+			self::$errorCode = 2;
+
+			$response = 'e4j.error.auth';
+			if (self::$getArray) {
+				return $response;
+			}
+			echo $response;
+			exit;
+		}
+
+		if ($tac_apiv == 5) {
+			// compose adults-children array and sql clause
+			$arradultsrooms = [];
+			$arradultsclause = [];
+			$arrpeople = [];
+			if ($args['adults']) {
+				foreach ($args['adults'] as $kad => $adu) {
+					$roomnumb = $kad + 1;
+					if (strlen($adu)) {
+						$numadults = intval($adu);
+						if ($numadults >= 0) {
+							$arradultsrooms[$roomnumb] = $numadults;
+							$arrpeople[$roomnumb]['adults'] = $numadults;
+							$strclause = "(`fromadult`<=".$numadults." AND `toadult`>=".$numadults."";
+							if (!empty($args['children'][$kad]) && intval($args['children'][$kad]) > 0) {
+								$numchildren = intval($args['children'][$kad]);
+								$arrpeople[$roomnumb]['children'] = $numchildren;
+								$arrpeople[$roomnumb]['children_age'] = isset($args['children_age'][$roomnumb]) && $args['children_age'][$roomnumb] ? $args['children_age'][$roomnumb] : [];
+								$strclause .= " AND `fromchild`<=".$numchildren." AND `tochild`>=".$numchildren."";
+							} else {
+								$arrpeople[$roomnumb]['children'] = 0;
+								$arrpeople[$roomnumb]['children_age'] = [];
+								if (intval($args['children'][$kad]) == 0) {
+									$strclause .= " AND `fromchild` = 0";
+								}
+							}
+							$strclause .= " AND `totpeople` >= ".($arrpeople[$roomnumb]['adults'] + $arrpeople[$roomnumb]['children']);
+							$strclause .= " AND `mintotpeople` <= ".($arrpeople[$roomnumb]['adults'] + $arrpeople[$roomnumb]['children']);
+							$strclause .= ")";
+							$arradultsclause[] = $strclause;
+						}
+					}
+				}
+			}
+			// set $args['adults'] to the number of adults occupying the first room but it could be a party of multiple rooms
+			$args['num_adults'] = $arrpeople[1]['adults'];
+			// this clause would return one room type for each party type: implode(" OR ", $arradultsclause) - the AND clause must be used rather than OR.
+			$q = "SELECT `id`, `units` FROM `#__vikbooking_rooms` WHERE `avail`=1 AND (" . implode(" AND ", $arradultsclause) . ")" . (self::$forcedRoomIds ? ' AND `id` IN (' . implode(', ', array_map('intval', self::$forcedRoomIds)) . ')' : '');
+		} else {
+			// API v4
+			$arrpeople = [];
+			$arrpeople[1]['adults'] = $args['num_adults'];
+			$arrpeople[1]['children'] = 0;
+			$q = "SELECT `id`, `units` FROM `#__vikbooking_rooms` WHERE `avail`=1 AND `toadult` >= " . $args['num_adults'] . (self::$forcedRoomIds ? ' AND `id` IN (' . implode(', ', array_map('intval', self::$forcedRoomIds)) . ')' : '');
+		}
+
+		$dbo->setQuery($q, 0, self::$maxRoomsLimit);
+		$avail_rooms = $dbo->loadAssocList();
+
+		if (!$avail_rooms) {
+			// set error code
+			self::$errorCode = 3;
+
+			// build error data
+			$errorData = ['e4j.error' => 'No valid rooms were found for the requested number of guests'];
+
+			if (self::$getArray) {
+				return $errorData;
+			}
+
+			// send JSON (erroneous) response to output
+			VBOHttpDocument::getInstance()->json($errorData);
+		}
+
+		// arr[0] = (sec) checkin, arr[1] = (sec) checkout
+		$check_in_out = VikBooking::getTimeOpenStore();
+		if (is_array($check_in_out)) {
+			$args['start_ts'] += $check_in_out[0];
+			$args['end_ts'] += $check_in_out[1];
+		}
+
+		$room_ids = [];
+		for ($i = 0; $i < count($avail_rooms); $i++) {
+			$room_ids[$i] = $avail_rooms[$i]['id'];
+		}
+
+		$all_restrictions = VikBooking::loadRestrictions(true, $room_ids);
+		$glob_restrictions = VikBooking::globalRestrictions($all_restrictions);
+
+		// validate restrictions error message
+		$x_restr = $glob_restrictions ? VikBooking::validateRoomRestriction($glob_restrictions, getdate($args['start_ts']), getdate($args['end_ts']), $args['nights']) : '';
+
+		if (!self::$ignoreRestrictions && strlen($x_restr)) {
+			// set error code
+			self::$errorCode = 4;
+
+			// build error data
+			$errorData = ['e4j.error' => 'Unable to proceed because of booking Restrictions in these dates (' . $x_restr . ')'];
+
+			if (self::$getArray) {
+				return $errorData;
+			}
+
+			// send JSON (erroneous) response to output
+			VBOHttpDocument::getInstance()->json($errorData);
+		}
+
+		$nowdf = VikBooking::getDateFormat();
+		if ($nowdf == "%d/%m/%Y") {
+			$df = 'd/m/Y';
+		} elseif ($nowdf == "%m/%d/%Y") {
+			$df = 'm/d/Y';
+		} else {
+			$df = 'Y/m/d';
+		}
+		// closing dates
+		$err_closingdates = VikBooking::validateClosingDates($args['start_ts'], $args['end_ts'], $df);
+		if (!self::$ignoreRestrictions && !empty($err_closingdates)) {
+			// set error code
+			self::$errorCode = 5;
+
+			// build error data
+			$errorData = ['e4j.error' => JText::sprintf('VBERRDATESCLOSED', $err_closingdates)];
+
+			if (self::$getArray) {
+				return $errorData;
+			}
+
+			// send JSON (erroneous) response to output
+			VBOHttpDocument::getInstance()->json($errorData);
+		}
+
+		// hours to arrival may affect rate plan restrictions
+		$hoursdiff = VikBooking::countHoursToArrival($args['start_ts']);
+
+		// get rates
+		$room_ids = [];
+		foreach ($avail_rooms as $k => $room) {
+			$room_ids[$room['id']] = $room;
+		}
+		$rates = [];
+		$q = "SELECT `p`.*, `r`.`id` AS `r_reference_id`, `r`.`name` AS `r_short_desc`, `r`.`img`, `r`.`units`, `r`.`moreimgs`, `r`.`imgcaptions`, `prices`.`id` AS `price_reference_id`, `prices`.`name` AS `pricename`, `prices`.`breakfast_included`, `prices`.`free_cancellation`, `prices`.`canc_deadline`, `prices`.`minlos`, `prices`.`minhadv` FROM `#__vikbooking_dispcost` AS `p`, `#__vikbooking_rooms` AS `r`, `#__vikbooking_prices` AS `prices` WHERE `r`.`id`=`p`.`idroom` AND `p`.`idprice`=`prices`.`id` AND `p`.`days`=".$args['nights']." AND `r`.`id` IN (".implode(',', array_keys($room_ids)).") ORDER BY `p`.`cost` ASC;";
+		$dbo->setQuery($q);
+		$rates = $dbo->loadAssocList();
+		if (!$rates) {
+			// set error code
+			self::$errorCode = 6;
+
+			// build error data
+			$errorData = ['e4j.error' => 'The Query for fetching the rates returned an empty result'];
+
+			if (self::$getArray) {
+				return $errorData;
+			}
+
+			// send JSON (erroneous) response to output
+			VBOHttpDocument::getInstance()->json($errorData);
+		}
+		$vbo_tn->translateContents($rates, '#__vikbooking_rooms', array('id' => 'r_reference_id', 'r_short_desc' => 'name'));
+		$vbo_tn->translateContents($rates, '#__vikbooking_prices', array('id' => 'price_reference_id', 'pricename' => 'name'));
+		
+		// build list of eligible room rates
+		$arr_rates = [];
+
+		/**
+		 * If all results are excluded because of restrictions at rate plan level, we turn on this flag
+		 * to know that the rate plans have a Min LOS or a Min Hours in Advance (Advance Booking Offset).
+		 */
+		$err_rplan_restr = false;
+
+		// extract all the involved room IDs with base rates defined before restrictions validation
+		$involved_listing_ids = array_values(array_unique(array_column($rates, 'idroom')));
+
+		// scan and assign the eligible room rates
+		foreach ($rates as $rate) {
+			// rate plans with a minlos, or with a min hours in advance
+			if ((!empty($rate['minlos']) && $rate['minlos'] > $args['nights']) || $hoursdiff < $rate['minhadv']) {
+				// this flag will tell us that some results were excluded due to restrictions at rate plan level
+				$err_rplan_restr = true;
+				continue;
+			} else {
+				// we don't want the properties 'minlos' and 'minhadv' in the response.
+				unset($rate['minlos']);
+				unset($rate['minhadv']);
+			}
+			// push eligible room rate
+			if (!isset($arr_rates[$rate['idroom']])) {
+				$arr_rates[$rate['idroom']] = [];
+			}
+			$arr_rates[$rate['idroom']][] = $rate;
+		}
+
+		/**
+		 * If restrictions are set to be ignored, maybe because we need to focus on availability,
+		 * we perform a check to see if some listings suffered availability due to rate-plan
+		 * level restrictions. In case we find some, we re-do the process by including at least
+		 * one rate plan to those listings that would be otherwise missing rates and availability.
+		 * 
+		 * @since 	1.18.6 (J) - 1.8.6 (WP)
+		 */
+		$listings_norates = array_diff($involved_listing_ids, array_keys($arr_rates));
+		if (self::$ignoreRestrictions && !self::$ignoreAvailability && $listings_norates) {
+			// push back room rates to listings with no rates as we are focusing on availability
+			foreach ($listings_norates as $recover_listing_id) {
+				foreach ($rates as $rate) {
+					if ($rate['idroom'] != $recover_listing_id) {
+						// not the listing we look for
+						continue;
+					}
+					if ($arr_rates[$rate['idroom']] ?? []) {
+						// one room rate is sufficient
+						continue;
+					}
+					// restore availability for this listing by pushing the first rate plan
+					$arr_rates[$rate['idroom']] = [$rate];
+				}
+			}
+		}
+
+		// flags to understand exactly what's making some rooms unavailable
+		$err_rtype_restr = false;
+		$err_rtype_booked = false;
+
+		// check availability for the rooms with a rate for this number of nights
+		$minus_units = 0;
+		if (count($arr_rates) < $args['num_rooms']) {
+			$minus_units = $args['num_rooms'] - count($arr_rates);
+		}
+		foreach ($arr_rates as $k => $datarate) {
+			$room = $room_ids[$k];
+			$consider_units = $room['units'] - $minus_units;
+			if (!self::$ignoreAvailability && ($consider_units <= 0 || !VikBooking::roomBookable($room['id'], $consider_units, $args['start_ts'], $args['end_ts']))) {
+				// unset room from results
+				unset($arr_rates[$k]);
+				// push room as fully booked
+				array_push($fullybooked, (int)$room['id']);
+				// turn flag on
+				$err_rtype_booked = true;
+			} else {
+				if (!self::$ignoreRestrictions && $all_restrictions) {
+					$room_restr = VikBooking::roomRestrictions($room['id'], $all_restrictions);
+					if ($room_restr) {
+						if (strlen(VikBooking::validateRoomRestriction($room_restr, getdate($args['start_ts']), getdate($args['end_ts']), $args['nights'])) > 0) {
+							// unset room from results
+							unset($arr_rates[$k]);
+							// turn flag on
+							$err_rtype_restr = true;
+						}
+					}
+				}
+			}
+		}
+
+		if (!$arr_rates) {
+			// set error code
+			self::$errorCode = $err_rtype_booked ? 7 : 8;
+
+			// build error response
+			$err_mess = JText::_('VBNOROOMSINDATE');
+			$err_mess = $err_mess == 'VBNOROOMSINDATE' ? JText::_('VBO_AV_ECODE_7') : $err_mess;
+
+			$res = ['e4j.error' => $err_mess];
+			if ($only_rates && $fullybooked) {
+				$res['fullybooked'] = $fullybooked;
+			}
+
+			// concatenate rate plan restriction errors, if any
+			if ($err_rplan_restr === true) {
+				$res['e4j.error'] .= ' (Rate Plan Restrictions)';
+			}
+
+			if (self::$getArray) {
+				return $res;
+			}
+
+			// send JSON (erroneous) response to output
+			VBOHttpDocument::getInstance()->json($res);
+		}
+
+		// apply special prices
+		$arr_rates = VikBooking::applySeasonalPrices($arr_rates, $args['start_ts'], $args['end_ts']);
+		$multi_rates = 1;
+		foreach ($arr_rates as $idr => $tars) {
+			$multi_rates = count($tars) > $multi_rates ? count($tars) : $multi_rates;
+		}
+		if ($multi_rates > 1) {
+			for ($r = 1; $r < $multi_rates; $r++) {
+				$deeper_rates = [];
+				foreach ($arr_rates as $idr => $tars) {
+					foreach ($tars as $tk => $tar) {
+						if ($tk == $r) {
+							$deeper_rates[$idr][0] = $tar;
+							break;
+						}
+					}
+				}
+				if (!$deeper_rates) {
+					continue;
+				}
+				$deeper_rates = VikBooking::applySeasonalPrices($deeper_rates, $args['start_ts'], $args['end_ts']);
+				foreach ($deeper_rates as $idr => $dtars) {
+					foreach ($dtars as $dtk => $dtar) {
+						$arr_rates[$idr][$r] = $dtar;
+					}
+				}
+			}
+		}
+
+		// children ages charge
+		$children_sums = [];
+
+		// sum charges/discounts per occupancy for each room party
+		foreach ($arrpeople as $roomnumb => $party) {
+			// charges/discounts per adults occupancy
+			foreach ($arr_rates as $r => $rates) {
+				$children_charges = VikBooking::getChildrenCharges($r, $party['children'], $party['children_age'], $args['nights']);
+				if ($children_charges) {
+					$children_sums[$r] += $children_charges['total'];
+				}
+
+				$diffusageprice = VikBooking::loadAdultsDiff($r, $party['adults']);
+				$rplan_obp_overrides = [];
+
+				// Occupancy Override - Special Price may be setting a charge/discount for this occupancy while default price had no occupancy pricing
+				if (!$diffusageprice) {
+					foreach ($rates as $kpr => $vpr) {
+						if (isset($vpr['occupancy_ovr'][$party['adults']]) && strlen((string) $vpr['occupancy_ovr'][$party['adults']]['value'])) {
+							if (!$diffusageprice) {
+								// set the first OBP override rule found
+								$diffusageprice = $vpr['occupancy_ovr'][$party['adults']];
+							}
+							// set the OBP override rule at rate-plan level
+							$rplan_obp_overrides[$vpr['idprice']] = $diffusageprice;
+						}
+					}
+					reset($rates);
+				}
+
+				if ($diffusageprice) {
+					/**
+					 * OBP offsets can be overridden at rate-plan-level, while OBP offsets are regularly defined at room-level.
+					 * In case we detect OBP overrides only for some rate plans, we try to apply them on the proper rate plans.
+					 * 
+					 * @since 	1.17.6 (J) - 1.7.6 (WP)
+					 */
+					$rplan_level_obp_overrides = ($rplan_obp_overrides && count($rates) != count($rplan_obp_overrides));
+					$null_obp_override = [
+						$party['adults'] => [
+							'chdisc'   => 1,
+							'valpcent' => 1,
+							'pernight' => 0,
+							'value'    => 0,
+						],
+					];
+
+					// apply OBP rules
+					foreach ($rates as $kpr => $vpr) {
+						if ($roomnumb == 1) {
+							$arr_rates[$r][$kpr]['costbeforeoccupancy'] = (float) $arr_rates[$r][$kpr]['cost'];
+						}
+						// Occupancy Override
+						if (isset($vpr['occupancy_ovr'][$party['adults']]) && strlen((string) $vpr['occupancy_ovr'][$party['adults']]['value'])) {
+							if ($rplan_level_obp_overrides && !($rplan_obp_overrides[$vpr['idprice']] ?? null)) {
+								// apply a null OBP override for this rate plan ID
+								$diffusageprice = $null_obp_override;
+							} else {
+								// apply the OBP override rules
+								$diffusageprice = $vpr['occupancy_ovr'][$party['adults']];
+							}
+						} elseif ($rplan_level_obp_overrides && !($rplan_obp_overrides[$vpr['idprice']] ?? null)) {
+							// apply a null OBP override for this rate plan ID
+							$diffusageprice = $null_obp_override;
+						}
+						$arr_rates[$r][$kpr]['diffusage'] = $party['adults'];
+						if ($diffusageprice['chdisc'] == 1) {
+							// charge
+							if ($diffusageprice['valpcent'] == 1) {
+								// fixed value
+								$aduseval = $diffusageprice['pernight'] == 1 ? $diffusageprice['value'] * $arr_rates[$r][$kpr]['days'] : $diffusageprice['value'];
+								$arr_rates[$r][$kpr]['diffusagecost'][$roomnumb] = $aduseval;
+								$arr_rates[$r][$kpr]['cost'] += $aduseval;
+							} else {
+								// percentage value
+								$aduseval = $diffusageprice['pernight'] == 1 ? round(($arr_rates[$r][$kpr]['costbeforeoccupancy'] * $diffusageprice['value'] / 100) * $arr_rates[$r][$kpr]['days'], 2) : round(($arr_rates[$r][$kpr]['costbeforeoccupancy'] * $diffusageprice['value'] / 100), 2);
+								$arr_rates[$r][$kpr]['diffusagecost'][$roomnumb] = $aduseval;
+								$arr_rates[$r][$kpr]['cost'] += $aduseval;
+							}
+						} else {
+							// discount
+							if ($diffusageprice['valpcent'] == 1) {
+								// fixed value
+								$aduseval = $diffusageprice['pernight'] == 1 ? $diffusageprice['value'] * $arr_rates[$r][$kpr]['days'] : $diffusageprice['value'];
+								$arr_rates[$r][$kpr]['diffusagediscount'][$roomnumb] = $aduseval;
+								$arr_rates[$r][$kpr]['cost'] -= $aduseval;
+							} else {
+								// percentage value
+								$aduseval = $diffusageprice['pernight'] == 1 ? round(((($arr_rates[$r][$kpr]['costbeforeoccupancy'] / $arr_rates[$r][$kpr]['days']) * $diffusageprice['value'] / 100) * $arr_rates[$r][$kpr]['days']), 2) : round(($arr_rates[$r][$kpr]['costbeforeoccupancy'] * $diffusageprice['value'] / 100), 2);
+								$arr_rates[$r][$kpr]['diffusagediscount'][$roomnumb] = $aduseval;
+								$arr_rates[$r][$kpr]['cost'] -= $aduseval;
+							}
+						}
+					}
+				} elseif ($roomnumb == 1) {
+					foreach ($rates as $kpr => $vpr) {
+						$arr_rates[$r][$kpr]['costbeforeoccupancy'] = (float) $arr_rates[$r][$kpr]['cost'];
+					}
+				}
+			}
+		}
+
+		// if the rooms are given to a party of multiple rooms, multiply the basic rates per room per number of rooms
+		for ($i = 2; $i <= $args['num_rooms']; $i++) {
+			foreach ($arr_rates as $r => $rates) {
+				foreach ($rates as $kpr => $vpr) {
+					$arr_rates[$r][$kpr]['cost'] += $arr_rates[$r][$kpr]['costbeforeoccupancy'];
+				}
+			}
+		}
+		
+		// children ages charge
+		if ($children_sums) {
+			foreach ($arr_rates as $r => $rates) {
+				if (array_key_exists($r, $children_sums)) {
+					foreach ($rates as $kpr => $vpr) {
+						$arr_rates[$r][$kpr]['cost'] += $children_sums[$r];
+					}
+				}
+			}
+		}
+		
+		//sort results by price ASC
+		$arr_rates = VikBooking::sortResults($arr_rates);
+
+		// compose taxes information
+		$ivainclusa = VikBooking::ivaInclusa();
+		$rates_ids = [];
+		foreach ($arr_rates as $r => $rate) {
+			foreach ($rate as $ids) {
+				if (!in_array($ids['idprice'], $rates_ids)) {
+					$rates_ids[] = $ids['idprice'];
+				}
+			}
+		}
+		$tax_rates = [];
+		$q = "SELECT `p`.`id`,`t`.`aliq`,`t`.`taxcap` FROM `#__vikbooking_prices` AS `p` LEFT JOIN `#__vikbooking_iva` `t` ON `p`.`idiva`=`t`.`id` WHERE `p`.`id` IN (".implode(',', $rates_ids).");";
+		$dbo->setQuery($q);
+		$alltaxrates = $dbo->loadAssocList();
+		if ($alltaxrates) {
+			foreach ($alltaxrates as $tx) {
+				if (!empty($tx['aliq']) && $tx['aliq'] > 0) {
+					/**
+					 * Tax Cap implementation.
+					 * 
+					 * @since 	1.12
+					 */
+					$tax_rates[$tx['id']] = array($tx['aliq'], (float)$tx['taxcap']);
+				}
+			}
+		}
+		if ($tax_rates) {
+			foreach ($arr_rates as $r => $rates) {
+				foreach ($rates as $k => $rate) {
+					if (array_key_exists($rate['idprice'], $tax_rates)) {
+						if (intval($ivainclusa) == 1) {
+							// prices tax included
+							$realcost = $rate['cost'];
+							$tax_oper = ($tax_rates[$rate['idprice']][0] + 100) / 100;
+							$taxes = $rate['cost'] - ($rate['cost'] / $tax_oper);
+							/**
+							 * Tax Cap implementation.
+							 * 
+							 * @since 	1.12
+							 */
+							if ($tax_rates[$rate['idprice']][1] > 0 && $taxes > $tax_rates[$rate['idprice']][1]) {
+								$taxes = $tax_rates[$rate['idprice']][1];
+							}
+						} else {
+							// prices tax excluded
+							$realcost = $rate['cost'] * (100 + $tax_rates[$rate['idprice']][0]) / 100;
+							$taxes = $realcost - $rate['cost'];
+							/**
+							 * Tax Cap implementation.
+							 * 
+							 * @since 	1.12
+							 */
+							if ($tax_rates[$rate['idprice']][1] > 0 && $taxes > $tax_rates[$rate['idprice']][1]) {
+								$realcost = $rate['cost'] + $tax_rates[$rate['idprice']][1];
+								$taxes = $tax_rates[$rate['idprice']][1];
+							}
+						}
+						if (!($options['wtax'] ?? null) && ($req_type == 'hotel_availability' || $req_type == 'booking_availability')) {
+							// always set 'cost' to the base rate tax excluded
+							$realcost = $realcost - $taxes;
+						}
+						$arr_rates[$r][$k]['cost'] = round($realcost, 2);
+						$arr_rates[$r][$k]['taxes'] = round($taxes, 2);
+					}
+				}
+			}
+			// sum taxes/fees for each room party
+			foreach ($arrpeople as $roomnumb => $party) {
+				foreach ($arr_rates as $r => $rates) {
+					$city_tax_fees = VikBooking::getMandatoryTaxesFees([$r], $party['adults'], $args['nights'], $args['start_ts'], $args['end_ts']);
+					foreach ($rates as $k => $rate) {
+						if (!isset($arr_rates[$r][$k]['city_taxes'])) {
+							$arr_rates[$r][$k]['city_taxes'] = 0;
+						}
+						if (!isset($arr_rates[$r][$k]['fees'])) {
+							$arr_rates[$r][$k]['fees'] = 0;
+						}
+						$arr_rates[$r][$k]['city_taxes'] += round($city_tax_fees['city_taxes'], 2);
+						$arr_rates[$r][$k]['fees'] += round($city_tax_fees['fees'], 2);
+					}
+				}
+			}
+		} else {
+			foreach ($arr_rates as $r => $rates) {
+				foreach ($rates as $k => $rate) {
+					$arr_rates[$r][$k]['taxes'] = round(0, 2);
+					$arr_rates[$r][$k]['city_taxes'] = round(0, 2);
+					$arr_rates[$r][$k]['fees'] = round(0, 2);
+				}
+			}
+		}
+
+		if (self::$getArray) {
+			return $arr_rates;
+		}
+
+		if ($only_rates && $fullybooked) {
+			$arr_rates['fullybooked'] = $fullybooked;
+		}
+
+		// send JSON response to output
+		VBOHttpDocument::getInstance()->json($arr_rates);
+	}
+
+	/**
+	 * Returns the error code to understand what produced an error.
+	 * 
+	 * @return 	int 	the error code identifier.
+	 * 
+	 * @since 	1.15.0 (J) - 1.5.0 (WP)
+	 */
+	public static function getErrorCode()
+	{
+		return self::$errorCode;
+	}
+}

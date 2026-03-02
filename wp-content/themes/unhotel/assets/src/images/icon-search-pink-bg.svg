@@ -1,0 +1,27 @@
+<svg id="Component_3_1" data-name="Component 3 – 1" xmlns="http://www.w3.org/2000/svg" width="33.895" height="33.895" viewBox="0 0 33.895 33.895">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f94676;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_3" data-name="Ellipse 3" class="cls-1" cx="16.948" cy="16.948" r="16.948"/>
+  <g id="Mask_Group_111" data-name="Mask Group 111">
+    <g id="search-icon_copy" data-name="search-icon copy" transform="translate(8.025 7.123)">
+      <g id="Layer_1">
+        <g id="Group_110" data-name="Group 110">
+          <circle id="Ellipse_15" data-name="Ellipse 15" class="cls-2" cx="4.993" cy="4.993" r="4.993" transform="translate(1.062 1.303)"/>
+          <line id="Line_43" data-name="Line 43" class="cls-2" x1="6.959" y1="6.838" transform="translate(9.604 9.806)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

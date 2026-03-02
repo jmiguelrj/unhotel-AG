@@ -1,0 +1,693 @@
+/* Carousel Block Styles */
+@use 'variables' as *;
+
+// Constants
+$carousel-image-size: 376px;
+$carousel-item-height: 376px;
+
+.unhotel-carousel {
+    background: transparent ;
+    position: relative;
+    width: 100%;
+    padding: $spacing-xlarge 0 3rem 0;
+    min-height: 300px;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+
+    // Add extra padding when dots are enabled
+    &:has(.flickity-page-dots) {
+        padding-bottom: 4rem;
+    }
+
+    &.fullwidth {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        max-width: 100%;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    &.has-background {
+        padding: $spacing-xlarge;
+        border-radius: $border-radius-large;
+    }
+
+    // Grid Mode
+    &.grid-mode {
+        .carousel-track {
+            background: transparent ;
+            display: grid;
+            gap: $spacing-small; // Smaller gap between items (0.5rem)
+            // Default to 3 columns, will be overridden by data-items attribute
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        // Grid columns based on items to show (1-4 per row)
+        .carousel-track[data-items="1"] {
+            grid-template-columns: 1fr;
+        }
+        .carousel-track[data-items="2"] {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .carousel-track[data-items="3"] {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .carousel-track[data-items="4"] {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .carousel-item {
+            min-width: 0;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            
+            // Make height equal to width (square aspect ratio) for image items only
+            &.carousel-image {
+                // Use padding-top trick for square aspect ratio
+                padding-top: 100% ;
+                height: 0 ;
+                width: 100% ;
+                position: relative;
+                background-size: cover ; // Fill the square completely
+                background-position: center ;
+                background-repeat: no-repeat ;
+                margin: 0 ;
+                background-clip: border-box;
+                box-sizing: border-box;
+                
+                // If using img tag instead of background
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+            
+            // Blog posts keep natural height
+            &.carousel-post {
+                height: auto;
+                padding-top: 0;
+            }
+        }
+    }
+
+    // Carousel Mode
+    &.carousel-mode {
+        overflow: hidden;
+        max-width: 100%;
+
+        .carousel-track {
+            display: block;
+            width: 100%;
+            visibility: visible;
+            opacity: 1;
+
+            // Before Flickity initializes
+            &:not(.flickity-enabled) {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: hidden;
+                gap: $spacing-medium;
+
+                .carousel-item {
+                    flex: 0 0 auto;
+                    // Default to 3 items, will be calculated by JavaScript
+                    width: calc((100% - ($spacing-medium * 2)) / 3);
+                    min-width: 0;
+                }
+            }
+        }
+
+        // Flickity enabled styles
+        .carousel-track.flickity-enabled {
+            display: block;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        // Flickity viewport
+        .flickity-viewport {
+            visibility: visible;
+            opacity: 1;
+            height: $carousel-item-height;
+            overflow: hidden ;
+            -webkit-overflow-scrolling: none;
+            touch-action: pan-y;
+            width: 100%;
+        }
+
+        .flickity-slider {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        // Carousel items in Flickity
+        .carousel-item {
+            visibility: visible;
+            opacity: 1;
+            height: $carousel-item-height;
+            flex-shrink: 0;
+
+            &.carousel-image {
+                width: $carousel-image-size;
+                height: $carousel-image-size;
+                margin: 0;
+                padding: 0;
+                line-height: 0;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                img {
+                    width: $carousel-image-size;
+                    height: $carousel-image-size;
+;
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+
+    // Carousel Track
+    .carousel-track {
+        width: 100%;
+        visibility: visible;
+        opacity: 1;
+        overflow: hidden;
+    }
+
+    // Carousel Item Base Styles
+    .carousel-item {
+        border-radius: 0;
+        box-shadow: none;
+        overflow: hidden;
+        transition: transform $transition-duration $transition-timing-function;
+        height: $carousel-item-height;
+        flex-shrink: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+
+        &:hover {
+            transform: none;
+        }
+
+        // Image items (for carousel mode, not grid)
+        &.carousel-image {
+            display: block;
+            position: relative;
+            width: $carousel-image-size;
+            height: $carousel-image-size;
+            margin: 0;
+            padding: 0;
+            line-height: 0;
+            background: transparent;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    
+    // Grid mode overrides - ensure all images are square and equal
+    &.grid-mode {
+        .carousel-item.carousel-image {
+            width: 100% ;
+            height: 0 ;
+            padding-top: 100% ;
+            margin: 0 ;
+            background-size: cover ;
+            background-position: center ;
+            background-repeat: no-repeat ;
+        }
+    }
+
+    // Image Placeholder
+    .carousel-image-placeholder {
+        width: $carousel-image-size;
+        height: $carousel-image-size;
+        background: $bg-lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $text-light;
+        font-size: 0.875rem;
+    }
+
+    // Image Element
+    .carousel-img {
+        width: $carousel-image-size;
+        height: $carousel-image-size;
+        object-fit: contain;
+        object-position: center;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        margin: 0;
+        padding: 0;
+        vertical-align: top;
+    }
+
+    // Testimonial Item Styles
+    .carousel-testimonial {
+        padding: $spacing-xlarge;
+
+        .testimonial-content {
+            margin: 0;
+            font-style: italic;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: $text-color;
+
+            p {
+                margin: 0 0 $spacing-medium 0;
+            }
+        }
+
+        .testimonial-rating {
+            margin-bottom: $spacing-medium;
+
+            .star {
+                color: #ddd;
+                font-size: 1.2rem;
+
+                &.filled {
+                    color: #ffc107;
+                }
+            }
+        }
+
+        .testimonial-author {
+            display: block;
+            margin-top: $spacing-medium;
+            font-style: normal;
+            font-weight: 600;
+            color: $text-color;
+            font-size: 0.95rem;
+
+            &::before {
+                content: '— ';
+            }
+
+            .testimonial-company {
+                font-weight: normal;
+                color: $text-light;
+            }
+        }
+
+        // Text-only testimonial
+        &.testimonial-text-only {
+            border: 1px solid $bg-color;
+            padding: 10px;
+            box-shadow: 1px 20px 16px 8px #f7f8f9;
+            background: $bg-color;
+            border-radius: $border-radius-large;
+            min-height: auto;
+
+            .testimonial-content {
+                margin-bottom: $spacing-medium;
+                padding: 0;
+
+                p {
+                    margin-bottom: 0.75rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .testimonial-rating {
+                margin-bottom: $spacing-medium;
+            }
+
+            .testimonial-author {
+                margin-top: $spacing-large;
+                padding-top: $spacing-medium;
+                border-top: 1px solid $border-color;
+                font-size: 0.9rem;
+
+                .testimonial-author-meta {
+                    display: block;
+                    font-weight: normal;
+                    color: $text-light;
+                    font-size: 0.85rem;
+                    margin-top: 0.25rem;
+                }
+            }
+        }
+    }
+
+    // Blog Post Item Styles
+    .carousel-post {
+        background: $bg-color ;
+        border-radius: $border-radius-large;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) ;
+        border: none;
+        height: auto ;
+        min-height: auto ;
+        display: flex ;
+        flex-direction: column;
+
+        .carousel-post-link {
+            display: flex;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+            flex-direction: column;
+            width: 100%;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .carousel-post-thumbnail {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            border-radius: $border-radius-large $border-radius-large 0 0;
+            flex-shrink: 0;
+        }
+
+        .carousel-post-content {
+            padding: $spacing-large;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+        }
+
+        .carousel-post-title {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.125rem;
+            font-weight: 700;
+            line-height: 1.4;
+            color: $text-color;
+            font-family: $primary-font;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            flex-shrink: 0;
+
+            .carousel-post-link:hover & {
+                color: $primary-color;
+            }
+        }
+
+        .carousel-post-category {
+            display: inline-block;
+            color: $primary-color;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            font-family: $primary-font;
+            flex-shrink: 0;
+        }
+
+        .carousel-post-excerpt {
+            margin: 0 0 $spacing-medium 0;
+            color: $text-color;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            flex: 1;
+            font-family: $primary-font;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-height: 0;
+        }
+
+        .carousel-post-meta {
+            display: flex;
+            align-items: center;
+            gap: $spacing-medium;
+            margin-top: auto;
+            font-size: 0.875rem;
+            color: $text-light;
+            font-family: $primary-font;
+            flex-wrap: wrap;
+        }
+
+        .carousel-post-date {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: $text-light;
+            font-size: 0.875rem;
+
+            .carousel-post-date-icon {
+                width: 16px;
+                height: 16px;
+                stroke: currentColor;
+                flex-shrink: 0;
+            }
+        }
+
+        .carousel-post-author {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            color: $text-light;
+            font-size: 0.875rem;
+
+            .carousel-post-author-link {
+                color: $primary-color;
+                text-decoration: none;
+                font-weight: 500;
+
+                &:hover {
+                    color: $hover-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    // Empty state
+    .carousel-empty {
+        text-align: center;
+        padding: $spacing-xlarge;
+        color: $text-light;
+    }
+
+    // Flickity Navigation - Arrows
+    .flickity-prev-next-button {
+        background: $primary-color;
+        color: $bg-color;
+        border: none;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+        transition: background $transition-duration $transition-timing-function, 
+                    opacity $transition-duration $transition-timing-function;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+
+        &:hover {
+            background: $hover-color;
+        }
+
+        &:disabled {
+            background: $primary-color;
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: $bg-color;
+        }
+
+        &.previous {
+            left: 10px;
+        }
+
+        &.next {
+            right: 10px;
+        }
+    }
+
+    // Flickity Navigation - Dots
+    .flickity-page-dots {
+        text-align: center;
+        width: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        list-style: none;
+        margin: 0;
+        padding: 30px 0 10px 0;
+        pointer-events: auto;
+
+        &.is-visible {
+            display: block;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        &:not(.is-visible) {
+            display: none ;
+            visibility: hidden ;
+            opacity: 0 ;
+            height: 0 ;
+            overflow: hidden ;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: $primary-color;
+            opacity: 0.4;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background $transition-duration $transition-timing-function, 
+                        opacity $transition-duration $transition-timing-function;
+            display: inline-block ;
+            visibility: visible ;
+            border: none;
+            padding: 0;
+            pointer-events: auto;
+
+            &:hover {
+                background: $primary-color;
+                opacity: 0.7;
+            }
+
+            &.is-selected {
+                background: $primary-color;
+                opacity: 1;
+            }
+        }
+    }
+
+    // Responsive Styles
+    @media (max-width: $breakpoint-mobile-max) {
+        &.grid-mode .carousel-track {
+            // On mobile, always show 1 column regardless of data-items
+            grid-template-columns: 1fr ;
+        }
+
+        .carousel-testimonial {
+            padding: $spacing-large;
+        }
+
+        .carousel-post {
+            .carousel-post-thumbnail {
+                height: 150px;
+            }
+
+            .carousel-post-content {
+                padding: $spacing-medium;
+            }
+        }
+    }
+
+    // Carousel mode specific overrides
+    &.carousel-mode {
+        .flickity-enabled {
+            .carousel-item {
+                margin-right: 0.5rem;
+
+                &.carousel-image {
+                    width: $carousel-image-size;
+                    min-width: $carousel-image-size;
+                    max-width: $carousel-image-size;
+                  
+                }
+
+                &.carousel-post {
+                    height: auto ;
+                    min-height: auto ;
+                    // Width will be calculated by JavaScript based on itemsToShow
+                    width: auto;
+                    min-width: 0;
+                    max-width: none;
+                }
+            }
+        }
+
+        .carousel-item.carousel-image {
+            display: block;
+            visibility: visible;
+            opacity: 1;
+            border-radius: 0;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+
+        .carousel-item.carousel-post {
+            height: auto ;
+            min-height: auto ;
+            display: flex ;
+            flex-direction: column;
+        }
+    }
+}
+
+// Grid mode specific overrides - ensure all images are perfectly square and equal
+.unhotel-carousel.grid-mode {
+    .carousel-item.carousel-image {
+        width: 100% ;
+        height: 0 ;
+        padding-top: 100% ;
+        margin: 0 ;
+        background-size: cover ;
+        background-position: center ;
+        background-repeat: no-repeat ;
+        
+        // Remove the ::after pseudo-element if it exists
+        &::after {
+            display: none ;
+        }
+    }
+}
+
+// Editor specific styles
+.unhotel-carousel-editor {
+    .carousel-item {
+        min-width: 250px;
+        max-width: 350px;
+    }
+
+    &.grid-mode .carousel-item {
+        max-width: 100%;
+    }
+}
+
+// Flickity viewport global override
+.flickity-viewport {
+    min-height: 150px;
+    visibility: visible ;
+    opacity: 1 ;
+}

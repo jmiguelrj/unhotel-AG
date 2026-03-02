@@ -1,0 +1,181 @@
+{
+	"apiVersion": 2,
+	"name": "jet-gallery/gallery-grid",
+	"category": "jet-gallery",
+	"title": "Gallery Grid",
+	"description": "Insert onto your single product page with a gallery element in the form of a grid with images and video to heat the customers buy desire.",
+	"icon": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\" viewBox=\"0 0 64 64\" fill=\"none\">\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M19 0C16.7909 0 15 1.79086 15 4V16C15 18.2091 16.7909 20 19 20H27C29.2091 20 31 18.2091 31 16V4C31 1.79086 29.2091 0 27 0H19ZM27 2H19C17.8954 2 17 2.89543 17 4V16C17 17.1046 17.8954 18 19 18H27C28.1046 18 29 17.1046 29 16V4C29 2.89543 28.1046 2 27 2Z\" fill=\"currentColor\"></path>\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M19 22C16.7909 22 15 23.7909 15 26V38C15 40.2091 16.7909 42 19 42H27C29.2091 42 31 40.2091 31 38V26C31 23.7909 29.2091 22 27 22H19ZM27 24H19C17.8954 24 17 24.8954 17 26V38C17 39.1046 17.8954 40 19 40H27C28.1046 40 29 39.1046 29 38V26C29 24.8954 28.1046 24 27 24Z\" fill=\"currentColor\"></path>\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M15 48C15 45.7909 16.7909 44 19 44H27C29.2091 44 31 45.7909 31 48V60C31 62.2091 29.2091 64 27 64H19C16.7909 64 15 62.2091 15 60V48ZM19 46H27C28.1046 46 29 46.8954 29 48V60C29 61.1046 28.1046 62 27 62H19C17.8954 62 17 61.1046 17 60V48C17 46.8954 17.8954 46 19 46Z\" fill=\"currentColor\"></path>\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M37 0C34.7909 0 33 1.79086 33 4V16C33 18.2091 34.7909 20 37 20H45C47.2091 20 49 18.2091 49 16V4C49 1.79086 47.2091 0 45 0H37ZM45 2H37C35.8954 2 35 2.89543 35 4V16C35 17.1046 35.8954 18 37 18H45C46.1046 18 47 17.1046 47 16V4C47 2.89543 46.1046 2 45 2Z\" fill=\"currentColor\"></path>\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M33 26C33 23.7909 34.7909 22 37 22H45C47.2091 22 49 23.7909 49 26V38C49 40.2091 47.2091 42 45 42H37C34.7909 42 33 40.2091 33 38V26ZM37 24H45C46.1046 24 47 24.8954 47 26V38C47 39.1046 46.1046 40 45 40H37C35.8954 40 35 39.1046 35 38V26C35 24.8954 35.8954 24 37 24Z\" fill=\"currentColor\"></path>\n</svg>\n",
+	"textdomain": "jet-woo-product-gallery",
+	"keywords": [ "gallery", "grid", "media", "images" ],
+	"attributes": {
+		"className": {
+			"type": "string",
+			"default": ""
+		},
+		"gallery_source": {
+			"type": "string",
+			"default": "manual"
+		},
+		"product_id": {
+			"type": "number"
+		},
+		"disable_feature_image": {
+			"type": "boolean",
+			"default": false
+		},
+		"enable_zoom": {
+			"type": "boolean",
+			"default": false
+		},
+		"zoom_magnify": {
+			"type": "number",
+			"default": 1
+		},
+		"gallery_key": {
+			"type": "string",
+			"default": ""
+		},
+		"enable_feature_image": {
+			"type": "boolean",
+			"default": false
+		},
+		"gallery_images": {
+			"type": "array",
+			"default": []
+		},
+		"enable_video": {
+			"type": "boolean",
+			"default": false
+		},
+		"video_type": {
+			"type": "string",
+			"default": "youtube"
+		},
+		"youtube_url": {
+			"type": "string",
+			"default": "https://www.youtube.com/watch?v=CJO0u_HrWE8"
+		},
+		"vimeo_url": {
+			"type": "string",
+			"default": "https://vimeo.com/235215203"
+		},
+		"self_hosted_url": {
+			"type": "object",
+			"default": {}
+		},
+		"custom_placeholder": {
+			"type": "object",
+			"default": {}
+		},
+		"enable_gallery": {
+			"type": "boolean",
+			"default": false
+		},
+		"gallery_trigger_type": {
+			"type": "string",
+			"default": "button"
+		},
+		"gallery_button_icon": {
+			"type": "object",
+			"default": {}
+		},
+		"gallery_button_position": {
+			"type": "string",
+			"default": "top-right"
+		},
+		"show_on_hover": {
+			"type": "boolean",
+			"default": false
+		},
+		"gallery_show_caption": {
+			"type": "boolean",
+			"default": true
+		},
+		"gallery_show_fullscreen": {
+			"type": "boolean",
+			"default": true
+		},
+		"gallery_show_zoom": {
+			"type": "boolean",
+			"default": true
+		},
+		"gallery_show_share": {
+			"type": "boolean",
+			"default": true
+		},
+		"gallery_show_counter": {
+			"type": "boolean",
+			"default": true
+		},
+		"gallery_show_arrows": {
+			"type": "boolean",
+			"default": true
+		},
+		"video_display_in": {
+			"type": "string",
+			"default": "content"
+		},
+		"aspect_ratio": {
+			"type": "string",
+			"default": "16-9"
+		},
+		"first_place_video": {
+			"type": "boolean",
+			"default": false
+		},
+		"autoplay": {
+			"type": "boolean",
+			"default": false
+		},
+		"mute": {
+			"type": "boolean",
+			"default": false
+		},
+		"loop": {
+			"type": "boolean",
+			"default": false
+		},
+		"show_play_button": {
+			"type": "boolean",
+			"default": true
+		},
+		"play_button_icon": {
+			"type": "object",
+			"default": {}
+		},
+		"popup_button_icon": {
+			"type": "object",
+			"default": {}
+		},
+		"image_size": {
+			"type": "string",
+			"default": "full"
+		},
+		"columns": {
+			"type": "number",
+			"default": 4
+		},
+		"columns_tablet": {
+			"type": "number",
+			"default": 2
+		},
+		"columns_mobile": {
+			"type": "number",
+			"default": 1
+		},
+		"primary_image": {
+			"type": "string",
+			"default": ""
+		},
+		"grid_items_count": {
+			"type": "number",
+			"default": 4
+		},
+		"grid_overlay_text": {
+			"type": "text",
+			"default": "More Images"
+		}
+	},
+	"viewStyle": "jet-gallery-widget-gallery-grid",
+	"editorStyle": "jet-gallery-widget-gallery-grid"
+}

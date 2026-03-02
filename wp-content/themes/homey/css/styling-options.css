@@ -1,0 +1,825 @@
+/* responsive mixing
+/* ------------------------------------------------------------------------ */
+/* @mixin typography($font_size, $line_height, $margin, $font_weight, $transform, $position)
+/* ------------------------------------------------------------------------ */
+/* blockquote mixing
+/* ------------------------------------------------------------------------ */
+/* blockquote mixing
+/* ------------------------------------------------------------------------ */
+/* list columns mixing
+/* ------------------------------------------------------------------------ */
+/* anumations mixing
+/* ------------------------------------------------------------------------ */
+/* transition mixing
+/* ------------------------------------------------------------------------ */
+/* opacity mixing
+/* ------------------------------------------------------------------------ */
+/* opacity mixing
+/* ------------------------------------------------------------------------ */
+/* rotate mixing
+/* ------------------------------------------------------------------------ */
+/* scale mixing
+/* ------------------------------------------------------------------------ */
+/* translate mixing
+/* ------------------------------------------------------------------------ */
+/* skew mixing
+/* ------------------------------------------------------------------------ */
+/* transform origin mixing
+/* ------------------------------------------------------------------------ */
+/* border radius mixing
+/* ------------------------------------------------------------------------ */
+/* placeholder mixing
+/* ------------------------------------------------------------------------ */
+/* social media colors
+/* ------------------------------------------------------------------------ */
+/* [converter] $parent hack
+/* ------------------------------------------------------------------------ */
+/* button colors
+/* ------------------------------------------------------------------------ */
+/* vertical alignment
+/* ------------------------------------------------------------------------ */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* general colors
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* primary color
+/* ----------------------------------------------------------- */
+.primary-color,
+.btn-primary-outlined {
+  color: #f15e75;
+}
+
+.btn-primary-outlined,
+.searchform button {
+  border-color: #f15e75;
+}
+
+.media-signal .signal-icon,
+.account-loggedin:before,
+.single-blog-article .meta-tags a,
+.title .circle-icon,
+.label-primary,
+.searchform button,
+.next-prev-block .prev-box,
+.next-prev-block .next-box {
+  background-color: #f15e75;
+}
+
+/*.taxonomy-card .taxonomy-title {
+  background: rgba(241, 94, 117, 0.75);
+  }*/
+
+  .slick-prev,
+  .slick-next {
+    color: #f15e75;
+    border: 1px solid #f15e75;
+    background-color: transparent;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: #f15e75;
+  }
+  .slick-prev:hover:before,
+  .slick-next:hover:before {
+    color: #fff;
+    /* don't add this in styling options */
+  }
+
+  .header-slider .slick-prev,
+  .header-slider .slick-next {
+    border: 1px solid #f15e75;
+    background-color: #f15e75;
+  }
+  .header-slider .slick-prev:before,
+  .header-slider .slick-next:before {
+    color: #fff;
+    /* don't add this in styling options */
+  }
+
+  .widget-slider .slick-next:hover:before,
+  .widget-slider .slick-next:hover:before {
+    color: #fff;
+    /* don't add this in styling options */
+  }
+
+  .nav-tabs > li.active > a {
+    box-shadow: 0px -2px 0px 0px inset #f15e75;
+  }
+
+/* primary color :hover
+/* ----------------------------------------------------------- */
+.btn-primary-outlined:focus,
+.crncy-lang-block > li:hover a,
+.crncy-lang-block .dropdown-menu li:hover {
+  color: #f15e75;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.table-hover > tbody > tr:hover,
+.search-auto-complete li:hover,
+.btn-primary-outlined:hover,
+.btn-primary-outlined:active,
+.item-tools .dropdown-menu > li > a:hover {
+  background-color: #f15e75;
+}
+
+.slick-prev:focus, .slick-prev:active,
+.slick-next:focus,
+.slick-next:active {
+  color: #f15e75;
+  border: 1px solid #f15e75;
+  background-color: transparent;
+}
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #f15e75;
+  border: 1px solid #f15e75;
+  color: #fff;
+}
+
+.header-slider .slick-prev:focus,
+.header-slider .slick-next:active {
+  border: 1px solid #f15e75;
+  background-color: #f15e75;
+}
+.header-slider .slick-prev:focus:before,
+.header-slider .slick-next:active:before {
+  color: #fff;
+  /* don't add this in styling options */
+}
+.header-slider .slick-prev:hover,
+.header-slider .slick-next:hover {
+  background-color: rgba(241, 94, 117, 0.65);
+  border: 1px solid #f15e75;
+}
+.header-slider .slick-prev:hover:before,
+.header-slider .slick-next:hover:before {
+  color: #fff;
+  /* don't add this in styling options */
+}
+
+/* secondary color
+/* ----------------------------------------------------------- */
+.secondary-color,
+.btn-secondary-outlined,
+.taber-nav li.active a,
+.saved-search-block .saved-search-icon,
+.block-title .help,
+.custom-actions .btn-action,
+.daterangepicker .input-mini.active + i,
+.daterangepicker td.in-range,
+.payment-list-detail-btn {
+  color: #54c4d9;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active.end-date,
+.homy-progress-bar .progress-bar-inner,
+.fc-event,
+.property-calendar .current-day,
+.label-secondary {
+  background-color: #54c4d9;
+}
+
+.availability-section .search-calendar .days li.day-available.current-day {
+  background-color: #54c4d9 !important;
+}
+
+.daterangepicker .input-mini.active,
+.daterangepicker td.in-range,
+.msg-unread {
+  background-color: rgba(84, 196, 217, 0.2);
+}
+
+.msgs-reply-list .msg-me {
+  background-color: rgba(84, 196, 217, 0.1) !important;
+}
+
+.control input:checked ~ .control-text {
+  color: #54c4d9;
+}
+.control input:checked ~ .control__indicator {
+  background-color: #7ed2e2;
+  border-color: #29a1b8;
+}
+.control input:checked:focus ~ .control__indicator,
+.control input:checked:active ~ .control__indicator {
+  background-color: #29a1b8;
+  border-color: #2db3cd;
+}
+.control input:focus ~ .control__indicator {
+  background-color: #7ed2e2;
+  border-color: #29a1b8;
+}
+
+.open > .btn-default.dropdown-toggle,
+.custom-actions .btn-action,
+.daterangepicker .input-mini.active,
+.msg-unread,
+.btn-secondary-outlined {
+  border-color: #54c4d9;
+}
+
+.bootstrap-select .btn:focus,
+.bootstrap-select .btn:active {
+  border-color: #54c4d9 !important;
+}
+
+/* secondary color :hover
+/* ----------------------------------------------------------- */
+.taber-nav li:hover a,
+.payment-list-detail-btn:hover,
+.payment-list-detail-btn:focus {
+  color: #54c4d9;
+}
+
+.header-comp-search .form-control:focus {
+  background-color: rgba(84, 196, 217, 0.2);
+}
+
+.bootstrap-select.btn-group .dropdown-menu a:hover,
+.daterangepicker td.active:hover,
+.daterangepicker td.available:hover,
+.daterangepicker th.available:hover,
+.custom-actions .btn-action:hover,
+.calendar-table .prev:hover,
+.calendar-table .next:hover,
+.btn-secondary-outlined:hover,
+.btn-secondary-outlined:active,
+.btn-preview-listing:hover,
+.btn-preview-listing:active,
+.btn-preview-listing:focus,
+.btn-action:hover,
+.btn-action:active,
+.btn-action:focus {
+  background-color: #54c4d9;
+}
+
+.search-calendar .days li:hover:not(.day-disabled) {
+  background-color: rgba(84, 196, 217, 0.2);
+}
+
+.form-control:focus,
+.open > .btn-default.dropdown-toggle:hover,
+.open > .btn-default.dropdown-toggle:focus,
+.open > .btn-default.dropdown-toggle:active,
+.header-comp-search .form-control:focus,
+.btn-secondary-outlined:hover,
+.btn-secondary-outlined:active,
+.btn-secondary-outlined:focus,
+.btn-preview-listing:hover,
+.btn-preview-listing:active,
+.btn-preview-listing:focus {
+  border-color: #54c4d9;
+}
+
+.bootstrap-select .btn:focus,
+.bootstrap-select .btn:active {
+  border-color: #54c4d9 !important;
+}
+
+/* body bg color
+/* ----------------------------------------------------------- */
+body {
+  background-color: #f7f8f9;
+}
+
+/* text color
+/* ----------------------------------------------------------- */
+body,
+.fc button,
+.pagination > li > a,
+.pagination > li > span,
+.item-title-head .title a,
+.sidebar .widget .review-block .title a,
+.sidebar .widget .comment-block .title a,
+.adults-calculator .quantity-calculator input[disbaled],
+.children-calculator .quantity-calculator input[disbaled],
+.nav-tabs > li > a,
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.modal-login-form .forgot-password-text a,
+.modal-login-form .checkbox a,
+.bootstrap-select.btn-group .dropdown-menu a,
+.header-nav .social-icons a,
+.header-nav .crncy-lang-block > li span,
+.header-comp-logo h1,
+.item-list-view .item-user-image,
+.item-title-head .title a,
+.control {
+  color: #4f5962;
+}
+
+.item-title-head .title a:hover,
+.sidebar .widget .review-block .title a:hover,
+.sidebar .widget .comment-block .title a:hover {
+  color: rgba(79, 89, 98, 0.5);
+}
+
+/* buttons colors
+/* ----------------------------------------------------------- */
+.btn-primary {
+  color: #fff;
+  background-color: #f15e75;
+  border-color: #f15e75;
+}
+.btn-primary:focus {
+  color: #fff;
+  background-color: #f15e75;
+  border-color: #f15e75;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #f58d9d;
+  border-color: #f58d9d;
+}
+.btn-primary:active {
+  color: #fff;
+  background-color: #f58d9d;
+  border-color: #f58d9d;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #54c4d9;
+  border-color: #54c4d9;
+}
+.btn-secondary:focus {
+  color: #fff;
+  background-color: #54c4d9;
+  border-color: #54c4d9;
+}
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #7ed2e2;
+  border-color: #7ed2e2;
+}
+.btn-secondary:active {
+  color: #fff;
+  background-color: #7ed2e2;
+  border-color: #7ed2e2;
+}
+
+/* main nav colors
+/* ----------------------------------------------------------- */
+.header-nav,
+.is-sticky {
+  background-color: #fff;
+  border-bottom: 1px solid #d8dce1;
+}
+
+.navi > .main-menu > li > a,
+.account-loggedin,
+.login-register a {
+  color: #4f5962;
+}
+.navi > .main-menu > li > a:hover, .navi > .main-menu > li > a:active,
+.account-loggedin:hover,
+.account-loggedin:active,
+.login-register a:hover,
+.login-register a:active {
+  color: #f15e75;
+}
+
+.navi > .main-menu > li > a:before {
+  background-color: #f15e75;
+  /* this is the border top on hover */
+}
+
+.navi > .main-menu > li > a:before,
+.listing-navi > .main-menu > li > a:before {
+  background-color: #f15e75;
+}
+.navi > .main-menu > li.active > a,
+.listing-navi > .main-menu > li.active > a {
+  color: #f15e75;
+}
+.navi .homey-megamenu-wrap,
+.listing-navi .homey-megamenu-wrap {
+  background-color: #fff;
+}
+
+/* transparen header
+/* ----------------------------------------------------------- */
+.transparent-header .navi > .main-menu > li > a,
+.transparent-header .account-loggedin,
+.transparent-header .login-register a,
+.transparent-header .btn-mobile-nav {
+  color: #fff;
+}
+.transparent-header .navi > .main-menu > li > a:hover, .transparent-header .navi > .main-menu > li > a:active,
+.transparent-header .account-loggedin:hover,
+.transparent-header .account-loggedin:active,
+.transparent-header .login-register a:hover,
+.transparent-header .login-register a:active,
+.transparent-header .btn-mobile-nav:hover,
+.transparent-header .btn-mobile-nav:active {
+  color: #f15e75;
+}
+.transparent-header .navi > .main-menu > li > a:before {
+  background-color: #f15e75;
+}
+.transparent-header .navi > .main-menu > li > a:before,
+.transparent-header .listing-navi > .main-menu > li > a:before {
+  background-color: #f15e75;
+}
+.transparent-header .navi > .main-menu > li.active > a,
+.transparent-header .listing-navi > .main-menu > li.active > a {
+  color: #f15e75;
+}
+.transparent-header .navi .homey-megamenu-wrap,
+.transparent-header .listing-navi .homey-megamenu-wrap {
+  background-color: #fff;
+}
+
+/* main nav dropdown colors
+/* ----------------------------------------------------------- */
+.navi .homey-megamenu-wrap > .sub-menu a,
+.listing-navi .homey-megamenu-wrap > .sub-menu a {
+  color: #4f5962;
+  background-color: #fff;
+}
+.navi .homey-megamenu-wrap > .sub-menu a:hover,
+.listing-navi .homey-megamenu-wrap > .sub-menu a:hover {
+  color: #f15e75;
+  background-color: #fff;
+}
+
+.header-nav .menu-dropdown a,
+.header-nav .sub-menu a {
+  color: #4f5962;
+  background-color: #fff;
+  border-bottom: 1px solid #d8dce1;
+}
+.header-nav .menu-dropdown a:hover,
+.header-nav .sub-menu a:hover {
+  color: #f15e75;
+  background-color: #fff;
+}
+.header-nav .menu-dropdown li.active > a,
+.header-nav .sub-menu li.active > a {
+  color: #f15e75;
+}
+
+/* add new listing button
+/* ----------------------------------------------------------- */
+.btn-add-new-listing {
+  color: #f15e75;
+  background-color: #fff;
+  border-color: #f15e75;
+  font-size: 14px;
+}
+.btn-add-new-listing:focus {
+  color: #f15e75;
+  background-color: #fff;
+  border-color: #f15e75;
+}
+.btn-add-new-listing:hover {
+  color: #f15e75;
+  background-color: white;
+  border-color: #f58d9d;
+}
+.btn-add-new-listing:active {
+  color: #f15e75;
+  background-color: white;
+  border-color: #f58d9d;
+}
+
+/* user dashboard menu
+/* ----------------------------------------------------------- */
+.account-loggedin:hover {
+  color: #f15e75;
+}
+.account-loggedin.active .account-dropdown {
+  background-color: #fff;
+}
+
+.account-dropdown ul > li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.account-dropdown ul > li a {
+  color: #4f5962;
+}
+.account-dropdown ul > li a:hover {
+  background-color: rgba(84, 196, 217, 0.15);
+  color: #4f5962;
+}
+.account-dropdown ul li.active > a,
+.account-dropdown ul li:hover > a {
+  background-color: rgba(84, 196, 217, 0.15);
+}
+.account-dropdown ul .sub-menu {
+  background-color: rgba(84, 196, 217, 0.15);
+}
+.account-dropdown ul .sub-menu li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.account-dropdown ul .sub-menu li.active > a,
+.account-dropdown ul .sub-menu li:hover > a {
+  color: #4f5962;
+}
+
+/* left dashboard menu
+/* ----------------------------------------------------------- */
+.board-panel-menu a {
+  color: #4f5962;
+}
+.board-panel-menu a:hover {
+  background-color: rgba(84, 196, 217, 0.15);
+  color: #4f5962;
+}
+
+/* dashboard footer colors
+/* ----------------------------------------------------------- */
+.footer-top-wrap {
+  background-color: #4f5962;
+  color: #fff;
+}
+
+.footer-bottom-wrap,
+.footer-small {
+  background-color: #4a545c;
+  color: #fff;
+}
+
+.footer .social-icons a,
+.footer a {
+  color: #fff;
+}
+
+.footer-copyright {
+  color: #fff;
+}
+
+/* listing nav colors
+/* ----------------------------------------------------------- */
+.listing-nav {
+  background-color: rgba(79, 89, 98, 0.85);
+}
+
+.listing-navi > .main-menu > li > a {
+  color: #fff;
+  background-color: transparent;
+}
+.listing-navi > .main-menu > li > a:focus, .listing-navi > .main-menu > li > a:hover, .listing-navi > .main-menu > li > a:active {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* top bar colors
+/* ----------------------------------------------------------- */
+.header-top-bar {
+  background-color: #4f5962;
+}
+
+.social-icons a {
+  color: #fff;
+}
+
+.top-contact-address li {
+  color: #fff;
+}
+.top-contact-address a {
+  color: #fff;
+}
+.top-contact-address a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* main search
+/* ----------------------------------------------------------- */
+.main-search {
+  background-color: #fff;
+}
+
+/* parallax banner colors
+/* ----------------------------------------------------------- */
+.banner-title,
+.banner-subtitle {
+  color: #fff;
+}
+
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* typography
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* body
+/* ----------------------------------------------------------- */
+body, address, li, dt, dd {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: "Quicksand", sans-serif;
+}
+@media (max-width: 768px) {
+  body, address, li, dt, dd {
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+}
+
+/* headings
+/* ----------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: normal;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: normal;
+  }
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: normal;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: normal;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: normal;
+}
+@media (max-width: 768px) {
+  h3 {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: normal;
+  }
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: normal;
+}
+@media (max-width: 768px) {
+  h4 {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: normal;
+  }
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: normal;
+}
+@media (max-width: 768px) {
+  h5 {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: normal;
+  }
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: normal;
+}
+@media (max-width: 768px) {
+  h5 {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: normal;
+  }
+}
+
+/* listing nav typography
+/* ----------------------------------------------------------- */
+.listing-navi > .main-menu > li > a {
+  font-size: 12px;
+  line-height: 60px;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* main nav typography
+/* ----------------------------------------------------------- */
+.navi > .main-menu > li > a,
+.account-loggedin,
+.login-register a {
+  font-size: 14px;
+  line-height: 80px;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* main nav dropdown typography
+/* ----------------------------------------------------------- */
+.menu-dropdown a,
+.navi .homey-megamenu-wrap > .sub-menu a,
+.listing-navi .homey-megamenu-wrap > .sub-menu a {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* account drop down menu typography
+/* ----------------------------------------------------------- */
+.account-dropdown ul > li a {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* top bar typography
+/* ----------------------------------------------------------- */
+.top-contact-address li, .crncy-lang-block > li {
+  font-size: 14px;
+  line-height: 47px;
+  font-weight: 400;
+}
+
+/* parallax banner typography
+/* ----------------------------------------------------------- */
+.banner-title {
+  font-size: 32px;
+  line-height: 42px;
+  /*font-weight: inherit;*/
+  text-transform: none;
+  letter-spacing: normal;
+}
+.banner-subtitle {
+  font-size: 18px;
+  line-height: 30px;
+  /*font-weight: inherit;*/
+  text-transform: none;
+  letter-spacing: normal;
+}
+@media(max-width: 480px) {
+  .banner-title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .banner-subtitle {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+/* datepiker no need to add in styling option
+/* ----------------------------------------------------------- */
+.daterangepicker td.start-date,
+.daterangepicker td.end-date,
+.daterangepicker td.active.end-date {
+  color: #fff;
+}

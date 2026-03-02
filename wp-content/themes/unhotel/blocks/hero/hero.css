@@ -1,0 +1,50 @@
+/**
+ * Hero Block - Frontend Styles
+ */
+.unhotel-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.unhotel-hero.fullwidth {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+.unhotel-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+.unhotel-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  max-width: 800px;
+  text-align: center;
+  color: #fff;
+}
+.unhotel-hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: inherit;
+}
+.unhotel-hero-content p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin: 0;
+  color: inherit;
+}
+@media (max-width: 767px) {
+  .unhotel-hero-content {
+    padding: 1.5rem;
+  }
+}
+/*# sourceMappingURL=hero.css.map */

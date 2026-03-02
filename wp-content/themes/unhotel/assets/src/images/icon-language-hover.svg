@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ff7f9b;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="Language-icon_Hover_State_" data-name="Language-icon (Hover State)" transform="translate(0.5 0.5)">
+    <g id="Layer_1" transform="translate(-0.316 -0.316)">
+      <g id="Group_13" data-name="Group 13" transform="translate(0 0)">
+        <circle id="Ellipse_8" data-name="Ellipse 8" class="cls-1" cx="13.5" cy="13.5" r="13.5" transform="translate(0.316 0.316)"/>
+        <path id="Path_21" data-name="Path 21" class="cls-1" d="M28.848,8.52a16.29,16.29,0,0,1-9.039,2.725A16.29,16.29,0,0,1,10.77,8.52" transform="translate(-6.151 -5.093)"/>
+        <path id="Path_22" data-name="Path 22" class="cls-1" d="M10.76,39.825a16.352,16.352,0,0,1,18.078,0" transform="translate(-6.147 -15.93)"/>
+        <line id="Line_5" data-name="Line 5" class="cls-1" x2="27" transform="translate(0.316 13.316)"/>
+        <line id="Line_6" data-name="Line 6" class="cls-1" y2="27" transform="translate(13.316 0.316)"/>
+        <path id="Path_23" data-name="Path 23" class="cls-1" d="M16.967,30.053a35.253,35.253,0,0,1,0-25.963" transform="translate(-7.562 -3.413)"/>
+        <path id="Path_24" data-name="Path 24" class="cls-1" d="M32.17,4.09a35.077,35.077,0,0,1,2.477,12.981A35.077,35.077,0,0,1,32.17,30.053" transform="translate(-14.266 -3.413)"/>
+      </g>
+    </g>
+  </g>
+</svg>

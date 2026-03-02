@@ -1,0 +1,468 @@
+// =================================================================
+// Legacy Styles from Homey Child Theme
+// =================================================================
+// This file contains all custom CSS from the previous theme implementation
+// Organized by section for better maintainability
+@use 'variables' as *;
+
+// =================================================================
+// Admin Bar Customizations
+// =================================================================
+body.admin-bar div#ui-datepicker-div {
+    border-radius: 0;
+
+    table.ui-datepicker-calendar {
+        background: #E9E9E9;
+    }
+}
+
+// =================================================================
+// Third-Party Plugins
+// =================================================================
+
+// Google reCAPTCHA v3 Badge
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+// WooCommerce Form Customization
+.form-row.form-row-first.woocommerce-validated.campos_cielo_webservice>label {
+    width: 100%;
+}
+
+// =================================================================
+// Half Map Layout
+// =================================================================
+.half-map-wrap.map-on-left.clearfix {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: $breakpoint-mobile-max) {
+    .half-map-wrap.map-on-left.clearfix {
+        flex-direction: column-reverse;
+    }
+
+    .half-map-wrap .listing-wrap,
+    .half-map-left-wrap .item-grid-view .item-wrap,
+    .half-map-left-wrap .item-card-view .item-wrap {
+        max-width: 100%;
+    }
+
+    .half-map-left-wrap .item-grid-view .item-wrap .img-responsive {
+        width: 100%;
+    }
+}
+
+// =================================================================
+// Comfort Slider Customization
+// =================================================================
+#comfort_slider {
+    .owl-item {
+        padding: 12px;
+
+        .sa_vert_center_wrap .sa_vert_center {
+            transform: none;
+            left: 0;
+            right: 0;
+            top: auto !important;
+            bottom: 0;
+            padding: 4px 8px;
+            background-color: rgba(0, 0, 0, 0.5);
+            min-height: 118px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        >div {
+            border-radius: 8px;
+        }
+
+        &.active:nth-child(2) {
+            padding: 0 15px;
+        }
+    }
+
+    .owl-nav {
+
+        .owl-prev,
+        .owl-next {
+            border-radius: 50%;
+            height: 50px !important;
+            width: 50px !important;
+        }
+    }
+}
+
+// =================================================================
+// Marketing Digital - Typography & Font Sizes
+// =================================================================
+
+// Bootstrap Select
+.bootstrap-select .dropdown-toggle .filter-option {
+    height: auto;
+    font-weight: 500;
+    color: #333;
+}
+
+// Search Form Elements
+#homey-main-search .bootstrap-select .dropdown-toggle .filter-option,
+#homey-main-search input {
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+}
+
+.search-wrap .half-map-search-buttons .btn-primary,
+.search-wrap .btn.dropdown-toggle.bs-placeholder.btn-default,
+.search-wrap input {
+    font-size: 14px;
+}
+
+// General Typography
+.search-button>button,
+.item-price sub,
+.item-price sup,
+.title,
+.sub-title,
+.sub-heading,
+.vc_btn3-container.vc_btn3-center .vc_btn3-block.vc_btn3-size-sm,
+.footer-top-wrap .widget-body p,
+.footer-top-wrap .widget-body ul li,
+.menu-footer-nav-container #menu-footer-nav li,
+#section-body .main-content-area.listing-page.listing-page-full-width .vc_row.wpb_row.vc_row-fluid,
+.blog-article p {
+    font-size: 18px !important;
+}
+
+.item-title-head .title {
+    font-size: 18px !important;
+}
+
+// Text Alignment
+.sidebar .widget,
+.blog-article p,
+.footer-top-wrap .widget-body p {
+    text-align: justify;
+}
+
+// Buttons
+.vc_btn3-container.vc_btn3-center .vc_btn3-block.vc_btn3-size-sm.vc_btn3-style-outline-custom {
+    padding-left: 12px !important;
+}
+
+// Blog Module
+.blog-module .item-title-head {
+    font-size: 14px;
+}
+
+// Service Blocks & Testimonials
+.service-blocks-main .row p,
+.testimonials-module .description {
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+}
+
+// Property Module Sliders
+.property-module-grid-slider,
+.property-module-card-slider {
+
+    .slick-prev,
+    .slick-next {
+        font-size: 14px;
+        height: 30px;
+        width: 49px;
+    }
+
+    .slick-prev {
+        right: 54px;
+    }
+}
+
+// Single Page Article
+.single-page-article .article-detail.block-body {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: justify;
+    // padding: 20px 40px;
+    padding: 20px 0;
+}
+
+// Navigation styles moved to _menu.scss
+
+// Search Fields
+.search-destination .animated-label,
+.search-date-range .animated-label,
+.search-guests .animated-label,
+.search-guests input {
+    color: #000 !important;
+    font-weight: 500;
+}
+
+// Taxonomy Cards
+.taxonomy-card .taxonomy-title {
+    font-size: 15px !important;
+}
+
+// Breadcrumbs
+.breadcrumb li {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+// Menu styles moved to _menu.scss
+
+// 404 Page
+.error404 .single-page-article .article-detail.block-body {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+
+    h4 {
+        font-size: 14px;
+    }
+}
+
+// Login Modal
+.custom-modal-login .modal-content {
+    font-size: 14px;
+    font-weight: 500;
+
+    .modal-body .modal-login-form {
+        input {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .homey_login_button {
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+// // Detail Property Page
+// .main-content-area.detail-property-page {
+//     h3 {
+//         font-size: 15px !important;
+//     }
+
+//     .block,
+//     .has-medium-font-size,
+//     .block-body ul li,
+//     .block-body dt,
+//     .block-body dd {
+//         font-size: 18px !important;
+//         font-weight: 500;
+//         text-align: justify;
+//     }
+// }
+
+
+// =================================================================
+// Responsive Typography
+// =================================================================
+@media screen and (max-width: 992px) {
+    .services-module.style3 .service-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .block-icon {
+            padding: 0;
+            max-width: 60px;
+            min-width: auto;
+        }
+
+        .block-content {
+            width: auto;
+            text-align: center;
+        }
+    }
+
+    .vc_row.wpb_row.vc_row-fluid.vc_row-has-fill.vc_general.vc_parallax.vc_parallax-content-moving {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+}
+
+@media (max-width: $breakpoint-mobile-max) {
+    .container {
+        width: auto;
+    }
+
+    // Checkout Page Specific Styles
+    .single-page-article.block.post-2047.page.type-page.status-publish.hentry,
+    .single-page-article.block.post-2048.page.type-page.status-publish.hentry {
+        .woocommerce-checkout #payment {
+            div.payment_box {
+                margin: 0;
+                padding: 0.5em;
+            }
+
+            ul.payment_methods {
+                padding: 0;
+            }
+        }
+
+        .article-detail.block-body {
+            padding: 0;
+        }
+    }
+}
+
+// =================================================================
+// Form Elements
+// =================================================================
+.checkbox,
+.checkbox-inline,
+.radio,
+.radio-inline {
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        position: relative;
+    }
+}
+
+// =================================================================
+// Dashboard Tables
+// =================================================================
+.table-block.dashboard-reservation-table.dashboard-table {
+    width: auto;
+    display: block;
+    overflow-x: auto;
+
+    .table {
+        overflow-x: auto;
+        font-size: 12px;
+    }
+}
+
+// =================================================================
+// Homepage Banner
+// =================================================================
+.home .banner-subtitle {
+    font-size: 20px;
+}
+
+// =================================================================
+// Homey Carousel
+// =================================================================
+.homey-carousel .media-left,
+.media-left {
+    display: block !important;
+}
+
+// =================================================================
+// Item Elements
+// =================================================================
+.item-user-image {
+    right: 20px;
+    bottom: 16px;
+
+    &.list-item-hidden {
+        display: none !important;
+    }
+}
+
+.item-amenities {
+    max-width: 350px !important;
+}
+
+.title-head-left {
+    width: 323px !important;
+}
+
+.property-module-grid-slider {
+    .slick-prev {
+        right: 72px;
+    }
+
+    .slick-arrow {
+        width: 67px;
+    }
+}
+
+.property-manager-container {
+    form>.form-wrapper .form-control {
+        font-family:$primary-font;
+        outline: none !important;
+        font-size: 16px;
+        height: 42px;
+        padding: 0 12px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+
+        border-style: solid;
+        border-width: 1px;
+        display: block;
+        width: 100%;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border-radius: 4px;
+
+    }
+
+    .cols {
+        width: 100%;
+    }
+
+    @media (min-width: $max-width) {
+        .align-self-y-bottom {
+            width: 10%;
+        }
+    }
+
+    label {
+        font-weight: 700;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: $primary-color;
+        border-color: $primary-color;
+        border: none;
+        width: 100%;
+        font-weight: 700;
+        line-height: 40px;
+        padding: 0 30px;
+        text-align: center;
+        border-radius: 4px;
+        outline: none !important;
+        font-size: 16px;
+
+        &:hover {
+            color: #ffffff;
+            background-color: $primary-color;
+            border-color: $primary-color;
+        }
+    }
+    .list-menu-container .list-menu .btn {
+        font-weight: 700;
+        line-height: 40px;
+        padding: 0 30px;
+        text-align: center;
+        border-radius: 4px; 
+    }
+    .property-form {
+        .btn-primary {
+            width:auto;
+    }
+}
+}
+
+// Mobile Menu and Search Popup styles moved to _menu.scss
+
+// =================================================================
+// UI Datepicker
+// =================================================================
+#ui-datepicker-div {
+    border-radius: 30px !important;
+}
+

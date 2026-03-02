@@ -1,0 +1,23 @@
+// Dataviews
+.dataviews {
+	&-wrapper {
+		.dataviews-view-table {
+			&__row {
+				& td:nth-child(1) {
+					.dataviews-view-table__cell-content-wrapper {
+						white-space: normal;
+						word-break: break-word;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Components popover
+.components-popover {
+	// fallback
+	&__fallback-container .components-dropdown__content.is-positioned {
+		z-index: 7;
+	}
+}

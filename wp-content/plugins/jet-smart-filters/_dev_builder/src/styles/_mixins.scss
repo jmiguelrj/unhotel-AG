@@ -1,0 +1,25 @@
+/**
+ * Mixins
+ */
+@mixin fixed-block {
+	& {
+		position: fixed;
+		left: 0;
+		right: 0;
+		margin-left: 0;
+	}
+
+	@media (max-width: 782px) {
+		#wpwrap.wp-responsive-open & {
+			margin-left: 190px;
+		}
+	}
+
+	@media (min-width: 783px) and (max-width: 960px) {
+		margin-left: 36px;
+	}
+
+	@media (min-width: 961px) {
+		margin-left: 160px;
+	}
+}

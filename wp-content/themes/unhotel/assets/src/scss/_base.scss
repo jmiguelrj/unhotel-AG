@@ -1,0 +1,166 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+// Reset and Base Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: $primary-font;
+    color: $text-color;
+    font-size: 1rem;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $primary-dark;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+// Focus states
+*:focus,
+*:focus-visible {
+    outline: transparent;
+}
+
+// Typography
+body.page h1.post-title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $primary-font;
+    font-weight: 700;
+    color: $text-color;
+}
+
+h2 {
+    font-size: $h2-size;
+}
+
+.paragraphs-subheadings {
+    font-size: $paragraph-md-size;
+}
+
+.mt-5 {
+    margin-top: $spacing-xlarge;
+}
+.is-dotted-style {
+    border-bottom: 1px dotted #d8dce1;
+    border-top: 0;
+    border-style: dotted;
+    border-left: 0;
+    border-right: 0;
+    margin: 30px 0;
+}
+
+//lets make style for all inputs , the height is not apply to textarea but the rest of the style yes
+input,
+select,
+textarea {
+    font-family: $primary-font;
+    font-weight: 500;
+    height: 42px;
+    font-size: 14px;
+    border: 1px solid #d8dce1;
+    padding: 0 10px;
+    color: #4f5962;
+    border-radius: 4px;
+    &:focus {
+        border-color: #7ed2e2;
+        outline: none;
+    }
+}
+.wp-block-table {
+    table {
+        thead {
+            border: 0;
+        }
+        th {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: 15px;
+            vertical-align: middle;
+        }
+        td,
+        tr {
+            border: 1px solid #ddd;
+        }
+    }
+}
+
+body:not(.custom-vk_page) {
+    &.default-editor-style {
+        #primary {
+            > .container {
+                padding-left: 0;
+                padding-right: 0;
+
+                header {
+                    padding: 30px 0px 20px 0px !important;
+                    h1 {
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        line-height: 120%;
+                        @media (min-width: $breakpoint-tablet) {
+                            font-size: 2.5rem;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            @media (max-width: $breakpoint-desktop) {
+                .single-page-article .article-detail.block-body {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $breakpoint-tablet) {
+    .spacer-mobile {
+        height: 20px !important;
+    }
+}
+.wp-block-list {
+    padding: 6px 35px 10px 35px;
+}
+@media (max-width: $breakpoint-tablet) {
+    .p-top {
+        padding-top: 40px;
+    }
+}

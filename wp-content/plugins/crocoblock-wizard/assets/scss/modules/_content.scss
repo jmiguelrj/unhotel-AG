@@ -1,0 +1,148 @@
+.cbw-content {
+	.vertical-flex & {
+		flex: 1 1 auto;
+	}
+}
+
+.cbw-import-type {
+	height: 100%;
+}
+
+.cbw-clear-content {
+	padding: 23px 0 0 0;
+	&__note {
+		display: flex;
+		font-size: 13px;
+		line-height: 20px;
+		align-items: center;
+		color: $color__error;
+		padding: 15px 0 0 0;
+		svg {
+			@include margin(0, 5px, 0, 0);
+		}
+	}
+	&__result {
+		font-size: 13px;
+		line-height: 20px;
+		padding: 15px 0 0 0;
+		&--error {
+			color: $color__error;
+		}
+		&--success {
+			color: $color__success;
+		}
+	}
+	&__message {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 23px;
+		padding: 0 0 2px;
+		color: $color__heading;
+	}
+	&__controls {
+		display: flex;
+		max-width: 650px;
+		.cx-vui-button {
+			flex: 0 0 100px;
+			@include margin(0, 0, 0, 10px);
+		}
+		.cx-vui-component-raw {
+			flex: 1 1 auto;
+			input {
+				width: 100%;
+				padding: 11px 15px;
+			}
+		}
+	}
+}
+
+.cbw-import-summary {
+	padding: 20px;
+	border: 1px solid $color__border-in-panel;
+	border-radius: 4px;
+	margin: 30px 0 0 0;
+	background: #fff;
+	table {
+		width: 100%;
+		th {
+			font-weight: normal;
+			text-align: getValueByDirection(left, right);
+			font-size: 15px;
+			line-height: 23px;
+			color: $color__text;
+			padding: 0 0 5px;
+		}
+		td {
+			padding: 5px 0;
+			font-size: 15px;
+			line-height: 23px;
+		}
+		td.summary-label {
+			font-weight: 500;
+			color: $color__heading;
+		}
+		.summary-label {
+			width: 10%;
+			min-width: 145px;
+		}
+		.summary-total {
+			width: 8%;
+			min-width: 100px;
+			@include padding(0, 0, 0, 30px);
+		}
+	}
+}
+
+.summary-total-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content-page {
+	.cbw-block__top {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.cbw-regenerate {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.cbw-slides-wrap {
+		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
+	}
+}
+
+.cbw-slides {
+	width: 100%;
+}
+
+.cbw-slide {
+	text-align: center;
+	&__title {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 140%;
+		color: $color__heading;
+		padding: 23px 0 6px;
+	}
+	&__desc {
+		font-size: 15px;
+		line-height: 140%;
+	}
+}
+
+.cx-vui-panel {
+	&.content-page {
+		background-image: url( '../img/content-cover.png' );
+	}
+	&.content-page.import-step {
+		background-image: url( '../img/content-alt-cover.png' );
+	}
+	&.content-page.regenerate-step {
+		background-image: none;
+	}
+}

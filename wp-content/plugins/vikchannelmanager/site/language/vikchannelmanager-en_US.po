@@ -1,0 +1,1157 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: VikChannelManager\n"
+"POT-Creation-Date: 2026-01-21 16:52+0100\n"
+"PO-Revision-Date: 2026-01-21 16:52+0100\n"
+"Last-Translator: \n"
+"Language-Team: extensionsforjoomla.com\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ../../libraries/language\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-SearchPath-0: site.php\n"
+"X-Poedit-SearchPath-1: general.php\n"
+
+#: general.php:42
+msgid "AI Auto-Responder"
+msgstr "AI Auto-Responder"
+
+#: general.php:45
+msgid "AI Auto-Responder Failure"
+msgstr "AI Auto-Responder Failure"
+
+#: general.php:48
+msgid "See reply"
+msgstr "See reply"
+
+#: general.php:51
+msgid "See review"
+msgstr "See review"
+
+#: general.php:54
+msgid "AI Auto-Responder Draft"
+msgstr "AI Auto-Responder Draft"
+
+#: general.php:57
+#, php-format
+msgid "The AI generated a draft for the guest message: %s."
+msgstr "The AI generated a draft for the guest message: %s."
+
+#: general.php:60
+msgid "AI Auto-Reply Review"
+msgstr "AI Auto-Reply Review"
+
+#: general.php:63
+msgid "AI Auto-Reply Review Failure"
+msgstr "AI Auto-Reply Review Failure"
+
+#: general.php:66
+msgid "AI Auto-Review Guest"
+msgstr "AI Auto-Review Guest"
+
+#: general.php:69
+msgid "AI Auto-Review Guest Failure"
+msgstr "AI Auto-Review Guest Failure"
+
+#: site.php:42
+#, php-format
+msgid ""
+"VikChannelManager\n"
+"\n"
+"An error occurred while processing a new reservation received from the "
+"Channel %s.\n"
+"The booking id %s was made for the room id %s that corresponds to the room -"
+"%s- of VikBooking. The room is not available from the %s to the %s.\n"
+"Please verify the reservation manually from your Extranet Account on the "
+"Channel and check all the reservations saved in VikBooking for those dates.\n"
+"This booking will be automatically saved and confirmed by the Channel even "
+"if you do not do anything. This is just an alert message to inform you about "
+"the availability situation on your site.\n"
+"\n"
+"If you have already received a notification message for this booking id, "
+"please ignore this message."
+msgstr ""
+"VikChannelManager\n"
+"\n"
+"An error occurred while processing a new order received from the Channel "
+"%s.\n"
+"The booking id %s was made for the room id %s that corresponds to the room -"
+"%s- of VikBooking. The room is not available from the %s to the %s.\n"
+"Please verify the order manually from your Hotel Account on the Channel and "
+"check all the reservations saved in VikBooking for those dates.\n"
+"This booking will be automatically saved and confirmed by the Channel even "
+"if you do not do anything. This is just an alert message to inform you that "
+"the order was not saved in VikBooking.\n"
+"\n"
+"If you have already received a notification message for this booking id, "
+"please ignore this message."
+
+#: site.php:45
+msgid "VikChannelManager Error Notification"
+msgstr "VikChannelManager Error Notification"
+
+#: site.php:48
+#, php-format
+msgid ""
+"VikChannelManager\n"
+"\n"
+"An error occurred while processing a cancellation request for a reservation "
+"received from the channel %s.\n"
+"The booking id %s does not exist in VikBooking so the system was unable to "
+"cancel the reservation. The room id for whom the customer requested the "
+"cancellation is %s. The reservation was probably already cancelled in "
+"VikBooking or never saved.\n"
+"\n"
+"Please ignore this message if you have already received a notification for "
+"this booking id. Otherwise check your OTA account because they will "
+"automatically proceed with the cancellation of the booking because it was "
+"requested by the customer."
+msgstr ""
+"VikChannelManager\n"
+"\n"
+"An error occurred while processing a cancellation request for a reservation "
+"received from the channel %s.\n"
+"The booking id %s does not exist in VikBooking so the system was unable to "
+"cancel the reservation. The room id for whom the customer requested the "
+"cancellation is %s. The reservation was probably already cancelled in "
+"VikBooking or never saved.\n"
+"\n"
+"Please ignore this message if you have already received a notification for "
+"this booking id. Otherwise check your OTA account because they will "
+"automatically proceed with the cancellation of the booking because it was "
+"requested by the customer."
+
+#: site.php:51
+msgid "VikChannelManager Notification: Booking not found for cancellation"
+msgstr "VikChannelManager Notification: Booking not found for cancellation"
+
+#: site.php:54
+#, php-format
+msgid ""
+"VikChannelManager\n"
+"\n"
+"An error occurred while processing a modification request for a reservation "
+"received from the channel %s.\n"
+"The booking id %s does not exist in VikBooking so the system was unable to "
+"modify the reservation. The room id for whom the customer requested the "
+"modification is %s. The reservation was probably already cancelled in "
+"VikBooking or never saved.\n"
+"\n"
+"Please ignore this message if you have already received a notification for "
+"the modification of this booking id. Otherwise check your OTA account "
+"because they will automatically proceed with the modification of the booking "
+"because it was requested by the customer."
+msgstr ""
+"VikChannelManager\n"
+"\n"
+"An error occurred while processing a modification request for a reservation "
+"received from the channel %s.\n"
+"The booking id %s does not exist in VikBooking so the system was unable to "
+"modify the reservation. The room id for whom the customer requested the "
+"modification is %s. The reservation was probably already cancelled in "
+"VikBooking or never saved.\n"
+"\n"
+"Please ignore this message if you have already received a notification for "
+"the modification of this booking id. Otherwise check your OTA account "
+"because they will automatically proceed with the modification of the booking "
+"because it was requested by the customer."
+
+#: site.php:57
+msgid "VikChannelManager Notification: Booking not found for modification"
+msgstr "VikChannelManager Notification: Booking not found for modification"
+
+#: site.php:60
+#, php-format
+msgid ""
+"VikChannelManager\n"
+"\n"
+"An error occurred while processing a modification request of an existing "
+"reservation received from the channel OTA %s.\n"
+"The booking id %s was made on the room id %s that corresponds to the room -"
+"%s- of VikBooking. The room is not available from the %s to the %s.\n"
+"Please verify the reservation manually from the OTA and checks all the "
+"reservations saved in VikBooking for those dates.\n"
+"This booking will be automatically saved by the OTA even if you do not do "
+"anything, this is just an alert message to inform you that the reservation "
+"was not modified in VikBooking.\n"
+"In case you want to manually remove or modify the reservation manually in "
+"VikBooking, the reservation id of VikBooking is %s.\n"
+"\n"
+"If you have already received a notification message for this booking id, "
+"please ignore this message."
+msgstr ""
+"VikChannelManager\n"
+"\n"
+"An error occurred while processing a modification request of an existing "
+"reservation received from the channel OTA %s.\n"
+"The booking id %s was made on the room id %s that corresponds to the room -"
+"%s- of VikBooking. The room is not available from the %s to the %s.\n"
+"Please verify the reservation manually from the OTA and checks all the "
+"reservations saved in VikBooking for those dates.\n"
+"This booking will be automatically saved by the OTA even if you do not do "
+"anything, this is just an alert message to inform you that the reservation "
+"was not modified in VikBooking.\n"
+"In case you want to manually remove or modify the reservation manually in "
+"VikBooking, the reservation id of VikBooking is %s.\n"
+"\n"
+"If you have already received a notification message for this booking id, "
+"please ignore this message."
+
+#: site.php:63
+msgid "VikChannelManager Modification Error Notification"
+msgstr "VikChannelManager Modification Error Notification"
+
+#: site.php:66
+#, php-format
+msgid ""
+"Price Mismatch: the total amount that should be paid for this room in these "
+"dates is %s."
+msgstr ""
+"Price Mismatch: the total amount that should be paid for this room in these "
+"dates is %s."
+
+#: site.php:69
+msgid "TripAdvisor - New Booking Received"
+msgstr "TripAdvisor - New Booking Received"
+
+#: site.php:72
+#, php-format
+msgid ""
+"A new booking was received from TripAdvisor. [%s]\n"
+"\n"
+"%s\n"
+"\n"
+"Checkin Date: %s - Checkout Date: %s\n"
+"\n"
+"Customer Info:\n"
+"\n"
+"%s\n"
+"The credit card details were partially stored in the database and are "
+"available at the link below.\n"
+"\n"
+"Remaining Card Number: %s\n"
+"\n"
+"Order Details:\n"
+"\n"
+"%s"
+msgstr ""
+"A new booking was received from TripAdvisor. [%s]\n"
+"\n"
+"%s\n"
+"\n"
+"Checkin Date: %s - Checkout Date: %s\n"
+"\n"
+"Customer Info:\n"
+"\n"
+"%s\n"
+"The credit card details were partially stored in the database and are "
+"available at the link below.\n"
+"\n"
+"Remaining Card Number: %s\n"
+"\n"
+"Order Details:\n"
+"\n"
+"%s"
+
+#: site.php:75
+msgid ""
+"The status is PENDING so you may want to process the payment manually "
+"through your virtual terminal or from the order details page."
+msgstr ""
+"The status is PENDING so you may want to process the payment manually "
+"through your virtual terminal or from the order details page."
+
+#: site.php:78
+msgid ""
+"The status is CONFIRMED and you may want to collect the credit card details "
+"from this email and from the administrator section."
+msgstr ""
+"The status is CONFIRMED and you may want to collect the credit card details "
+"from this email and from the administrator section."
+
+#: site.php:81
+msgid "Trivago - New Booking Received"
+msgstr "Trivago - New Booking Received"
+
+#: site.php:84
+#, php-format
+msgid ""
+"A new booking was received from Trivago. [%s]\n"
+"\n"
+"%s\n"
+"\n"
+"Checkin Date: %s - Checkout Date: %s\n"
+"\n"
+"Customer Info:\n"
+"\n"
+"%s\n"
+"The payment details were partially stored in the database and are available "
+"at the link below.\n"
+"\n"
+"Remaining Card Number/Payment Details: %s\n"
+"\n"
+"Order Details:\n"
+"\n"
+"%s"
+msgstr ""
+"A new booking was received from Trivago. [%s]\n"
+"\n"
+"%s\n"
+"\n"
+"Checkin Date: %s - Checkout Date: %s\n"
+"\n"
+"Customer Info:\n"
+"\n"
+"%s\n"
+"The payment details were partially stored in the database and are available "
+"at the link below.\n"
+"\n"
+"Remaining Card Number/Payment Details: %s\n"
+"\n"
+"Order Details:\n"
+"\n"
+"%s"
+
+#: site.php:87
+msgid "Booking Sensitive Data: Credit Card"
+msgstr "Booking Sensitive Data: Credit Card"
+
+#: site.php:90
+#, php-format
+msgid ""
+"The credit card details for the Booking ID %s received from %s, were "
+"partially stored in the database and you can see them from the link below.\n"
+"\n"
+"Remaining Card Number: %s\n"
+"\n"
+"Order Details link:\n"
+"%s"
+msgstr ""
+"The credit card details for the Booking ID %s received from %s, were "
+"partially stored in the database and you can see them from the link below.\n"
+"\n"
+"Remaining Card Number: %s\n"
+"\n"
+"Order Details link:\n"
+"%s"
+
+#: site.php:93
+msgid "Missing App Credentials in Vik Channel Manager"
+msgstr "Missing App Credentials in Vik Channel Manager"
+
+#: site.php:96
+msgid "Missing App Credential Email"
+msgstr "Missing App Credential Email"
+
+#: site.php:99
+msgid "Missing App Credential Password"
+msgstr "Missing App Credential Password"
+
+#: site.php:102
+msgid "Invalid Email for Authentication"
+msgstr "Invalid Email for Authentication"
+
+#: site.php:105
+msgid "Invalid Password for Authentication"
+msgstr "Invalid Password for Authentication"
+
+#: site.php:108
+msgid "VikBooking is not installed"
+msgstr "VikBooking is not installed"
+
+#: site.php:111
+msgid "Invalid Date!"
+msgstr "Invalid Date!"
+
+#: site.php:114
+msgid "Invalid request type"
+msgstr "Invalid request type"
+
+#: site.php:117
+msgid "Empty Booking ID"
+msgstr "Empty Booking ID"
+
+#: site.php:120
+msgid "Requested booking not available"
+msgstr "Requested booking not available"
+
+#: site.php:123
+msgid "No rooms connected to the selected booking"
+msgstr "No rooms connected to the selected booking"
+
+#: site.php:126
+msgid "No rooms available"
+msgstr "No rooms available"
+
+#: site.php:129
+#, php-format
+msgid "Error %s: %s"
+msgstr "Error %s: %s"
+
+#: site.php:132
+msgid "No rooms found"
+msgstr "No rooms found"
+
+#: site.php:135
+msgid "Empty Request"
+msgstr "Empty Request"
+
+#: site.php:138
+msgid "Invalid request"
+msgstr "Invalid request"
+
+#: site.php:141
+msgid "Access Denied"
+msgstr "Access Denied"
+
+#: site.php:144
+msgid "Error with channels sync. Check the notifications from your site."
+msgstr "Error with channels sync. Check the notifications from your site."
+
+#: site.php:147
+msgid "Channel Mobile App not available"
+msgstr "Channel Mobile App not available"
+
+#: site.php:150
+#, php-format
+msgid "Some rooms are no longer available for these dates (%s)"
+msgstr "Some rooms are no longer available for these dates (%s)"
+
+#: site.php:153
+msgid "Dates invalid or in the past"
+msgstr "Dates invalid or in the past"
+
+#: site.php:156
+#, php-format
+msgid "The room %s cannot be switched to the %s on these dates."
+msgstr "The room %s cannot be switched to the %s on these dates."
+
+#: site.php:159
+#, php-format
+msgid "Previous room %s was switched on %s"
+msgstr "Previous room %s was switched on %s"
+
+#: site.php:162
+msgid "No rates found"
+msgstr "No rates found"
+
+#: site.php:165
+msgid "No valid channels found for this room"
+msgstr "No valid channels found for this room"
+
+#: site.php:168
+msgid "Invalid Rate Plans provided"
+msgstr "Invalid Rate Plans provided"
+
+#: site.php:171
+#, php-format
+msgid "Errors while updating the website rates: %s"
+msgstr "Errors while updating the website rates: %s"
+
+#: site.php:174
+msgid "Room Closed"
+msgstr "Room Closed"
+
+#: site.php:177
+#, php-format
+msgid "Room Closed via App by %s"
+msgstr "Room Closed via App by %s"
+
+#: site.php:180
+#, php-format
+msgid "New Booking created via App by %s"
+msgstr "New Booking created via App by %s"
+
+#: site.php:183
+msgid "First Name"
+msgstr "First Name"
+
+#: site.php:186
+msgid "Last Name"
+msgstr "Last Name"
+
+#: site.php:189
+msgid "Email"
+msgstr "Email"
+
+#: site.php:192
+msgid "Phone"
+msgstr "Phone"
+
+#: site.php:195
+msgid "Address"
+msgstr "Address"
+
+#: site.php:198
+msgid "City"
+msgstr "City"
+
+#: site.php:201
+msgid "ZIP"
+msgstr "ZIP"
+
+#: site.php:204
+msgid "Your API Key is either expired or invalid"
+msgstr "Your API Key is either expired or invalid"
+
+#: site.php:207
+msgid "News from E4jConnect"
+msgstr "News from E4jConnect"
+
+#: site.php:210
+msgid "Registration"
+msgstr "Registration"
+
+#: site.php:213
+msgid "Checked-in"
+msgstr "Checked-in"
+
+#: site.php:216
+msgid "Checked-out"
+msgstr "Checked-out"
+
+#: site.php:219
+msgid "No Show"
+msgstr "No Show"
+
+#: site.php:222
+msgid "none"
+msgstr "none"
+
+#: site.php:225
+msgid "Today"
+msgstr "Today"
+
+#: site.php:228
+msgid "Yesterday"
+msgstr "Yesterday"
+
+#: site.php:231
+msgid "Type your message..."
+msgstr "Type your message..."
+
+#: site.php:234
+msgid "No threads found"
+msgstr "No threads found"
+
+#: site.php:237
+msgid "An error occurred while sending the message. Please, try again."
+msgstr "An error occurred while sending the message. Please, try again."
+
+#: site.php:240
+msgid "Please enter an optional subject for this thread."
+msgstr "Please enter an optional subject for this thread."
+
+#: site.php:243
+msgid "Information Request"
+msgstr "Information Request"
+
+#: site.php:246 site.php:249
+#, php-format
+msgid "You have a message from %s"
+msgstr "You have a message from %s"
+
+#: site.php:252 site.php:255
+#, php-format
+msgid "You have a message from %s:\\n%s"
+msgstr "You have a message from %s:\\n%s"
+
+#: site.php:258
+#, php-format
+msgid "Reservation ID %s"
+msgstr "Reservation ID %s"
+
+#: site.php:261
+#, php-format
+msgid "You have a new message from %s"
+msgstr "You have a new message from %s"
+
+#: site.php:264
+msgid "You have a new message from the guest"
+msgstr "You have a new message from the guest"
+
+#: site.php:267
+msgid "Click here to respond"
+msgstr "Click here to respond"
+
+#: site.php:270
+msgid "Reservation Details"
+msgstr "Reservation Details"
+
+#: site.php:273
+msgid "Guest name"
+msgstr "Guest name"
+
+#: site.php:276
+msgid "Check-in"
+msgstr "Check-in"
+
+#: site.php:279
+msgid "Check-out"
+msgstr "Check-out"
+
+#: site.php:282
+#, php-format
+msgid "Confirmation number %s"
+msgstr "Confirmation number %s"
+
+#: site.php:285
+msgid "Attached files"
+msgstr "Attached files"
+
+#: site.php:288
+msgid "Nights"
+msgstr "Nights"
+
+#: site.php:291
+msgid "Total rooms"
+msgstr "Total rooms"
+
+#: site.php:294
+msgid ""
+"This email notification was sent by your Channel Manager because you have "
+"received a message from the guest through the chat regarding a specific "
+"reservation. Please log in to the back-end section of your website to send a "
+"reply to the guest."
+msgstr ""
+"This email notification was sent by your Channel Manager because you have "
+"received a message from the guest through the chat regarding a specific "
+"reservation. Please log in to the back-end section of your website to send a "
+"reply to the guest."
+
+#: site.php:297
+msgid ""
+"You have received this email notification because the property has sent you "
+"a message through the chat regarding your reservation. Please access the "
+"booking details page to reply."
+msgstr ""
+"You have received this email notification because the property has sent you "
+"a message through the chat regarding your reservation. Please access the "
+"booking details page to reply."
+
+#: site.php:300
+msgid "No records found"
+msgstr "No records found"
+
+#: site.php:305
+msgid "Your Weekly Report"
+msgstr "Your Weekly Report"
+
+#: site.php:308
+msgid "Your Bi-Weekly Report"
+msgstr "Your Bi-Weekly Report"
+
+#: site.php:311
+msgid "Your Monthly Report"
+msgstr "Your Monthly Report"
+
+#: site.php:314
+msgid "Total income"
+msgstr "Total income"
+
+#: site.php:317
+msgid "Gross Revenue"
+msgstr "Gross Revenue"
+
+#: site.php:320
+msgid "New Bookings"
+msgstr "New Bookings"
+
+#: site.php:323
+msgid "Direct Bookings from your Website"
+msgstr "Direct Bookings from your Website"
+
+#: site.php:326
+msgid "of all bookings"
+msgstr "of all bookings"
+
+#: site.php:329
+msgid "Global Occupancy"
+msgstr "Global Occupancy"
+
+#: site.php:332
+msgid "Reservations Count"
+msgstr "Reservations Count"
+
+#: site.php:335
+msgid "Channel"
+msgstr "Channel"
+
+#: site.php:338
+msgid "Rate of Growth"
+msgstr "Rate of Growth"
+
+#: site.php:341
+msgid "Your Website"
+msgstr "Your Website"
+
+#: site.php:344
+msgid ""
+"You are receiving this message because you have enabled the periodical "
+"Reports from the page Settings in Vik Channel Manager. Log into your website "
+"to change the configuration."
+msgstr ""
+"You are receiving this message because you have enabled the periodical "
+"Reports from the page Settings in Vik Channel Manager. Log into your website "
+"to change the configuration."
+
+#: site.php:347
+msgid "Please do not reply to this message as it was generated automatically."
+msgstr "Please do not reply to this message as it was generated automatically."
+
+#: site.php:350
+msgid "Channel Manager Report"
+msgstr "Channel Manager Report"
+
+#: site.php:353
+msgid "Booking Request Accepted"
+msgstr "Booking Request Accepted"
+
+#: site.php:356
+#, php-format
+msgid "Unknown Error [%s]"
+msgstr "Unknown Error [%s]"
+
+#: site.php:359
+msgid "Reservation was updated from \"Pending\" to \"Confirmed\"."
+msgstr "Reservation was updated from \"Pending\" to \"Confirmed\"."
+
+#: site.php:362
+msgid ""
+"The reservation is pending confirmation, but there is no availability at "
+"this moment."
+msgstr ""
+"The reservation is pending confirmation, but there is no availability at "
+"this moment."
+
+#: site.php:365
+msgid "Your Channel Manager subscription will expire soon"
+msgstr "Your Channel Manager subscription will expire soon"
+
+#: site.php:368
+#, php-format
+msgid ""
+"This message was generated automatically by your own website at %s.\n"
+"\n"
+"This is a reminder to inform you that your E4jConnect subscription for the "
+"Channel Manager service will expire in %d days (%s). Do not forget to renew "
+"the service before then to not lose the connectivity."
+msgstr ""
+"This message was generated automatically by your own website at %s.\n"
+"\n"
+"This is a reminder to inform you that your E4jConnect subscription for the "
+"Channel Manager service will expire in %d days (%s). Do not forget to renew "
+"the service before then to not lose the connectivity."
+
+#: site.php:371
+msgid ""
+"Thanks for getting in touch. We will get back to you as soon as possible."
+msgstr ""
+"Thanks for getting in touch. We will get back to you as soon as possible."
+
+#: site.php:374
+msgid "Attach"
+msgstr "Attach"
+
+#: site.php:377
+msgid "AI Assistant"
+msgstr "AI Assistant"
+
+#: site.php:380
+msgid "Translate"
+msgstr "Translate"
+
+#: site.php:383
+msgid "Translating..."
+msgstr "Translating..."
+
+#: site.php:386
+msgid "AI ✨"
+msgstr "AI ✨"
+
+#: site.php:389
+msgid "The AI will auto-respond shortly"
+msgstr "The AI will auto-respond shortly"
+
+#: site.php:392
+msgid "The AI auto-responder is stopped"
+msgstr "The AI auto-responder is stopped"
+
+#: site.php:395
+msgid "Resume"
+msgstr "Resume"
+
+#: site.php:398
+msgid "Stop"
+msgstr "Stop"
+
+#: site.php:401
+msgid "The AI generated the following message."
+msgstr "The AI generated the following message."
+
+#: site.php:404
+msgid "Send"
+msgstr "Send"
+
+#: site.php:407
+msgid "Edit"
+msgstr "Edit"
+
+#: site.php:410
+msgid "This function requires the AI service integration!"
+msgstr "This function requires the AI service integration!"
+
+#: site.php:419
+msgid "Sunday"
+msgstr "Sunday"
+
+#: site.php:422
+msgid "Monday"
+msgstr "Monday"
+
+#: site.php:425
+msgid "Tuesday"
+msgstr "Tuesday"
+
+#: site.php:428
+msgid "Wednesday"
+msgstr "Wednesday"
+
+#: site.php:431
+msgid "Thursday"
+msgstr "Thursday"
+
+#: site.php:434
+msgid "Friday"
+msgstr "Friday"
+
+#: site.php:437
+msgid "Saturday"
+msgstr "Saturday"
+
+#: site.php:440
+msgid "January"
+msgstr "January"
+
+#: site.php:443
+msgid "February"
+msgstr "February"
+
+#: site.php:446
+msgid "March"
+msgstr "March"
+
+#: site.php:449
+msgid "April"
+msgstr "April"
+
+#: site.php:452
+msgid "May"
+msgstr "May"
+
+#: site.php:455
+msgid "June"
+msgstr "June"
+
+#: site.php:458
+msgid "July"
+msgstr "July"
+
+#: site.php:461
+msgid "August"
+msgstr "August"
+
+#: site.php:464
+msgid "September"
+msgstr "September"
+
+#: site.php:467
+msgid "October"
+msgstr "October"
+
+#: site.php:470
+msgid "November"
+msgstr "November"
+
+#: site.php:473
+msgid "December"
+msgstr "December"
+
+#~ msgid "Type something and hit enter to send the message"
+#~ msgstr "Type something and hit enter to send the message"
+
+#~ msgid "Please insert below your e4jConnect API Key"
+#~ msgstr "Please insert below your e4jConnect API Key"
+
+#~ msgid "Validate API Key"
+#~ msgstr "Validate API Key"
+
+#~ msgid "Dashboard"
+#~ msgstr "Dashboard"
+
+#~ msgid "Settings"
+#~ msgstr "Settings"
+
+#~ msgid "IBE"
+#~ msgstr "IBE"
+
+#~ msgid "Hotel"
+#~ msgstr "Hotel"
+
+#~ msgid "Availability & Rates"
+#~ msgstr "Availability & Rates"
+
+#~ msgid "Synchronize Rooms"
+#~ msgstr "Synchronize Rooms"
+
+#~ msgid "Custom Availability"
+#~ msgstr "Custom Availability"
+
+#~ msgid "Details"
+#~ msgstr "Details"
+
+#~ msgid "Rooms Inventory"
+#~ msgstr "Rooms Inventory"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Review Express"
+#~ msgstr "Review Express"
+
+#~ msgid "Properties"
+#~ msgstr "Properties"
+
+#~ msgid "Availability Overview"
+#~ msgstr "Availability Overview"
+
+#~ msgid "Smart Balancer"
+#~ msgstr "Smart Balancer"
+
+#~ msgid "Compare 31 days Availability to all Channels"
+#~ msgstr "Compare 31 days Availability to all Channels"
+
+#~ msgid "Launch Input Output Diagnostic Test"
+#~ msgstr "Launch Input Output Diagnostic Test"
+
+#~ msgid "IO Traffic Diagnostic Test Successful! Booking retrieval example:"
+#~ msgstr "IO Traffic Diagnostic Test Successful! Booking retrieval example:"
+
+#~ msgid "IO Traffic Diagnostic Test Failed! Error response:"
+#~ msgstr "IO Traffic Diagnostic Test Failed! Error response:"
+
+#~ msgid "Yes"
+#~ msgstr "Yes"
+
+#~ msgid "From Date"
+#~ msgstr "From Date"
+
+#~ msgid "To Date"
+#~ msgstr "To Date"
+
+#~ msgid "Compare data to IBE"
+#~ msgstr "Compare data to IBE"
+
+#~ msgid "Warning!"
+#~ msgstr "Warning!"
+
+#~ msgid ""
+#~ "You have no Inventories loaded for this Room Type and Rate Plan for the "
+#~ "selected Dates."
+#~ msgstr ""
+#~ "You have no Inventories loaded for this Room Type and Rate Plan for the "
+#~ "selected Dates."
+
+#~ msgid ""
+#~ "Use the function &quot;Copy Rates &amp; Inventory&quot; to push your "
+#~ "availability and rates through n days in the future."
+#~ msgstr ""
+#~ "Use the function &quot;Copy Rates &amp; Inventory&quot; to push your "
+#~ "availability and rates through n days in the future."
+
+#~ msgid "Okay"
+#~ msgstr "Okay"
+
+#~ msgid "Copy Rates &amp; Inventory"
+#~ msgstr "Copy Rates &amp; Inventory"
+
+#~ msgid "Copy availability and rates of the Date"
+#~ msgstr "Copy availability and rates of the Date"
+
+#~ msgid "Copy availability and/or rates of the Date"
+#~ msgstr "Copy availability and/or rates of the Date"
+
+#~ msgid "Availability &amp; Rates"
+#~ msgstr "Availability &amp; Rates"
+
+#~ msgid ""
+#~ "Both Availability and Rates will be copied and pushed from this date."
+#~ msgstr ""
+#~ "Both Availability and Rates will be copied and pushed from this date."
+
+#~ msgid "Rates Only"
+#~ msgstr "Rates Only"
+
+#~ msgid ""
+#~ "Only the Rates of this date will be copied and pushed. The Availability "
+#~ "of this date and the next days, will remain unchanged."
+#~ msgstr ""
+#~ "Only the Rates of this date will be copied and pushed. The Availability "
+#~ "of this date and the next days, will remain unchanged."
+
+#~ msgid "Copy Inventory from"
+#~ msgstr "Copy Inventory from"
+
+#~ msgid "Current Inventory Grid"
+#~ msgstr "Current Inventory Grid"
+
+#~ msgid "VikBooking (IBE)"
+#~ msgstr "VikBooking (IBE)"
+
+#~ msgid "and Apply them on the next n Days"
+#~ msgstr "and Apply them on the next n Days"
+
+#~ msgid "The values for this Date are already set for copy."
+#~ msgstr "The values for this Date are already set for copy."
+
+#~ msgid "Parent Rate Plans"
+#~ msgstr "Parent Rate Plans"
+
+#~ msgid "Any Rate Plans"
+#~ msgstr "Any Rate Plans"
+
+#~ msgid "Add Costs per Night"
+#~ msgstr "Add Costs per Night"
+
+#~ msgid "Remove all Costs per Night"
+#~ msgstr "Remove all Costs per Night"
+
+#~ msgid "Number of Nights"
+#~ msgstr "Number of Nights"
+
+#~ msgid "from"
+#~ msgstr "from"
+
+#~ msgid "Apply"
+#~ msgstr "Apply"
+
+#~ msgid "Cost per Night"
+#~ msgstr "Cost per Night"
+
+#~ msgid "the room type must support the Length Of Stay Pricing"
+#~ msgstr "the room type must support the Length Of Stay Pricing"
+
+#~ msgid "%d Guest"
+#~ msgstr "%d Guest"
+
+#~ msgid "%d Guests"
+#~ msgstr "%d Guests"
+
+#~ msgid "Last Update to Extranet"
+#~ msgstr "Last Update to Extranet"
+
+#~ msgid "Done"
+#~ msgstr "Done"
+
+#~ msgid "Load Rates from IBE"
+#~ msgstr "Load Rates from IBE"
+
+#~ msgid "Any Room Type"
+#~ msgstr "Any Room Type"
+
+#~ msgid "Any Rate Plan"
+#~ msgstr "Any Rate Plan"
+
+#~ msgid "Use this Price"
+#~ msgstr "Use this Price"
+
+#~ msgid "Copy All Prices"
+#~ msgstr "Copy All Prices"
+
+#~ msgid "OTA Room Type"
+#~ msgstr "OTA Room Type"
+
+#~ msgid "Open"
+#~ msgstr "Open"
+
+#~ msgid "Inventory"
+#~ msgstr "Inventory"
+
+#~ msgid "Total Inventory Sold: %d"
+#~ msgstr "Total Inventory Sold: %d"
+
+#~ msgid "Base Allocation: %d"
+#~ msgstr "Base Allocation: %d"
+
+#~ msgid "Flexible Allocation: %d"
+#~ msgstr "Flexible Allocation: %d"
+
+#~ msgid "Total Inventory"
+#~ msgstr "Total Inventory"
+
+#~ msgid "Flexible Allocations"
+#~ msgstr "Flexible Allocations"
+
+#~ msgid "Rate Plan"
+#~ msgstr "Rate Plan"
+
+#~ msgid "%s(%s)"
+#~ msgstr "%s(%s)"
+
+#~ msgid "Per Day"
+#~ msgstr "Per Day"
+
+#~ msgid "Nights: %d"
+#~ msgstr "Nights: %d"
+
+#~ msgid "Per Person"
+#~ msgstr "Per Person"
+
+#~ msgid "Occupancy %d:"
+#~ msgstr "Occupancy %d:"
+
+#~ msgid "Unknown Rate Type"
+#~ msgstr "Unknown Rate Type"
+
+#~ msgid "Single Rate"
+#~ msgstr "Single Rate"
+
+#~ msgid "Double Rate"
+#~ msgstr "Double Rate"
+
+#~ msgid "Full Rate"
+#~ msgstr "Full Rate"
+
+#~ msgid "Extra Person"
+#~ msgstr "Extra Person"
+
+#~ msgid "Extra Adult"
+#~ msgstr "Extra Adult"
+
+#~ msgid "Extra Child"
+#~ msgstr "Extra Child"
+
+#~ msgid "Extra Bed"
+#~ msgstr "Extra Bed"
+
+#~ msgid "Min LOS:"
+#~ msgstr "Min LOS:"
+
+#~ msgid "Max LOS:"
+#~ msgstr "Max LOS:"
+
+#~ msgid "Closed to Arrival"
+#~ msgstr "Closed to Arrival"
+
+#~ msgid "Closed to Departure"
+#~ msgstr "Closed to Departure"
+
+#~ msgid "Breakfast Included"
+#~ msgstr "Breakfast Included"
+
+#~ msgid "Promotion Blackout"
+#~ msgstr "Promotion Blackout"

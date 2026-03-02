@@ -1,0 +1,34 @@
+import { createComponentConfig, KoContainerViewModel } from '../control-base.js';
+import { AmeCustomizable } from '../../assets/customizable.js';
+class AmeSiControlGroup extends KoContainerViewModel {
+    constructor(params, $element) {
+        super(params, $element);
+        this.labelFor = params.labelFor || null;
+    }
+    getExpectedUiElementType() {
+        return AmeCustomizable.ControlGroup;
+    }
+    get classes() {
+        return ['ame-si-control-group', ...super.classes];
+    }
+}
+export default createComponentConfig(AmeSiControlGroup, `
+	<div data-bind="class: classString">
+		<h4>
+			<!-- ko if: title -->
+				<!-- ko if: labelFor -->
+					<label data-bind="attr: {for: labelFor}, text: title"></label>
+				<!-- /ko -->
+				<!-- ko ifnot: labelFor -->
+					<span data-bind="text: title"></span>
+				<!-- /ko -->
+			<!-- /ko -->
+		</h4>
+		<div class="ame-si-control-group-children">
+		<!-- ko foreach: childComponents -->
+			<!-- ko component: $data --><!-- /ko -->
+		<!-- /ko -->
+		</div>
+	</div>	
+`);
+//# sourceMappingURL=ame-si-control-group.js.map

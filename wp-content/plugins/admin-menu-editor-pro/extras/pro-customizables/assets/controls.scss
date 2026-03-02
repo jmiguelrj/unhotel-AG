@@ -1,0 +1,15 @@
+//Include both the free controls and the Pro controls.
+
+@import "../../../customizables/assets/combined-base-controls";
+@import "background-position";
+@import "font-style-picker";
+@import "box-dimensions";
+@import "border-style";
+@import "actor-feature-checkbox";
+@import "postbox-section";
+@import "general-control-group";
+
+.ame-placeholder-component {
+	border: 1px dashed #ccc;
+	padding: 0.5em;
+}

@@ -1,0 +1,14 @@
+@use "./components/toolbar.scss";
+@use "./components/sidebars.scss";
+@use "./components/canvas.scss";
+
+.jsf-editor {
+	display: flex;
+	flex-direction: column;
+
+	&__body {
+		display: flex;
+		flex: 1;
+		min-height: 0;
+	}
+}

@@ -1,0 +1,14 @@
+{
+    "require": {
+        "upstatement/routes": "^0.9.1",
+        "eftec/bladeone": "^4.9",
+        "jgrossi/corcel": "^5.1",
+        "dompdf/dompdf": "^2.0",
+        "illuminate/pagination": "^8.83"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}

@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'crocoblock/jet-form-builder-signature-field',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'e7495a38d1966307026dde1a3f0fa44e09a56250',
+        'type' => 'project',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'crocoblock/jet-form-builder-signature-field' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'e7495a38d1966307026dde1a3f0fa44e09a56250',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'crocoblock/jfb-addon-core' => array(
+            'pretty_version' => '1.1.13',
+            'version' => '1.1.13.0',
+            'reference' => '02c5b26aefe11a93f911a0d22777316206de7418',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../crocoblock/jfb-addon-core',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'crocoblock/jfb-addon-core-dev' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'reference' => '39ab4f0b9cff78ff721eaea2207f2842ac99441f',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../crocoblock/jfb-addon-core-dev',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

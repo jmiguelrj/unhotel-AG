@@ -1,0 +1,186 @@
+@use 'variables' as *;
+
+// Global Container Padding Rules - Mobile First
+// Apply to all pages via .content-area (exists on all templates)
+.content-area {
+    padding-left: $container-padding-left;
+    padding-right: $container-padding-right;
+    
+    // Prevent double padding - remove padding from all child containers
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    // unhotel-section inside content-area: no extra padding (inherits from content-area)
+    .unhotel-section:not(.fullwidth) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+// VikBooking pages - Apply global padding when checkbox is CHECKED
+body.custom-vk_page.apply-global-padding-vik {
+    .content-area,
+    .article-detail,
+    .custom-vk_room-info,
+    .vbo-container,
+    .vbcontentinner {
+        padding-left: $container-padding-left;
+        padding-right: $container-padding-right;
+    }
+}
+
+// VikBooking pages - Default behavior (when global padding is NOT applied)
+// Keep VIK's original padding structure: content-area has 0, specific containers have padding
+// Exclude homepage (.home) - homepage should always use global padding even with VIK widget
+body.custom-vk_page:not(.apply-global-padding-vik):not(.home) {
+    .content-area {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    // Apply padding to VIK specific containers
+    .article-detail,
+    .custom-vk_room-info,
+    .vbo-container,
+    .vbcontentinner {
+        padding-left: $container-padding-left;
+        padding-right: $container-padding-right;
+    }
+}
+
+// POA Pages - Apply padding when option is checked (for plugin pages without .content-area)
+body.apply-padding-poa {
+    .property-manager-container {
+        padding-left: $container-padding-left;
+        padding-right: $container-padding-right;
+    }
+}
+
+
+// Additional containers (max-width only, no padding)
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+// For fullwidth sections or elements OUTSIDE .content-area
+// These need their own padding since they're not inside content-area
+.unhotel-section.fullwidth,
+body > .unhotel-section,
+.site-header .unhotel-section,
+.site-footer .unhotel-section {
+    padding-left: $container-padding-left;
+    padding-right: $container-padding-right;
+}
+
+// Layout with Sidebar - Mobile First
+.content-area {
+    width: 100%;
+}
+
+// Mobile: Single column
+.has-sidebar .content-area .container {
+    display: block;
+}
+
+
+.has-sidebar .site-main {
+    width: 100%; 
+}
+
+.has-sidebar .widget-area {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+// Tablet and up: Grid layout
+// @media (min-width: $breakpoint-tablet) {
+//     .container {
+//         max-width: $max-width;
+//     }
+
+//     .has-sidebar .content-area .container {
+//         display: grid;
+//         grid-template-columns: 1fr 300px;
+//         gap: 2rem;
+//         align-items: start;
+//     }
+
+//     .has-sidebar .site-main {
+//         grid-column: 1;
+//         width: auto;
+//     }
+
+//     .has-sidebar .widget-area {
+//         grid-column: 2;
+//         margin-top: 0;
+//         width: auto;
+//     }
+// }
+
+// Gutenberg Block Alignments - Mobile First
+.alignleft {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+    text-align: center;
+}
+
+.alignright {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+    text-align: center;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.alignwide {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.alignfull {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+}
+
+// Tablet and up: Float alignments
+@media (min-width: $breakpoint-tablet) {
+    .alignleft {
+        float: left;
+        margin: 0 1.5rem 1rem 0;
+        text-align: left;
+    }
+
+    .alignright {
+        float: right;
+        margin: 0 0 1rem 1.5rem;
+        text-align: right;
+    }
+
+    .alignwide {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .alignfull {
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+        max-width: 100vw;
+    }
+}
+
+// Gutenberg Blocks
+.wp-block-group,
+.wp-block-columns,
+.wp-block-cover,
+.wp-block-media-text {
+    margin-bottom: 2rem;
+}

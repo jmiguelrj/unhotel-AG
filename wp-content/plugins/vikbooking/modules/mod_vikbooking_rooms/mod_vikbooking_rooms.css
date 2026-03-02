@@ -1,0 +1,241 @@
+.container { margin: 0 auto; }
+
+/* Example wrapper */
+.wrap {
+	position: relative;
+	margin: 0;
+}
+.vbmodroom-layout-scroll {
+	z-index: initial;
+}
+
+.vbmodroomsboxdiv .vbmodroomsname {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+span.vbmodroomscat {
+	font-size: .9em;
+	font-style: italic;
+}
+
+span.vbmodroomsstartfrom {
+	color: #000000;
+}
+span.vbmodroomscarcost {
+	font-weight: bold;
+	font-size:15px;
+	color:#444;
+}
+
+.vbmodroom-desc {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+span.vbmodroomsview a {
+	color:#fff;
+}
+.vbmodrooms-item {
+	background: #fff;
+	border: 1px solid #eee;
+	margin: 10px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+}
+.vbmodrooms-item .vbinf {
+	padding: 10px 20px 0;
+}
+.vbmodroomsboxdiv {
+	width: 100%;
+	border-radius: 3px;
+	background: #fff;
+}
+.vbmodroomsimg {
+	width: 100%;
+}
+.vbmodroomsboxdiv .vbo-room-carats {
+	margin: 5px 0;
+}
+.vbmodroomsboxdiv .vbo-room-carats .vbo-room-carat {
+	display: inline-block;
+	margin: 3px 8px;
+}
+.vbmodroomsboxdiv .vbo-room-carats .vbo-room-carat:first-child {
+	margin-left: 0;
+}
+.vbmodroomsboxdiv .vbo-room-carats .vbo-room-carat:last-child {
+	margin-right: 0;
+}
+.vbmodroomsboxdiv .vbo-room-carats img {
+	max-width: 100%;
+	width: auto;
+}
+.prevPage {
+	background: transparent url(left-arrow.png) no-repeat;
+	border: 0;
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	left:-12px;
+	position: absolute;
+}
+.nextPage {
+	background: transparent url(right-arrow.png) no-repeat;
+	border: 0;
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	right:-12px;
+}
+.vbmodrooms-controls {
+	position: absolute;
+	top: 44%;
+	width: 100%;
+}
+.vbmodrooms-divblock {
+	display: inline-block;
+	width: 100%;
+	padding: 0;
+	margin: 10px 0 0 0;
+}
+.vbmodroomsname {
+	font-size:18px;
+	margin: 0 10px 0 0;
+}
+.vbmodrooms-divblock .vbmodroomsbeds {
+	float: right;
+	display: inline-block;
+}
+.vbmodroomscat {
+	width: 100%;
+	color: #999;
+	display: inline-block;
+}
+.vbmodroomsdesc {
+	display: inline-block;
+	width: 100%;
+	margin: 8px 0 8px;
+}
+.vbmodroomsroomcost {
+	display: inline-block;
+	width: 100%;
+	font-weight: bold;
+	text-align: left;
+	font-size: 1.1em;
+	margin: 8px 0 12px;
+}
+.vbmodroomslabelcost {
+	font-size: 15px;
+}
+.vbmodroomsview {
+	display: block;
+	margin: 0px 20px 20px 20px;
+	text-align: center;
+}
+.vbmodroomsview > a {
+	display: inline-block;
+	padding: 10px 20px;
+	background:#999;
+	border-radius: 6px;
+	width: 100%;
+	border:1px solid #ccc;
+	color: #fff;
+}
+.vbmodhorsearchcheckoutdiv {
+	margin: 0 10px 0 0;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px !important;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.owl-carousel .owl-dots {
+	display: inline-block;
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+}
+.owl-carousel .owl-dots .owl-dot {
+	width: 10px;
+	height: 10px;
+	background: #ddd;
+	border-radius: 50%;
+	margin: 2px 4px;
+}
+.owl-carousel .owl-dots .owl-dot.active, .owl-carousel .owl-dots .owl-dot.hover {
+	background: #999;
+}
+.owl-disabled {
+	display: none;
+}
+.vbmodrooms-carats .vbulcarats {
+    text-align: center;
+    margin-top: 5px;
+}
+.vbmodrooms-carats .vbulcarats li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 4px;
+    padding: 0;
+    font-size: 12px;
+    color: #999;
+}
+
+/* Grid Layout */
+.vbmodroom-layout-grid {
+	display: grid;
+	gap: 20px;
+}
+.vbmodroom-grid-numb-1 {
+	grid-template-columns: repeat(1, 1fr);
+}
+.vbmodroom-grid-numb-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+.vbmodroom-grid-numb-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+.vbmodroom-grid-numb-4 {
+	grid-template-columns: repeat(4, minmax(300px, 1fr));
+}
+.vbmodroom-grid-numb-5 {
+	grid-template-columns: repeat(5, 1fr);
+}
+.vbmodroom-grid-numb-6 {
+	grid-template-columns: repeat(6, 1fr);
+}
+.vbmodroom-layout-grid .vbmodrooms-item {
+	margin: 0;
+}
+
+@media screen and (max-width: 1160px) {
+	.vbmodroom-grid-numb-4, .vbmodroom-grid-numb-5, .vbmodroom-grid-numb-6 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (max-width: 860px) {
+	.vbmodroom-grid-numb-3, .vbmodroom-grid-numb-4, .vbmodroom-grid-numb-5, .vbmodroom-grid-numb-6 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (max-width: 580px) {
+	.vbmodroom-layout-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+/* WordPress Block Editor */
+
+.block-editor .owl-carousel {
+    display: flex !important;
+    overflow: scroll;
+}
+.block-editor .owl-carousel .btn {
+    box-sizing: border-box;
+}

@@ -1,0 +1,97 @@
+.wpdt-c .wpDataTablesWrapper .DTTT_button.DTTT_button_md:before {
+    font-family: "wpDataTablesIcons";
+    font-size: 18px;
+    content: "\f0e8";
+}
+
+#wdt-md-modal .modal-body p {
+    margin-bottom: 0;
+}
+
+#wdt-md-modal .modal-body .col-sm-3 {
+    padding-left: 0;
+    font-size: 13px;
+}
+
+#wdt-md-modal .modal-body .detailColumn {
+    font-size: 13px;
+    word-break: break-word;
+}
+
+#wdt-md-modal .modal-body .detailColumn a {
+    box-shadow: none;
+    -o-box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#wdt-md-modal .modal-footer {
+    display: none;
+}
+
+#wdt-md-modal h4.modal-title {
+    padding: 0;
+    margin: 0;
+    line-height: 1.42857143;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wpdt-c .wpDataTablesWrapper .master_detail_column_btn {
+    cursor: pointer;
+    width: 100%;
+    white-space: normal;
+}
+
+.wpdt-c .wpDataTablesWrapper .master_detail_column_btn:focus {
+    background-color: rgb(221, 221, 221) !important;
+}
+
+.wpdt-c .wpDataTablesWrapper input.md-link {
+    cursor: pointer;
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    color: #2196F3;
+}
+
+.wpdt-c .wpDataTablesWrapper input.md-link:hover {
+    color: #0a6ebd;
+    text-decoration: none;
+}
+
+.wpDataTablesWrapper table.wpDataTable > tbody > tr > td.column-masterdetail {
+    text-align: center;
+}
+
+.wpDataTablesWrapper .DTTT_button.DTTT_button_md {
+    order: 8;
+    margin-left: 12px;
+    margin-right: 0 !important;
+}
+
+#wdt-columns-list-modal .wdt-columns-container div[data-orig_header='masterdetail'] .wdt-toggle-show-sorting,
+#wdt-columns-list-modal .wdt-columns-container div[data-orig_header='masterdetail'] .wdt-toggle-show-filters {
+    display: none;
+}
+
+.wpdt-c .wpDataTablesWrapper .row-detail .columnValue .wdt_md_form {
+    display: contents;
+}
+
+.wpdt-c .wpDataTablesWrapper .row-detail .columnValue .wdt_md_form .master_detail_column_btn {
+    width: auto;
+}
+
+.wpdt-c .wpDataTablesWrapper table.wpDataTable thead th.sorting.column-masterdetail,
+.wpdt-c.wdt-skin-light .wpDataTablesWrapper table.wpDataTable thead th.sorting_desc.column-masterdetail,
+.wpdt-c .wpDataTablesWrapper table.wpDataTable thead th.sorting_asc.column-masterdetail {
+    cursor: default;
+    pointer-events: none;
+}
+
+.wpdt-c .wpDataTablesWrapper table.wpDataTable thead th.sorting.column-masterdetail:after,
+.wpdt-c.wdt-skin-light .wpDataTablesWrapper table.wpDataTable thead th.sorting_desc.column-masterdetail:after,
+.wpdt-c .wpDataTablesWrapper table.wpDataTable thead th.sorting_asc.column-masterdetail:after {
+    display: none;
+}

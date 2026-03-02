@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="4.0.0" client="site" method="upgrade">
+	<name>MOD_VIKBOOKING_CHANNELRATES</name>
+	<author>E4J s.r.l.</author>
+	<creationDate>January 2024</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>tech@e4j.com</authorEmail>
+	<authorUrl>https://vikwp.com</authorUrl>
+	<version>1.15.2</version>
+	<description>MOD_VIKBOOKING_CHANNELRATES_DESC</description>
+
+	<config>
+		<fields name="params">
+			
+			<fieldset name="basic" addfieldpath="/modules/mod_vikbooking_channelrates/fields">
+
+				<field
+					name="title"
+					type="text"
+					default=""
+					label="TITLE"
+				/>
+
+				<field name="channels" multiple="multiple" type="channels" default="" label="VBOMODCMRSELCHANNELS" description="VBOMODCMRSELCHANNELSHELP" />
+
+				<field name="def_idprice" type="sql" default="0" label="VBOMODCMRDEFPRICE" description="VBOMODCMRDEFPRICEHELP" query="SELECT id AS value, name AS title FROM #__vikbooking_prices ORDER BY name ASC" key_field="value" value_field="title">
+					<option value="0">VBOMODCMRDEFPRICEEMPTY</option>
+				</field>
+
+				<field name="tax" type="list" default="0" label="VBOMODCMRDEFTAX" description="VBOMODCMRDEFTAXHELP">
+					<option value="0">VBOMODCMRDEFTAXEX</option>
+					<option value="1">VBOMODCMRDEFTAXIN</option>
+				</field>
+
+				<field name="cust_rmodpcent" type="list" default="pcent" label="VBOMODCMRCUSTRMODPCENT" description="VBOMODCMRCUSTRMODPCENTHELP">
+					<option value="pcent">VBOMODCMRCUSTRMODPCENTP</option>
+					<option value="fixed">VBOMODCMRCUSTRMODPCENTF</option>
+				</field>
+
+				<field name="cust_rmodval" type="number" default="" label="VBOMODCMRCUSTRMODVAL" description="VBOMODCMRCUSTRMODVALHELP"/>
+				
+				<field name="introtxt" type="textarea" default="" label="VBOMODCMRINTROTXT" description="VBOMODCMRINTROTXTHELP" rows="10" cols="95" filter="raw"/>
+
+				<field name="modstyle" type="list" default="flat-vertical" label="VBOMODCMRMODSTYLE" description="VBOMODCMRMODSTYLEHELP">
+					<option value="flat-vertical">VBOMODCMRMODSTYLEFLATVERT</option>
+					<option value="fixed">VBOMODCMRMODSTYLEFLATFIXD</option>
+				</field>
+
+				<field
+					name="itemid"
+					type="menuitem"
+					prefix="vikbooking"
+					default=""
+					required="true"
+					label="JMENUITEM"
+					description="JMENUITEM_DESC"
+				/>
+			</fieldset>
+			
+			<fieldset name="contacts">
+				
+				<field name="cemail" type="text" default="" label="VBOMODCMRCEMAIL" description="VBOMODCMRCEMAILHELP" />
+				
+				<field name="cmessenger" type="text" default="" label="VBOMODCMRCMESSENGER" description="VBOMODCMRCMESSENGERHELP" />
+				
+				<field name="cwhatsapp" type="text" default="" label="VBOMODCMRCWHATSAPP" description="VBOMODCMRCWHATSAPPHELP" />
+				
+				<field name="cphone" type="text" default="" label="VBOMODCMRCPHONE" description="VBOMODCMRCPHONEHELP" />
+				
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JLAYOUT"
+					description="JLAYOUT_DESC"
+				/>
+			</fieldset>
+			
+		</fields>
+	</config>
+
+</extension>

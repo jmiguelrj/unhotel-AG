@@ -1,0 +1,109 @@
+.jsf-editor {
+	&__left-sidebar {
+		width: 350px;
+		border-right: 1px solid #ddd;
+
+		&__header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 7px 10px 7px 20px;
+			border-bottom: 1px solid #ddd;
+
+			&__label {
+				font-weight: 600;
+			}
+		}
+
+		&__container {
+			height: calc(100% - 51px);
+			overflow-y: auto;
+		}
+
+		.block-editor-tabbed-sidebar__tablist-and-close-button {
+			display: none;
+		}
+
+		.block-editor-inserter {
+			&__insertable-blocks-at-selection {
+				border: none;
+			}
+		}
+	}
+
+	&__sidebar {
+		width: 280px;
+		border-left: 1px solid #ddd;
+		overflow-y: auto;
+
+		&__close {
+			margin-right: 8px;
+		}
+
+		&__header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 1px solid #e0e0e0;
+		}
+
+		&__body {
+			margin-top: -1px;
+
+			.block-editor-block-inspector__no-blocks {
+				background: none;
+			}
+		}
+
+		&__tab {
+			&-buttons {
+				button {
+					cursor: pointer;
+					position: relative;
+					padding: 16px;
+					color: #1e1e1e;
+					border: none;
+					background: none;
+
+					&::after {
+						position: absolute;
+						height: 2px;
+						left: 0;
+						right: 0;
+						bottom: -1px;
+						background: #007cba;
+					}
+
+					&:hover {
+						color: #007cba;
+					}
+					&.active::after {
+						content: "";
+					}
+				}
+			}
+		}
+
+		&__control {
+			padding: 0 0 25px;
+		}
+
+		.components-panel__body {
+			//border: none;
+
+			.components-button .components-panel__arrow {
+				right: 14px;
+			}
+		}
+	}
+
+	// close buttons
+	&__left-sidebar__header .components-button,
+	.jsf-editor__sidebar__close {
+		color: #1e1e1e;
+
+		&.is-tertiary:hover {
+			background: none;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+/*
+Theme Name: Unhotel
+Theme URI: cossoftware.solutions/hotels-wordpress-theme
+Author: Cossoftware Solutions SRL
+Author URI: https://www.cossoftware.com
+Description: A super light and easy WordPress theme compatible with Gutenberg and VIK plugin. Minimal design for maximum performance.
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: unhotel
+Tags: light-weight, gutenberg-ready, block-editor, minimal, clean, responsive, accessibility-ready
+
+Unhotel is a lightweight WordPress theme built for speed and simplicity.
+
+Note: The actual styles are compiled from assets/src/scss/ and loaded via functions.php
+This file contains only the WordPress theme header for recognition.
+*/

@@ -1,0 +1,88 @@
+<div id="ame-import-enabled-modules-container" data-config-data="{{CONFIG_DATA_JSON}}">
+	<div id="ame-iem-tabs">
+		<ul>
+			<li><a href="#ame-iem-tab-summary">Summary</a></li>
+			<li><a href="#ame-iem-tab-edit">Edit</a></li>
+		</ul>
+
+		<div class="ame-iem-tab-content" id="ame-iem-tab-summary">
+			<div id="ame-iem-summary-content">
+				<div class="ame-iem-summary-panel" id="ame-iem-summary-enabled-modules"
+				     data-bind="css: {'ame-iem-empty-panel': (willBeEnabled().length === 0) }">
+					<h3 class="ame-iem-summary-title">
+						Will be enabled
+						<span class="ame-iem-change-counter" data-bind="text: willBeEnabled().length"></span>
+					</h3>
+					<ul class="ame-iem-summary-list" data-bind="foreach: willBeEnabled">
+						<li class="ame-iem-summary-list-item">
+							<span class="ame-iem-module-title" data-bind="text: title"></span>
+						</li>
+					</ul>
+					<div class="ame-iem-empty-panel-message">&mdash;</div>
+				</div>
+
+				<div class="ame-iem-summary-panel" id="ame-iem-summary-disabled-modules"
+				     data-bind="css: {'ame-iem-empty-panel': (willBeDisabled().length === 0) }">
+					<h3 class="ame-iem-summary-title">
+						Will be disabled
+						<span class="ame-iem-change-counter" data-bind="text: willBeDisabled().length"></span>
+					</h3>
+					<ul class="ame-iem-summary-list" data-bind="foreach: willBeDisabled">
+						<li class="ame-iem-summary-list-item">
+							<span class="ame-iem-module-title" data-bind="text: title"></span>
+						</li>
+					</ul>
+					<div class="ame-iem-empty-panel-message">&mdash;</div>
+				</div>
+
+				<div class="ame-iem-summary-panel" id="ame-iem-summary-unchanged-modules"
+				     data-bind="css: {'ame-iem-empty-panel': (unchanged().length === 0) }">
+					<h3 class="ame-iem-summary-title">
+						Unchanged
+						<span class="ame-iem-change-counter" data-bind="text: unchanged().length"></span>
+					</h3>
+					<ul class="ame-iem-summary-list" data-bind="foreach: unchanged">
+						<li class="ame-iem-summary-list-item">
+							<span class="ame-iem-module-title" data-bind="text: title"></span>
+						</li>
+					</ul>
+					<div class="ame-iem-empty-panel-message">&mdash;</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ame-iem-tab-content" id="ame-iem-tab-edit">
+			<ul id="ame-iem-editable-module-list" data-bind="foreach: options">
+				<li class="ame-iem-editable-module-item"
+				    data-bind="css: {
+				        'ame-iem-will-change': willChange(),
+				        'ame-iem-will-be-enabled': enabledAfterImport(),
+				        'ame-iem-will-be-disabled': !enabledAfterImport()
+				    }">
+					<label>
+						<input type="checkbox" data-bind="checked: enabledAfterImport"/>
+						<span class="ame-iem-module-title" data-bind="text: title"></span>
+					</label>
+					<span class="ame-iem-status-change">
+						<!-- ko if: willChange() -->
+							<span class="ame-iem-state"
+							      data-bind="text: (currentState ? 'ON' : 'OFF'),
+							        css: {'ame-iem-on': currentState, 'ame-iem-off': !currentState}"></span>
+							<span class="ame-iem-arrow">→</span>
+							<span class="ame-iem-state ame-iem-new-state"
+							      data-bind="text: (enabledAfterImport() ? 'ON' : 'OFF'),
+							        css: {'ame-iem-on': enabledAfterImport(), 'ame-iem-off': !enabledAfterImport()}"></span>
+						<!-- /ko -->
+						<!-- ko if: !willChange() -->
+							<span class="ame-iem-state ame-iem-no-change"
+							      data-bind="text: (currentState ? 'ON' : 'OFF')"></span>
+						<!-- /ko -->
+					</span>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+	<input type="hidden" name="{{CONFIG_FIELD_NAME}}" data-bind="value: configFieldValue"/>
+</div>

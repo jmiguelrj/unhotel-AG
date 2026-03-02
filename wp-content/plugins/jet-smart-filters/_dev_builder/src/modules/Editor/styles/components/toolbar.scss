@@ -1,0 +1,41 @@
+.jsf-editor {
+	&__toolbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.5rem 1rem;
+		border-bottom: 1px solid #ddd;
+		background: #fff;
+
+		&__left,
+		&__center,
+		&__right {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+
+		&__center {
+			flex-grow: 1;
+			justify-content: center;
+
+			#item-name-input {
+				width: 100%;
+				max-width: 350px;
+
+				.components-input-control {
+					&__container {
+						background: #f0f0f0;
+					}
+					&__backdrop {
+						border-color: #f0f0f0;
+					}
+				}
+
+				.components-button:focus {
+					box-shadow: none;
+				}
+			}
+		}
+	}
+}

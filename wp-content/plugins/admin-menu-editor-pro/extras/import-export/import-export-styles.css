@@ -1,0 +1,211 @@
+/*
+Standard WordPress admin colors.
+
+Announcement post:
+https://make.wordpress.org/core/2021/02/23/standardization-of-wp-admin-colors-in-wordpress-5-7/
+
+Source:
+https://codepen.io/ryelle/pen/WNGVEjw
+
+A "wp" prefix has been added to avoid name conflicts with other code in this plugin.
+ */
+.ame-import-component-item span.description {
+  vertical-align: middle;
+}
+
+.ame-import-component-config {
+  display: none;
+  margin-left: 1.5em;
+  margin-top: 4px;
+  padding: 10px 10px;
+  border-radius: 6px;
+  border: 1px solid #c3c4c7;
+  background: #f6f7f7;
+}
+.ame-has-expanded-import-config .ame-import-component-config {
+  display: block;
+}
+
+.ame-import-config-toggle {
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ame-import-config-toggle-separator {
+  vertical-align: middle;
+}
+.ame-import-config-toggle-separator:after {
+  content: "|";
+}
+
+.ame-import-component-results, .ame-import-error-details {
+  list-style: disc inside;
+}
+
+.ame-import-error-details {
+  margin: 6px 0 0 1em;
+  color: #b32d2e;
+}
+
+.ame-import-error-code {
+  font-family: "Consolas", "Monaco", monospace;
+}
+
+#ame-import-enabled-modules-container {
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+#ame-import-enabled-modules-container .ui-tabs-nav {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #c3c4c7;
+  padding-left: 10px;
+}
+#ame-import-enabled-modules-container .ui-tabs-tab {
+  flex-grow: 0;
+  text-align: center;
+  list-style: none;
+  margin: 0 0 -1px 0;
+  border: 1px solid transparent;
+  border-bottom-width: 0;
+}
+#ame-import-enabled-modules-container .ui-tabs-anchor {
+  display: inline-block;
+  padding: 4px 10px 10px;
+  text-decoration: none;
+}
+#ame-import-enabled-modules-container .ui-tabs-active {
+  border-color: #c3c4c7;
+  background: #fff;
+}
+#ame-import-enabled-modules-container .ui-tabs-active .ui-tabs-anchor {
+  color: #2c3338;
+}
+#ame-import-enabled-modules-container .ui-tabs-panel {
+  padding: 10px 10px 10px 20px;
+  background: #fff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-size: 14px;
+}
+
+#ame-iem-summary-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em 2em;
+}
+
+.ame-iem-summary-panel {
+  min-width: 12em;
+}
+
+.ame-iem-summary-title {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin: 0.4em 0;
+}
+
+#ame-iem-summary-enabled-modules .ame-iem-module-title {
+  color: #005c12;
+}
+
+#ame-iem-summary-disabled-modules .ame-iem-module-title {
+  color: #8a2424;
+}
+
+#ame-iem-summary-unchanged-modules .ame-iem-module-title {
+  color: #646970;
+}
+#ame-iem-summary-unchanged-modules .ame-iem-summary-list {
+  max-height: 14em;
+  overflow-y: auto;
+}
+
+.ame-iem-change-counter {
+  display: inline-block;
+  margin-left: 4px;
+  font-weight: 600;
+  font-size: 0.8em;
+  line-height: 1;
+  padding: 3px 8px;
+  color: #2c3338;
+  background: #f0f0f1;
+  border: 1px solid #c3c4c7;
+  border-radius: 12px;
+}
+
+.ame-iem-empty-panel-message {
+  font-style: italic;
+  color: #646970;
+  display: none;
+}
+
+.ame-iem-empty-panel .ame-iem-summary-title {
+  color: #787c82;
+}
+.ame-iem-empty-panel .ame-iem-empty-panel-message {
+  display: block;
+}
+
+#ame-iem-editable-module-list {
+  columns: auto 28em;
+  column-gap: 1em;
+}
+
+.ame-iem-editable-module-item {
+  display: flex;
+  flex-direction: row;
+  max-width: 28em;
+  align-items: center;
+  margin: 0 0 3px 0;
+  padding: 3px 3px;
+}
+.ame-iem-editable-module-item .ame-iem-module-title {
+  margin-right: 2em;
+}
+.ame-iem-editable-module-item label {
+  flex-grow: 1;
+}
+
+.ame-iem-status-change {
+  margin-left: auto;
+}
+
+.ame-iem-state {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  background: #f0f0f1;
+}
+
+.ame-iem-new-state.ame-iem-on {
+  background: #b8e6bf;
+  color: #003008;
+}
+.ame-iem-new-state.ame-iem-off {
+  background: #facfd2;
+  color: #451313;
+}
+
+.ame-iem-will-change.ame-iem-will-be-enabled {
+  background: #edfaef;
+}
+.ame-iem-will-change.ame-iem-will-be-disabled {
+  background: #fcf0f1;
+}
+
+#ame-rex-import-roles-merge-container {
+  max-width: 1000px;
+}
+#ame-rex-import-roles-merge-container .rex-rm-section:last-of-type {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=import-export-styles.css.map */

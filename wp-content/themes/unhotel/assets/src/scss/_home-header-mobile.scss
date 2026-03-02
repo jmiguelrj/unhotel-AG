@@ -1,0 +1,222 @@
+@use "variables" as *;
+/* Mobile dock menu */
+.uh-mobile-menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 110;
+    justify-content: center;
+    background: #fff;
+    display: block;
+    .uh-menu-primary {
+        list-style-type: none;
+        margin: 0;
+        padding: 15px 30px;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 999;
+        position: relative;
+
+
+        li {
+            flex: 1;
+            text-align: center;
+            position: relative;
+        }
+       a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: 30px;
+            height: 30px;
+
+            background-color: #ffffff;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all 0.22s ease;
+            font-size: 0;
+            color: transparent;
+            cursor: pointer;
+
+            &.active,
+            &:focus {
+                color: #f94676;
+                outline: none;
+            }
+
+            &.uh-menu-link {
+                background-image: url("../images/icon-menu.svg");
+                &.active {
+                    background-image: url('../images/icon-menu-hover.svg');
+                }
+            }
+
+            &.uh-language-link {
+                background-image: url("../images/icon-language.svg");
+                 background-color: transparent;
+                &.active {
+                    background-image: url('../images/icon-language-hover.svg');
+                }
+            }
+
+            &.uh-whatsapp-link {
+                background-image: url("../images/icon-whatsapp.svg");
+                background-color: transparent;
+            
+            }
+
+            &.uh-account-link {
+                background-image: url("../images/icon-profile.svg");
+
+                &.avatar {
+                    background-image: none;
+                    border: 0;
+                    padding: 0;
+                    &.active{
+                       box-shadow: none;
+                    }
+
+                    img {
+                       width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        // border: 2px solid #c5c5c5;
+                        // box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+                    }
+                }
+            }
+
+            &.uh-logo-link {
+                position: absolute;
+                top: -62px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 68px;
+                height: 68px;
+                border-radius: 50%;
+                background: #f94676 url("../images/logo-Unhotel-favicon.svg") center/70% no-repeat;
+                transition: all 0.22s ease;
+                pointer-events: auto;
+                @media(min-width:$breakpoint-mobile-xs){
+                    width: 80px;
+                    height: 80px;
+                }
+
+                &.menu-open {
+                    width: 60px;
+                    height: 60px;
+                    top: -30px;
+                    background-size: 100%;
+                }
+            }
+        }
+    }
+    .uh-menu-profile{
+        #user-menu {
+           .menu-item-has-children{
+            > a{
+                display: none !important;
+            }
+            }
+        }
+    }
+}
+
+
+body.mobile-menu-active .uh-mobile-menu {
+    display: flex;
+}
+
+.uh-general-menu {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+
+    .wpml-ls-legacy-list-horizontal {
+          padding: 0px 0 20px 0;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: block !important;
+            padding: 0;
+            border-bottom: 1px solid #f0f0f0;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+            &.icon-arrow {
+            a{
+                position: relative;
+                padding-left: 40px;
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                top: 0;
+             left: 10px;
+                rotate: 180deg;
+                transform: translateY(-50%);
+                width: 28px;
+                height: 28px;
+                background: url("../images/icon-angle-left 2.svg") center/contain no-repeat;
+            }
+            }
+        }
+    
+        }
+
+        a {
+            display: block !important;
+            color: #1f1f1f;
+            text-decoration: none;
+            padding: 16px 20px;
+            font-size: 16px;
+            transition: all 0.18s ease;
+
+            &:hover,
+            &:focus {
+                color: #f94676;
+                background: #fff4f8;
+            }
+        }
+    }
+}
+
+.uh-menu-language {
+    .wpml-ls-legacy-list-horizontal {
+        ul {
+            display: block;
+        }
+    }
+
+    .wpml-ls-item a {
+        padding: 16px 20px;
+        display: block;
+        width: 100%;
+    }
+}
+
+body.uh-mobile-menu-open {
+    overflow: hidden;
+}
+
+.mobile-search-open {
+    overflow: hidden;
+
+    .mobile-logo {
+        display: none;
+    }
+}

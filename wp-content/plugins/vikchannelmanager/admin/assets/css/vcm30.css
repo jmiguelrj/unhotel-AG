@@ -1,0 +1,29 @@
+/* Joomla 3.x */
+
+input, textarea, select {
+	width: auto !important;
+}
+input[type="number"] {
+	width: 55px !important;
+}
+table.adminform label {
+	display: inline;
+	margin:0 0 0 5px;
+}
+table.adminform td {
+	padding: 6px 0;
+}
+table.adminform div.input-append {
+	display: inline;
+}
+.icon-vikchannelmanager:before {
+	content: "\62";
+}
+/* Joomla 3.7.0 */
+.field-calendar {
+	display: inline-block;
+	vertical-align: top;
+}
+.btn-group .calendar-head-row {
+	font-size: 13px;
+}

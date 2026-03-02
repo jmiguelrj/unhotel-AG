@@ -1,0 +1,7 @@
+@use "./_mixins" as m;
+
+.jsf-editor {
+	height: calc(100vh - 122px);
+
+	@include m.fixed-block;
+}

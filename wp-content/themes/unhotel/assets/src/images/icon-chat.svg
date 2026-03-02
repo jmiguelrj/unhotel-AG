@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.228" height="28.042" viewBox="0 0 28.228 28.042">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #333;
+        stroke-miterlimit: 2.61;
+      }
+    </style>
+  </defs>
+  <g id="Chat-icon" transform="translate(0.5 0.5)">
+    <g id="Layer_1">
+      <path id="Path_19" data-name="Path 19" class="cls-1" d="M6.411,8H28.817a2.446,2.446,0,0,1,2.411,2.472V25.514a2.446,2.446,0,0,1-2.411,2.472H18.786c-1.309,1.376-3.208,3.235-5.965,6.36-1,1.137-2.471.844-2.471-.783V27.986H6.411A2.446,2.446,0,0,1,4,25.514V10.472A2.446,2.446,0,0,1,6.411,8Z" transform="translate(-4 -8)"/>
+      <line id="Line_1" data-name="Line 1" class="cls-1" x2="16.826" transform="translate(4.842 4.911)"/>
+      <line id="Line_2" data-name="Line 2" class="cls-1" x2="16.826" transform="translate(4.842 7.783)"/>
+      <line id="Line_3" data-name="Line 3" class="cls-1" x2="14.246" transform="translate(4.38 10.773)"/>
+      <line id="Line_4" data-name="Line 4" class="cls-1" x2="14.246" transform="translate(4.38 13.762)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,2 @@
+<?php
+return ['items'=>['https://bestwebsoft.com/products/wordpress/plugins/google-captcha/'=>['saveStringInDb'=>true,'cmp'=>['plugin metadata',1],'names'=>[],'urls'=>[]],'BestWebSoft'=>['saveStringInDb'=>true,'cmp'=>['plugin metadata',1],'names'=>[],'urls'=>[]],'https://bestwebsoft.com/'=>['saveStringInDb'=>true,'cmp'=>['plugin metadata',1],'names'=>[],'urls'=>[]],'1.85'=>['saveStringInDb'=>true,'cmp'=>['plugin metadata',1],'names'=>[],'urls'=>[]]]];

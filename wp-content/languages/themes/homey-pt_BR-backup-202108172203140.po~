@@ -1,0 +1,5004 @@
+# Copyright (C) 2016 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Homey v1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2020-06-03 14:50+0500\n"
+"PO-Revision-Date: 2021-08-17 22:02+0000\n"
+"Last-Translator: Matheus\n"
+"Language-Team: Português do Brasil\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_html_x;esc_attr__;esc_attr_e;esc_attr_x;_x;_ex;_n;_nx;_n_noop;_nx_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Loco-Version: 2.5.3; wp-5.8"
+
+#: framework/functions/price.php:10
+msgid "$"
+msgstr "$"
+
+#: template-parts/page-title.php:16 template-parts/page-title.php:19 template-parts/page-title.php:22
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: content-grid.php:30
+#, php-format
+msgid "%s ago"
+msgstr "%s atrás"
+
+#: localization.php:599
+msgid "%s: minimum booking days are %s for the period %s to %s"
+msgstr "%s: você precisa reservar no mínimo %s dias entre o período %s a %s"
+
+#: comments.php:42
+msgid "&larr; Older Comments"
+msgstr "← Comentários mais antigos"
+
+#: localization.php:299
+msgid "(Minimum size 1440 x 900 px)"
+msgstr "(Tamanho mínimo 1440 x 900 px)"
+
+#: framework/vc_extend.php:1324
+msgid "- All -"
+msgstr "- Todos -"
+
+#: framework/vc_extend.php:380 framework/vc_extend.php:557
+msgid "- Any -"
+msgstr "- Qualquer -"
+
+#: framework/metaboxes/homey-meta-boxes.php:1504 template-parts/dashboard/reservation/review-form.php:23
+#: template-parts/dashboard/reservation/review-host.php:24
+msgid "1 Star - Poor"
+msgstr "1 estrela - Péssimo"
+
+#: framework/metaboxes/homey-meta-boxes.php:1505 template-parts/dashboard/reservation/review-form.php:24
+#: template-parts/dashboard/reservation/review-host.php:25
+msgid "2 Star -  Fair"
+msgstr "2 estrelas - Ruim"
+
+#: framework/metaboxes/homey-meta-boxes.php:1506 template-parts/dashboard/reservation/review-form.php:25
+#: template-parts/dashboard/reservation/review-host.php:26
+msgid "3 Star - Average"
+msgstr "3 estrelas - Médio"
+
+#: framework/metaboxes/homey-meta-boxes.php:1507 template-parts/dashboard/reservation/review-form.php:26
+#: template-parts/dashboard/reservation/review-host.php:27
+msgid "4 Star - Good"
+msgstr "4 estrelas - Bom"
+
+#: framework/metaboxes/homey-meta-boxes.php:1508 template-parts/dashboard/reservation/review-form.php:27
+#: template-parts/dashboard/reservation/review-host.php:28
+msgid "5 Star - Excellent"
+msgstr "5 estrelas - Excelente"
+
+#: template-parts/dashboard/profile/payment-method.php:17 template-parts/dashboard/wallet/payment-method-depricated.php:10
+msgid "<strong>Congratulation!</strong> Your data has been saved."
+msgstr "<strong> Parabéns! </strong> Seus dados foram salvos."
+
+#: template/dashboard-submission.php:104 template-parts/dashboard/profile/payment-method.php:22
+#: template-parts/dashboard/wallet/payment-method-depricated.php:15
+msgid "<strong>Error!</strong> Please fill out the required fields."
+msgstr "<strong> Erro!</strong> Preencha os campos obrigatórios."
+
+#: template/dashboard-submission.php:108
+msgid "<strong>Error!</strong> Upload at least one image."
+msgstr "<strong> Erro!</strong> Faça upload de pelo menos uma imagem."
+
+#: localization.php:243
+#, php-format
+msgid "<strong>Note:</strong> 15% of your booking will be taken as commission when the guest books."
+msgstr "<strong> Nota:</strong> 15% da sua reserva será considerada como comissão quando os hóspedes fizerem a reserva."
+
+#: framework/functions/review.php:231
+#, php-format
+msgid "A new rating has been received for reservation %s"
+msgstr "Uma nova classificação foi recebida para a reserva %s"
+
+#: single-listing/listing-nav.php:14 single-listing/listing-nav.php:18
+msgid "About"
+msgstr "Sobre"
+
+#: localization.php:26
+msgid "About this listing"
+msgstr "Sobre esta acomodação"
+
+#: single-listing/about.php:35
+msgid "acco_icon"
+msgstr "acco_icon"
+
+#: localization.php:28
+msgid "Accommodates"
+msgstr "Acomoda"
+
+#: localization.php:41 localization.php:175
+msgid "Accomodation"
+msgstr "Acomodação"
+
+#: template-parts/dashboard/wallet/adjustment-form.php:36 template-parts/dashboard/wallet/adjustment-form.php:37
+#: template-parts/dashboard/wallet/adjustment-guest.php:36 template-parts/dashboard/wallet/adjustment-guest.php:37
+msgid "Action"
+msgstr "Ação"
+
+#: localization.php:40 localization.php:483 template-parts/dashboard/invoices/item.php:65
+#: template-parts/dashboard/users/user-widget.php:11 template-parts/dashboard/users/users.php:99
+#: template-parts/dashboard/users/users.php:162 template-parts/dashboard/wallet/earnings.php:27
+#: template-parts/dashboard/wallet/earnings.php:80 template-parts/dashboard/wallet/payout-detail.php:287
+#: template-parts/dashboard/wallet/payouts-host.php:28 template-parts/dashboard/wallet/payouts-host.php:128
+#: template-parts/dashboard/wallet/payouts.php:100 template-parts/dashboard/wallet/payouts.php:202
+msgid "Actions"
+msgstr "Ações"
+
+#: single-listing/what-nearby.php:23
+msgid "Active Life"
+msgstr "Vida Ativa"
+
+#: template-parts/dashboard/wallet/main-guest.php:39 template-parts/dashboard/wallet/main.php:62
+msgid "Add Adjustment"
+msgstr "Adicionar Ajuste"
+
+#: localization.php:187
+msgid "Add another room"
+msgstr "Adicionar outro cômodo"
+
+#: localization.php:197
+msgid "Add another service"
+msgstr "Adicionar outro serviço"
+
+#: template-parts/dashboard/ical-import.php:42
+msgid "Add Feed"
+msgstr "Adicionar feed"
+
+#: template-parts/dashboard/wallet/adjustment-form.php:38 template-parts/dashboard/wallet/adjustment-guest.php:38
+msgid "Add Money"
+msgstr "Adicione dinheiro"
+
+#: template-parts/dashboard/edit-listing/extra.php:70 template-parts/dashboard/reservation/add-extra-expenses.php:50
+#: template-parts/dashboard/reservation/discount.php:50 template-parts/dashboard/submit-listing/extra.php:59
+msgid "Add More"
+msgstr "Adicione mais"
+
+#: template-parts/dashboard/host-stats.php:23
+msgid "Add New"
+msgstr "Adicionar novo"
+
+#: localization.php:575
+msgid "Add New Listing"
+msgstr "Criar Anúncio"
+
+#: localization.php:61
+msgid "Add to Favorite"
+msgstr "Adicionar aos favoritos"
+
+#: localization.php:257
+msgid "Additional costs"
+msgstr "Custos adicionais"
+
+#: localization.php:385
+msgid "Additional guest"
+msgstr "Convidado adicional"
+
+#: localization.php:129 localization.php:130 localization.php:386
+msgid "Additional guests"
+msgstr "Hóspede Extra"
+
+#: template-parts/dashboard/invoices/detail.php:121
+msgid "Additional Information:"
+msgstr "Informação adicional:"
+
+#: localization.php:216
+msgid "Additional rules information"
+msgstr "Informações de regras adicionais"
+
+#: localization.php:217
+msgid "Additional rules information (Optional)"
+msgstr "Informações adicionais sobre regras (opcional)"
+
+#: localization.php:111 template/dashboard-payment.php:110 template-parts/dashboard/sidebar-listing.php:127
+#: template-parts/dashboard/profile/address.php:14 template-parts/dashboard/users/user-detail.php:170
+#: template-parts/dashboard/users/user-detail.php:272 template-parts/dashboard/wallet/payout-detail.php:198
+msgid "Address"
+msgstr "Endereço"
+
+#: localization.php:547
+msgid "Adults"
+msgstr "Adultos"
+
+#: localization.php:553 template-parts/search/overlay-mobile-search-daily.php:276
+#: template-parts/search/overlay-mobile-search-hourly.php:307
+msgid "Advanced"
+msgstr "Avançado"
+
+#: framework/metaboxes/homey-meta-boxes.php:203
+msgid "Affiliate Booking Link"
+msgstr "Link de afiliado Booking"
+
+#: framework/functions/demo-importer.php:18 framework/functions/demo-importer.php:35 framework/functions/demo-importer.php:53
+#: framework/functions/demo-importer.php:71 framework/functions/demo-importer.php:89 framework/functions/demo-importer.php:107
+#: framework/functions/demo-importer.php:125 framework/functions/demo-importer.php:143 framework/functions/demo-importer.php:160
+#: framework/functions/demo-importer.php:177
+msgid "After you import this demo, you will have to setup the slider separately."
+msgstr "Depois de importar esta demonstração, você terá que configurar o slider separadamente."
+
+#: template-parts/dashboard/profile/social.php:78
+msgid "Airbnb Url"
+msgstr "Url da Airbnb"
+
+#: framework/vc_extend.php:163
+msgid "Alignement:"
+msgstr "Alinhamento:"
+
+#: template/dashboard-listings.php:106 template/dashboard-listings.php:110 template/dashboard-messages.php:127
+#: template-parts/dashboard/reservation/list.php:65 template-parts/dashboard/users/users.php:59
+#: template-parts/dashboard/wallet/payouts.php:42 template-parts/dashboard/wallet/payouts.php:43
+#: template-parts/dashboard/wallet/payouts.php:62 template-parts/dashboard/wallet/payouts.php:63
+msgid "All"
+msgstr "Todos"
+
+#: framework/vc_extend.php:287 framework/vc_extend.php:464 framework/metaboxes/homey-meta-boxes.php:1023
+#: framework/metaboxes/homey-meta-boxes.php:1157
+msgid "All/Any"
+msgstr "Todos/Qualquer"
+
+#: localization.php:132
+msgid "Allow additional guests"
+msgstr "Permitir convidados adicionais"
+
+#: localization.php:246
+msgid "Allow instant booking for this place."
+msgstr "Permitir reserva instantânea para este lugar."
+
+#: localization.php:107 localization.php:560 framework/metaboxes/homey-meta-boxes.php:1090
+msgid "Amenities"
+msgstr "Facilidades"
+
+#: template-parts/dashboard/wallet/main-guest.php:148 template-parts/dashboard/wallet/main-guest.php:195
+#: template-parts/dashboard/wallet/main.php:173 template-parts/dashboard/wallet/main.php:220
+#: template-parts/dashboard/wallet/payout-detail.php:76 template-parts/dashboard/wallet/payouts-host.php:24
+#: template-parts/dashboard/wallet/payouts-host.php:87 template-parts/dashboard/wallet/payouts.php:95
+#: template-parts/dashboard/wallet/payouts.php:159
+msgid "Amount"
+msgstr "Quantidade"
+
+#: template-parts/dashboard/wallet/adjustment-form.php:32 template-parts/dashboard/wallet/adjustment-guest.php:32
+msgid "Amount (only number)"
+msgstr "Quantidade (apenas número)"
+
+#: framework/functions/wallet.php:1358 framework/functions/wallet.php:1458 template-parts/dashboard/reservation/detail.php:241
+#: template-parts/dashboard/reservation/detail.php:255
+msgid "and"
+msgstr "e"
+
+#: localization.php:458
+msgid "Any"
+msgstr "Qualquer"
+
+#: localization.php:549
+msgid "Apply"
+msgstr "Aplique"
+
+#: localization.php:567
+msgid "Apply Filters"
+msgstr "Aplicar Filtros"
+
+#: template-parts/dashboard/users/user-widget.php:14
+msgid "Approve ID verification"
+msgstr "Aprovar verificação de ID"
+
+#: template-parts/dashboard/profile/address.php:27 template-parts/dashboard/profile/payment-method.php:81
+#: template-parts/dashboard/profile/payment-method.php:181 template-parts/dashboard/wallet/payment-method-depricated.php:68
+#: template-parts/dashboard/wallet/payment-method-depricated.php:168
+msgid "Apt, Suite"
+msgstr "Apt, Suite"
+
+#: localization.php:115
+msgid "Apt, Suite (Optional)"
+msgstr "Apt, Suite (opcional)"
+
+#: localization.php:24
+msgid "Are you kidding?"
+msgstr "Você está de brincadeira?"
+
+#: localization.php:312
+msgid "Are you sure you want to do this?"
+msgstr "Você tem certeza de que quer fazer isso?"
+
+#: localization.php:269 localization.php:562
+msgid "Area"
+msgstr "Área"
+
+#: localization.php:542
+msgid "Arrive"
+msgstr "Chegada"
+
+#: localization.php:544
+msgid "Arrive & Depart"
+msgstr "Chegada e Partida"
+
+#: single-listing/what-nearby.php:24
+msgid "Arts & Entertainment"
+msgstr "Artes & Entretenimento"
+
+#: single-listing/booking/sidebar-instance-booking-hourly.php:81 single-listing/booking/sidebar-instance-booking-hourly.php:94
+#: template-parts/dashboard/reservation/detail-hourly.php:175 template-parts/dashboard/reservation/detail-hourly.php:183
+#: template-parts/dashboard/reservation/item-hourly.php:69 template-parts/dashboard/reservation/item-hourly.php:74
+#: template-parts/dashboard/wallet/detail.php:65 template-parts/dashboard/wallet/earnings.php:59
+#: template-parts/dashboard/wallet/main-guest.php:110 template-parts/dashboard/wallet/main-guest.php:192
+#: template-parts/dashboard/wallet/main-guest.php:217 template-parts/dashboard/wallet/main.php:135
+#: template-parts/dashboard/wallet/main.php:217 template-parts/dashboard/wallet/main.php:242
+#: template-parts/dashboard/wallet/payout-detail.php:107 template-parts/dashboard/wallet/payout-detail.php:119
+#: template-parts/dashboard/wallet/payouts-host.php:81 template-parts/dashboard/wallet/payouts-host.php:123
+#: template-parts/dashboard/wallet/payouts.php:153 template-parts/dashboard/wallet/payouts.php:197
+#: template-parts/dashboard/wallet/security-deposits.php:46
+msgid "at"
+msgstr "em"
+
+#: template-parts/dashboard/wallet/earnings.php:92 template-parts/dashboard/wallet/main.php:150
+msgid "At the moment there are no earnings."
+msgstr "No momento não há ganhos."
+
+#: template-parts/dashboard/wallet/main-guest.php:231 template-parts/dashboard/wallet/main.php:256
+#: template-parts/dashboard/wallet/payouts-host.php:141 template-parts/dashboard/wallet/payouts.php:214
+msgid "At the moment there are no payouts."
+msgstr "No momento não há pagamentos."
+
+#: template-parts/dashboard/wallet/main-guest.php:125 template-parts/dashboard/wallet/security-deposits.php:62
+msgid "At the moment there are no record."
+msgstr "No momento não há registro."
+
+#: template-parts/dashboard/reservation/item-hourly.php:46 template-parts/dashboard/reservation/item.php:61
+msgid "Author"
+msgstr "Autor"
+
+#: template-parts/page-title.php:28
+msgid "Author Archive"
+msgstr "Arquivo do Autor"
+
+#: single-listing/what-nearby.php:25
+msgid "Automotive"
+msgstr "Automotivo"
+
+#: framework/vc_extend.php:652
+msgid "Autoplay speed:"
+msgstr "Velocidade de reprodução automática:"
+
+#: framework/vc_extend.php:643
+msgid "Autoplay:"
+msgstr "Reprodução automática:"
+
+#: localization.php:221
+msgid "Availability"
+msgstr "Disponibilidade"
+
+#: localization.php:444
+msgid "AVAILABLE"
+msgstr "DISPONÍVEL"
+
+#: localization.php:231
+msgid "Available"
+msgstr "Disponível"
+
+#: template-parts/dashboard/wallet/main.php:56 template-parts/dashboard/wallet/payout-request.php:25
+msgid "Available Balance"
+msgstr "Saldo disponível"
+
+#: template-parts/dashboard/users/users.php:93 template-parts/dashboard/users/users.php:123
+msgid "Avatar"
+msgstr "Avatar"
+
+#: localization.php:398
+msgid "Average"
+msgstr "Média"
+
+#: localization.php:325 template/dashboard-payment.php:81 template-parts/dashboard/actions.php:6
+#: template-parts/dashboard/wallet/payout-detail.php:57 template-parts/dashboard/wallet/payout-detail.php:57
+msgid "Back"
+msgstr "Voltar"
+
+#: 404.php:25
+msgid "Back to the homepage"
+msgstr "Voltar a página inicial"
+
+#: localization.php:393 template-parts/dashboard/wallet/detail.php:110
+msgid "Balance due of"
+msgstr "Saldo devido de"
+
+#: template/dashboard-payment.php:168 template-parts/dashboard/users/user-detail.php:330
+#: template-parts/dashboard/wallet/payout-detail.php:235
+msgid "Bank Address"
+msgstr "Endereço do banco"
+
+#: template/dashboard-payment.php:158 template-parts/dashboard/profile/payment-method.php:169
+#: template-parts/dashboard/users/user-detail.php:320 template-parts/dashboard/wallet/payment-method-depricated.php:156
+#: template-parts/dashboard/wallet/payout-detail.php:231
+msgid "Bank Name"
+msgstr "Nome do banco"
+
+#: framework/metaboxes/homey-meta-boxes.php:1346
+msgid "Banner Search"
+msgstr "Pesquisa de Banner"
+
+#: framework/metaboxes/homey-meta-boxes.php:1357
+msgid "Banner Search Style"
+msgstr "Estilo de pesquisa de Banner"
+
+#: single-listing/about.php:37
+msgid "bathroom_icon"
+msgstr "bathroom_icon"
+
+#: localization.php:51
+msgid "Bathrooms"
+msgstr "Banheiros"
+
+#: localization.php:56
+msgid "Baths"
+msgstr "Banheiras"
+
+#: single-listing/what-nearby.php:26
+msgid "Beauty & Spas"
+msgstr "Beleza  & Spas"
+
+#: localization.php:379
+msgid "Become a Host"
+msgstr "Torne-se um Anfitrião"
+
+#: localization.php:183
+msgid "Bed type"
+msgstr "Tipo de cama"
+
+#: localization.php:177
+msgid "Bedroom name"
+msgstr "Nome do quarto"
+
+#: single-listing/about.php:36
+msgid "bedroom_icon"
+msgstr "bedroom_icon"
+
+#: localization.php:50 localization.php:176
+msgid "Bedrooms"
+msgstr "Quartos"
+
+#: localization.php:55
+msgid "Beds"
+msgstr "Camas"
+
+#: localization.php:454
+msgid "Below your order information"
+msgstr "Abaixo as informações do seu pedido"
+
+#: template/dashboard-payment.php:138 template-parts/dashboard/profile/payment-method.php:157
+#: template-parts/dashboard/users/user-detail.php:300 template-parts/dashboard/wallet/payment-method-depricated.php:144
+#: template-parts/dashboard/wallet/payout-detail.php:223
+msgid "Beneficiary Account Number"
+msgstr "Número da Conta do Beneficiario"
+
+#: template-parts/dashboard/profile/payment-method.php:35 template-parts/dashboard/wallet/payment-method-depricated.php:28
+msgid "Beneficiary Information"
+msgstr "Informação do Beneficiário"
+
+#: template/dashboard-payment.php:97 template-parts/dashboard/users/user-detail.php:239
+#: template-parts/dashboard/wallet/payout-detail.php:177
+msgid "Beneficiary Name"
+msgstr "Nome do Beneficiário"
+
+#: localization.php:480
+msgid "Billing For"
+msgstr "Faturamento para"
+
+#: localization.php:479 template-parts/dashboard/invoices/item.php:44
+msgid "Billing Type"
+msgstr "Tipo de Cobrança"
+
+#: localization.php:533 template-parts/dashboard/users/user-detail.php:206
+msgid "Bio"
+msgstr "Bio"
+
+#: framework/vc_extend.php:953
+msgid "Blog Posts Carousel"
+msgstr "Carrossel de Postagens do Blog"
+
+#: framework/vc_extend.php:912
+msgid "Blog Posts Grid"
+msgstr "Grade de Postagens do Blog"
+
+#: functions.php:311
+msgid "Blog Sidebar"
+msgstr "Barra Lateral do Blog"
+
+#: single-listing/booking/overlay-booking.php:116 single-listing/booking/overlay-hourly-booking.php:154
+#: single-listing/booking/sidebar-booking-hourly.php:77 single-listing/booking/sidebar-booking-module.php:56
+msgid "Book Now"
+msgstr "Agende Agora"
+
+#: localization.php:445
+msgid "BOOKED"
+msgstr "RESERVADO"
+
+#: localization.php:234
+msgid "Booked"
+msgstr "Reservado"
+
+#: localization.php:482
+msgid "Booking Date"
+msgstr "Data de Reserva"
+
+#: framework/metaboxes/homey-meta-boxes.php:948
+msgid "Booking Form"
+msgstr "Formulário de Inscrição"
+
+#: localization.php:236
+msgid "Booking id"
+msgstr "ID da Reserva"
+
+#: localization.php:360
+msgid "Booking request sent. Please wait for confirmation!"
+msgstr "Pedido de reserva enviado. Aguarde a confirmação!"
+
+#: framework/vc_extend.php:293 framework/vc_extend.php:470 framework/metaboxes/homey-meta-boxes.php:314
+#: framework/metaboxes/homey-meta-boxes.php:1019 framework/metaboxes/homey-meta-boxes.php:1153
+msgid "Booking Type"
+msgstr "Tipo de reserva"
+
+#: template-parts/dashboard/side-menu.php:113 template-parts/header/account.php:90 template-parts/header/mobile-user-menu.php:103
+msgid "Bookings"
+msgstr "Reservas"
+
+#: inc/register-scripts.php:510
+msgid "Both fields required."
+msgstr "Ambos os campos são obrigatórios."
+
+#: template-parts/dashboard/profile/photo.php:37 template-parts/dashboard/profile/verification.php:59
+msgid "Browse"
+msgstr "Navegar"
+
+#: framework/metaboxes/homey-meta-boxes.php:803 template-parts/dashboard/edit-listing/terms.php:134
+#: template-parts/dashboard/submit-listing/terms.php:119
+msgid "Business Hours"
+msgstr "Horário Comercial"
+
+#: localization.php:329
+msgid "By"
+msgstr "De"
+
+#: localization.php:330
+msgid "by"
+msgstr "de"
+
+#: template-parts/instance-booking/hourly.php:185 template-parts/instance-booking/nightly.php:182
+#, php-format
+msgid "By clicking Continue you agree to our <a href=\"%s\">Terms & Conditions</a> and <a href=\"%s\">Privacy Policy</a>"
+msgstr ""
+"Ao clicar em Continuar, você concorda com nossos <a href=\"%s\">Termos e Condições</a> e <a href=\"%s\">Política de "
+"Privacidade</a>"
+
+#: framework/vc_extend.php:246
+msgid "By Favethemes"
+msgstr "Por Favethemes"
+
+#: framework/metaboxes/homey-meta-boxes.php:1422
+msgid "By who?"
+msgstr "Por quem?"
+
+#: localization.php:237
+msgid "Calendar"
+msgstr "Calendário"
+
+#: localization.php:321 template-parts/dashboard/actions.php:4 template-parts/dashboard/ical-export.php:19
+#: template-parts/dashboard/ical-import.php:44 template-parts/dashboard/reservation/add-extra-expenses.php:52
+#: template-parts/dashboard/reservation/discount.php:52
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: template-parts/dashboard/reservation/cancel-form.php:4 template-parts/dashboard/reservation/cancel-hourly-form.php:4
+#: template-parts/dashboard/reservation/cancelled.php:4
+msgid "Cancel Reason"
+msgstr "Motivo de Cancelamento"
+
+#: localization.php:513
+msgid "Cancellation Policy"
+msgstr "Política de Cancelamento"
+
+#: localization.php:172
+msgid "Cancellation policy"
+msgstr "Política de cancelamento"
+
+#: localization.php:447
+msgid "CANCELLED"
+msgstr "CANCELADO"
+
+#: framework/vc_extend.php:925 framework/vc_extend.php:966
+msgid "Category Filter:"
+msgstr "Filtro de Categoria:"
+
+#: template-parts/dashboard/profile/password.php:4
+msgid "Change Password"
+msgstr "Mudar Senha"
+
+#: template-parts/dashboard/wallet/payout-detail.php:289
+msgid "Change the payout status"
+msgstr "Alterar o status de pagamento"
+
+#: localization.php:42
+msgid "Check In"
+msgstr "Check In"
+
+#: localization.php:43
+msgid "Check Out"
+msgstr "Check Out"
+
+#: localization.php:503
+msgid "Check out date must be greater then check in date"
+msgstr "A data de check out deve ser posterior à data de check-in"
+
+#: localization.php:504
+msgid "Check out hour must be greater then check in hour"
+msgstr "A hora de check out deve ser maior que a hora de check-in"
+
+#: localization.php:45
+msgid "Check-in"
+msgstr "Check-in"
+
+#: localization.php:47
+msgid "Check-in After"
+msgstr "Check-in após"
+
+#: localization.php:46
+msgid "Check-out"
+msgstr "Verificação de saída"
+
+#: localization.php:48
+msgid "Check-out Before"
+msgstr "Check-out Antes"
+
+#: localization.php:147 localization.php:548
+msgid "Children"
+msgstr "Crianças"
+
+#: localization.php:171
+msgid "Children allowed"
+msgstr "Crianças permitidas"
+
+#: template-parts/dashboard/profile/photo.php:35 template-parts/dashboard/profile/verification.php:57
+msgid "Choose an image from your computer"
+msgstr "Escolha uma imagem do seu computador"
+
+#: framework/metaboxes/homey-meta-boxes.php:1241
+msgid "Choose city for listings on map header, you can select multiple cities or keep all un-select to show from all cities"
+msgstr ""
+"Escolha a cidade para listagens no cabeçalho do mapa, você pode selecionar várias cidades ou manter todas desmarcadas para "
+"mostrar todas as cidades"
+
+#: framework/metaboxes/listing-type-meta.php:20 framework/metaboxes/listing-type-meta.php:70
+msgid "Choose color"
+msgstr "Escolha a cor"
+
+#: framework/functions/price.php:607
+msgid "Choose Currency"
+msgstr "Escolha a Moeda"
+
+#: framework/vc_extend.php:278
+msgid "Choose grid/list/card style, default will be list view"
+msgstr "Escolha o estilo de grade/lista/cartão, o padrão será a visualização de lista"
+
+#: framework/vc_extend.php:784
+msgid "Choose grid:"
+msgstr "Escolha a grade:"
+
+#: framework/metaboxes/homey-meta-boxes.php:1206
+msgid "Choose page header type"
+msgstr "Escolha o tipo de cabeçalho da página"
+
+#: framework/vc_extend.php:791
+msgid "Choose Taxonomy"
+msgstr "Escolha a Taxonomia"
+
+#: framework/metaboxes/homey-meta-boxes.php:1217
+msgid "Choose where map show listings"
+msgstr "Escolha onde o mapa mostra as acomodações"
+
+#: localization.php:266 framework/metaboxes/homey-meta-boxes.php:1214 template-parts/dashboard/profile/address.php:33
+#: template-parts/dashboard/profile/payment-method.php:87 template-parts/dashboard/profile/payment-method.php:187
+#: template-parts/dashboard/wallet/payment-method-depricated.php:74
+#: template-parts/dashboard/wallet/payment-method-depricated.php:174
+msgid "City"
+msgstr "Cidade"
+
+#: localization.php:136 localization.php:388
+msgid "City fee"
+msgstr "Taxa da cidade"
+
+#: localization.php:138
+msgid "City fee type"
+msgstr "Tipo de taxa da cidade"
+
+#: localization.php:133 localization.php:387
+msgid "Cleaning fee"
+msgstr "Taxa de limpeza"
+
+#: localization.php:135
+msgid "Cleaning fee type"
+msgstr "Tipo de taxa de limpeza"
+
+#: template-parts/search/search-calendar.php:189
+msgid "Clear"
+msgstr "Limpar"
+
+#: single-listing/what-nearby.php:79
+msgid "Click Here"
+msgstr "Clique Aqui"
+
+#: framework/functions/v13-db.php:19
+msgid "Click here for database update, It is required"
+msgstr "Clique aqui para atualização do banco de dados, é necessário"
+
+#: framework/functions/messages.php:609
+msgid "Click here to see message on website dashboard."
+msgstr "Clique aqui para ver a mensagem no painel do site."
+
+#: localization.php:310
+msgid "Click on a date to make it unavailable. Then click on it again to make available."
+msgstr "Clique em uma data para torná-la indisponível. Em seguida, clique nele novamente para disponibilizar."
+
+#: template-parts/listing/compare.php:26
+msgid "Close"
+msgstr "Fechar"
+
+#: localization.php:213
+msgid "Close Time"
+msgstr "Hora de fechamento"
+
+#: localization.php:214
+msgid "Closed"
+msgstr "Fechado"
+
+#: framework/metaboxes/listing-type-meta.php:59
+msgid "Color"
+msgstr "Cor"
+
+#: framework/vc_extend.php:170
+msgid "Color Scheme"
+msgstr "Esquema de cores"
+
+#: framework/vc_extend.php:748
+msgid "Columns in Row:"
+msgstr "Colunas em Linha:"
+
+#: framework/vc_extend.php:1127
+msgid "Columns:"
+msgstr "Colunas:"
+
+#: framework/functions/review.php:235
+msgid "Comment:"
+msgstr "Comentário:"
+
+#: comments.php:25
+msgid "Comments"
+msgstr "Comentários"
+
+#: framework/metaboxes/homey-meta-boxes.php:1434 template-parts/dashboard/profile/payment-method.php:63
+#: template-parts/dashboard/users/user-detail.php:249 template-parts/dashboard/wallet/payment-method-depricated.php:50
+#: template-parts/dashboard/wallet/payout-detail.php:183
+msgid "Company Name"
+msgstr "Nome da Empresa"
+
+#. Name of the template
+#: localization.php:59 localization.php:64
+msgid "Compare"
+msgstr "Comparar"
+
+#: template-parts/listing/compare.php:11
+msgid "Compare listings"
+msgstr "Compare acomodações"
+
+#: localization.php:308
+msgid "Complete your listing"
+msgstr "Complete sua acomodação"
+
+#: localization.php:450 inc/register-scripts.php:240 inc/register-scripts.php:506
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: template-parts/dashboard/profile/password.php:19
+msgid "Confirm new password"
+msgstr "Confirmar a nova senha"
+
+#: template-parts/dashboard/profile/password.php:18
+msgid "Confirm Password"
+msgstr "Confirmar a Senha"
+
+#: localization.php:305
+msgid "Congratulations. Your listing has been submitted for approval."
+msgstr "Parabéns. Sua listagem foi enviada para aprovação."
+
+#: inc/register-scripts.php:241
+msgid "Connecting to paypal, Please wait... "
+msgstr "Conectando-se ao paypal, aguarde..."
+
+#: framework/metaboxes/homey-meta-boxes.php:949
+msgid "Contact Form"
+msgstr "Formulário de Contato"
+
+#: template-parts/profile/host.php:180
+msgid "Contact me"
+msgstr "Contate-me"
+
+#: template-parts/dashboard/profile/contact.php:21 template-parts/dashboard/users/user-detail.php:352
+msgid "Contact Name"
+msgstr "Nome de Contato"
+
+#: localization.php:412
+msgid "Contact the host"
+msgstr "Contate o anfitrião"
+
+#: localization.php:22
+msgid "Contact us"
+msgstr "Contate-nos"
+
+#: framework/vc_extend.php:1075
+msgid "Content:"
+msgstr "Conteúdo:"
+
+#: localization.php:314
+msgid "Continue"
+msgstr "Continuar"
+
+#: framework/functions/price.php:476
+msgid "Cookie update failed"
+msgstr "Falha na atualização do cookie"
+
+#: localization.php:260 template-parts/dashboard/profile/address.php:57
+msgid "Country"
+msgstr "País"
+
+#: template-parts/dashboard/profile/address.php:58
+msgid "country"
+msgstr "país"
+
+#: framework/vc_extend.php:136
+msgid "Create seation titles between elements"
+msgstr "Crie títulos de seção entre os elementos"
+
+#: framework/metaboxes/listing-type-meta.php:12 framework/metaboxes/listing-type-meta.php:62
+msgid "Custom"
+msgstr "Personalizadas"
+
+#: localization.php:230
+msgid "custom period & weekend"
+msgstr "período personalizado & fim de semana"
+
+#: localization.php:145
+msgid "Custom Period Prices"
+msgstr "Preços por Períodos Especiais"
+
+#: functions.php:331
+msgid "Custom Sidebar 1"
+msgstr "Barra Lateral Personalizada 1"
+
+#: functions.php:341
+msgid "Custom Sidebar 2"
+msgstr "Barra Lateral Personalizada 2"
+
+#: functions.php:351
+msgid "Custom Sidebar 3"
+msgstr "Barra Lateral Personalizada 3"
+
+#: localization.php:485
+msgid "Customer details:"
+msgstr "Detalhes do cliente:"
+
+#: localization.php:139 single-listing/prices.php:61 single-listing/prices.php:67
+msgid "Daily"
+msgstr "Diariamente"
+
+#. Name of the template
+#: localization.php:572
+msgid "Dashboard"
+msgstr "Painel de Controle"
+
+#. Name of the template
+msgid "Dashboard Add Listing"
+msgstr "Painel Adicionar Listagem"
+
+#. Name of the template
+msgid "Dashboard Favorites"
+msgstr "Painel Favoritos"
+
+#. Name of the template
+msgid "Dashboard Invoices"
+msgstr "Painel Faturas"
+
+#. Name of the template
+msgid "Dashboard Listing Submitted"
+msgstr "Painel Acomodações Submetidas"
+
+#. Name of the template
+msgid "Dashboard Listings"
+msgstr "Painel Acomodações"
+
+#. Name of the template
+msgid "Dashboard Messages"
+msgstr "Painel Mensagens"
+
+#. Name of the template
+msgid "Dashboard My Bookings"
+msgstr "Painel Minhas Reservas"
+
+#. Name of the template
+msgid "Dashboard My Reservations"
+msgstr "Painel Minhas Reservas"
+
+#. Name of the template
+msgid "Dashboard Reservations"
+msgstr "Painel Reservas"
+
+#. Name of the template
+msgid "Dashboard User Profile"
+msgstr "Painel Perfil de Usuário"
+
+#: framework/functions/profile.php:608
+msgid "Data successfully saved."
+msgstr "Dados salvos com sucesso."
+
+#: framework/functions/v13-db.php:18
+msgid "Database need to be update for homey 1.3.0"
+msgstr "O banco de dados precisa ser atualizado para homey 1.3.0"
+
+#: localization.php:36 localization.php:484 template-parts/dashboard/invoices/item.php:18
+#: template-parts/dashboard/wallet/detail.php:62 template-parts/dashboard/wallet/earnings.php:22
+#: template-parts/dashboard/wallet/earnings.php:57 template-parts/dashboard/wallet/main-guest.php:81
+#: template-parts/dashboard/wallet/main-guest.php:108 template-parts/dashboard/wallet/main.php:104
+#: template-parts/dashboard/wallet/main.php:133 template-parts/dashboard/wallet/payout-detail.php:98
+#: template-parts/dashboard/wallet/security-deposits.php:18 template-parts/dashboard/wallet/security-deposits.php:44
+msgid "Date"
+msgstr "Data"
+
+#: framework/vc_extend.php:125 framework/vc_extend.php:404
+msgid "Date (New to Old)"
+msgstr "Data (Novo para Antigo)"
+
+#: framework/vc_extend.php:124 framework/vc_extend.php:403
+msgid "Date (Old to New)"
+msgstr "Data (Antigo para Novo)"
+
+#: single-listing/reviews.php:38 framework/metaboxes/homey-meta-boxes.php:998 framework/metaboxes/homey-meta-boxes.php:1132
+#: template-parts/listing/sort-tool.php:33 template-parts/listing/sort-tool_2.php:32
+msgid "Date New to Old"
+msgstr "Data de Novo para Antigo"
+
+#: single-listing/reviews.php:37 framework/metaboxes/homey-meta-boxes.php:999 framework/metaboxes/homey-meta-boxes.php:1133
+#: template-parts/listing/sort-tool.php:32 template-parts/listing/sort-tool_2.php:31
+msgid "Date Old to New"
+msgstr "Data Antigo para Novo"
+
+#: template-parts/dashboard/wallet/main-guest.php:150 template-parts/dashboard/wallet/main-guest.php:211
+#: template-parts/dashboard/wallet/main.php:175 template-parts/dashboard/wallet/main.php:236
+#: template-parts/dashboard/wallet/payout-detail.php:112 template-parts/dashboard/wallet/payouts-host.php:27
+#: template-parts/dashboard/wallet/payouts-host.php:117 template-parts/dashboard/wallet/payouts.php:99
+#: template-parts/dashboard/wallet/payouts.php:191
+msgid "Date Processed"
+msgstr "Data Processada"
+
+#: template-parts/dashboard/wallet/main-guest.php:147 template-parts/dashboard/wallet/main-guest.php:190
+#: template-parts/dashboard/wallet/main.php:172 template-parts/dashboard/wallet/main.php:215
+#: template-parts/dashboard/wallet/payout-detail.php:104 template-parts/dashboard/wallet/payouts-host.php:22
+#: template-parts/dashboard/wallet/payouts-host.php:79 template-parts/dashboard/wallet/payouts.php:93
+#: template-parts/dashboard/wallet/payouts.php:151
+msgid "Date Requested"
+msgstr "Data Requerida"
+
+#: template-parts/dashboard/invoices/detail.php:77
+msgid "Date:"
+msgstr "Data:"
+
+#: template-parts/dashboard/reservation/decline-form.php:4 template-parts/dashboard/reservation/decline-hourly-form.php:4
+#: template-parts/dashboard/reservation/declined.php:4
+msgid "Decline Reason"
+msgstr "Razão da Recusa"
+
+#: localization.php:446
+msgid "DECLINED"
+msgstr "RECUSADO"
+
+#: template-parts/dashboard/wallet/adjustment-form.php:39 template-parts/dashboard/wallet/adjustment-guest.php:39
+msgid "Deduct Money"
+msgstr "Deduzir Dinheiro"
+
+#: framework/vc_extend.php:121 framework/vc_extend.php:400
+msgid "Default"
+msgstr "Padrão"
+
+#: framework/metaboxes/homey-meta-boxes.php:947
+msgid "Default (Same settings as theme options)"
+msgstr "Padrão (Mesmas configurações das opções de tema)"
+
+#: framework/metaboxes/homey-meta-boxes.php:1321
+msgid "Default 300px"
+msgstr "Padrão 300px"
+
+#: framework/metaboxes/homey-meta-boxes.php:1312
+msgid "Default 600px"
+msgstr "Padrão 600px"
+
+#: single-listing/reviews.php:36 template-parts/listing/sort-tool.php:23 template-parts/listing/sort-tool.php:24
+#: template-parts/listing/sort-tool_2.php:21 template-parts/listing/sort-tool_2.php:22
+msgid "Default Order"
+msgstr "Pedido Padrão"
+
+#: functions.php:283
+msgid "Default Sidebar"
+msgstr "Barra Lateral Padrão"
+
+#: localization.php:320 template-parts/dashboard/edit-listing/extra.php:60 template-parts/dashboard/messages/detail.php:182
+#: template-parts/dashboard/messages/messages.php:106 template-parts/dashboard/profile/photo.php:38
+#: template-parts/dashboard/profile/verification.php:60 template-parts/dashboard/reservation/detail-hourly.php:96
+#: template-parts/dashboard/reservation/detail.php:133 template-parts/dashboard/submit-listing/extra.php:52
+msgid "Delete"
+msgstr "Excluir"
+
+#: localization.php:543
+msgid "Depart"
+msgstr "Partir"
+
+#: localization.php:86
+msgid "Description"
+msgstr "Descrição"
+
+#: template-parts/dashboard/users/users.php:164
+msgid "Detail"
+msgstr "Detalhe"
+
+#: localization.php:76 localization.php:449 localization.php:476 framework/metaboxes/homey-meta-boxes.php:1473
+#: template-parts/dashboard/invoices/detail.php:92 template-parts/dashboard/reservation/detail-hourly.php:167
+#: template-parts/dashboard/reservation/detail.php:219 template-parts/dashboard/wallet/detail.php:42
+#: template-parts/dashboard/wallet/earnings.php:82 template-parts/dashboard/wallet/main-guest.php:37
+#: template-parts/dashboard/wallet/main.php:41 template-parts/dashboard/wallet/payout-detail.php:53
+#: template-parts/dashboard/wallet/payouts-host.php:130 template-parts/dashboard/wallet/payouts.php:204
+msgid "Details"
+msgstr "Detalhes"
+
+#: framework/vc_extend.php:425 framework/metaboxes/homey-meta-boxes.php:1351 framework/metaboxes/homey-meta-boxes.php:1385
+#: framework/metaboxes/homey-meta-boxes.php:1396
+msgid "Disable"
+msgstr "Desabilitar"
+
+#: template-parts/dashboard/listing-item.php:46
+msgid "Disable Listing"
+msgstr "Desativar Acomodação"
+
+#: template/dashboard-listings.php:131
+msgid "Disabled"
+msgstr "Desativado"
+
+#: template-parts/dashboard/reservation/discount.php:16
+msgid "Discount"
+msgstr "Desconto"
+
+#: template-parts/dashboard/reservation/discount.php:40
+msgid "Discount Name"
+msgstr "Nome do Desconto"
+
+#: template-parts/dashboard/reservation/discount.php:44
+msgid "Discount Value"
+msgstr "Valor de Desconto"
+
+#: localization.php:536
+msgid "Display name publicly as"
+msgstr "Exibir nome publicamente como"
+
+#: template-parts/modal-window-register.php:98
+msgid "Do you already have an account?"
+msgstr "Você já tem uma conta?"
+
+#: framework/metaboxes/homey-meta-boxes.php:915
+msgid "Do you want to display this property in the slider?"
+msgstr "Você deseja exibir esta propriedade no controle deslizante?"
+
+#: localization.php:289
+msgid "Do you want to show the listing map?"
+msgstr "Você quer mostrar o mapa da acomodação?"
+
+#: framework/functions/profile.php:108
+msgid "Document upload failed!"
+msgstr "Falha no upload do documento!"
+
+#: template-parts/dashboard/users/user-detail.php:99
+msgid "Documents"
+msgstr "Documentos"
+
+#: template-parts/modal-window-login.php:72
+msgid "Don't you have an account?"
+msgstr "Você não tem uma conta?"
+
+#: template-parts/search/search-calendar.php:197 template-parts/dashboard/profile/progress.php:14
+#: template-parts/dashboard/profile/progress.php:23 template-parts/dashboard/profile/status.php:25
+msgid "Done"
+msgstr "Feito"
+
+#: framework/vc_extend.php:676
+msgid "Dots navigation:"
+msgstr "Navegação por pontos:"
+
+#: template-parts/dashboard/ical-export.php:18
+msgid "Download"
+msgstr "Baixar"
+
+#: template/dashboard-listings.php:127
+msgid "Draft"
+msgstr "Rascunho"
+
+#: localization.php:298
+msgid "Drag and drop the images to customize the gallery order.<br>Click on the star icon to set the featured image"
+msgstr ""
+"Arraste e solte as imagens para personalizar a ordem da galeria. <br>Clique no ícone de estrela para definir a imagem em "
+"destaque"
+
+#: localization.php:290
+msgid "Drag and drop the pin on map to find exact location"
+msgstr "Arraste e solte o alfinete no mapa para encontrar a localização exata"
+
+#: localization.php:291
+msgid "Drag and drop the pin on map to find exact location or use address field above."
+msgstr "Arraste e solte o alfinete no mapa para encontrar a localização exata ou use o campo de endereço acima."
+
+#: template-parts/dashboard/host-stats.php:32 template-parts/dashboard/side-menu.php:135
+#: template-parts/header/mobile-user-menu.php:126 template-parts/dashboard/wallet/detail.php:89
+#: template-parts/dashboard/wallet/main.php:87
+msgid "Earnings"
+msgstr "Ganhos"
+
+#: localization.php:318 localization.php:408 template-parts/dashboard/actions.php:2
+msgid "Edit"
+msgstr "Editar"
+
+#: single-listing/what-nearby.php:27
+msgid "Education"
+msgstr "Educação"
+
+#: localization.php:71 localization.php:529 single-hm_homey_memberships.php:311 template-parts/modal-window-register.php:53
+#: template-parts/dashboard/profile/contact.php:33 template-parts/dashboard/users/user-detail.php:135
+#: template-parts/dashboard/users/user-detail.php:384 template-parts/dashboard/users/users.php:95
+#: template-parts/dashboard/users/users.php:129 template-parts/dashboard/wallet/payout-detail.php:156
+msgid "Email"
+msgstr "Email"
+
+#: template-parts/dashboard/profile/progress.php:21 template-parts/dashboard/profile/status.php:32
+#: template-parts/dashboard/profile/verification.php:16
+msgid "Email Address"
+msgstr "Endereço de E-mail"
+
+#: template-parts/profile/guest.php:73
+msgid "Email address"
+msgstr "Endereço de e-mail"
+
+#: inc/register-scripts.php:618
+msgid "Email field required"
+msgstr "Campo de email obrigatório"
+
+#: template-parts/dashboard/users/users.php:97 template-parts/dashboard/users/users.php:138
+msgid "Email Verification"
+msgstr "verificação de e-mail"
+
+#: localization.php:487 template-parts/dashboard/invoices/detail.php:90
+msgid "Email:"
+msgstr "Email:"
+
+#: template-parts/dashboard/profile/contact.php:13 template-parts/dashboard/users/user-detail.php:347
+msgid "Emergency Contact"
+msgstr "Contato de Emergência"
+
+#: framework/vc_extend.php:241
+msgid "Empty Space"
+msgstr "Espaço Vazio"
+
+#: framework/vc_extend.php:424 framework/metaboxes/homey-meta-boxes.php:1350 framework/metaboxes/homey-meta-boxes.php:1384
+#: framework/metaboxes/homey-meta-boxes.php:1395
+msgid "Enable"
+msgstr "Habilitar"
+
+#: template-parts/dashboard/listing-item.php:50
+msgid "Enable Listing"
+msgstr "Habilitar Acomodação"
+
+#: template-parts/dashboard/edit-listing/modal-calendar.php:18
+msgid "End Date"
+msgstr "Termino de Período"
+
+#: localization.php:462
+msgid "End date"
+msgstr "Término"
+
+#: framework/metaboxes/homey-meta-boxes.php:822 template-parts/dashboard/edit-listing/terms.php:153
+#: template-parts/dashboard/submit-listing/terms.php:134
+msgid "End Hour"
+msgstr "Hora Final"
+
+#: localization.php:495
+msgid "Enjoy and book with confidence."
+msgstr "Aproveite e reserve com confiança."
+
+#: framework/metaboxes/homey-meta-boxes.php:204
+msgid "Enter affiliate booking link"
+msgstr "Insira o link de afiliado booking"
+
+#: template-parts/dashboard/profile/contact.php:34
+msgid "Enter contact email address"
+msgstr "Insira o endereço de e-mail de contato"
+
+#: template-parts/dashboard/reservation/discount.php:41
+msgid "Enter discount name"
+msgstr "Insira o nome do desconto"
+
+#: inc/register-scripts.php:511 template-parts/dashboard/reservation/discount.php:45
+msgid "Enter discount value"
+msgstr "Insira o valor do desconto"
+
+#: localization.php:463
+msgid "Enter end date"
+msgstr "Insira a data de término"
+
+#: template-parts/dashboard/profile/upfront.php:32
+msgid "Enter how many % payment required while booking."
+msgstr "Insira quantos % de pagamento necessário durante a reserva."
+
+#: template-parts/dashboard/profile/payment-method.php:58 template-parts/dashboard/wallet/payment-method-depricated.php:45
+msgid "Enter last name"
+msgstr "Insira o último nome"
+
+#: framework/vc_extend.php:758
+msgid "Enter Listings ids comma separated. Ex 12,305,34"
+msgstr "Insira os IDs das acomodações separados por vírgulas. Ex 12.305,34"
+
+#: template-parts/dashboard/profile/contact.php:22
+msgid "Enter Name"
+msgstr "Insira o Nome"
+
+#: template-parts/dashboard/profile/password.php:13
+msgid "Enter new password"
+msgstr "Insira a nova senha"
+
+#: localization.php:98
+msgid "Enter number of bathrooms"
+msgstr "Insira o número de banheiros"
+
+#: localization.php:90
+msgid "Enter number of bedrooms"
+msgstr "Insira o número de quartos"
+
+#: localization.php:96
+msgid "Enter number of beds"
+msgstr "Insira o número de camas"
+
+#: localization.php:94
+msgid "Enter number of guest"
+msgstr "Digite o número de convidados"
+
+#: localization.php:92
+msgid "Enter number of rooms"
+msgstr "Insira o número de quartos"
+
+#: framework/metaboxes/homey-meta-boxes.php:379 template-parts/dashboard/edit-listing/pricing.php:116
+#: template-parts/dashboard/submit-listing/pricing.php:94
+msgid "Enter per hour price for weekends"
+msgstr "Insira o preço por hora para fins de semana"
+
+#: framework/functions/profile.php:187
+msgid "Enter percentage"
+msgstr "Insira a porcentagem"
+
+#: localization.php:276
+msgid "Enter price - only digits"
+msgstr "Insira o preço - apenas dígitos"
+
+#: framework/metaboxes/homey-meta-boxes.php:355 template-parts/dashboard/edit-listing/pricing.php:86
+#: template-parts/dashboard/submit-listing/pricing.php:63
+msgid "Enter price for 1 hour"
+msgstr "Insira o preço por 1 hora"
+
+#: localization.php:119
+msgid "Enter price for 1 night"
+msgstr "Insira o preço para 1 noite"
+
+#: localization.php:126
+msgid "Enter price for security deposit"
+msgstr "Insira o preço do depósito de segurança"
+
+#: template-parts/dashboard/profile/contact.php:28
+msgid "Enter Relationship"
+msgstr "Entrar no Relacionamento"
+
+#: localization.php:273
+msgid "Enter service name"
+msgstr "Insira o nome do serviço"
+
+#: localization.php:461
+msgid "Enter start date"
+msgstr "Insira a data de início"
+
+#: template-parts/dashboard/profile/address.php:22 template-parts/dashboard/profile/payment-method.php:76
+#: template-parts/dashboard/profile/payment-method.php:176 template-parts/dashboard/wallet/payment-method-depricated.php:63
+#: template-parts/dashboard/wallet/payment-method-depricated.php:163
+msgid "Enter street address"
+msgstr "Digite o endereço"
+
+#: template-parts/dashboard/profile/payment-method.php:70 template-parts/dashboard/wallet/payment-method-depricated.php:57
+msgid "Enter tax identification number"
+msgstr "Insira o número de identificação fiscal"
+
+#: localization.php:128
+msgid "Enter tax percentage (only number)"
+msgstr "Insira a porcentagem de imposto (apenas número)"
+
+#: localization.php:270
+msgid "Enter the Area"
+msgstr "Entrar na Área"
+
+#: template-parts/dashboard/profile/payment-method.php:170 template-parts/dashboard/wallet/payment-method-depricated.php:157
+msgid "Enter the bank name"
+msgstr "Insira o nome do banco"
+
+#: localization.php:184
+msgid "Enter the bed type"
+msgstr "Insira o tipo de cama"
+
+#: localization.php:267
+msgid "Enter the City"
+msgstr "Entrar na Cidade"
+
+#: template-parts/dashboard/profile/payment-method.php:64 template-parts/dashboard/wallet/payment-method-depricated.php:51
+msgid "Enter the company name"
+msgstr "Insira o nome da empresa"
+
+#: localization.php:261
+msgid "Enter the Country"
+msgstr "Insira o País"
+
+#: template-parts/dashboard/reservation/add-extra-expenses.php:41
+msgid "Enter the expense name"
+msgstr "Insira o nome da despesa"
+
+#: template-parts/dashboard/reservation/add-extra-expenses.php:45
+msgid "Enter the expense price"
+msgstr "Insira o preço da despesa"
+
+#: template-parts/dashboard/ical-import.php:33
+msgid "Enter the feed name"
+msgstr "Insira o nome do feed"
+
+#: template-parts/dashboard/ical-import.php:37
+msgid "Enter the feed url"
+msgstr "Insira o url do feed"
+
+#: framework/vc_extend.php:197
+msgid "Enter the font size for section sub title"
+msgstr "Insira o tamanho da fonte para o subtítulo da seção"
+
+#: framework/vc_extend.php:178
+msgid "Enter the font size for section title"
+msgstr "Insira o tamanho da fonte para o título da seção"
+
+#: framework/vc_extend.php:206
+msgid "Enter the line height for section sub title"
+msgstr "Insira a altura da linha para o subtítulo da seção"
+
+#: framework/vc_extend.php:187
+msgid "Enter the line height for section title"
+msgstr "Insira a altura da linha para o título da seção"
+
+#: localization.php:112
+msgid "Enter the listing address"
+msgstr "Insira o endereço da lista"
+
+#: localization.php:87
+msgid "Enter the listing description"
+msgstr "Insira a descrição da acomodação"
+
+#: framework/vc_extend.php:715
+msgid "Enter the listing ID. Example 305"
+msgstr "Digite o ID da acomodação. Exemplo 305"
+
+#: localization.php:84
+msgid "Enter the listing title"
+msgstr "Insira o título da acomodação"
+
+#: framework/vc_extend.php:569
+msgid "Enter the listings ids comma separated. Example 12,305,34"
+msgstr "Insira os IDs das acomodações separados por vírgulas. Exemplo 12.305,34"
+
+#: localization.php:153
+msgid "Enter the maximum days of booking (Only number)"
+msgstr "Insira o número máximo de dias de reserva (apenas número)"
+
+#: localization.php:150
+msgid "Enter the minimum days of a booking (Only number)"
+msgstr "Insira os dias mínimos de uma reserva (apenas número)"
+
+#: localization.php:597
+msgid "Enter the minimum of nights for the period"
+msgstr "Insira o mínimo de noites do período"
+
+#: localization.php:182
+msgid "Enter the number of beds"
+msgstr "Insira o número de camas"
+
+#: localization.php:180
+msgid "Enter the number of guests for this room"
+msgstr "Digite o número de hóspedes para esta sala"
+
+#: template-parts/dashboard/wallet/payout-request.php:36
+msgid "Enter the payout amount. Only numbers"
+msgstr "Insira o valor do pagamento. Apenas números"
+
+#: localization.php:594
+msgid "Enter the period name"
+msgstr "Insira o nome do período"
+
+#: template-parts/dashboard/profile/contact.php:40
+msgid "Enter the phone number"
+msgstr "Digite o número do telefone"
+
+#: localization.php:131
+msgid "Enter the price for 1 additional guest"
+msgstr "Insira o preço para 1 hóspede adicional"
+
+#: localization.php:137
+msgid "Enter the price for city fee"
+msgstr "Insira o preço da taxa da cidade"
+
+#: localization.php:134
+msgid "Enter the price for cleaning fee"
+msgstr "Insira o preço da taxa de limpeza"
+
+#: framework/vc_extend.php:156
+msgid "Enter the section sub-title"
+msgstr "Insira o subtítulo da seção"
+
+#: framework/vc_extend.php:148
+msgid "Enter the section title"
+msgstr "Insira o título da seção"
+
+#: localization.php:196
+msgid "Enter the service description"
+msgstr "Insira a descrição do serviço"
+
+#: localization.php:194
+msgid "Enter the service price"
+msgstr "Insira o preço do serviço"
+
+#: localization.php:102
+msgid "Enter the size. Only numbers"
+msgstr "Insira o tamanho. Apenas números"
+
+#: localization.php:264
+msgid "Enter the State"
+msgstr "Insira o Estado"
+
+#: template-parts/dashboard/profile/payment-method.php:164 template-parts/dashboard/wallet/payment-method-depricated.php:151
+msgid "Enter the SWIFT code"
+msgstr "Insira o código SWIFT"
+
+#: localization.php:105
+msgid "Enter the unit of measure. Ex. SqFt"
+msgstr "Insira a unidade de medida. Ex. SqFt"
+
+#: localization.php:121 localization.php:255 localization.php:256
+msgid "Enter the unit price for a single day"
+msgstr "Insira o preço unitário para um único dia"
+
+#: localization.php:304
+msgid "Enter the video link or URL. Supported formats: YouTube, Vimeo, SWF and MOV"
+msgstr "Insira o link ou URL do vídeo. Formatos suportados: YouTube, Vimeo, SWF e MOV"
+
+#: template-parts/dashboard/wallet/payout-detail.php:301
+msgid "Enter transfer fee"
+msgstr "Insira a taxa de transferência"
+
+#: framework/metaboxes/homey-meta-boxes.php:1463
+msgid "Enter website address"
+msgstr "Insira o endereço do site"
+
+#: template-parts/dashboard/profile/payment-method.php:158 template-parts/dashboard/wallet/payment-method-depricated.php:145
+msgid "Enter your bank account number"
+msgstr "Insira o número da sua conta bancária"
+
+#: localization.php:514
+msgid "Enter your cancellation policy"
+msgstr "Insira sua política de cancelamento"
+
+#: template-parts/dashboard/profile/address.php:34 template-parts/dashboard/profile/payment-method.php:88
+#: template-parts/dashboard/profile/payment-method.php:188 template-parts/dashboard/wallet/payment-method-depricated.php:75
+#: template-parts/dashboard/wallet/payment-method-depricated.php:175
+msgid "Enter your city"
+msgstr "Insira sua cidade"
+
+#: template-parts/dashboard/profile/payment-method.php:194 template-parts/dashboard/wallet/payment-method-depricated.php:181
+msgid "Enter your country/state"
+msgstr "Insira seu país/estado"
+
+#: localization.php:530
+msgid "Enter your email"
+msgstr "Insira seu e-mail"
+
+#: localization.php:528
+msgid "Enter your last name"
+msgstr "Insira seu sobrenome"
+
+#: localization.php:526 template-parts/dashboard/profile/payment-method.php:52
+#: template-parts/dashboard/wallet/payment-method-depricated.php:39
+msgid "Enter your name"
+msgstr "Insira seu nome"
+
+#: template-parts/dashboard/profile/payment-method.php:221 template-parts/dashboard/wallet/payment-method-depricated.php:208
+msgid "Enter your PayPal email"
+msgstr "Insira seu e-mail do PayPal"
+
+#: localization.php:532
+msgid "Enter your phone"
+msgstr "Insira seu telefone"
+
+#: template-parts/dashboard/profile/payment-method.php:240 template-parts/dashboard/wallet/payment-method-depricated.php:227
+msgid "Enter your Skrill email"
+msgstr "Insira seu e-mail Skrill"
+
+#: template-parts/dashboard/profile/address.php:40
+msgid "Enter your state"
+msgstr "Insira em seu estado"
+
+#: template-parts/dashboard/profile/payment-method.php:94 template-parts/dashboard/wallet/payment-method-depricated.php:81
+msgid "Enter your state/country"
+msgstr "Insira seu estado/país"
+
+#: localization.php:524
+msgid "Enter your username"
+msgstr "Insira seu nome de usuário"
+
+#: template-parts/modal-window-forgot-password.php:13
+msgid "Enter your username or email"
+msgstr "Insira seu nome de usuário ou e-mail"
+
+#: localization.php:287
+msgid "Enter your Zip Code"
+msgstr "Insira seu código Postal"
+
+#: template-parts/dashboard/profile/address.php:46
+msgid "Enter zip code"
+msgstr "Insira o código postal"
+
+#: template-parts/dashboard/profile/payment-method.php:100 template-parts/dashboard/profile/payment-method.php:200
+#: template-parts/dashboard/wallet/payment-method-depricated.php:87
+#: template-parts/dashboard/wallet/payment-method-depricated.php:187
+msgid "Enter zip/post code"
+msgstr "Insira o CEP/código postal"
+
+#: single-listing/what-nearby.php:28
+msgid "Event Planning & Services"
+msgstr "Planejamento de Eventos & Eventos"
+
+#: localization.php:116 template-parts/dashboard/profile/address.php:28 template-parts/dashboard/profile/payment-method.php:82
+#: template-parts/dashboard/profile/payment-method.php:182 template-parts/dashboard/wallet/payment-method-depricated.php:69
+#: template-parts/dashboard/wallet/payment-method-depricated.php:169
+msgid "Ex. #123"
+msgstr "Ex. # 123"
+
+#: localization.php:178
+msgid "Ex. Master Room or Room 1"
+msgstr "Ex. Quarto Principal ou Sala 1"
+
+#: localization.php:192
+msgid "Ex. Projection Screen"
+msgstr "Ex. Tela de projeção"
+
+#: framework/metaboxes/homey-meta-boxes.php:1431
+msgid "Ex: Founder & CEO."
+msgstr "Ex: Fundador e CEO."
+
+#: localization.php:67 localization.php:400
+msgid "Excellent"
+msgstr "Excelente"
+
+#: template-parts/dashboard/wallet/main.php:38
+msgid "Excluding the service fee, the host fee and the security deposit"
+msgstr "Excluindo a taxa de serviço, a taxa de host e o depósito de segurança"
+
+#: template-parts/dashboard/reservation/add-extra-expenses.php:40
+msgid "Expense Name"
+msgstr "Nome da Despesa"
+
+#: template-parts/dashboard/reservation/add-extra-expenses.php:44
+msgid "Expense Value"
+msgstr "Valor de Despesa"
+
+#: localization.php:206
+msgid "Export"
+msgstr "Exportar"
+
+#: template-parts/dashboard/ical-export.php:9
+msgid "Export iCal"
+msgstr "Exportar iCal"
+
+#: template-parts/dashboard/ical-export.php:12
+msgid "Export Link"
+msgstr "Exportar Link"
+
+#: template-parts/dashboard/reservation/add-extra-expenses.php:16
+msgid "Extra Expense"
+msgstr "Despesa Extra"
+
+#: single-listing/extra-prices.php:19
+msgid "Extra Services"
+msgstr "Serviços Extra"
+
+#: single-listing/booking/extra-prices.php:9
+msgid "Extra services"
+msgstr "Serviços extras"
+
+#: framework/functions/profile.php:1040 template-parts/dashboard/users/user-detail.php:406
+msgid "Facebook"
+msgstr "Facebook"
+
+#: template-parts/dashboard/profile/social.php:30
+msgid "Facebook URL"
+msgstr "URL do Facebook"
+
+#: localization.php:108 localization.php:561 framework/metaboxes/homey-meta-boxes.php:1099
+msgid "Facilities"
+msgstr "Facilidades"
+
+#: localization.php:397
+msgid "Fair"
+msgstr "Justo"
+
+#. Author of the theme
+#: framework/functions/messages.php:660
+msgid "Favethemes"
+msgstr "Favethemes"
+
+#: localization.php:577
+msgid "Favorites"
+msgstr "Favoritos"
+
+#: localization.php:426
+msgid "Featured"
+msgstr "Destaque"
+
+#: template-parts/listing/sort-tool.php:30 template-parts/listing/sort-tool_2.php:29
+msgid "Featured First"
+msgstr "Destacado Primeiro"
+
+#: framework/vc_extend.php:381
+msgid "Featured Listings:"
+msgstr "Acomodações em Destaque:"
+
+#: framework/vc_extend.php:558
+msgid "Featured listings:"
+msgstr "Acomodações em destaque:"
+
+#: framework/vc_extend.php:126
+msgid "Featured on Top"
+msgstr "Destacado no Topo"
+
+#: framework/vc_extend.php:405
+msgid "Featured on top"
+msgstr "Destacado no topo"
+
+#: localization.php:106
+msgid "Features"
+msgstr "Características"
+
+#: template-parts/dashboard/wallet/earnings.php:12
+msgid "Fee:"
+msgstr "Taxa:"
+
+#: template-parts/dashboard/ical-import.php:32
+msgid "Feed Name"
+msgstr "Nome do Feed"
+
+#: template-parts/dashboard/ical-import.php:36
+msgid "Feed URL"
+msgstr "URL do Feed"
+
+#: template-parts/dashboard/wallet/detail.php:115
+msgid "Fees"
+msgstr "Taxas"
+
+#: single-listing/what-nearby.php:29
+msgid "Financial Services"
+msgstr "Serviços Financeiros"
+
+#: localization.php:293
+msgid "Find Address"
+msgstr "Encontrar Endereço"
+
+#: localization.php:292
+msgid "Find the address on the map"
+msgstr "Encontre o endereço no mapa"
+
+#: localization.php:525 template-parts/dashboard/profile/payment-method.php:51
+#: template-parts/dashboard/wallet/payment-method-depricated.php:38
+msgid "First name"
+msgstr "Primeiro nome"
+
+#: localization.php:341
+msgid "First name required"
+msgstr "Primeiro nome é obrigatório"
+
+#: localization.php:406
+msgid "Follow me"
+msgstr "Siga-me"
+
+#: framework/vc_extend.php:196
+msgid "Font Size for Sub Title:"
+msgstr "Tamanho da fonte para o subtítulo:"
+
+#: framework/vc_extend.php:177
+msgid "Font Size for Title:"
+msgstr "Tamanho da fonte para o título:"
+
+#: single-listing/what-nearby.php:30
+msgid "Food"
+msgstr "Comida"
+
+#: functions.php:361
+msgid "Footer Area 1"
+msgstr "Área de Rodapé 1"
+
+#: functions.php:370
+msgid "Footer Area 2"
+msgstr "Área de Rodapé 2"
+
+#: functions.php:379
+msgid "Footer Area 3"
+msgstr "Área de Rodapé 3"
+
+#: functions.php:388
+msgid "Footer Area 4"
+msgstr "Área de Rodapé 4"
+
+#: template-parts/modal-window-forgot-password.php:6
+msgid "Forgot Password"
+msgstr "Esqueceu a Senha"
+
+#: template-parts/modal-window-login.php:64
+msgid "Forgot password?"
+msgstr "Esqueceu a senha?"
+
+#: single-listing/booking/sidebar-booking-hourly.php:67 single-listing/booking/sidebar-booking-module.php:45
+msgid "Free"
+msgstr "Grátis"
+
+#: single-listing/prices-hourly.php:40 single-listing/prices.php:74
+msgid "Fri & Sat"
+msgstr "Sex & Sáb"
+
+#: single-listing/prices-hourly.php:43 single-listing/prices.php:77
+msgid "Fri, Sat & Sun"
+msgstr "Sex, Sáb & Dom"
+
+#: localization.php:249
+msgid "Friday and Saturday"
+msgstr "Sexta e Sábado"
+
+#: localization.php:250
+msgid "Friday, Saturday and Sunday"
+msgstr "Sexta, Sábado e Domingo"
+
+#: template/dashboard-messages.php:124 template-parts/dashboard/reservation/detail-hourly.php:153
+#: template-parts/dashboard/reservation/detail.php:205 template-parts/dashboard/wallet/detail.php:77
+msgid "From"
+msgstr "De"
+
+#: framework/functions/messages.php:603
+msgid "from"
+msgstr "de"
+
+#: localization.php:53
+msgid "Full"
+msgstr "Completo"
+
+#: template-parts/dashboard/profile/upfront.php:25
+msgid "Full Payment"
+msgstr "Pagamento Integral"
+
+#: localization.php:515
+msgid "Full refund 1 day prior arrival, exceept fees"
+msgstr "Reembolso total 1 dia antes da chegada, exceto taxas"
+
+#: framework/metaboxes/homey-meta-boxes.php:1380
+msgid "Full Screen"
+msgstr "Tela Cheia"
+
+#: template-parts/map-controls.php:36
+msgid "Fullscreen"
+msgstr "Tela cheia"
+
+#: single-listing/listing-nav.php:30
+msgid "Gallery"
+msgstr "Galeria"
+
+#: template-parts/dashboard/profile/information.php:118
+msgid "GDPR Agreement *"
+msgstr "Acordo GDPR *"
+
+#: localization.php:432
+msgid "General"
+msgstr "Geral"
+
+#: inc/register-scripts.php:532
+msgid "Geocode was not successful for the following reason"
+msgstr "Geocode não teve sucesso pelo seguinte motivo"
+
+#: framework/metaboxes/listing-type-meta.php:10
+msgid "Global Color"
+msgstr "Cor Global"
+
+#: template/dashboard-invoices.php:146
+msgid "Go back"
+msgstr "Voltar"
+
+#: localization.php:399
+msgid "Good"
+msgstr "Bom"
+
+#: framework/metaboxes/homey-meta-boxes.php:1546
+msgid "Google Map Marker Icon"
+msgstr "Ícone do marcador do Google Map"
+
+#: framework/metaboxes/homey-meta-boxes.php:1553
+msgid "Google Map Marker Retina Icon"
+msgstr "Ícone de retina do marcador do Google Map"
+
+#: template-parts/map-controls.php:16
+msgid "Google Map Search"
+msgstr "Google Map Search"
+
+#: framework/metaboxes/homey-meta-boxes.php:1202
+msgid "Google Map with Listings"
+msgstr "Mapa do Google com Acomodações"
+
+#: framework/functions/profile.php:1068 template-parts/dashboard/users/user-detail.php:420
+msgid "Google Plus"
+msgstr "Google Plus"
+
+#: template-parts/dashboard/profile/social.php:48
+msgid "Google Plus Url"
+msgstr "URL do Google Plus"
+
+#: template-parts/profile/guest.php:70
+msgid "Government ID"
+msgstr "Identidade Governamental"
+
+#: template-parts/dashboard/wallet/detail.php:104
+msgid "Gross Payment"
+msgstr "Pagamento Bruto"
+
+#: localization.php:58 localization.php:186 localization.php:546 framework/functions/profile.php:685
+#: framework/functions/profile.php:698 template-parts/dashboard/wallet/payout-detail.php:140
+msgid "Guest"
+msgstr "Convidado"
+
+#: template-parts/profile/guest.php:49
+msgid "Guest Rating"
+msgstr "Avaliação do Convidado"
+
+#: localization.php:57 localization.php:185 localization.php:545
+msgid "Guests"
+msgstr "Convidados"
+
+#: localization.php:54
+msgid "Half Baths"
+msgstr "Meios Banhos"
+
+#: framework/metaboxes/homey-meta-boxes.php:1117
+msgid "Half Map Template Options"
+msgstr "Opções de Modelo de Meio Mapa"
+
+#: framework/metaboxes/homey-meta-boxes.php:1198
+msgid "Half Search"
+msgstr "Meia Busca"
+
+#: framework/metaboxes/homey-meta-boxes.php:1192
+msgid "Header Type"
+msgstr "Tipo de Cabeçalho"
+
+#: single-listing/what-nearby.php:31
+msgid "Health & Medical"
+msgstr "Saúde & Medicina"
+
+#: framework/metaboxes/homey-meta-boxes.php:1308
+msgid "Height"
+msgstr "Altura"
+
+#: framework/metaboxes/homey-meta-boxes.php:1317
+msgid "Height Mobile"
+msgstr "Altura Móvel"
+
+#: framework/vc_extend.php:251
+msgid "Height of the space (px)"
+msgstr "Altura do espaço (px)"
+
+#: localization.php:405
+msgid "Hi, I'm"
+msgstr "Oi, eu sou"
+
+#: localization.php:201
+msgid "Hide"
+msgstr "Ocultar"
+
+#: framework/vc_extend.php:893
+msgid "Hide Empty:"
+msgstr "Esconder Vazio:"
+
+#: template-parts/dashboard/wallet/earnings.php:9 template-parts/dashboard/wallet/main-guest.php:64
+#: template-parts/dashboard/wallet/payouts-host.php:10 template-parts/dashboard/wallet/security-deposits.php:9
+msgid "History"
+msgstr "História"
+
+#: single-listing/what-nearby.php:32
+msgid "Home Services "
+msgstr "Serviços Domésticos"
+
+#. Name of the theme
+msgid "Homey"
+msgstr "Homey"
+
+#: framework/vc_extend.php:770
+msgid "Homey Grids"
+msgstr "Homey Grades"
+
+#. Description of the theme
+msgid "Homey is a powerful booking platform that lets you run a residential or commercial"
+msgstr "Homey é uma plataforma de reservas poderosa que permite que você administre um residencial ou comercial"
+
+#. Name of the template
+msgid "Homey Membership Subscriptions Webhook"
+msgstr "Homey Webhook de Assinaturas de Membros"
+
+#. Name of the template
+msgid "Homey Subscriptions Payment Complete"
+msgstr "Homey Pagamento de Assinaturas Concluído"
+
+#. Name of the template
+msgid "Homey WooCommerce"
+msgstr "Homey WooCommerce"
+
+#: framework/metaboxes/homey-meta-boxes.php:1361
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: single-listing/listing-nav.php:70 framework/functions/profile.php:683 framework/functions/profile.php:696
+#: template-parts/dashboard/profile/information.php:30 template-parts/dashboard/wallet/payout-detail.php:138
+#: template-parts/dashboard/wallet/payout-detail.php:142 template-parts/dashboard/wallet/payouts.php:60
+msgid "Host"
+msgstr "Anfitrião"
+
+#: template-parts/dashboard/wallet/detail.php:121 template-parts/dashboard/wallet/earnings.php:25
+#: template-parts/dashboard/wallet/earnings.php:74
+msgid "Host Fee"
+msgstr "Taxa do Anfitrião"
+
+#: template-parts/dashboard/wallet/main.php:37
+msgid "Host Fee:"
+msgstr "Taxa do Anfitrião:"
+
+#: localization.php:564
+msgid "Host Language"
+msgstr "Idioma do Anfitrião"
+
+#: localization.php:407
+msgid "Host rating"
+msgstr "Avaliação do Anfitrião"
+
+#: template-parts/dashboard/wallet/payouts.php:96 template-parts/dashboard/wallet/payouts.php:170
+msgid "Host/Guest"
+msgstr "Anfitrião/Convidado"
+
+#: localization.php:75
+msgid "Hosted by"
+msgstr "Hospedado por"
+
+#: single-listing/what-nearby.php:33
+msgid "Hotels & Travel"
+msgstr "Hotéis & Viagens"
+
+#: single-listing/availability-hourly.php:8 template-parts/dashboard/edit-listing/calendar-hourly.php:15
+#: template-parts/dashboard/reservation/detail-hourly.php:133
+msgid "Hour"
+msgstr "Hora"
+
+#: localization.php:226
+msgid "hour"
+msgstr "hora"
+
+#: localization.php:140 single-listing/prices-hourly.php:27 single-listing/prices-hourly.php:33
+#: framework/metaboxes/homey-meta-boxes.php:323
+msgid "Hourly"
+msgstr "Por hora"
+
+#: localization.php:588 single-listing/availability-hourly.php:6 template-parts/dashboard/edit-listing/calendar-hourly.php:13
+#: template-parts/dashboard/reservation/detail-hourly.php:131
+msgid "Hours"
+msgstr "Horas"
+
+#: localization.php:227
+msgid "hours"
+msgstr "horas"
+
+#: localization.php:563
+msgid "House Rules"
+msgstr "Regras da Casa"
+
+#. Author URI of the theme
+msgid "http://favethemes.com/"
+msgstr "http://favethemes.com/"
+
+#. URI of the theme
+msgid "http://themeforest.net/user/favethemes/"
+msgstr "http://themeforest.net/user/favethemes/"
+
+#: template-parts/map-controls.php:25
+msgid "Hybrid"
+msgstr "Híbrido"
+
+#: single-hm_homey_memberships.php:346 template-parts/modal-window-register.php:81
+#, php-format
+msgid "I agree with your <a href=\"%s\">Terms & Conditions</a>"
+msgstr "Eu concordo com seus <a href=\"%s\">Termos e Condições</a>"
+
+#: localization.php:519
+msgid "I have read and agree with all rental policies and terms."
+msgstr "Eu li e concordo com todas as políticas e termos de aluguel."
+
+#. Name of the template
+msgid "iCalendar Feeds"
+msgstr "Feeds iCalendar"
+
+#: single-listing/accomodation.php:33
+msgid "icon"
+msgstr "ícone"
+
+#: localization.php:35 template-parts/dashboard/users/user-detail.php:142 template-parts/dashboard/wallet/payout-detail.php:72
+#: template-parts/dashboard/wallet/payouts-host.php:23 template-parts/dashboard/wallet/payouts-host.php:84
+#: template-parts/dashboard/wallet/payouts.php:54 template-parts/dashboard/wallet/payouts.php:94
+#: template-parts/dashboard/wallet/payouts.php:156
+msgid "ID"
+msgstr "ID"
+
+#: template-parts/dashboard/users/users.php:98 template-parts/dashboard/users/users.php:147
+msgid "ID Verification"
+msgstr "ID de Verificação"
+
+#: framework/metaboxes/homey-meta-boxes.php:371
+msgid "If leave empty, it will use theme options default label."
+msgstr "Se deixar em branco, ele usará a legenda padrão das opções do tema."
+
+#: localization.php:113
+msgid "If you do not enter any address, then the map will not show on listing detail page."
+msgstr "Se você não inserir nenhum endereço, o mapa não será exibido na página de detalhes da lista."
+
+#: framework/metaboxes/homey-meta-boxes.php:1197 framework/metaboxes/homey-meta-boxes.php:1273
+#: framework/metaboxes/homey-meta-boxes.php:1529 template-parts/dashboard/sidebar-listing.php:82
+#: template-parts/dashboard/messages/messages.php:90
+msgid "Image"
+msgstr "Imagem"
+
+#: localization.php:297
+msgid "Image Gallery"
+msgstr "Galeria de Imagens"
+
+#: framework/vc_extend.php:1060
+msgid "Image:"
+msgstr "Imagem:"
+
+#: localization.php:205
+msgid "Import"
+msgstr "Importar"
+
+#: localization.php:204 template-parts/dashboard/ical-import.php:10
+msgid "Import iCal"
+msgstr "Importar iCal"
+
+#: localization.php:374
+msgid "Imported successfully"
+msgstr "Importado com sucesso"
+
+#: localization.php:383 template-parts/dashboard/wallet/detail.php:104
+msgid "Includes taxes and fees"
+msgstr "Inclui impostos e taxas"
+
+#: localization.php:420
+msgid "Incoming Messages"
+msgstr "Mensagens de Entrada"
+
+#: framework/vc_extend.php:631
+msgid "Infinite scroll:"
+msgstr "Rolagem infinita:"
+
+#: localization.php:80 template-parts/dashboard/users/user-detail.php:89 template-parts/dashboard/wallet/payout-detail.php:275
+msgid "Information"
+msgstr "Informação"
+
+#: framework/functions/wallet.php:1221
+msgid "Information saved successfully."
+msgstr "Informação salva com sucesso."
+
+#: framework/metaboxes/listing-type-meta.php:11 framework/metaboxes/listing-type-meta.php:61
+msgid "Inherit from default accent color"
+msgstr "Herdar da cor de destaque padrão"
+
+#: framework/functions/profile.php:1056 template-parts/dashboard/users/user-detail.php:427
+msgid "Instagram"
+msgstr "Instagram"
+
+#: template-parts/dashboard/profile/social.php:54
+msgid "Instagram URL"
+msgstr "URL do Instagram"
+
+#. Name of the template
+msgid "Instance Booking"
+msgstr "Reserva de instância"
+
+#: single-listing/booking/overlay-booking.php:34 single-listing/booking/overlay-booking.php:88
+#: single-listing/booking/overlay-hourly-booking.php:36 single-listing/booking/overlay-hourly-booking.php:126
+#: single-listing/booking/sidebar-booking-hourly.php:130 single-listing/booking/sidebar-booking-module.php:97
+msgid "Instant Booking"
+msgstr "Reserva Instantânea"
+
+#: localization.php:245
+msgid "Instant booking"
+msgstr "Reserva instantânea"
+
+#: localization.php:511
+msgid "Introduce your self to the host"
+msgstr "Apresente-se ao anfitrião"
+
+#: single-listing/booking/overlay-booking.php:77 single-listing/booking/overlay-hourly-booking.php:114
+#: single-listing/booking/sidebar-booking-hourly.php:117 single-listing/booking/sidebar-booking-module.php:84
+msgid "Introduce yourself to the host"
+msgstr "Apresente-se ao anfitrião"
+
+#: framework/functions/wallet.php:668 framework/functions/wallet.php:782
+msgid "Invalid Nonce!"
+msgstr "Nonce inválido!"
+
+#: framework/functions/profile.php:1182
+msgid "Invalid password reset Key"
+msgstr "Chave de redefinição de senha inválida"
+
+#: framework/functions/profile.php:451
+msgid "Invalid phone number."
+msgstr "Número de telefone inválido."
+
+#: template-parts/dashboard/invoices/detail.php:76
+msgid "Invoice:"
+msgstr "Fatura:"
+
+#: localization.php:578
+msgid "Invoices"
+msgstr "Faturas"
+
+#: content-none.php:34
+msgid "It seems we cannot find what you are looking for. Perhaps searching can help."
+msgstr "Parece que não conseguimos encontrar o que você está procurando. Talvez pesquisar possa ajudar."
+
+#: framework/metaboxes/homey-meta-boxes.php:1398
+msgid "It's only work if the header v1 or v4 is selected"
+msgstr "Só funciona se o cabeçalho v1 ou v4 for selecionado"
+
+#: localization.php:438
+msgid "Join The Discussion"
+msgstr "Junte-se à Discussão"
+
+#: localization.php:409
+msgid "Languages"
+msgstr "Idiomas"
+
+#: template-parts/dashboard/profile/payment-method.php:57 template-parts/dashboard/wallet/payment-method-depricated.php:44
+msgid "Last Name"
+msgstr "Sobrenome"
+
+#: localization.php:527
+msgid "Last name"
+msgstr "Sobrenome"
+
+#: localization.php:342
+msgid "Last name required"
+msgstr "Sobrenome obrigatório"
+
+#: localization.php:295 framework/metaboxes/homey-meta-boxes.php:1221
+msgid "Latitude"
+msgstr "Latitude"
+
+#: localization.php:506
+msgid "Learn More"
+msgstr "Saiba Mais"
+
+#: template-parts/dashboard/reservation/review-form.php:14 template-parts/dashboard/reservation/review-host.php:15
+msgid "Leave a Review"
+msgstr "Deixe um Comentário"
+
+#: localization.php:496
+msgid "Leave the ability to add content in this page"
+msgstr "Deixe a capacidade de adicionar conteúdo nesta página"
+
+#: template-parts/dashboard/wallet/main-guest.php:200 template-parts/dashboard/wallet/main.php:225
+#: template-parts/dashboard/wallet/payout-detail.php:83 template-parts/dashboard/wallet/payouts-host.php:92
+#: template-parts/dashboard/wallet/payouts.php:164
+msgid "less"
+msgstr "menos"
+
+#: framework/vc_extend.php:391
+msgid "Limit listing number:"
+msgstr "Limitar número de acomodações:"
+
+#: framework/vc_extend.php:587
+msgid "Limit listings number:"
+msgstr "Limitar número de acomodações:"
+
+#: framework/vc_extend.php:1008 framework/vc_extend.php:1136
+msgid "Limit:"
+msgstr "Limite:"
+
+#: framework/vc_extend.php:205
+msgid "Line Height for Sub Title:"
+msgstr "Altura da linha para o subtítulo:"
+
+#: framework/vc_extend.php:186
+msgid "Line Height for Title:"
+msgstr "Altura da linha para título:"
+
+#: framework/functions/profile.php:1044
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: template-parts/dashboard/users/user-detail.php:441
+msgid "Linkedin"
+msgstr "Linkedin"
+
+#: template-parts/dashboard/profile/social.php:42
+msgid "Linkedin URL"
+msgstr "URL do Linkedin"
+
+#: localization.php:465 template-parts/dashboard/wallet/detail.php:71 template-parts/dashboard/wallet/earnings.php:23
+#: template-parts/dashboard/wallet/earnings.php:62 template-parts/dashboard/wallet/main-guest.php:82
+#: template-parts/dashboard/wallet/main-guest.php:113 template-parts/dashboard/wallet/main.php:105
+#: template-parts/dashboard/wallet/main.php:138 template-parts/dashboard/wallet/security-deposits.php:19
+#: template-parts/dashboard/wallet/security-deposits.php:49
+msgid "Listing"
+msgstr "Acomodações"
+
+#: framework/metaboxes/homey-meta-boxes.php:980
+msgid "Listing Advanced Options"
+msgstr "Opções Avançadas da Acomodação"
+
+#: framework/vc_extend.php:857
+msgid "Listing Area"
+msgstr "Área da Acomodação"
+
+#: framework/vc_extend.php:366 framework/vc_extend.php:543
+msgid "Listing area filter:"
+msgstr "Filtro de área de acomodação:"
+
+#: framework/vc_extend.php:692
+msgid "Listing by ID"
+msgstr "Acomodação por ID"
+
+#: framework/vc_extend.php:844
+msgid "Listing Cities"
+msgstr "Cidades das Acomodações"
+
+#: framework/vc_extend.php:353 framework/vc_extend.php:530
+msgid "Listing city filter:"
+msgstr "Filtro de cidade da acomodação:"
+
+#: framework/vc_extend.php:820
+msgid "Listing Country"
+msgstr "País da Acomodação"
+
+#: framework/vc_extend.php:327 framework/vc_extend.php:504
+msgid "Listing country filter:"
+msgstr "Filtro de país da acomodação:"
+
+#: framework/metaboxes/homey-meta-boxes.php:78
+msgid "Listing Details"
+msgstr "Detalhes da Acomodação"
+
+#. Name of the template
+msgid "Listing Half Map"
+msgstr "Meio Mapa da Acomodação"
+
+#: template/template-stripe-charge.php:79
+msgid "Listing ID"
+msgstr "ID da Acomodação"
+
+#: framework/vc_extend.php:714
+msgid "Listing ID:"
+msgstr "ID da Acomodação:"
+
+#: framework/vc_extend.php:568 framework/vc_extend.php:757
+msgid "Listing IDs:"
+msgstr "IDs da Acomodação:"
+
+#: framework/vc_extend.php:340 framework/vc_extend.php:517
+msgid "Listing state filter:"
+msgstr "Filtro de estado da acomodação:"
+
+#: framework/vc_extend.php:832
+msgid "Listing States"
+msgstr "Estados da Acomodação"
+
+#: framework/vc_extend.php:277 framework/vc_extend.php:739
+msgid "Listing Style"
+msgstr "Estilo da Acomodação"
+
+#: framework/vc_extend.php:454 framework/vc_extend.php:705
+msgid "Listing style"
+msgstr "Estilo da acomodação"
+
+#: localization.php:478
+msgid "Listing Title"
+msgstr "Título da Acomodação"
+
+#: localization.php:550
+msgid "Listing Type"
+msgstr "Tipo da Acomodação"
+
+#: framework/vc_extend.php:301 framework/vc_extend.php:478
+msgid "Listing type filter:"
+msgstr "Filtro de tipo de acomodação:"
+
+#: framework/vc_extend.php:796
+msgid "Listing Types"
+msgstr "Tipos de Acomodação"
+
+#: localization.php:414 framework/vc_extend.php:263
+msgid "Listings"
+msgstr "Acomodações"
+
+#: framework/vc_extend.php:726
+msgid "Listings by IDs"
+msgstr "Acomodações por IDs"
+
+#. Name of the template
+msgid "Listings Card View"
+msgstr "Acomodações Card View"
+
+#: framework/vc_extend.php:439
+msgid "Listings Carousel"
+msgstr "Carrossel de Acomodações"
+
+#. Name of the template
+msgid "Listings Grid View"
+msgstr "Acomodações Grid View"
+
+#. Name of the template
+msgid "Listings List View"
+msgstr "Acomodações List View"
+
+#: functions.php:301
+msgid "Listings Sidebar"
+msgstr "Barra Lateral das Acomodações"
+
+#. Name of the template
+msgid "Listings with Sticky Map"
+msgstr "Acomodações com Sticky Map"
+
+#: localization.php:315 framework/vc_extend.php:422
+msgid "Load More"
+msgstr "Carregar Mais"
+
+#: single-listing/what-nearby.php:34
+msgid "Local Flavor"
+msgstr "Sabor Local"
+
+#: single-listing/what-nearby.php:35
+msgid "Local Services"
+msgstr "Serviços Locais"
+
+#: localization.php:109
+msgid "Location"
+msgstr "Localização"
+
+#: template-parts/modal-window-login.php:69 template-parts/modal-window-register.php:98
+msgid "Log In"
+msgstr "Entrar"
+
+#: template-parts/modal-window-login.php:41
+msgid "Log in"
+msgstr "Entrar"
+
+#: localization.php:581
+msgid "Log out"
+msgstr "Sair"
+
+#: localization.php:377 template-parts/modal-window-login.php:24
+msgid "Login"
+msgstr "Entrar"
+
+#: framework/functions/icalendar.php:137 framework/functions/icalendar.php:337
+msgid "Login required"
+msgstr "Login necessário"
+
+#: template-parts/modal-window-login.php:31 template-parts/modal-window-register.php:37
+msgid "Login with Facebook"
+msgstr "Entrar com o Facebook"
+
+#: template-parts/modal-window-login.php:35 template-parts/modal-window-register.php:41
+msgid "Login with Google"
+msgstr "Entrar com o Google"
+
+#: template-parts/dashboard/invoices/detail.php:64
+msgid "logo"
+msgstr "logo"
+
+#: localization.php:252
+msgid "Long-term pricing"
+msgstr "Preços de longo prazo"
+
+#: localization.php:294 framework/metaboxes/homey-meta-boxes.php:1229
+msgid "Longitude"
+msgstr "Longitude"
+
+#: functions.php:58
+msgid "Main Menu"
+msgstr "Menu Principal"
+
+#: template-parts/dashboard/wallet/adjustment-form.php:16 template-parts/dashboard/wallet/adjustment-guest.php:16
+msgid "Make Adjustment"
+msgstr "Ajustar"
+
+#: template-parts/dashboard/upgrade-featured.php:65
+msgid "Make Featured"
+msgstr "Destacar"
+
+#: framework/metaboxes/homey-meta-boxes.php:1369
+msgid "Make Search Hourly"
+msgstr "Fazer Pesquisa por Hora"
+
+#: localization.php:425
+msgid "Make this listing as featured?"
+msgstr "Quer destacar esta acomodação?"
+
+#: template-parts/dashboard/upgrade-featured.php:50
+msgid "Make This Listing Featured"
+msgstr "Destacar esta acomodação"
+
+#: localization.php:332 template-parts/dashboard/admin-stats.php:38 template-parts/dashboard/admin-stats.php:44
+#: template-parts/dashboard/admin-stats.php:50 template-parts/dashboard/host-stats.php:28
+#: template-parts/dashboard/users/users.php:57 template-parts/dashboard/wallet/main-guest.php:51
+#: template-parts/dashboard/wallet/main.php:74 template-parts/dashboard/wallet/payouts.php:33
+msgid "Manage"
+msgstr "Gerir"
+
+#: single-listing/listing-nav.php:42
+msgid "Map"
+msgstr "Mapa"
+
+#: framework/metaboxes/homey-meta-boxes.php:1209
+msgid "Map Data"
+msgstr "Dados do Mapa"
+
+#: template/dashboard-payment.php:187 template-parts/dashboard/reservation/detail.php:129
+msgid "Mark as Paid"
+msgstr "Marcar como Pago"
+
+#: single-listing/what-nearby.php:36
+msgid "Mass Media"
+msgstr "Mass Media"
+
+#: localization.php:559
+msgid "Max."
+msgstr "Máx."
+
+#: localization.php:151
+msgid "Maximum days of a booking"
+msgstr "Máximo de dias de uma reserva"
+
+#: localization.php:156
+msgid "Maximum days of a booking are"
+msgstr "O máximo de dias de uma reserva é"
+
+#: localization.php:505
+msgid "Maximum guests allowed are"
+msgstr "Máximo de convidados permitidos são"
+
+#: localization.php:165
+msgid "Maximum hours of a booking are"
+msgstr "Horas máximas de uma reserva são"
+
+#: localization.php:66
+msgid "Maximum item compare are 4"
+msgstr "A comparação máxima de itens é 4"
+
+#: localization.php:162
+msgid "Maximum months of a booking are"
+msgstr "Os meses máximos de uma reserva são"
+
+#: localization.php:143
+msgid "Maximum number of days"
+msgstr "Número máximo de dias"
+
+#: localization.php:159
+msgid "Maximum weeks of a booking are"
+msgstr "O máximo de semanas de uma reserva é"
+
+#: template-parts/dashboard/messages/detail.php:143
+msgid "Me"
+msgstr "Eu"
+
+#: single-hm_homey_memberships.php:253
+msgid "Membership Package"
+msgstr "Pacote de Sócios"
+
+#: localization.php:73 template-parts/dashboard/messages/messages.php:100
+msgid "Message"
+msgstr "Mensagem"
+
+#: framework/functions/messages.php:82
+msgid "Message sent successfully!"
+msgstr "Mensagem enviada com sucesso!"
+
+#: localization.php:579
+msgid "Messages"
+msgstr "Mensagens"
+
+#: template/dashboard-payment.php:93 template-parts/dashboard/users/user-detail.php:235
+#: template-parts/dashboard/wallet/payout-detail.php:169 template-parts/dashboard/wallet/payout-detail.php:173
+msgid "Method"
+msgstr "Método"
+
+#: localization.php:558
+msgid "Min."
+msgstr "Min."
+
+#: template/dashboard-listings.php:108 template/dashboard-messages.php:128 template-parts/dashboard/reservation/list.php:67
+msgid "Mine"
+msgstr "Meu"
+
+#: localization.php:149
+msgid "Minimum days of a booking"
+msgstr "Dias mínimos de reserva"
+
+#: localization.php:155
+msgid "Minimum days of a booking are"
+msgstr "Os dias mínimos de uma reserva são"
+
+#: localization.php:164
+msgid "Minimum hours of a booking are"
+msgstr "As horas mínimas de uma reserva são"
+
+#: localization.php:161
+msgid "Minimum months of a booking are"
+msgstr "Os meses mínimos de uma reserva são"
+
+#: localization.php:142
+msgid "Minimum number of days"
+msgstr "Número mínimo de dias"
+
+#: localization.php:596
+msgid "Minimum of Nights"
+msgstr "Mín. de Noites"
+
+#: framework/functions/wallet.php:593
+msgid "Minimum payout amount is"
+msgstr "O valor mínimo de pagamento é"
+
+#: template-parts/dashboard/profile/photo.php:36
+msgid "Minimum size 100 x 100 px"
+msgstr "Tamanho mínimo 100 x 100 px"
+
+#: localization.php:158
+msgid "Minimum weeks of a booking are"
+msgstr "Semanas mínimas de reserva são"
+
+#: localization.php:30
+msgid "Mon - Fri"
+msgstr "Seg - Sex"
+
+#: framework/metaboxes/homey-meta-boxes.php:322
+msgid "Monthly"
+msgstr "Mensal"
+
+#: localization.php:124
+msgid "Monthly (30d+)"
+msgstr "Mensal (30d +)"
+
+#: localization.php:254
+msgid "Monthly - 30+ nights"
+msgstr "Mensal - 30+ noites"
+
+#: template-parts/page-title.php:19
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: localization.php:565
+msgid "More"
+msgstr "Mais"
+
+#: framework/metaboxes/homey-meta-boxes.php:1282
+msgid "MP4 File"
+msgstr "Arquivo MP4"
+
+#: template-parts/dashboard/side-menu.php:117 template-parts/header/account.php:94 template-parts/header/mobile-user-menu.php:107
+msgid "My Bookings"
+msgstr "Minhas Reservas"
+
+#: localization.php:574
+msgid "My Listings"
+msgstr "Minhas Acomodações"
+
+#: localization.php:419 template-parts/dashboard/side-menu.php:124 template-parts/header/account.php:101
+#: template-parts/header/mobile-user-menu.php:114
+msgid "My Reservations"
+msgstr "Minhas Reservas"
+
+#: localization.php:555
+msgid "n. of bedrooms"
+msgstr "n. de quartos"
+
+#: localization.php:556
+msgid "n. of rooms"
+msgstr "n. de aposentos"
+
+#: localization.php:70 localization.php:272 template-parts/dashboard/users/user-detail.php:128
+#: template-parts/dashboard/users/users.php:94 template-parts/dashboard/users/users.php:126
+#: template-parts/dashboard/wallet/payout-detail.php:152
+msgid "Name"
+msgstr "Nome"
+
+#: inc/register-scripts.php:617
+msgid "Name field required"
+msgstr "Campo de nome obrigatório"
+
+#: framework/metaboxes/homey-meta-boxes.php:1425
+msgid "Name of the client who gave feedback"
+msgstr "Nome do cliente que deu feedback"
+
+#: localization.php:486
+msgid "Name:"
+msgstr "Nome:"
+
+#: localization.php:534 template-parts/dashboard/users/user-detail.php:183
+msgid "Native Language"
+msgstr "Língua Nativa"
+
+#: localization.php:490
+msgid "Nearby"
+msgstr "Próximo"
+
+#: template-parts/dashboard/profile/address.php:51 template-parts/dashboard/profile/address.php:52
+msgid "Neighborhood"
+msgstr "Vizinhança"
+
+#: template-parts/dashboard/wallet/earnings.php:26 template-parts/dashboard/wallet/earnings.php:77
+#: template-parts/dashboard/wallet/main.php:106 template-parts/dashboard/wallet/main.php:141
+msgid "Net Amount"
+msgstr "Valor líquido"
+
+#: template-parts/dashboard/wallet/detail.php:123
+msgid "Net Earnings"
+msgstr "Lucro Líquido"
+
+#: localization.php:443
+msgid "NEW"
+msgstr "NOVO"
+
+#: template-parts/dashboard/admin-stats.php:17
+msgid "New listing"
+msgstr "Nova acomodação"
+
+#: template-parts/dashboard/admin-stats.php:19
+msgid "New listings"
+msgstr "Novas acomodações"
+
+#: template-parts/dashboard/messages/new.php:70
+msgid "New Message"
+msgstr "Nova Mensagem"
+
+#: framework/functions/messages.php:687
+#, php-format
+msgid "New message sent by %s using agent contact form at %s"
+msgstr "Nova mensagem enviada por% s usando o formulário de contato do agente em% s"
+
+#: template/template-verification.php:65 template-parts/dashboard/profile/password.php:12
+msgid "New Password"
+msgstr "Nova Senha"
+
+#: framework/functions/profile.php:632
+msgid "New password or confirm password is blank"
+msgstr "Nova senha ou senha de confirmação está em branco"
+
+#: template-parts/dashboard/admin-stats.php:22
+msgid "New reservation"
+msgstr "Nova reserva"
+
+#: template-parts/dashboard/admin-stats.php:24
+msgid "New reservations"
+msgstr "Novas reservas"
+
+#: template-parts/dashboard/admin-stats.php:27
+msgid "New User"
+msgstr "Novo usuário"
+
+#: template-parts/dashboard/admin-stats.php:29
+msgid "New Users"
+msgstr "Novos usuários"
+
+#: comments.php:43
+msgid "Newer Comments &rarr;"
+msgstr "Comentários mais recentes →"
+
+#: localization.php:430 template-parts/map-controls.php:32
+msgid "Next"
+msgstr "Próx."
+
+#: single-post/post-nav.php:45
+msgid "Next post"
+msgstr "Próxima postagem"
+
+#: framework/vc_extend.php:664
+msgid "Next/Prev navigation:"
+msgstr "Navegação prox/ant:"
+
+#: localization.php:224
+msgid "night"
+msgstr "noite"
+
+#: single-listing/what-nearby.php:37
+msgid "Nightlife"
+msgstr "Vida noturna"
+
+#: localization.php:118 framework/metaboxes/homey-meta-boxes.php:320
+msgid "Nightly"
+msgstr "Tarifa"
+
+#: localization.php:225
+msgid "nights"
+msgstr "noites"
+
+#: localization.php:209 single-listing/prices-hourly.php:19 single-listing/prices.php:53
+#: framework/metaboxes/homey-meta-boxes.php:922 framework/metaboxes/homey-meta-boxes.php:1374
+#: template-parts/search/search-guests.php:47 template-parts/dashboard/users/user-widget.php:30
+#: template-parts/dashboard/users/user-widget.php:55
+msgid "No"
+msgstr "Não"
+
+#: framework/metaboxes/homey-meta-boxes.php:483 template-parts/dashboard/edit-listing/pricing.php:221
+#: template-parts/dashboard/submit-listing/pricing.php:196
+msgid "No of Guests"
+msgstr "Nº de Convidados"
+
+#: template-parts/dashboard/users/user-detail.php:484
+msgid "No result found."
+msgstr "Nenhum resultado encontrado."
+
+#: template-parts/profile/guest.php:98
+msgid "No Reviews"
+msgstr "Sem comentários"
+
+#: template-parts/dashboard/profile/upfront.php:28
+msgid "No upfront, Take full payment locally"
+msgstr "Sem adiantamento, receba o pagamento integral localmente"
+
+#: template-parts/dashboard/users/users.php:173
+msgid "No users found."
+msgstr "Usuários não encontrados."
+
+#: framework/metaboxes/homey-meta-boxes.php:1196 template-parts/dashboard/edit-listing/information.php:242
+#: template-parts/dashboard/submit-listing/information.php:255
+msgid "None"
+msgstr "Nenhum"
+
+#: localization.php:232 template-parts/dashboard/users/user-detail.php:146
+msgid "Not Available"
+msgstr "Não Disponível"
+
+#: localization.php:473
+msgid "Not Paid"
+msgstr "Não Pago"
+
+#: single-listing/host.php:57 template-parts/profile/guest.php:63 template-parts/profile/host.php:151
+msgid "Not Verified"
+msgstr "Não Verificado"
+
+#: template-parts/dashboard/wallet/payout-request.php:34
+msgid "Note: the minimum amount for a payout is"
+msgstr "Nota: o valor mínimo para um pagamento é"
+
+#: template-parts/dashboard/edit-listing/modal-calendar.php:22 template-parts/dashboard/reservation/detail-hourly.php:214
+#: template-parts/dashboard/reservation/detail.php:291
+msgid "Notes"
+msgstr "Notas"
+
+#: framework/metaboxes/homey-meta-boxes.php:485 template-parts/dashboard/edit-listing/pricing.php:222
+#: template-parts/dashboard/submit-listing/pricing.php:197
+msgid "Number of additional guests allowed"
+msgstr "Número de convidados adicionais permitidos"
+
+#: localization.php:97
+msgid "Number of bathrooms"
+msgstr "Número de banheiros"
+
+#: localization.php:89
+msgid "Number of bedrooms"
+msgstr "Numero de quartos"
+
+#: localization.php:95 localization.php:181
+msgid "Number of beds"
+msgstr "Número de camas"
+
+#: localization.php:93
+msgid "Number of guest"
+msgstr "Número de convidados"
+
+#: localization.php:179
+msgid "Number of guests"
+msgstr "Número de convidados"
+
+#: framework/vc_extend.php:900
+msgid "Number of Items to Show:"
+msgstr "Número de itens a serem exibidos:"
+
+#: framework/metaboxes/homey-meta-boxes.php:1011 framework/metaboxes/homey-meta-boxes.php:1145
+msgid "Number of listings to show"
+msgstr "Número de acomodações para mostrar"
+
+#: framework/vc_extend.php:941 framework/vc_extend.php:982
+msgid "Number of posts to show"
+msgstr "Numero de postagens para mostrar"
+
+#: localization.php:91
+msgid "Number of Rooms"
+msgstr "Número de Quartos"
+
+#: template-parts/dashboard/messages/detail.php:113
+msgid "Offline"
+msgstr "Offline"
+
+#: framework/vc_extend.php:933 framework/vc_extend.php:974
+msgid "Offset"
+msgstr "Offset"
+
+#: framework/vc_extend.php:414 framework/vc_extend.php:595
+msgid "Offset listings:"
+msgstr "Offset Acomodações:"
+
+#: framework/vc_extend.php:1016 framework/vc_extend.php:1144
+msgid "Offset Posts:"
+msgstr "Offset Posts:"
+
+#: framework/metaboxes/homey-meta-boxes.php:1294
+msgid "OGV File"
+msgstr "Arquivo OGV"
+
+#: template-parts/dashboard/messages/detail.php:107
+msgid "on"
+msgstr "em"
+
+#: localization.php:467
+msgid "One Time"
+msgstr "Um Tempo"
+
+#: template-parts/dashboard/messages/detail.php:111
+msgid "Online"
+msgstr "Online"
+
+#: framework/vc_extend.php:380 framework/vc_extend.php:557
+msgid "Only Featured"
+msgstr "Apenas Destacados"
+
+#: framework/functions/wallet.php:573
+msgid "Only numbers are allowed"
+msgstr "Somente números são permitidos"
+
+#: framework/functions/wallet.php:915
+msgid "Only numbers are allowed for the transfert fee"
+msgstr "Apenas números são permitidos para a taxa de transferência"
+
+#: template-parts/dashboard/messages/detail.php:90 template-parts/dashboard/messages/new.php:56
+msgid "Oopps something getting wrong, please try again!"
+msgstr "Oops, algo está errado, tente novamente!"
+
+#: template/template-verification.php:44 template/template-verification.php:46
+msgid "Oops something went wrong."
+msgstr "Oops, algo deu errado."
+
+#: localization.php:212
+msgid "Open Time"
+msgstr "Tempo aberto"
+
+#: localization.php:29 localization.php:211
+msgid "Opening Hours"
+msgstr "Horário de Funcionamento"
+
+#: localization.php:344
+msgid "Ops! Something went wrong. Please try again."
+msgstr "Ops! Algo deu errado. Por favor, tente novamente."
+
+#: template-parts/search/languages.php:12 template-parts/search/languages.php:17 template-parts/search/languages.php:22
+#: template-parts/search/languages.php:27 template-parts/search/languages.php:32 template-parts/search/rules.php:12
+#: template-parts/search/rules.php:17 template-parts/search/rules.php:22 template-parts/search/rules.php:27
+#: template-parts/search/rules.php:32
+msgid "Option Name"
+msgstr "Nome da Opção"
+
+#: localization.php:474 template-parts/dashboard/invoices/item.php:15
+msgid "Order"
+msgstr "Ordem"
+
+#: framework/metaboxes/homey-meta-boxes.php:994 framework/metaboxes/homey-meta-boxes.php:1128
+msgid "Order By"
+msgstr "Ordenar Por"
+
+#: framework/vc_extend.php:879 framework/vc_extend.php:1025 framework/vc_extend.php:1153
+msgid "Order By:"
+msgstr "Ordenar Por:"
+
+#: template-parts/dashboard/wallet/earnings.php:20 template-parts/dashboard/wallet/earnings.php:51
+#: template-parts/dashboard/wallet/main.php:103 template-parts/dashboard/wallet/main.php:130
+msgid "Order id"
+msgstr "ID do pedido"
+
+#: framework/vc_extend.php:886 framework/vc_extend.php:1033 framework/vc_extend.php:1161
+msgid "Order:"
+msgstr "Ordem:"
+
+#: localization.php:535 template-parts/dashboard/users/user-detail.php:193
+msgid "Other Language"
+msgstr "Outra Língua"
+
+#: framework/metaboxes/homey-meta-boxes.php:1523
+msgid "Other Settings"
+msgstr "Outros Ajustes"
+
+#: template-parts/dashboard/users/user-detail.php:474
+msgid "Overall Ratings"
+msgstr "Avaliações Gerais"
+
+#: framework/metaboxes/homey-meta-boxes.php:1325
+msgid "Overlay Color Opacity"
+msgstr "Overlay Color Opacity"
+
+#: localization.php:516
+msgid "Owner rules"
+msgstr "Regras do proprietário"
+
+#: localization.php:466 single-hm_homey_memberships.php:256
+msgid "Package"
+msgstr "Pacote"
+
+#: framework/metaboxes/homey-meta-boxes.php:1186
+msgid "Page Header Options"
+msgstr "Opções de Cabeçalho da Página"
+
+#: functions.php:292
+msgid "Page Sidebar"
+msgstr "Barra Lateral da Página"
+
+#. Name of the template
+msgid "Page Template"
+msgstr "Modelo de Página"
+
+#: content-page.php:6 single.php:67
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: localization.php:472 template-parts/dashboard/wallet/detail.php:107
+msgid "Paid"
+msgstr "Pago"
+
+#: template-parts/dashboard/wallet/detail.php:110
+msgid "paid locally to the host"
+msgstr "pago localmente ao anfitrião"
+
+#: framework/metaboxes/homey-meta-boxes.php:1454
+msgid "Partner Details"
+msgstr "Detalhes do Parceiro"
+
+#: framework/metaboxes/homey-meta-boxes.php:1460
+msgid "Partner website address"
+msgstr "Endereço do site do parceiro"
+
+#: framework/vc_extend.php:995
+msgid "Partners"
+msgstr "Parceiros"
+
+#: localization.php:170
+msgid "Party allowed"
+msgstr "Festa permitida"
+
+#: single-hm_homey_memberships.php:318 template-parts/modal-window-login.php:49 template-parts/modal-window-register.php:58
+#: template-parts/dashboard/side-menu.php:80 template-parts/header/mobile-user-menu.php:69
+msgid "Password"
+msgstr "Senha"
+
+#: framework/functions/profile.php:1193
+msgid "Password reset successfully, you can login now."
+msgstr "Senha redefinida com sucesso, você pode fazer o login agora."
+
+#: framework/functions/profile.php:645
+msgid "Password Updated"
+msgstr "Senha atualizada"
+
+#: framework/functions/profile.php:636
+msgid "Passwords do not match"
+msgstr "As senhas não coincidem"
+
+#: localization.php:448
+msgid "Pay Now"
+msgstr "Pague agora"
+
+#: localization.php:520 template/dashboard-payment.php:242 template-parts/dashboard/upgrade-featured.php:159
+#: template-parts/dashboard/reservation/payment-sidebar-hourly.php:3 template-parts/dashboard/reservation/payment-sidebar.php:3
+msgid "Payment"
+msgstr "Forma de pagamento"
+
+#: template-parts/dashboard/wallet/payout-detail.php:252 template-parts/dashboard/wallet/payouts-host.php:108
+#: template-parts/dashboard/wallet/payouts.php:182
+msgid "Payment Adjustment"
+msgstr "Ajuste de pagamento"
+
+#: localization.php:477
+msgid "Payment details"
+msgstr "Detalhes do pagamento"
+
+#: localization.php:392
+msgid "Payment due"
+msgstr "Pagamento devido"
+
+#: inc/register-scripts.php:620
+msgid "Payment Failed, please make sure you have entered name, email and valid card number"
+msgstr "Falha no pagamento, certifique-se de inserir o nome, e-mail e número de cartão válido"
+
+#: template/dashboard-payment.php:78
+msgid "Payment info"
+msgstr "Informação de pagamento"
+
+#: localization.php:475 template-parts/dashboard/side-menu.php:83 template-parts/header/mobile-user-menu.php:72
+#: template-parts/dashboard/invoices/item.php:59
+msgid "Payment Method"
+msgstr "Forma de pagamento"
+
+#: template/dashboard.php:44
+msgid "Payment Received"
+msgstr "Pagamento recebido"
+
+#: template-parts/dashboard/profile/upfront.php:14
+msgid "Payment while booking"
+msgstr "Pagamento durante a reserva"
+
+#: template-parts/dashboard/wallet/payout-detail.php:66
+msgid "Payout"
+msgstr "Pagamento"
+
+#: template-parts/dashboard/wallet/payout-request.php:35
+msgid "Payout Amount"
+msgstr "Montante de Pagamento"
+
+#: template-parts/dashboard/wallet/payouts-host.php:25 template-parts/dashboard/wallet/payouts-host.php:99
+#: template-parts/dashboard/wallet/payouts.php:97 template-parts/dashboard/wallet/payouts.php:173
+msgid "Payout Method"
+msgstr "Método de Pagamento"
+
+#: template-parts/dashboard/side-menu.php:136 template-parts/dashboard/side-menu.php:148
+#: template-parts/dashboard/side-menu.php:157 template-parts/header/account.php:126 template-parts/header/mobile-user-menu.php:127
+#: template-parts/header/mobile-user-menu.php:140 template-parts/header/mobile-user-menu.php:149
+#: template-parts/dashboard/wallet/main-guest.php:135 template-parts/dashboard/wallet/main.php:160
+msgid "Payouts"
+msgstr "Pagamentos"
+
+#: framework/functions/wallet.php:1235
+msgid "PayPal"
+msgstr "PayPal"
+
+#: single-hm_homey_memberships.php:393 template/dashboard-payment.php:213 template-parts/dashboard/upgrade-featured.php:130
+#: template-parts/instance-booking/hourly.php:303 template-parts/instance-booking/nightly.php:303
+#: template-parts/dashboard/profile/payment-method.php:118 template-parts/dashboard/wallet/payment-method-depricated.php:105
+msgid "Paypal"
+msgstr "Paypal"
+
+#: template-parts/dashboard/profile/payment-method.php:214 template-parts/dashboard/wallet/payment-method-depricated.php:201
+msgid "PayPal Account Information"
+msgstr "Informações da conta PayPal"
+
+#: template/dashboard-payment.php:125 template-parts/dashboard/users/user-detail.php:287
+#: template-parts/dashboard/wallet/payout-detail.php:207
+msgid "PayPal Email"
+msgstr "Email do Paypal"
+
+#: template-parts/dashboard/users/users.php:144 template-parts/dashboard/users/users.php:156
+msgid "PENDING"
+msgstr "PENDENTE"
+
+#: localization.php:233 localization.php:587 template/dashboard-listings.php:122
+#: template-parts/dashboard/profile/verification.php:73
+msgid "Pending"
+msgstr "Pendente"
+
+#: localization.php:235
+msgid "Pending id"
+msgstr "ID pendente"
+
+#: localization.php:280 single-listing/extra-prices.php:34
+msgid "Per Guest"
+msgstr "Por Convidado"
+
+#: framework/vc_extend.php:291 framework/vc_extend.php:468 inc/register-scripts.php:476 single-listing/extra-prices.php:8
+#: framework/metaboxes/homey-meta-boxes.php:1027 framework/metaboxes/homey-meta-boxes.php:1161
+#: template-parts/dashboard/edit-listing/extra.php:6 template-parts/dashboard/submit-listing/extra.php:5
+#: template-parts/dashboard/submit-listing/listing-mode.php:16
+msgid "Per Hour"
+msgstr "Por Hora"
+
+#: inc/register-scripts.php:477 single-listing/extra-prices.php:9 template-parts/dashboard/edit-listing/extra.php:7
+#: template-parts/dashboard/submit-listing/extra.php:6
+msgid "Per Hour Per Guest"
+msgstr "Por Hora Por Convidado"
+
+#: framework/vc_extend.php:290 framework/vc_extend.php:467 inc/register-scripts.php:482
+#: framework/metaboxes/homey-meta-boxes.php:1026 framework/metaboxes/homey-meta-boxes.php:1160
+#: template-parts/dashboard/edit-listing/extra.php:12 template-parts/dashboard/submit-listing/extra.php:11
+#: template-parts/dashboard/submit-listing/listing-mode.php:15
+msgid "Per Month"
+msgstr "Por Mês"
+
+#: inc/register-scripts.php:483 template-parts/dashboard/edit-listing/extra.php:13
+#: template-parts/dashboard/submit-listing/extra.php:12
+msgid "Per Month Per Guest"
+msgstr "Por Mês Por Hóspede"
+
+#: localization.php:279 framework/vc_extend.php:288 framework/vc_extend.php:465 single-listing/extra-prices.php:11
+#: framework/metaboxes/homey-meta-boxes.php:1024 framework/metaboxes/homey-meta-boxes.php:1158
+#: template-parts/dashboard/submit-listing/listing-mode.php:13
+msgid "Per Night"
+msgstr "Por Noite"
+
+#: localization.php:281 single-listing/extra-prices.php:12
+msgid "Per Night Per Guest"
+msgstr "Por Noite Por Hóspede"
+
+#: single-listing/prices-hourly.php:25 single-listing/prices-hourly.php:31 single-listing/prices.php:59
+#: single-listing/prices.php:65
+msgid "Per Stay"
+msgstr "Por Estadia"
+
+#: localization.php:141
+msgid "Per stay"
+msgstr "Por estadia"
+
+#: framework/vc_extend.php:289 framework/vc_extend.php:466 inc/register-scripts.php:479
+#: framework/metaboxes/homey-meta-boxes.php:1025 framework/metaboxes/homey-meta-boxes.php:1159
+#: template-parts/dashboard/edit-listing/extra.php:9 template-parts/dashboard/submit-listing/extra.php:8
+#: template-parts/dashboard/submit-listing/listing-mode.php:14
+msgid "Per Week"
+msgstr "Por Semana"
+
+#: inc/register-scripts.php:480 template-parts/dashboard/edit-listing/extra.php:10
+#: template-parts/dashboard/submit-listing/extra.php:9
+msgid "Per Week Per Guest"
+msgstr "Por Semana Por Hóspede"
+
+#: template-parts/dashboard/profile/upfront.php:26
+msgid "Percentage(%)"
+msgstr "Percentagem(%)"
+
+#: localization.php:593
+msgid "Period name"
+msgstr "Pacote"
+
+#: localization.php:37 single-listing/what-nearby.php:38 template-parts/search/search-guests.php:37
+msgid "Pets"
+msgstr "Animais de estimação"
+
+#: localization.php:169
+msgid "Pets allowed"
+msgstr "Permitidos animais"
+
+#: localization.php:72 localization.php:531 template-parts/dashboard/profile/contact.php:39
+msgid "Phone"
+msgstr "Telefone"
+
+#: inc/register-scripts.php:619
+msgid "Phone field required"
+msgstr "Campo de telefone obrigatório"
+
+#: template-parts/dashboard/users/user-detail.php:374
+msgid "Phone Number"
+msgstr "Número de telefone"
+
+#: localization.php:343
+msgid "Phone number required"
+msgstr "Número de telefone obrigatório"
+
+#: framework/metaboxes/homey-meta-boxes.php:1440 template-parts/dashboard/profile/photo.php:8
+msgid "Photo"
+msgstr "Foto"
+
+#: framework/functions/profile.php:1052 template-parts/dashboard/users/user-detail.php:434
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: template-parts/dashboard/profile/social.php:60
+msgid "Pinterest Url"
+msgstr "Url do Pinterest"
+
+#: localization.php:497
+msgid "Please act quickly! Rates and availability may subject to change."
+msgstr "Aja rapidamente! Preços e disponibilidade podem estar sujeitos a alterações."
+
+#: localization.php:218
+msgid "Please add content"
+msgstr "Por favor adicione conteúdo"
+
+#: inc/register-scripts.php:536
+msgid "Please add expense first."
+msgstr "Adicione despesas primeiro."
+
+#: inc/register-scripts.php:535
+msgid "Please add feeds first."
+msgstr "Adicione feeds primeiro."
+
+#: localization.php:354
+msgid "Please add the review content"
+msgstr "Adicione o conteúdo da revisão"
+
+#: inc/register-scripts.php:582
+msgid "Please Agree with GDPR"
+msgstr "Concorde com o GDPR"
+
+#: framework/functions/wallet.php:706 framework/functions/wallet.php:822
+msgid "Please choose an action"
+msgstr "Escolha uma ação"
+
+#: localization.php:500
+msgid "Please choose check in date"
+msgstr "Por favor, escolha a data de check-in"
+
+#: localization.php:501
+msgid "Please choose check out date"
+msgstr "Por favor, escolha a data de check-out"
+
+#: localization.php:367
+msgid "Please choose guests"
+msgstr "Por favor, escolha convidados"
+
+#: localization.php:239
+msgid "please choose payment gateway"
+msgstr "por favor escolha o gateway de pagamento"
+
+#: framework/functions/wallet.php:563
+msgid "Please enter an amount greater then 0"
+msgstr "Insira um valor maior que 0"
+
+#: inc/register-scripts.php:493
+msgid "Please enter only digits"
+msgstr "Por favor, insira apenas dígitos"
+
+#: framework/functions/profile.php:1188
+msgid "Please enter password"
+msgstr "Por favor insira a senha"
+
+#: framework/functions/wallet.php:698 framework/functions/wallet.php:814
+msgid "Please enter the amount"
+msgstr "Por favor insira o valor"
+
+#: framework/functions/wallet.php:714 framework/functions/wallet.php:830
+msgid "Please enter the reason"
+msgstr "Por favor insira o motivo"
+
+#: framework/functions/wallet.php:690 framework/functions/wallet.php:806
+msgid "Please enter the title"
+msgstr "Por favor insira o título"
+
+#: template-parts/modal-window-forgot-password.php:10
+msgid "Please enter your username or email address. You will receive a link to create a new password via email."
+msgstr "Por favor insira seu nome de usuário ou endereço de e-mail. Você receberá um link para criar uma nova senha por e-mail."
+
+#: localization.php:362
+msgid "Please fill all the fields"
+msgstr "Por favor preencha todos os campos"
+
+#: framework/functions/price.php:483
+msgid "Please install and activate favethemes-currency-converter plugin!"
+msgstr "Instale e ative o plug-in conversor de moedas favethemes!"
+
+#: localization.php:363
+msgid "Please select arrive date"
+msgstr "Selecione a data de chegada"
+
+#: localization.php:364
+msgid "Please select depart date"
+msgstr "Selecione a data de partida"
+
+#: localization.php:372
+msgid "Please select end date"
+msgstr "Selecione a data de término"
+
+#: localization.php:366
+msgid "Please select end hour"
+msgstr "Selecione a hora de término"
+
+#: framework/functions/profile.php:179
+msgid "Please select payment type"
+msgstr "Selecione o tipo de pagamento"
+
+#: localization.php:371
+msgid "Please select start date"
+msgstr "Selecione a data de início"
+
+#: localization.php:365
+msgid "Please select start hour"
+msgstr "Selecione a hora de início"
+
+#: framework/functions/wallet.php:935
+msgid "Please select the payout status"
+msgstr "Selecione o status de pagamento"
+
+#: framework/vc_extend.php:1243
+msgid ""
+"Please set an icon. The entire list of icons can be found at <a href='http://fortawesome.github.io/Font-Awesome/icons/' "
+"target='_blank'>FontAwesome project page</a>. For example, if an icon is named 'fa-angle-right', the value you have to add "
+"inside the field is 'angle-right'."
+msgstr ""
+"Defina um ícone. A lista completa de ícones pode ser encontrada na <a href='http://fortawesome.github.io/Font-Awesome/icons/' "
+"target='_blank'>página do projeto FontAwesome</a> . Por exemplo, se um ícone for denominado &#39;fa-ângulo direito&#39;, o "
+"valor que você deve adicionar dentro do campo é &#39;ângulo direito&#39;."
+
+#: framework/functions/wallet.php:583
+msgid "Please setup your payment method"
+msgstr "Configure o seu método de pagamento"
+
+#: single-listing/what-nearby.php:78
+msgid "Please supply your API key"
+msgstr "Forneça sua chave de API"
+
+#: framework/functions/messages.php:55 framework/functions/messages.php:126
+msgid "Please write something in message"
+msgstr "Por favor, escreva algo na mensagem"
+
+#: localization.php:396
+msgid "Poor"
+msgstr "Ruim"
+
+#: framework/metaboxes/homey-meta-boxes.php:1428
+msgid "Position"
+msgstr "Posição"
+
+#: localization.php:437
+msgid "Post a Comment"
+msgstr "Poste um Comentário"
+
+#: localization.php:415
+msgid "Posts"
+msgstr "Postagens"
+
+#: localization.php:491
+msgid "Powered by"
+msgstr "Distribuído por"
+
+#: localization.php:431 template-parts/map-controls.php:31
+msgid "Prev"
+msgstr "Ant."
+
+#: single-post/post-nav.php:16
+msgid "Prev Post"
+msgstr "Post anterior"
+
+#: localization.php:34 localization.php:275 localization.php:557 single-hm_homey_memberships.php:257
+#: template/template-compare.php:135
+msgid "Price"
+msgstr "Preço"
+
+#: framework/vc_extend.php:123 framework/vc_extend.php:402 framework/metaboxes/homey-meta-boxes.php:1000
+#: framework/metaboxes/homey-meta-boxes.php:1134 template-parts/listing/sort-tool.php:26 template-parts/listing/sort-tool_2.php:24
+msgid "Price (High to Low)"
+msgstr "Preço (alto para baixo)"
+
+#: framework/vc_extend.php:122 framework/vc_extend.php:401 framework/metaboxes/homey-meta-boxes.php:1001
+#: framework/metaboxes/homey-meta-boxes.php:1135 template-parts/listing/sort-tool.php:25 template-parts/listing/sort-tool_2.php:23
+msgid "Price (Low to High)"
+msgstr "Preço (baixo para alto)"
+
+#: framework/metaboxes/homey-meta-boxes.php:353 template-parts/dashboard/edit-listing/pricing.php:85
+#: template-parts/dashboard/submit-listing/pricing.php:62
+msgid "Price Per Hour"
+msgstr "Preço Por Hora"
+
+#: localization.php:77
+msgid "Prices"
+msgstr "Preços"
+
+#: localization.php:241
+msgid "Pricing"
+msgstr "Preços"
+
+#: localization.php:324 template/dashboard-invoices.php:145 template-parts/dashboard/actions.php:3
+msgid "Print"
+msgstr "Impressão"
+
+#: localization.php:68
+msgid "Print this page"
+msgstr "Imprima esta página"
+
+#: localization.php:522 template/dashboard-payment.php:275 template/dashboard-payment.php:278
+#: template-parts/dashboard/upgrade-featured.php:195
+msgid "Process Payment"
+msgstr "Processo de pagamento"
+
+#: localization.php:219 inc/register-scripts.php:221 inc/register-scripts.php:222 inc/register-scripts.php:508
+#: inc/register-scripts.php:581
+msgid "Processing, Please wait..."
+msgstr "Processando... Por favor, aguarde..."
+
+#: single-listing/what-nearby.php:39
+msgid "Professional Services"
+msgstr "Serviços profissionais"
+
+#: localization.php:573 template-parts/dashboard/users/user-detail.php:108
+msgid "Profile"
+msgstr "Perfil"
+
+#: template-parts/dashboard/profile/progress.php:7 template-parts/dashboard/profile/status.php:15
+msgid "Profile Completed"
+msgstr "Perfil Concluído"
+
+#: template-parts/dashboard/profile/progress.php:12 template-parts/dashboard/profile/status.php:23
+msgid "Profile Picture"
+msgstr "Foto do perfil"
+
+#: localization.php:411 template-parts/profile/guest.php:59
+msgid "Profile Status"
+msgstr "Status do perfil"
+
+#: framework/functions/profile.php:579
+msgid "Profile updated"
+msgstr "perfil atualizado"
+
+#: template-parts/dashboard/profile/progress.php:31
+msgid "Progress"
+msgstr "Progresso"
+
+#: framework/vc_extend.php:1046
+msgid "Promo Box"
+msgstr "Promo Box"
+
+#: template-parts/dashboard/users/user-widget.php:39
+msgid "Promote to super user"
+msgstr "Promover a superusuário"
+
+#: framework/metaboxes/homey-meta-boxes.php:1200
+msgid "Properties Slider"
+msgstr "Controle deslizante de propriedades"
+
+#: template-parts/profile/guest.php:68
+msgid "Provided"
+msgstr "Forneceu"
+
+#: single-listing/what-nearby.php:40
+msgid "Public Services & Government"
+msgstr "Serviços públicos e governamentais"
+
+#: template-parts/dashboard/edit-listing/submit-form.php:89
+msgid "Publish"
+msgstr "Publicar"
+
+#: template/dashboard-listings.php:117 template-parts/dashboard/listing-item.php:32
+msgid "Published"
+msgstr "Publicados"
+
+#: template-parts/dashboard/wallet/payout-detail.php:248
+msgid "Purpose"
+msgstr "Objetivo"
+
+#: template-parts/search/banner-horizontal-daily.php:193 template-parts/search/banner-horizontal-daily.php:194
+#: template-parts/search/banner-horizontal-hourly.php:207 template-parts/search/banner-vertical-daily.php:190
+#: template-parts/search/banner-vertical-daily.php:191 template-parts/search/main-search-daily.php:193
+#: template-parts/search/main-search-hourly.php:207 template-parts/search/overlay-mobile-search-daily.php:195
+#: template-parts/search/overlay-mobile-search-hourly.php:206 template-parts/search/search-half-map-daily.php:246
+#: template-parts/search/search-half-map-hourly.php:284
+msgid "Radius"
+msgstr "Raio"
+
+#: framework/vc_extend.php:127
+msgid "Random"
+msgstr "Aleatória"
+
+#: framework/metaboxes/homey-meta-boxes.php:1002 framework/metaboxes/homey-meta-boxes.php:1136
+#: framework/metaboxes/homey-meta-boxes.php:1499 template-parts/listing/sort-tool.php:28 template-parts/listing/sort-tool_2.php:26
+msgid "Rating"
+msgstr "Avaliação"
+
+#: single-listing/reviews.php:40
+msgid "Rating (High to Low)"
+msgstr "Classificação (Alta para Baixa)"
+
+#: single-listing/reviews.php:39
+msgid "Rating (Low to High)"
+msgstr "Classificação (Baixa para Alta)"
+
+#: framework/functions/review.php:233
+msgid "Rating: "
+msgstr "Avaliação:"
+
+#: localization.php:331
+msgid "Read More"
+msgstr "Saiba Mais"
+
+#: content-none.php:24
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>"
+msgstr "Pronto para publicar seu primeiro post? <a href=\"%1$s\">Comece aqui</a>"
+
+#: single-listing/what-nearby.php:41
+msgid "Real Estate"
+msgstr "Imobiliária"
+
+#: template-parts/dashboard/wallet/adjustment-form.php:44 template-parts/dashboard/wallet/adjustment-guest.php:44
+msgid "Reason"
+msgstr "Razão"
+
+#: localization.php:421
+msgid "Recent Messages"
+msgstr "Mensagens Recentes"
+
+#: framework/metaboxes/listing-type-meta.php:49
+msgid "Recently used"
+msgstr "Usado recentemente"
+
+#: template-parts/dashboard/profile/payment-method.php:220 template-parts/dashboard/profile/payment-method.php:239
+#: template-parts/dashboard/wallet/payment-method-depricated.php:207
+#: template-parts/dashboard/wallet/payment-method-depricated.php:226
+msgid "Recipient Email"
+msgstr "E-mail do destinatário"
+
+#: localization.php:468
+msgid "Recurring"
+msgstr "Recorrente"
+
+#: single-hm_homey_memberships.php:380
+msgid "Redirecting to Invoice Page."
+msgstr "Redirecionando para a página de fatura."
+
+#: template-parts/dashboard/wallet/main-guest.php:34
+msgid "Refundable Security deposit"
+msgstr "Depósito reembolsável"
+
+#: localization.php:378 framework/vc_extend.php:217 template-parts/modal-window-login.php:72
+#: template-parts/modal-window-register.php:28 template-parts/modal-window-register.php:96
+msgid "Register"
+msgstr "Cadastre-se"
+
+#: template-parts/modal-window-register.php:46
+msgid "Register with your email"
+msgstr "Cadastre-se com seu email"
+
+#: single-post/related-posts.php:19
+msgid "Related posts"
+msgstr "Postagens relacionadas"
+
+#: template-parts/dashboard/profile/contact.php:27 template-parts/dashboard/users/user-detail.php:362
+msgid "Relationship"
+msgstr "Relação"
+
+#: single-listing/what-nearby.php:42
+msgid "Religious Organizations"
+msgstr "Organizações Religiosas"
+
+#: template-parts/modal-window-login.php:60
+msgid "Remember me"
+msgstr "Lembre de mim"
+
+#: localization.php:65
+msgid "Remove from compare"
+msgstr "Remover da comparação"
+
+#: localization.php:62
+msgid "Remove from Favorite"
+msgstr "Remover dos favoritos"
+
+#: localization.php:188
+msgid "Remove this room"
+msgstr "Remover esta sala"
+
+#: localization.php:198
+msgid "Remove this service"
+msgstr "Remova este serviço"
+
+#: framework/functions/icalendar.php:384
+msgid "Removed Successfully."
+msgstr "Removido com sucesso."
+
+#: localization.php:428
+msgid "Rental"
+msgstr "Acomodação"
+
+#: localization.php:517
+msgid "Rental Agreement"
+msgstr "Contrato de aluguel"
+
+#: localization.php:427
+msgid "Rentals"
+msgstr "Acomodações"
+
+#: template-parts/dashboard/profile/information.php:31
+msgid "Renter"
+msgstr "Locatário"
+
+#: single-hm_homey_memberships.php:324 template-parts/modal-window-register.php:61
+msgid "Repeat Password"
+msgstr "Repita a senha"
+
+#: template-parts/dashboard/messages/detail.php:239
+msgid "Reply"
+msgstr "Resposta"
+
+#: template-parts/dashboard/wallet/main.php:57
+msgid "Represents the available amount you can currently withdraw to your account."
+msgstr "Representa a quantia disponível que você pode sacar atualmente em sua conta."
+
+#: template-parts/dashboard/wallet/main-guest.php:48 template-parts/dashboard/wallet/main.php:71
+msgid "Represents the total number of paid reservations you have received"
+msgstr "Representa o número total de reservas pagas que você recebeu"
+
+#: template-parts/dashboard/profile/payment-method.php:42 template-parts/dashboard/wallet/main.php:60
+#: template-parts/dashboard/wallet/payment-method-depricated.php:31 template-parts/dashboard/wallet/payout-request.php:39
+msgid "Request a Payout"
+msgstr "Solicite um Pagamento"
+
+#: localization.php:413 single-listing/booking/overlay-booking.php:126 single-listing/booking/overlay-hourly-booking.php:163
+msgid "Request Information"
+msgstr "Pedir informação"
+
+#: framework/functions/price.php:490
+msgid "Request not valid"
+msgstr "Pedido inválido"
+
+#: framework/functions/profile.php:265
+msgid "Request sent for verification"
+msgstr "Pedido enviado para verificação"
+
+#: framework/functions/wallet.php:650
+msgid "Request sent successfully."
+msgstr "Solicitação enviada com sucesso."
+
+#: single-listing/booking/overlay-booking.php:36 single-listing/booking/overlay-booking.php:90
+#: single-listing/booking/overlay-hourly-booking.php:38 single-listing/booking/overlay-hourly-booking.php:128
+#: single-listing/booking/sidebar-booking-hourly.php:132 single-listing/booking/sidebar-booking-module.php:99
+msgid "Request to Book"
+msgstr "Pedido de reserva"
+
+#: single-listing/booking/overlay-booking.php:47 single-listing/booking/overlay-hourly-booking.php:70
+msgid "Request to book"
+msgstr "Pedido de reserva"
+
+#: localization.php:336 localization.php:353
+msgid "Reservation"
+msgstr "Reserva"
+
+#: localization.php:469
+msgid "Reservation Fee"
+msgstr "Taxa de reserva"
+
+#: template/template-stripe-charge.php:75 template-parts/dashboard/wallet/detail.php:60
+msgid "Reservation ID"
+msgstr "ID de reserva"
+
+#: template-parts/dashboard/wallet/earnings.php:21 template-parts/dashboard/wallet/earnings.php:54
+#: template-parts/dashboard/wallet/main-guest.php:80 template-parts/dashboard/wallet/main-guest.php:105
+#: template-parts/dashboard/wallet/security-deposits.php:17 template-parts/dashboard/wallet/security-deposits.php:41
+msgid "Reservation id"
+msgstr "Id de reserva"
+
+#: template-parts/dashboard/invoices/detail.php:80
+msgid "Reservation ID:"
+msgstr "ID de reserva:"
+
+#. Name of the template
+msgid "Reservation Payment"
+msgstr "Pagamento de Reserva"
+
+#: localization.php:416 localization.php:576
+msgid "Reservations"
+msgstr "Reservas"
+
+#: localization.php:327
+msgid "Reserve"
+msgstr "Reserva"
+
+#: localization.php:333
+msgid "Reserve a Period"
+msgstr "Reserve um período"
+
+#: localization.php:586
+msgid "Reserved"
+msgstr "Reservado"
+
+#: localization.php:566
+msgid "Reset"
+msgstr "Redefinir"
+
+#. Name of the template
+#: template/template-verification.php:67
+msgid "Reset Password"
+msgstr "Redefinir senha"
+
+#: framework/functions/profile.php:1179
+msgid "Reset password Session key expired."
+msgstr "Redefinir a senha A chave da sessão expirou."
+
+#: single-listing/what-nearby.php:43
+msgid "Restaurants"
+msgstr "Restaurantes"
+
+#: localization.php:401 framework/functions/review.php:32 framework/functions/review.php:134 template-parts/profile/guest.php:90
+msgid "Review"
+msgstr "Review"
+
+#: localization.php:319
+msgid "Review & Rating"
+msgstr "Review & Classificação"
+
+#: localization.php:402 single-listing/listing-nav.php:74 template-parts/profile/guest.php:88
+#: template-parts/dashboard/users/user-detail.php:94
+msgid "Reviews"
+msgstr "Reviews"
+
+#: single-listing/what-nearby.php:142
+msgid "reviews"
+msgstr "reviews"
+
+#: template-parts/dashboard/users/user-detail.php:471
+msgid "Reviews and Ratings"
+msgstr "Reviews e Avaliações"
+
+#: framework/metaboxes/homey-meta-boxes.php:1201 framework/metaboxes/homey-meta-boxes.php:1262
+msgid "Revolution Slider"
+msgstr "Revolution Slider"
+
+#: template-parts/map-controls.php:23
+msgid "Roadmap"
+msgstr "Roadmap"
+
+#: template-parts/dashboard/users/user-detail.php:158 template-parts/dashboard/users/users.php:96
+#: template-parts/dashboard/users/users.php:132
+msgid "Role"
+msgstr "Função"
+
+#: localization.php:551 framework/vc_extend.php:808
+msgid "Room Type"
+msgstr "Tipo de sala"
+
+#: framework/vc_extend.php:314 framework/vc_extend.php:491
+msgid "Room type filter:"
+msgstr "Filtro de tipo de quarto:"
+
+#: localization.php:52
+msgid "Rooms"
+msgstr "Quartos"
+
+#: localization.php:512
+msgid "Rules & Policies"
+msgstr "Regras e políticas"
+
+#: localization.php:31
+msgid "Sat"
+msgstr "Sáb"
+
+#: single-listing/prices-hourly.php:37 single-listing/prices.php:71
+msgid "Sat & Sun"
+msgstr "Sáb & Dom"
+
+#: template-parts/map-controls.php:24
+msgid "Satelite"
+msgstr "Satélite"
+
+#: localization.php:248
+msgid "Saturday and Sunday"
+msgstr "Sábado e Domingo"
+
+#: localization.php:326 inc/register-scripts.php:512 template-parts/dashboard/profile/payment-method.php:204
+#: template-parts/dashboard/profile/payment-method.php:225 template-parts/dashboard/profile/payment-method.php:244
+#: template-parts/dashboard/profile/social.php:89 template-parts/dashboard/profile/upfront.php:38
+#: template-parts/dashboard/users/user-widget.php:67 template-parts/dashboard/wallet/payment-method-depricated.php:191
+#: template-parts/dashboard/wallet/payment-method-depricated.php:212
+#: template-parts/dashboard/wallet/payment-method-depricated.php:231 template-parts/dashboard/wallet/payout-detail.php:305
+msgid "Save"
+msgstr "Salve"
+
+#: localization.php:313 template-parts/dashboard/submit-listing/submit-form.php:58
+msgid "Save as Draft"
+msgstr "Salvar como Rascunho"
+
+#: template-parts/dashboard/reservation/discount.php:51
+msgid "Save Discounts"
+msgstr "Salvar Descontos"
+
+#: template-parts/dashboard/reservation/add-extra-expenses.php:51
+msgid "Save Expense"
+msgstr "Salvar Despesas"
+
+#: template-parts/dashboard/ical-import.php:43
+msgid "Save Feeds"
+msgstr "Salvar Feeds"
+
+#: localization.php:60 localization.php:63
+msgid "Save to Favorite"
+msgstr "Salvar nos Favoritos"
+
+#: localization.php:580
+msgid "Saved Searches"
+msgstr "Pesquisas Salvas"
+
+#: localization.php:440 localization.php:552 template-parts/search/overlay-mobile-search-daily.php:69
+#: template-parts/search/overlay-mobile-search-hourly.php:82 template-parts/dashboard/users/users.php:80
+#: template-parts/dashboard/wallet/payouts.php:80
+msgid "Search"
+msgstr "Buscar"
+
+#: template/dashboard-listings.php:152
+msgid "Search listing"
+msgstr "Pesquisa de acomodação"
+
+#. Name of the template
+msgid "Search Results"
+msgstr "Resultados de Busca"
+
+#: framework/vc_extend.php:134
+msgid "Section Title"
+msgstr "Título da seção"
+
+#: template-parts/dashboard/wallet/main-guest.php:83
+msgid "Security"
+msgstr "Segurança"
+
+#: localization.php:335
+msgid "Security check failed"
+msgstr "A verificação de segurança falhou"
+
+#: template-parts/dashboard/side-menu.php:147 template-parts/header/mobile-user-menu.php:138
+#: template-parts/dashboard/profile/upfront.php:27 template-parts/dashboard/users/user-detail.php:112
+#: template-parts/dashboard/wallet/main-guest.php:33 template-parts/dashboard/wallet/main-guest.php:116
+#: template-parts/dashboard/wallet/security-deposits.php:20 template-parts/dashboard/wallet/security-deposits.php:53
+msgid "Security Deposit"
+msgstr "Depósito de segurança"
+
+#: localization.php:125 localization.php:389
+msgid "Security deposit"
+msgstr "Depósito de segurança"
+
+#: localization.php:210 template-parts/modal-window-register.php:66 template-parts/modal-window-register.php:67
+#: template-parts/dashboard/profile/upfront.php:24 template-parts/dashboard/submit-listing/listing-mode.php:12
+msgid "Select"
+msgstr "Selecione"
+
+#: framework/metaboxes/homey-meta-boxes.php:1490
+msgid "Select a Listing"
+msgstr "Selecione uma Acomodação"
+
+#: framework/metaboxes/homey-meta-boxes.php:1268
+msgid "Select an Slider"
+msgstr "Selecione um controle deslizante"
+
+#: localization.php:300
+msgid "Select and upload"
+msgstr "Selecione e faça upload"
+
+#: framework/metaboxes/homey-meta-boxes.php:1237 framework/metaboxes/listing-area-meta.php:13
+msgid "Select City"
+msgstr "Selecione a cidade"
+
+#: framework/metaboxes/listing-area-meta.php:16 framework/metaboxes/listing-area-meta.php:55
+msgid "Select city which has this area."
+msgstr "Selecione a cidade que possui esta área."
+
+#: framework/metaboxes/listing-state-meta.php:15 framework/metaboxes/listing-state-meta.php:50
+msgid "Select Country"
+msgstr "Selecione o pais"
+
+#: framework/metaboxes/listing-state-meta.php:18 framework/metaboxes/listing-state-meta.php:53
+msgid "Select country which has this state."
+msgstr "Selecione o país que possui este estado."
+
+#: framework/vc_extend.php:455 framework/vc_extend.php:706 framework/vc_extend.php:740
+msgid "Select grid/card style, the default style will be list view"
+msgstr "Selecione o estilo de grid/card, o estilo padrão será a visualização de lista"
+
+#: localization.php:100
+msgid "Select listing Type"
+msgstr "Selecione o tipo de lista"
+
+#: framework/metaboxes/listing-cities-meta.php:12
+msgid "Select State"
+msgstr "Selecione o estado"
+
+#: framework/metaboxes/listing-cities-meta.php:15 framework/metaboxes/listing-cities-meta.php:54
+msgid "Select state which has this city."
+msgstr "Selecione o estado que possui esta cidade."
+
+#: localization.php:247
+msgid "Select the days to apply weekend pricing"
+msgstr "Selecione os dias para aplicar o preço de fim de semana"
+
+#: localization.php:521 template/dashboard-payment.php:200 template-parts/dashboard/upgrade-featured.php:117
+msgid "Select the payment method"
+msgstr "Selecione o método de pagamento"
+
+#: localization.php:284
+msgid "Select Type"
+msgstr "Selecione o tipo"
+
+#: framework/metaboxes/homey-meta-boxes.php:943
+msgid "Select what to display in the sidebar of listing detail page"
+msgstr "Selecione o que exibir na barra lateral da página de detalhes da acomodação"
+
+#: template-parts/dashboard/profile/payment-method.php:110 template-parts/dashboard/wallet/payment-method-depricated.php:97
+msgid "Select Your Payout Method"
+msgstr "Selecione o seu método de pagamento"
+
+#: template-parts/dashboard/reservation/review-form.php:22 template-parts/dashboard/reservation/review-host.php:23
+msgid "Select your rating"
+msgstr "Selecione sua avaliação"
+
+#: template-parts/dashboard/messages/detail.php:265 template-parts/dashboard/messages/new.php:97
+msgid "Send"
+msgstr "Enviar"
+
+#: localization.php:328 template-parts/dashboard/actions.php:5 template-parts/profile/host.php:226
+msgid "Send Message"
+msgstr "Enviar mensagem"
+
+#: template-parts/dashboard/reservation/message.php:19
+msgid "Send Message to"
+msgstr "Enviar mensagem para"
+
+#: inc/register-scripts.php:583
+msgid "Sending info"
+msgstr "Enviando informações"
+
+#: inc/register-scripts.php:220 inc/register-scripts.php:507
+msgid "Sending user info, please wait..."
+msgstr "Enviando informações do usuário, por favor aguarde..."
+
+#: localization.php:195
+msgid "Service description"
+msgstr "Descrição do Serviço"
+
+#: template-parts/dashboard/wallet/detail.php:118 template-parts/dashboard/wallet/earnings.php:24
+#: template-parts/dashboard/wallet/earnings.php:65
+msgid "Service Fee"
+msgstr "Taxa de serviço"
+
+#: localization.php:390
+msgid "Service fees"
+msgstr "Taxas de serviço"
+
+#: localization.php:191
+msgid "Service name"
+msgstr "Nome do Serviço"
+
+#: localization.php:193
+msgid "Service Price"
+msgstr "Preço do serviço"
+
+#: localization.php:190
+msgid "Services"
+msgstr "Serviços"
+
+#: template/template-verification.php:51
+msgid "Session key expired."
+msgstr "A chave da sessão expirou."
+
+#: framework/vc_extend.php:254
+msgid "Set height of the space. You can add white space between elements to separate them beautifully."
+msgstr "Defina a altura do espaço. Você pode adicionar espaço em branco entre os elementos para separá-los perfeitamente."
+
+#: framework/metaboxes/homey-meta-boxes.php:118
+msgid "Settings"
+msgstr "Configurações"
+
+#: localization.php:144
+msgid "Setup Custom Period Prices"
+msgstr "Configurar Preços por Períodos Especiais"
+
+#: template/dashboard-listing-submitted.php:91
+msgid "Setup Custom Prices"
+msgstr "Configurar preços personalizados"
+
+#: template-parts/dashboard/edit-listing/extra.php:21 template-parts/dashboard/submit-listing/extra.php:20
+msgid "Setup Extra Services Price"
+msgstr "Preço de serviços extras de configuração"
+
+#: template-parts/dashboard/wallet/main.php:164 template-parts/dashboard/wallet/payout-request.php:28
+#: template-parts/dashboard/wallet/payouts-host.php:13
+msgid "Setup Payout Method"
+msgstr "Configurar Método de Pagamento"
+
+#: single-listing/what-nearby.php:44
+msgid "Shopping"
+msgstr "Compras"
+
+#: single-listing/contact-form.php:43 single-listing/contact-host.php:28 template-parts/profile/host.php:189
+msgid "Shortcode missing"
+msgstr "Shortcode ausente"
+
+#: localization.php:200
+msgid "Show"
+msgstr "Mostrar"
+
+#: framework/vc_extend.php:872
+msgid "Show Child:"
+msgstr "Mostrar criança:"
+
+#: framework/metaboxes/homey-meta-boxes.php:1003 framework/metaboxes/homey-meta-boxes.php:1137
+msgid "Show Featured on Top"
+msgstr "Mostrar destaque no topo"
+
+#: framework/vc_extend.php:727
+msgid "Show listings by IDs"
+msgstr "Mostrar listagens por IDs"
+
+#: framework/vc_extend.php:427
+msgid "Show load more pagination"
+msgstr "Mostrar carregar mais paginação"
+
+#: framework/vc_extend.php:693
+msgid "Show single listing by id"
+msgstr "Mostrar lista única por id"
+
+#: localization.php:173
+msgid "Similar listings"
+msgstr "Acomodações semelhantes"
+
+#: localization.php:278 single-listing/extra-prices.php:30
+msgid "Single Fee"
+msgstr "Taxa única"
+
+#: functions.php:321
+msgid "Single Listing"
+msgstr "Acomodação Única"
+
+#: localization.php:49 localization.php:101 localization.php:554
+msgid "Size"
+msgstr "Tamanho"
+
+#: framework/functions/wallet.php:1238 template-parts/dashboard/profile/payment-method.php:128
+#: template-parts/dashboard/wallet/payment-method-depricated.php:115
+msgid "Skrill"
+msgstr "Skrill"
+
+#: template-parts/dashboard/profile/payment-method.php:233 template-parts/dashboard/wallet/payment-method-depricated.php:220
+msgid "Skrill Account Information"
+msgstr "Informações da conta Skrill"
+
+#: template/dashboard-payment.php:132 template-parts/dashboard/users/user-detail.php:294
+#: template-parts/dashboard/wallet/payout-detail.php:214
+msgid "Skrill Email"
+msgstr "Email Skrill"
+
+#: framework/metaboxes/homey-meta-boxes.php:114
+msgid "Slider"
+msgstr "Slider"
+
+#: framework/metaboxes/homey-meta-boxes.php:928
+msgid "Slider Image"
+msgstr "Imagem deslizante"
+
+#: framework/vc_extend.php:619
+msgid "Slides to scroll:"
+msgstr "Slides para rolar:"
+
+#: framework/vc_extend.php:604
+msgid "Slides to show:"
+msgstr "Slides para mostrar:"
+
+#: localization.php:168
+msgid "Smoking allowed"
+msgstr "Fumar é permitido"
+
+#: framework/functions/profile.php:1036
+msgid "Social Info"
+msgstr "Informação Social"
+
+#: template-parts/dashboard/profile/social.php:21 template-parts/dashboard/users/user-detail.php:400
+msgid "Social Media"
+msgstr "Mídia social"
+
+#: framework/functions/messages.php:95 framework/functions/messages.php:162
+msgid "Some errors occurred! Please try again."
+msgstr "Alguns erros ocorreram! Por favor, tente novamente."
+
+#: framework/functions/profile.php:647 framework/functions/wallet.php:682 framework/functions/wallet.php:798
+msgid "Something went wrong"
+msgstr "Algo deu errado"
+
+#: framework/functions/icalendar.php:147 framework/functions/icalendar.php:347
+msgid "Something went wrong, please contact site administer"
+msgstr "Algo deu errado, entre em contato com o administrador do site"
+
+#: framework/functions/wallet.php:925
+msgid "Something went wrong."
+msgstr "Algo deu errado."
+
+#: template-parts/listing/listing-none.php:1
+msgid "Sorry no results found"
+msgstr "Desculpe, não foram encontrados resultados"
+
+#: content-none.php:27
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+"Desculpe, mas nada corresponde aos seus termos de pesquisa. Por favor, tente novamente com algumas palavras-chave diferentes."
+
+#: localization.php:345
+msgid "Sorry, this reservation does not belong to you."
+msgstr "Desculpe, esta reserva não pertence a você."
+
+#: localization.php:23 framework/vc_extend.php:398 framework/vc_extend.php:577
+msgid "Sort By"
+msgstr "Ordenar por"
+
+#: localization.php:508
+msgid "Speaks"
+msgstr "Fala"
+
+#. Name of the template
+msgid "Splash Page Template"
+msgstr "Modelo de página inicial"
+
+#: localization.php:510
+msgid "Start booking"
+msgstr "Comece a reserva"
+
+#: template-parts/dashboard/edit-listing/modal-calendar.php:14
+msgid "Start Date"
+msgstr "Inicio do Período"
+
+#: localization.php:460
+msgid "Start date"
+msgstr "Início"
+
+#: framework/metaboxes/homey-meta-boxes.php:811 template-parts/dashboard/edit-listing/terms.php:139
+#: template-parts/dashboard/submit-listing/terms.php:124
+msgid "Start Hour"
+msgstr "Hora de início"
+
+#: localization.php:263 template-parts/dashboard/profile/address.php:39 template-parts/dashboard/profile/payment-method.php:93
+#: template-parts/dashboard/profile/payment-method.php:193 template-parts/dashboard/wallet/payment-method-depricated.php:80
+#: template-parts/dashboard/wallet/payment-method-depricated.php:180
+msgid "State"
+msgstr "Estado"
+
+#: localization.php:33 localization.php:471 template-parts/dashboard/invoices/item.php:47
+#: template-parts/dashboard/wallet/main-guest.php:149 template-parts/dashboard/wallet/main-guest.php:206
+#: template-parts/dashboard/wallet/main.php:174 template-parts/dashboard/wallet/main.php:231
+#: template-parts/dashboard/wallet/payout-detail.php:277 template-parts/dashboard/wallet/payouts-host.php:26
+#: template-parts/dashboard/wallet/payouts-host.php:112 template-parts/dashboard/wallet/payouts.php:41
+#: template-parts/dashboard/wallet/payouts.php:98 template-parts/dashboard/wallet/payouts.php:186
+msgid "Status"
+msgstr "Status"
+
+#: template-parts/dashboard/messages/detail.php:111 template-parts/dashboard/messages/detail.php:113
+msgid "Status:"
+msgstr "Status:"
+
+#: template-parts/dashboard/profile/address.php:21 template-parts/dashboard/profile/payment-method.php:75
+#: template-parts/dashboard/profile/payment-method.php:175 template-parts/dashboard/wallet/payment-method-depricated.php:62
+#: template-parts/dashboard/wallet/payment-method-depricated.php:162
+msgid "Street Address"
+msgstr "Endereço"
+
+#: single-hm_homey_memberships.php:406 template/dashboard-payment.php:226 template-parts/dashboard/upgrade-featured.php:143
+#: template-parts/instance-booking/hourly.php:316 template-parts/instance-booking/nightly.php:316
+msgid "Stripe"
+msgstr "Listra"
+
+#. Name of the template
+msgid "Stripe Webhook"
+msgstr "Stripe Webhook"
+
+#: framework/vc_extend.php:155
+msgid "Sub Title:"
+msgstr "Legenda:"
+
+#: template-parts/dashboard/wallet/detail.php:113
+msgid "Sub Total"
+msgstr "Subtotal"
+
+#: localization.php:316 template-parts/modal-window-forgot-password.php:17 template-parts/dashboard/reservation/cancel-form.php:14
+#: template-parts/dashboard/reservation/cancel-hourly-form.php:14 template-parts/dashboard/reservation/decline-form.php:11
+#: template-parts/dashboard/reservation/decline-hourly-form.php:11
+msgid "Submit"
+msgstr "Enviar"
+
+#: template-parts/dashboard/reservation/review-form.php:46 template-parts/dashboard/reservation/review-host.php:47
+msgid "Submit Your Review"
+msgstr "Envie sua avaliação"
+
+#: inc/register-scripts.php:509
+msgid "Submitting, Please wait..."
+msgstr "Enviando, aguarde..."
+
+#: framework/metaboxes/homey-meta-boxes.php:1254
+msgid "Subtitle"
+msgstr "Legenda"
+
+#: localization.php:38
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#: framework/functions/profile.php:197
+msgid "Successfully saved"
+msgstr "Salvo com sucesso"
+
+#: framework/metaboxes/homey-meta-boxes.php:930
+msgid "Suggested size 1920 x 600"
+msgstr "Tamanho sugerido 1920 x 600"
+
+#: localization.php:32
+msgid "Sun"
+msgstr "Sol"
+
+#: single-listing/host.php:27 framework/functions/profile.php:681 template-parts/profile/host.php:67
+msgid "Super Host"
+msgstr "Super Host"
+
+#: template/dashboard-payment.php:148 template-parts/dashboard/users/user-detail.php:310
+#: template-parts/dashboard/wallet/payout-detail.php:227
+msgid "SWIFT"
+msgstr "RÁPIDO"
+
+#: template-parts/dashboard/profile/payment-method.php:163 template-parts/dashboard/wallet/payment-method-depricated.php:150
+msgid "SWIFT or IBN"
+msgstr "SWIFT ou IBN"
+
+#: localization.php:203
+msgid "Sync iCal"
+msgstr "Sincronizar iCal"
+
+#: single-post/tags.php:3
+msgid "Tags:"
+msgstr "Tags:"
+
+#: localization.php:127
+msgid "Tax %"
+msgstr "% De imposto"
+
+#: template-parts/dashboard/profile/payment-method.php:69 template-parts/dashboard/users/user-detail.php:260
+#: template-parts/dashboard/wallet/payment-method-depricated.php:56 template-parts/dashboard/wallet/payout-detail.php:190
+msgid "Tax Identification Number"
+msgstr "Número de identificação fiscal"
+
+#: localization.php:391
+msgid "Taxes"
+msgstr "Taxa de serviço"
+
+#: localization.php:167
+msgid "Terms"
+msgstr "Termos"
+
+#: template-parts/map-controls.php:26
+msgid "Terrain"
+msgstr "Terreno"
+
+#: framework/metaboxes/homey-meta-boxes.php:1410
+msgid "Testimonial Details"
+msgstr "Detalhes de depoimento"
+
+#: framework/metaboxes/homey-meta-boxes.php:1416
+msgid "Testimonial Text"
+msgstr "Texto de depoimento"
+
+#: framework/vc_extend.php:1105
+msgid "Testimonials"
+msgstr "Testemunhos"
+
+#: framework/vc_extend.php:1119
+msgid "Testimonials Type:"
+msgstr "Tipo de Testemunhos:"
+
+#: localization.php:455
+msgid "Thank you! We've received your payment."
+msgstr "Obrigado! Recebemos seu pagamento."
+
+#: framework/functions/profile.php:558
+msgid "The Email you entered is not valid. Please try again."
+msgstr "O e-mail que você digitou não é válido. Por favor, tente novamente."
+
+#: localization.php:339
+msgid "The instant booking page has not been created. Please contact the website administrator."
+msgstr "A página de reserva instantânea não foi criada. Por favor contate o Administrador do Website."
+
+#: localization.php:502
+msgid "The listing you are looking for is not available"
+msgstr "A lista que você está procurando não está disponível"
+
+#: localization.php:223
+msgid "The maximum stay is"
+msgstr "A estadia máxima é"
+
+#: template-parts/dashboard/messages/detail.php:83 template-parts/dashboard/messages/new.php:49
+msgid "The message has been sent."
+msgstr "A mensagem foi enviada."
+
+#: localization.php:222
+msgid "The minimum stay is"
+msgstr "A estadia mínima é"
+
+#: framework/functions/wallet.php:603
+msgid "The requested amount is greater then available balance."
+msgstr "O valor solicitado é maior que o saldo disponível."
+
+msgid "The reservation has been cancellated"
+msgstr ""
+
+#: localization.php:348
+msgid "There are no more listings available"
+msgstr "Não há mais listagens disponíveis"
+
+#: framework/vc_extend.php:1344
+msgid "There are no taxonomy found"
+msgstr "Nenhuma taxonomia encontrada"
+
+#: framework/functions/profile.php:564
+msgid "This Email is already used by another user. Please try a different one."
+msgstr "Este e-mail já está sendo usado por outro usuário. Por favor, tente um diferente."
+
+#: template-parts/dashboard/edit-listing/submit-form.php:248
+msgid "This is not a valid request"
+msgstr "Este não é um pedido válido"
+
+#: template-parts/dashboard/messages/detail.php:272
+msgid "This message thread is deleted from the owner, so you can't reply this."
+msgstr "Este tópico de mensagem foi excluído do proprietário, então você não pode responder."
+
+#: localization.php:338
+msgid "This reservation is not belong to you."
+msgstr "Esta reserva não pertence a você."
+
+#: functions.php:333 functions.php:343 functions.php:353
+msgid "This sidebar can be assigned to any page when add/edit page."
+msgstr "Esta barra lateral pode ser atribuída a qualquer página ao adicionar/editar página."
+
+#: framework/functions/messages.php:148
+msgid "Thread success fully created!"
+msgstr "Sucesso do tópico totalmente criado!"
+
+#: template-parts/listing/compare.php:19
+msgid "Thumb"
+msgstr "Thumb"
+
+#: localization.php:39
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+#: single-hm_homey_memberships.php:258
+msgid "Time Period"
+msgstr "Período de tempo"
+
+#: localization.php:83 template/template-compare.php:130 framework/metaboxes/homey-meta-boxes.php:1246
+#: template-parts/dashboard/sidebar-listing.php:116 template-parts/dashboard/wallet/adjustment-form.php:28
+#: template-parts/dashboard/wallet/adjustment-guest.php:28
+msgid "Title"
+msgstr "Título"
+
+#: framework/vc_extend.php:147 framework/vc_extend.php:230 framework/vc_extend.php:1068
+msgid "Title:"
+msgstr "Título:"
+
+#: template-parts/dashboard/wallet/payouts-host.php:105 template-parts/dashboard/wallet/payouts.php:179
+msgid "to"
+msgstr "para"
+
+#: localization.php:394
+msgid "to pay locally to the host"
+msgstr "pagar localmente ao anfitrião"
+
+#: template-parts/dashboard/invoices/detail.php:88
+msgid "To:"
+msgstr "Para:"
+
+#: localization.php:589
+msgid "Today"
+msgstr "Hoje"
+
+#: framework/vc_extend.php:1340
+msgid "Toggle Select"
+msgstr "Alternar Seleção"
+
+#: functions.php:59
+msgid "Top Menu"
+msgstr "Top Menu"
+
+#: localization.php:382 localization.php:481 template-parts/dashboard/upgrade-featured.php:172
+#: template-parts/dashboard/invoices/item.php:62
+msgid "Total"
+msgstr "Total"
+
+#: template-parts/dashboard/wallet/detail.php:105 template-parts/dashboard/wallet/detail.php:124
+msgid "Total amount"
+msgstr "Valor total"
+
+#: template-parts/dashboard/upgrade-featured.php:81
+msgid "Total Consumed"
+msgstr "Total consumido"
+
+#: template-parts/dashboard/wallet/main.php:37
+msgid "Total Earnings"
+msgstr "Ganhos totais"
+
+#: localization.php:459
+msgid "Total Invoices:"
+msgstr "Total de faturas:"
+
+#: template-parts/dashboard/wallet/main-guest.php:47 template-parts/dashboard/wallet/main.php:70
+msgid "Total reservations"
+msgstr "Total de reservas"
+
+#: template-parts/dashboard/wallet/main-guest.php:202 template-parts/dashboard/wallet/main.php:227
+#: template-parts/dashboard/wallet/payout-detail.php:85 template-parts/dashboard/wallet/payouts-host.php:94
+#: template-parts/dashboard/wallet/payouts.php:166
+msgid "transaction fee"
+msgstr "taxa de transação"
+
+#: template-parts/dashboard/wallet/payout-detail.php:300
+msgid "Transfer Fee"
+msgstr "Taxa de transferência"
+
+#: framework/metaboxes/homey-meta-boxes.php:1391
+msgid "Transparent Header"
+msgstr "Cabeçalho Transparente"
+
+#: single-listing/what-nearby.php:45
+msgid "Transportation"
+msgstr "Transporte"
+
+#: template-parts/dashboard/profile/social.php:84
+msgid "Trip Advisor Url"
+msgstr "URL do Trip Advisor"
+
+#: framework/functions/profile.php:1048 template-parts/dashboard/users/user-detail.php:413
+msgid "Twitter"
+msgstr "Twitter"
+
+#: template-parts/dashboard/profile/social.php:36
+msgid "Twitter URL"
+msgstr "URL do Twitter"
+
+#: localization.php:27 localization.php:283 localization.php:464
+msgid "Type"
+msgstr "Tipo"
+
+#: localization.php:99
+msgid "Type of listing"
+msgstr "Tipo de acomodação"
+
+#: localization.php:509 template-parts/dashboard/messages/detail.php:247 template-parts/dashboard/messages/new.php:79
+msgid "Type your message here..."
+msgstr "Digite sua mensagem aqui ..."
+
+#: template-parts/dashboard/reservation/message.php:34
+msgid "Type your message..."
+msgstr "Digite sua mensagem..."
+
+#: template-parts/dashboard/reservation/review-form.php:34 template-parts/dashboard/reservation/review-host.php:35
+msgid "Type your review here..."
+msgstr "Digite seu comentário aqui ..."
+
+#: single-listing/about.php:34
+msgid "type_icon"
+msgstr "type_icon"
+
+#: template/dashboard-reservations.php:12
+msgid "Unauthorized and redirecting to home page.."
+msgstr "Não autorizado e redirecionando para a página inicial..."
+
+#: localization.php:442
+msgid "UNDER REVIEW"
+msgstr "SOB REVISÃO"
+
+#: localization.php:104
+msgid "Unit of measure"
+msgstr "Unidade de medida"
+
+#: framework/functions/messages.php:47 framework/functions/messages.php:118
+msgid "Unverified Nonce!"
+msgstr "Nonce não verificado!"
+
+#: localization.php:418
+msgid "Upcoming Reservations"
+msgstr "Próximas Reservas"
+
+#: localization.php:323
+msgid "Update"
+msgstr "Atualizar"
+
+#: template/dashboard-listing-submitted.php:83
+msgid "Update calendar"
+msgstr "Atualizar calendário"
+
+#: template-parts/dashboard/profile/password.php:24
+msgid "Update Password"
+msgstr "Atualizar senha"
+
+#: template-parts/dashboard/reservation/review-form.php:43 template-parts/dashboard/reservation/review-host.php:44
+msgid "Update Review"
+msgstr "Revisão de atualização"
+
+#: inc/register-scripts.php:242
+msgid "Updating Currency, Please wait..."
+msgstr "Atualizando moeda, aguarde..."
+
+#: template-parts/dashboard/wallet/detail.php:107
+msgid "upfront payment while booking"
+msgstr "pagamento adiantado durante a reserva"
+
+#: localization.php:470
+msgid "Upgrade to Featured"
+msgstr "Atualizar para destaque"
+
+#: localization.php:317 template/dashboard-listing-submitted.php:103 template/dashboard.php:42
+#: template-parts/dashboard/upgrade-featured.php:71 template-parts/dashboard/upgrade-featured.php:165
+msgid "Upgrade to featured"
+msgstr "Atualize para destaque"
+
+#: framework/metaboxes/homey-meta-boxes.php:917
+msgid "Upload an image below if you selected yes."
+msgstr "Carregue uma imagem abaixo se você selecionou sim."
+
+#: template-parts/dashboard/profile/verification.php:35
+msgid "Upload your ID"
+msgstr "Carregue o seu ID"
+
+#: framework/functions/profile.php:255 template-parts/dashboard/profile/verification.php:58
+msgid "Upload your ID, Passport or Driver License"
+msgstr "Faça upload de sua identidade, passaporte ou carteira de motorista"
+
+#: template-parts/dashboard/users/user-detail.php:496
+msgid "Uploaded Documents"
+msgstr "Documentos Carregados"
+
+#: framework/vc_extend.php:1091
+msgid "URL Text:"
+msgstr "Texto de URL:"
+
+#: framework/vc_extend.php:1083
+msgid "URL:"
+msgstr "URL:"
+
+#: content-list.php:14 content.php:37 single.php:51
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ","
+
+#: template/dashboard.php:48
+msgid "User Profile"
+msgstr "Perfil de usuário"
+
+#: template-parts/modal-window-register.php:103
+msgid "User registration is disabled in this website."
+msgstr "O registro do usuário está desabilitado neste site."
+
+#: localization.php:523 single-hm_homey_memberships.php:305 template-parts/modal-window-register.php:50
+msgid "Username"
+msgstr "Nome do usuário"
+
+#: template-parts/modal-window-login.php:46
+msgid "Username or Email"
+msgstr "Nome de usuário ou email"
+
+#: template/dashboard.php:46 template-parts/dashboard/admin-stats.php:47 template-parts/dashboard/side-menu.php:181
+#: template-parts/header/account.php:148 template-parts/header/mobile-user-menu.php:171
+msgid "Users"
+msgstr "Usuários"
+
+#: inc/register-scripts.php:492 inc/register-scripts.php:574
+msgid "Valid file formats"
+msgstr "Formatos de arquivo válidos"
+
+#: template-parts/dashboard/side-menu.php:78 template-parts/header/mobile-user-menu.php:67
+msgid "Verification"
+msgstr "Verificação"
+
+#: template-parts/dashboard/profile/status.php:34 template-parts/dashboard/users/users.php:142
+#: template-parts/dashboard/users/users.php:150
+msgid "VERIFIED"
+msgstr "VERIFICADO"
+
+#: localization.php:410 single-listing/host.php:55 template-parts/profile/guest.php:61 template-parts/profile/host.php:149
+#: template-parts/dashboard/profile/verification.php:23 template-parts/dashboard/profile/verification.php:68
+#: template-parts/dashboard/users/user-detail.php:151
+msgid "Verified"
+msgstr "Verificado"
+
+#: localization.php:403
+msgid "Verified Reviews - All reviews are from verified guests."
+msgstr "Comentários verificados - Todos os comentários são de hóspedes verificados."
+
+#: template-parts/dashboard/profile/verification.php:76
+msgid "Verify Your ID"
+msgstr "Verifique sua identidade"
+
+#: template-parts/dashboard/profile/verification.php:10
+msgid "Verify Your Information"
+msgstr "Verifique suas informações"
+
+#: framework/metaboxes/homey-meta-boxes.php:1362
+msgid "Vertical"
+msgstr "Vertical"
+
+#: localization.php:302 framework/metaboxes/homey-meta-boxes.php:1199
+msgid "Video"
+msgstr "Vídeo"
+
+#: framework/metaboxes/homey-meta-boxes.php:1300
+msgid "Video Image"
+msgstr "Imagem de Vídeo"
+
+#: localization.php:303
+msgid "Video URL"
+msgstr "URL do vídeo"
+
+#: localization.php:322 template-parts/map-controls.php:29 template-parts/listing/layout-tool.php:2
+#: template-parts/dashboard/messages/messages.php:108
+msgid "View"
+msgstr "Visão"
+
+#: localization.php:417 template-parts/dashboard/wallet/main-guest.php:70 template-parts/dashboard/wallet/main-guest.php:139
+#: template-parts/dashboard/wallet/main.php:93
+msgid "View All"
+msgstr "Ver tudo"
+
+#: localization.php:384
+msgid "View details"
+msgstr "Ver detalhes"
+
+#: template-parts/dashboard/users/user-detail.php:230
+msgid "View Earnings"
+msgstr "Ver ganhos"
+
+#: template-parts/dashboard/users/user-detail.php:144
+msgid "View Picture"
+msgstr "Ver foto"
+
+#: localization.php:424 template-parts/dashboard/users/user-detail.php:114
+msgid "View Profile"
+msgstr "Ver perfil"
+
+#: template-parts/dashboard/users/user-detail.php:407 template-parts/dashboard/users/user-detail.php:414
+#: template-parts/dashboard/users/user-detail.php:421 template-parts/dashboard/users/user-detail.php:428
+#: template-parts/dashboard/users/user-detail.php:435 template-parts/dashboard/users/user-detail.php:442
+#: template-parts/dashboard/users/user-detail.php:449 template-parts/dashboard/users/user-detail.php:456
+msgid "View profile"
+msgstr "Ver perfil"
+
+#: framework/functions/profile.php:1064 template-parts/dashboard/users/user-detail.php:455
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: template-parts/dashboard/profile/social.php:72
+msgid "Vimeo Url"
+msgstr "Url do Vimeo"
+
+#. Name of the template
+msgid "Visual Composer"
+msgstr "Visual Composer"
+
+#: template-parts/dashboard/listing-item.php:36
+msgid "Waiting for Approval"
+msgstr "Esperando aprovação"
+
+#: localization.php:451
+msgid "WAITING PAYMENT"
+msgstr "AGUARDANDO PAGAMENTO"
+
+#. Name of the template
+#: template-parts/dashboard/host-stats.php:42 template-parts/dashboard/side-menu.php:133
+#: template-parts/dashboard/side-menu.php:145 template-parts/header/account.php:110 template-parts/header/account.php:118
+#: template-parts/header/mobile-user-menu.php:123 template-parts/header/mobile-user-menu.php:136
+msgid "Wallet"
+msgstr "Carteira"
+
+#: inc/register-scripts.php:392
+msgid "We didn't find any results"
+msgstr "Não encontramos nenhum resultado"
+
+#: localization.php:498
+msgid "We're sorry, but the dates you are trying to reserve are no longer available. Please select new stay dates and try again."
+msgstr ""
+"Lamentamos, mas as datas que você está tentando reservar não estão mais disponíveis. Selecione novas datas de estadia e tente "
+"novamente."
+
+#: localization.php:499
+msgid "We're sorry, but the hours you are trying to reserve are no longer available. Please select new stay hours and try again."
+msgstr ""
+"Lamentamos, mas o horário que você está tentando reservar não está mais disponível. Selecione um novo horário de estadia e "
+"tente novamente."
+
+#: framework/metaboxes/homey-meta-boxes.php:1288
+msgid "WEBM File"
+msgstr "Arquivo WEBM"
+
+#: framework/metaboxes/homey-meta-boxes.php:377
+msgid "Weekend Price"
+msgstr "Preço de fim de semana"
+
+#: localization.php:120
+msgid "Weekends"
+msgstr "Fins de Semana"
+
+#: framework/metaboxes/homey-meta-boxes.php:321
+msgid "Weekly"
+msgstr "Semanal"
+
+#: localization.php:123
+msgid "Weekly (7d+)"
+msgstr "Semanal (7d +)"
+
+#: localization.php:253
+msgid "Weekly - 7+ nights"
+msgstr "Semanal -7+ noites"
+
+#: localization.php:452
+msgid "Welcome back,"
+msgstr "Bem vindo de volta,"
+
+#: localization.php:81
+msgid "What kind of place do you want to list?"
+msgstr "Que tipo de lugar você deseja listar?"
+
+#: framework/metaboxes/homey-meta-boxes.php:941
+msgid "What to display in the sidebar?"
+msgstr "O que exibir na barra lateral?"
+
+#: localization.php:541
+msgid "Where to go?"
+msgstr "Onde ir?"
+
+#: framework/metaboxes/listing-area-meta.php:11 framework/metaboxes/listing-area-meta.php:50
+msgid "Which city has this area?"
+msgstr "Qual cidade tem essa área?"
+
+#: framework/metaboxes/listing-state-meta.php:13 framework/metaboxes/listing-state-meta.php:47
+msgid "Which country has this state?"
+msgstr "Qual país tem este estado?"
+
+#: framework/metaboxes/listing-cities-meta.php:10 framework/metaboxes/listing-cities-meta.php:49
+msgid "Which state has this city?"
+msgstr "Qual estado tem essa cidade?"
+
+#: functions.php:390
+msgid "Widgets in this area will be show in footer column four"
+msgstr "Os widgets nesta área serão mostrados na coluna quatro do rodapé"
+
+#: functions.php:363
+msgid "Widgets in this area will be show in footer column one"
+msgstr "Os widgets nesta área serão mostrados na coluna um do rodapé"
+
+#: functions.php:381
+msgid "Widgets in this area will be show in footer column three"
+msgstr "Os widgets nesta área serão mostrados na coluna três do rodapé"
+
+#: functions.php:372
+msgid "Widgets in this area will be show in footer column two"
+msgstr "Os widgets nesta área serão mostrados na coluna dois do rodapé"
+
+#: functions.php:303
+msgid "Widgets in this area will be shown in listings sidebar."
+msgstr "Os widgets nesta área serão mostrados na barra lateral das acomodações."
+
+#: functions.php:313
+msgid "Widgets in this area will be shown in the blog sidebar."
+msgstr "Os widgets nesta área serão mostrados na barra lateral do blog."
+
+#: functions.php:285
+msgid "Widgets in this area will be shown in the default sidebar."
+msgstr "Os widgets nesta área serão mostrados na barra lateral padrão."
+
+#: functions.php:294
+msgid "Widgets in this area will be shown in the page sidebar."
+msgstr "Os widgets nesta área serão mostrados na barra lateral da página."
+
+#: functions.php:323
+msgid "Widgets in this area will be shown in the single listing sidebar."
+msgstr "Os widgets nesta área serão mostrados na barra lateral de uma acomodação."
+
+#: framework/functions/wallet.php:1241 template-parts/dashboard/profile/payment-method.php:138
+#: template-parts/dashboard/wallet/payment-method-depricated.php:125
+msgid "Wire Transfer"
+msgstr "Transferência bancária"
+
+#: template-parts/dashboard/profile/payment-method.php:151 template-parts/dashboard/wallet/payment-method-depricated.php:138
+msgid "Wire Transfer Information"
+msgstr "Informações de transferência eletrônica"
+
+#: localization.php:229
+msgid "with custom period"
+msgstr "com período personalizado"
+
+#: localization.php:228
+msgid "with weekend"
+msgstr "com fim de semana"
+
+#: template-parts/dashboard/users/user-detail.php:227
+msgid "Withdraw Method"
+msgstr "Método de retirada"
+
+#: framework/vc_extend.php:380 framework/vc_extend.php:557
+msgid "Without Featured"
+msgstr "Sem destaque"
+
+#: framework/metaboxes/homey-meta-boxes.php:1419
+msgid "Write a testimonial into the textarea."
+msgstr "Escreva um depoimento na área de texto."
+
+#: template-parts/page-title.php:22
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: localization.php:492
+msgid "Yelp"
+msgstr "Yelp"
+
+#: localization.php:208 single-listing/prices-hourly.php:17 single-listing/prices.php:51
+#: framework/metaboxes/homey-meta-boxes.php:921 framework/metaboxes/homey-meta-boxes.php:1373
+#: template-parts/search/search-guests.php:41 template-parts/dashboard/users/user-widget.php:20
+#: template-parts/dashboard/users/user-widget.php:45
+msgid "Yes"
+msgstr "Sim"
+
+#: template-parts/dashboard/messages/detail.php:275 template-parts/dashboard/messages/detail.php:283
+msgid "You are not allowed to access this"
+msgstr "Você não tem permissão para acessar este"
+
+#: template-parts/dashboard/edit-listing/submit-form.php:244
+msgid "You are not logged in or This listing does not belong to you."
+msgstr "Você não está logado ou Esta acomodações não pertence a você."
+
+#: localization.php:337
+msgid "You are not the owner of this listing"
+msgstr "Você não é o proprietário desta acomodação"
+
+#: framework/vc_extend.php:382 framework/vc_extend.php:559
+msgid "You can make a post featured by clicking the featured listings checkbox while add/edit post"
+msgstr "Você pode fazer uma postagem em destaque clicando na caixa de acomodações em destaque enquanto adiciona/edita a postagem"
+
+#: framework/functions/review.php:239 framework/functions/review.php:243
+msgid "You can view this at"
+msgstr "Você pode ver isso em"
+
+#: framework/functions/review.php:247
+msgid "You can write your review at"
+msgstr "Você pode escrever sua crítica em"
+
+#: localization.php:349
+msgid "You don't have any favorite at this moment."
+msgstr "Você não tem nenhum favorito neste momento."
+
+#: localization.php:347
+msgid "You don't have any listing at this moment."
+msgstr "Você não tem nenhuma acomodação neste momento."
+
+#: template/dashboard-messages.php:140
+msgid "You don't have any message at this moment."
+msgstr "Você não tem nenhuma mensagem neste momento."
+
+#: localization.php:351
+msgid "You don't have any upcoming reservation at this moment."
+msgstr "Você não tem nenhuma reserva futura neste momento."
+
+#: framework/functions/icalendar.php:157 framework/functions/icalendar.php:357
+msgid "You don't have rights to do this."
+msgstr "Você não tem direitos para fazer isso."
+
+#: localization.php:25
+msgid "you don\\'t have the right to see this"
+msgstr "você não tem o direito de ver isso"
+
+#: localization.php:350
+msgid "You don’t have any reservation at this moment."
+msgstr "Você não tem nenhuma reserva neste momento."
+
+#: framework/functions/messages.php:603
+msgid "You have a new message on"
+msgstr "Você tem uma nova mensagem em"
+
+#: framework/functions/messages.php:622
+msgid "You have new message!"
+msgstr "Você tem uma nova mensagem!"
+
+#: framework/functions/messages.php:666
+msgid "You have received a message from:"
+msgstr "Você recebeu uma mensagem de:"
+
+#: localization.php:361
+msgid "You have successfully reserve a period"
+msgstr "Você reservou um período com sucesso"
+
+#: localization.php:518
+msgid "You must review and agree to all rules and policies to continue."
+msgstr "Você deve revisar e concordar com todas as regras e políticas para continuar."
+
+#: localization.php:369
+msgid "You need renter or subscriber login to book listing. "
+msgstr "Você precisa de um perfil de cliente ou inscrito para reservar acomodações."
+
+#: localization.php:238
+msgid "You need to agree with terms and condition"
+msgstr "Você precisa concordar com os termos e condições"
+
+#: localization.php:334
+msgid "You need to login in order to make a reservation"
+msgstr "Você precisa fazer o login para fazer uma reserva"
+
+#: single-listing/booking/overlay-booking.php:91 single-listing/booking/overlay-hourly-booking.php:129
+#: single-listing/booking/sidebar-booking-hourly.php:133 single-listing/booking/sidebar-booking-module.php:100
+msgid "You won't be charged yet"
+msgstr "Você ainda não será cobrado"
+
+#: localization.php:368
+msgid "Your cannot book your own listing."
+msgstr "Você não pode reservar sua própria acomodação."
+
+#: localization.php:436
+msgid "Your Comments"
+msgstr "Seus Comentários"
+
+#: localization.php:358
+msgid "Your dates are available!"
+msgstr "Suas datas estão disponíveis!"
+
+#: localization.php:356
+msgid "Your dates are not available"
+msgstr "Suas datas não estão disponíveis"
+
+#: localization.php:435
+msgid "Your Email"
+msgstr "Seu email"
+
+#: localization.php:359
+msgid "Your hours are available!"
+msgstr "Seu horário está disponível!"
+
+#: localization.php:357
+msgid "Your hours are not available"
+msgstr "Seu horário não está disponível"
+
+#: localization.php:306
+msgid "Your listing has been updated successfully."
+msgstr "Sua listagem foi atualizada com sucesso."
+
+#: localization.php:307
+msgid "Your listing has been upgraded to featured successfully."
+msgstr "Sua listagem foi atualizada para destaque com sucesso."
+
+#: localization.php:434
+msgid "Your Name"
+msgstr "Seu nome"
+
+#: template-parts/dashboard/profile/verification.php:18
+msgid "your@email.com"
+msgstr "seu@email.com"
+
+#: framework/functions/profile.php:1060 template-parts/dashboard/users/user-detail.php:448
+msgid "Youtube"
+msgstr "Youtube"
+
+#: template-parts/dashboard/profile/social.php:66
+msgid "Youtube Url"
+msgstr "Url do Youtube"
+
+#: localization.php:286 template-parts/dashboard/profile/address.php:45
+msgid "Zip Code"
+msgstr "Código postal"
+
+#: template-parts/dashboard/profile/payment-method.php:99 template-parts/dashboard/profile/payment-method.php:199
+#: template-parts/dashboard/wallet/payment-method-depricated.php:86
+#: template-parts/dashboard/wallet/payment-method-depricated.php:186
+msgid "Zip/Post Code"
+msgstr "CEP/Código Postal"

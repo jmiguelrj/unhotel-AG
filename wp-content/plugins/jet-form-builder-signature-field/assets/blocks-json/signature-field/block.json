@@ -1,0 +1,119 @@
+{
+	"apiVersion": 2,
+	"name": "jet-forms/signature-field",
+	"category": "jet-form-builder-fields",
+	"description": "Provides the ability for the user to draw a signature, which will be saved as an image and can be used later as proof of identity",
+	"icon": "<svg width=\"64\" height=\"64\" viewBox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13 9C10.7909 9 9 10.7909 9 13V51C9 53.2091 10.7909 55 13 55H51C53.2091 55 55 53.2091 55 51V13C55 10.7909 53.2091 9 51 9H13ZM51 11H13C11.8954 11 11 11.8954 11 13V51C11 52.1046 11.8954 53 13 53H51C52.1046 53 53 52.1046 53 51V13C53 11.8954 52.1046 11 51 11Z\" fill=\"currentColor\"\/><path d=\"M34.0001 33H35.4251L43.2126 25.2125L41.7876 23.7875L34.0001 31.575V33ZM32 35V30.75L41.1996 21.575C41.3996 21.3917 41.6204 21.25 41.8621 21.15C42.1037 21.05 42.3579 21 42.6246 21C42.8912 21 43.1496 21.05 43.3996 21.15C43.6496 21.25 43.8662 21.4 44.0496 21.6L45.4246 23C45.6246 23.1833 45.7704 23.4 45.8621 23.65C45.9537 23.9 45.9996 24.15 45.9996 24.4C45.9996 24.6667 45.9537 24.9208 45.8621 25.1625C45.7704 25.4042 45.6246 25.625 45.4246 25.825L36.25 35H32Z\" fill=\"currentColor\"\/><path d=\"M22.425 37.725C23.6417 36.825 24.5917 35.8375 25.275 34.7625C25.9583 33.6875 26.3 32.6167 26.3 31.55C26.3 31.0167 26.2125 30.625 26.0375 30.375C25.8625 30.125 25.625 30 25.325 30C24.5417 30 23.85 30.6625 23.25 31.9875C22.65 33.3125 22.35 34.8083 22.35 36.475C22.35 36.7083 22.3542 36.9292 22.3625 37.1375C22.3708 37.3458 22.3917 37.5417 22.425 37.725ZM23.8 42C23.3 42 22.8417 41.9042 22.425 41.7125C22.0083 41.5208 21.65 41.2083 21.35 40.775C20.9333 41.0083 20.5042 41.2167 20.0625 41.4C19.6208 41.5833 19.1667 41.7667 18.7 41.95L18 40.075C18.4667 39.9083 18.9125 39.7292 19.3375 39.5375C19.7625 39.3458 20.175 39.1417 20.575 38.925C20.4917 38.5583 20.4292 38.1583 20.3875 37.725C20.3458 37.2917 20.325 36.825 20.325 36.325C20.325 33.925 20.8 31.9375 21.75 30.3625C22.7 28.7875 23.8917 28 25.325 28C26.1917 28 26.9 28.3208 27.45 28.9625C28 29.6042 28.275 30.5 28.275 31.65C28.275 33.0833 27.8208 34.5 26.9125 35.9C26.0042 37.3 24.7417 38.5583 23.125 39.675C23.2417 39.7917 23.3625 39.8792 23.4875 39.9375C23.6125 39.9958 23.7417 40.025 23.875 40.025C24.3083 40.025 24.8125 39.75 25.3875 39.2C25.9625 38.65 26.4833 37.925 26.95 37.025L28.775 37.875C28.6583 38.1583 28.5667 38.5 28.5 38.9C28.4333 39.3 28.4417 39.65 28.525 39.95C28.6917 39.8667 28.8875 39.725 29.1125 39.525C29.3375 39.325 29.5667 39.075 29.8 38.775L31.375 40C30.9417 40.6 30.4417 41.0833 29.875 41.45C29.3083 41.8167 28.7833 42 28.3 42C27.95 42 27.6375 41.8958 27.3625 41.6875C27.0875 41.4792 26.8583 41.1583 26.675 40.725C26.2083 41.1417 25.7333 41.4583 25.25 41.675C24.7667 41.8917 24.2833 42 23.8 42Z\" fill=\"currentColor\"\/><\/svg>",
+	"keywords": [
+		"jetformbuilder",
+		"field",
+		"signature",
+		"sign"
+	],
+	"textdomain": "jet-form-builder",
+	"supports": {
+		"customClassName": false,
+		"html": false
+	},
+	"attributes": {
+		"image_format": {
+			"type": "string",
+			"default": "png",
+			"options":  [ "png", "png_filled", "jpg", "svg", "svg_filled" ]
+		},
+		"storage_type": {
+			"type": "string",
+			"default": "folder",
+			"options":  [ "folder", "attachment", "data_url" ]
+		},
+		"delete_file_on_error": {
+			"type": "boolean",
+			"default": true
+		},
+		"canvas_width": {
+			"type": "string",
+			"default": "100%"
+		},
+		"canvas_height": {
+			"type": "string",
+			"default": "250"
+		},
+		"canvas_bg": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"pen_color": {
+			"type": "string",
+			"default": "#111111"
+		},
+		"clear_label": {
+			"type": "string",
+			"default": "Clear"
+		},
+		"label": {
+			"type": "string",
+			"default": "",
+			"jfb": {
+				"rich": true
+			}
+		},
+		"name": {
+			"type": "string",
+			"default": "field_name"
+		},
+		"desc": {
+			"type": "string",
+			"default": "",
+			"jfb": {
+				"rich": true
+			}
+		},
+		"default": {
+			"type": "string",
+			"default": "",
+			"jfb": {
+				"rich": true
+			}
+		},
+		"placeholder": {
+			"type": "string",
+			"default": "",
+			"jfb": {
+				"rich": true
+			}
+		},
+		"required": {
+			"type": "boolean",
+			"default": false
+		},
+		"add_prev": {
+			"type": "boolean",
+			"default": false
+		},
+		"prev_label": {
+			"type": "string",
+			"default": "",
+			"jfb": {
+				"rich": true
+			}
+		},
+		"visibility": {
+			"type": "string",
+			"default": ""
+		},
+		"class_name": {
+			"type": "string",
+			"default": ""
+		},
+		"isPreview": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"usesContext": [
+		"jet-forms/repeater-field--name",
+		"jet-forms/repeater-row--default",
+		"jet-forms/repeater-row--current-index"
+	],
+	"title": ""
+}

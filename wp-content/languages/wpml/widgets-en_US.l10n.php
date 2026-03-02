@@ -1,0 +1,4 @@
+<?php
+return ['messages'=>['Descubra nossa plataforma de reservas online. Oferecemos uma seleção exclusiva dos melhores apartamentos por temporada no Rio de Janeiro.
+
+Anuncie seu imóvel conosco e garanta um alto retorno financeiro, enquanto nós cuidamos de tudo para você.'=>'Explore our online reservation platform featuring an exclusive selection of the finest vacation rentals in Rio de Janeiro. List your property with us to maximize your earnings, and let us handle the rest.','Search'=>'Search','widget body - 4b118e8b4b539bb004f8dc2eaf5e848d'=>'Explore our online reservation platform featuring an exclusive selection of the finest vacation rentals in Rio de Janeiro. List your property with us to maximize your earnings, and let us handle the rest.','widget title - 13348442cc6a27032d2b4aa28b75a5d3'=>'Search']];

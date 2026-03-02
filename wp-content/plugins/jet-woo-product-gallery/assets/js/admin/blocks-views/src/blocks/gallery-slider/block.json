@@ -1,0 +1,281 @@
+{
+	"apiVersion": 2,
+	"name": "jet-gallery/gallery-slider",
+	"category": "jet-gallery",
+	"title": "Gallery Slider",
+	"description": "Allow the users to see product images before their eyes in a form of slider, make it vertical or horizontal to match your website’s layout.",
+	"icon": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\" viewBox=\"0 0 64 64\" fill=\"none\">\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M14 8C14 5.79086 15.7909 4 18 4H47C49.2091 4 51 5.79086 51 8V40C51 42.2091 49.2091 44 47 44H18C15.7909 44 14 42.2091 14 40V8ZM18 6H47C48.1046 6 49 6.89543 49 8V40C49 41.1046 48.1046 42 47 42H18C16.8954 42 16 41.1046 16 40V8C16 6.89543 16.8954 6 18 6Z\" fill=\"currentColor\"></path>\n  <path d=\"M10.7071 28.7071C10.3166 29.0976 9.68342 29.0976 9.29289 28.7071L6.29289 25.7071C5.90237 25.3166 5.90237 24.6834 6.29289 24.2929L9.29289 21.2929C9.68342 20.9024 10.3166 20.9024 10.7071 21.2929C11.0976 21.6834 11.0976 22.3166 10.7071 22.7071L8.41421 25L10.7071 27.2929C11.0976 27.6834 11.0976 28.3166 10.7071 28.7071Z\" fill=\"currentColor\"></path>\n  <path d=\"M54.2929 21.2929C54.6834 20.9024 55.3166 20.9024 55.7071 21.2929L58.7071 24.2929C59.0976 24.6834 59.0976 25.3166 58.7071 25.7071L55.7071 28.7071C55.3166 29.0976 54.6834 29.0976 54.2929 28.7071C53.9024 28.3166 53.9024 27.6834 54.2929 27.2929L56.5858 25L54.2929 22.7071C53.9024 22.3166 53.9024 21.6834 54.2929 21.2929Z\" fill=\"currentColor\"></path>\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M18 46C15.7909 46 14 47.7909 14 50V56C14 58.2091 15.7909 60 18 60H21C23.2091 60 25 58.2091 25 56V50C25 47.7909 23.2091 46 21 46H18ZM21 48H18C16.8954 48 16 48.8954 16 50V56C16 57.1046 16.8954 58 18 58H21C22.1046 58 23 57.1046 23 56V50C23 48.8954 22.1046 48 21 48Z\" fill=\"currentColor\"></path>\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M31 46C28.7909 46 27 47.7909 27 50V56C27 58.2091 28.7909 60 31 60H34C36.2091 60 38 58.2091 38 56V50C38 47.7909 36.2091 46 34 46H31ZM34 48H31C29.8954 48 29 48.8954 29 50V56C29 57.1046 29.8954 58 31 58H34C35.1046 58 36 57.1046 36 56V50C36 48.8954 35.1046 48 34 48Z\" fill=\"currentColor\"></path>\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M44 46C41.7909 46 40 47.7909 40 50V56C40 58.2091 41.7909 60 44 60H47C49.2091 60 51 58.2091 51 56V50C51 47.7909 49.2091 46 47 46H44ZM47 48H44C42.8954 48 42 48.8954 42 50V56C42 57.1046 42.8954 58 44 58H47C48.1046 58 49 57.1046 49 56V50C49 48.8954 48.1046 48 47 48Z\" fill=\"currentColor\"></path>\n</svg>\n",
+	"textdomain": "jet-woo-product-gallery",
+	"keywords": [ "gallery", "slider", "media", "images", "carousel" ],
+	"attributes": {
+		"className": {
+			"type": "string",
+			"default": ""
+		},
+		"gallery_source": {
+			"type": "string",
+			"default": "manual"
+		},
+		"product_id": {
+			"type": "number"
+		},
+		"disable_feature_image": {
+			"type": "boolean",
+			"default": false
+		},
+		"enable_zoom": {
+			"type": "boolean",
+			"default": false
+		},
+		"zoom_magnify": {
+			"type": "number",
+			"default": 1
+		},
+		"gallery_key": {
+			"type": "string",
+			"default": ""
+		},
+		"enable_feature_image": {
+			"type": "boolean",
+			"default": false
+		},
+		"gallery_images": {
+			"type": "object",
+			"default": {}
+		},
+		"enable_video": {
+			"type": "boolean",
+			"default": false
+		},
+		"video_type": {
+			"type": "string",
+			"default": "youtube"
+		},
+		"youtube_url": {
+			"type": "string",
+			"default": "https://www.youtube.com/watch?v=CJO0u_HrWE8"
+		},
+		"vimeo_url": {
+			"type": "string",
+			"default": "https://vimeo.com/235215203"
+		},
+		"self_hosted_url": {
+			"type": "object",
+			"default": {}
+		},
+		"custom_placeholder": {
+			"type": "object",
+			"default": {}
+		},
+		"enable_gallery": {
+			"type": "boolean",
+			"default": false
+		},
+		"gallery_trigger_type": {
+			"type": "string",
+			"default": "button"
+		},
+		"gallery_button_icon": {
+			"type": "object",
+			"default": {}
+		},
+		"gallery_button_position": {
+			"type": "string",
+			"default": "top-right"
+		},
+		"show_on_hover": {
+			"type": "boolean",
+			"default": false
+		},
+		"gallery_show_caption": {
+			"type": "boolean",
+			"default": true
+		},
+		"gallery_show_fullscreen": {
+			"type": "boolean",
+			"default": true
+		},
+		"gallery_show_zoom": {
+			"type": "boolean",
+			"default": true
+		},
+		"gallery_show_share": {
+			"type": "boolean",
+			"default": true
+		},
+		"gallery_show_counter": {
+			"type": "boolean",
+			"default": true
+		},
+		"gallery_show_arrows": {
+			"type": "boolean",
+			"default": true
+		},
+		"video_display_in": {
+			"type": "string",
+			"default": "content"
+		},
+		"aspect_ratio": {
+			"type": "string",
+			"default": "16-9"
+		},
+		"first_place_video": {
+			"type": "boolean",
+			"default": false
+		},
+		"autoplay": {
+			"type": "boolean",
+			"default": false
+		},
+		"mute": {
+			"type": "boolean",
+			"default": false
+		},
+		"loop": {
+			"type": "boolean",
+			"default": false
+		},
+		"show_play_button": {
+			"type": "boolean",
+			"default": true
+		},
+		"play_button_icon": {
+			"type": "object",
+			"default": {}
+		},
+		"popup_button_icon": {
+			"type": "object",
+			"default": {}
+		},
+		"image_size": {
+			"type": "string",
+			"default": "full"
+		},
+		"thumbs_image_size": {
+			"type": "string",
+			"default": "full"
+		},
+		"slider_enable_infinite_loop": {
+			"type": "boolean",
+			"default": false
+		},
+		"slider_equal_slides_height": {
+			"type": "boolean",
+			"default": false
+		},
+		"slider_sensitivity": {
+			"type": "number",
+			"default": 0.8
+		},
+		"slider_enable_center_mode": {
+			"type": "boolean",
+			"default": false
+		},
+		"slider_center_mode_slides": {
+			"type": "number",
+			"default": 4
+		},
+		"slider_center_mode_slides_tablet": {
+			"type": "number",
+			"default": 3
+		},
+		"slider_center_mode_slides_mobile": {
+			"type": "number",
+			"default": 2
+		},
+		"slider_center_mode_space_between": {
+			"type": "number",
+			"default": 10
+		},
+		"slider_center_mode_space_between_tablet": {
+			"type": "number",
+			"default": 10
+		},
+		"slider_center_mode_space_between_mobile": {
+			"type": "number",
+			"default": 10
+		},
+		"slider_transition_effect": {
+			"type": "string",
+			"default": "slide"
+		},
+		"slider_show_nav": {
+			"type": "boolean",
+			"default": true
+		},
+		"slider_nav_arrow_prev": {
+			"type": "object",
+			"default": {}
+		},
+		"slider_nav_arrow_next": {
+			"type": "object",
+			"default": {}
+		},
+		"slider_show_pagination": {
+			"type": "boolean",
+			"default": true
+		},
+		"slider_pagination_type": {
+			"type": "string",
+			"default": "bullets"
+		},
+		"slider_pagination_controller_type": {
+			"type": "string",
+			"default": "bullets"
+		},
+		"slider_pagination_bullets_dynamic": {
+			"type": "boolean",
+			"default": false
+		},
+		"slider_pagination_direction": {
+			"type": "string",
+			"default": "horizontal"
+		},
+		"slider_pagination_v_position": {
+			"type": "string",
+			"default": "start"
+		},
+		"slider_pagination_h_position": {
+			"type": "string",
+			"default": "bottom"
+		},
+		"slider_show_thumb_nav": {
+			"type": "boolean",
+			"default": false
+		},
+		"pagination_thumbnails_slider_arrow_prev": {
+			"type": "object",
+			"default": {}
+		},
+		"pagination_thumbnails_slider_arrow_next": {
+			"type": "object",
+			"default": {}
+		},
+		"pagination_thumbnails_columns": {
+			"type": "number",
+			"default": 4
+		},
+		"pagination_thumbnails_columns_tablet": {
+			"type": "number",
+			"default": 3
+		},
+		"pagination_thumbnails_columns_mobile": {
+			"type": "number",
+			"default": 2
+		},
+		"pagination_thumbnails_space_between": {
+			"type": "number",
+			"default": 10
+		},
+		"pagination_thumbnails_space_between_tablet": {
+			"type": "number",
+			"default": 10
+		},
+		"pagination_thumbnails_space_between_mobile": {
+			"type": "number",
+			"default": 10
+		}
+	},
+	"viewStyle": "jet-gallery-widget-gallery-slider",
+	"editorStyle": "jet-gallery-widget-gallery-slider"
+}

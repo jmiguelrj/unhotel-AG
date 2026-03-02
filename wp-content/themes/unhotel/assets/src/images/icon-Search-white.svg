@@ -1,0 +1,27 @@
+<svg id="Search-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.716" height="38.333" viewBox="0 0 38.716 38.333">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+        stroke: #f4f2ec;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_55" data-name="Rectangle 55" class="cls-1" width="38.716" height="38.333"/>
+    </clipPath>
+  </defs>
+  <g id="Search-icon-2" data-name="Search-icon" class="cls-2">
+    <path id="Path_182" data-name="Path 182" class="cls-3" d="M24.835,13.168A11.667,11.667,0,1,1,13.167,1.5,11.668,11.668,0,0,1,24.835,13.168Z" transform="translate(-0.258 -0.259)"/>
+    <line id="Line_28" data-name="Line 28" class="cls-3" x1="16.267" y1="15.984" transform="translate(21.207 21.107)"/>
+  </g>
+</svg>

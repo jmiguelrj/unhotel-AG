@@ -1,0 +1,73 @@
+// ========================================
+// Variables
+// ========================================
+
+// Colors
+$primary-color: #f15e75;
+$primary-dark: #005177;
+$text-color: #3b4249;
+$text-light: #666;
+$text-dark: #333333;
+$bg-color: #fff;
+$bg-light: #f9f9f9;
+$bg-lighter: #f5f5f5;
+$border-color: #e0e0e0;
+$hover-color: #f58d9d;
+
+
+// Typography
+$primary-font:'Quicksand', sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+// Font Sizes
+$h1-size: 2.5rem;
+$h2-size: 1.5rem; 
+$h3-size: 1.75rem;
+$h4-size: .5rem;
+$h5-size: 1.25rem;
+$h6-size: 1rem;
+$paragraph-md-size: 1.125rem; //18px
+
+// Spacing
+$spacing-small: 0.5rem;
+$spacing-medium: 1rem; 
+$spacing-large: 1.5rem;
+$spacing-xlarge: 2rem;
+$spacing-xxlarge: 3rem;
+
+// Layout
+$max-width: 1200px;
+$sidebar-width: 300px;
+// Global container padding - uses CSS variables from WordPress Customizer
+// Values are always injected by PHP, no CSS fallback needed
+$container-padding-left: var(--container-padding-left);
+$container-padding-right: var(--container-padding-right);
+$container-padding-fallback: 20px; // Static fallback for calculations only
+
+// Border Radius
+$border-radius-small: 3px;
+$border-radius-medium: 4px;
+$border-radius-large: 5px;
+
+// Transitions
+$transition: .2s;
+$transition-duration: 0.2s;
+$transition-timing-function: ease;
+$transition-delay: 0s;
+$transition-property: all;
+
+// Breakpoints
+$breakpoint-mobile-xs: 400px;
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-wide: 1200px; 
+
+// Mobile max (for max-width queries - tablet - 1px)
+$breakpoint-mobile-max: 767px;
+
+
+//images
+$carousel-image-size: 377px;
+$carousel-item-height:377px;

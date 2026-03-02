@@ -1,0 +1,53 @@
+@use "../../../css/boxes";
+@use "../../../css/ui-constants";
+
+.ame-postbox-section {
+	@include boxes.ame-emulated-postbox();
+	max-width: 630px;
+
+	.ws-ame-postbox-content {
+		font-size: 14px;
+
+		display: flex;
+		flex-direction: column;
+	}
+
+	//Emulates "Tweaks" subgroup style.
+	.ame-gcg-title {
+		margin: 0;
+		font-weight: normal;
+	}
+
+	.ame-gcg-children {
+		margin-left: ui-constants.$controlChildLeftMargin;
+	}
+
+	//Horizontal layout for nested control groups.
+	.ame-general-control-group .ame-general-control-group {
+		display: grid;
+		grid-template-columns: minmax(7.5em, auto) 1fr;
+		column-gap: 4px;
+
+		.ame-gcg-title span {
+			vertical-align: middle;
+		}
+
+		.ame-gcg-children {
+			margin-left: 0;
+		}
+	}
+
+	//Borders for code editor. The default borderless style doesn't look good on a white background.
+	.CodeMirror {
+		box-sizing: border-box;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		margin-bottom: 4px;
+		//height: auto;
+	}
+
+	.CodeMirror:focus-within {
+		border-color: #007cba;
+		box-shadow: 0 0 0 1px #007cba;
+	}
+}

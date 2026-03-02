@@ -1,0 +1,311 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+// Buttons
+.wp-block-button a {
+    background-color: $primary-color;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 60px;
+    padding: 0 60px;
+    text-align: center;
+    border-radius: 6px;
+    margin: 0;
+    display: inline-block;
+
+    &:hover,
+    &:focus {
+        background-color: $hover-color;
+        color: #fff;
+    }
+    @media(max-width: 400px) {
+        font-size: 15px;
+       
+    }
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: $primary-color;
+    color: $bg-color;
+    border-radius: 3px;
+    font-weight: 500;
+    @include transition(background-color);
+
+    &:hover {
+        background-color: $primary-dark;
+        color: $bg-color;
+    }
+}
+
+// Posts
+.post {
+    margin-bottom: 3rem;
+}
+
+.post-title {
+    margin-bottom: 0.5rem;
+
+    a {
+        color: $text-color;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+.page-template-default {
+    .post-header.title-page-visible {
+        .post-title {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+.post-meta {
+    font-size: 0.875rem;
+    color: $text-light;
+    margin-bottom: 1rem;
+}
+
+.post-content {
+    margin-bottom: 1rem;
+
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+.post-thumbnail {
+    margin-bottom: 1.5rem;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.post-footer {
+    margin-top: 1rem;
+}
+
+.page-links {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid $border-color;
+
+    a {
+        display: inline-block;
+        margin: 0 0.25rem;
+        padding: 0.25rem 0.5rem;
+        background-color: $bg-lighter;
+        border-radius: 3px;
+        @include transition(background-color);
+
+        &:hover {
+            background-color: $primary-color;
+            color: $bg-color;
+        }
+    }
+}
+
+// Sidebar & Widgets
+body .widget {
+    background: transparent;
+    background-color: transparent;
+}
+
+.widget-area {
+    margin-top: 2rem;
+}
+
+.widget {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: $bg-light;
+    border-radius: 4px;
+}
+
+.widget-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid $border-color;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid $border-color;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.widget a {
+    color: $text-color;
+
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+// Comments
+.comments-area {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    background: #fff;
+    padding: 40px;
+    margin-bottom: 30px;
+    border:0;
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comment {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: $bg-light;
+    border-radius: 4px;
+}
+
+.comment-author {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.comment-meta {
+    font-size: 0.875rem;
+    color: $text-light;
+    margin-bottom: 1rem;
+}
+
+.comment-content {
+    margin-bottom: 1rem;
+}
+
+.comment-reply-link {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: $primary-color;
+    color: $bg-color;
+    border-radius: 3px;
+    font-size: 0.875rem;
+    @include transition(background-color);
+
+    &:hover {
+        background-color: $primary-dark;
+        color: $bg-color;
+    }
+}
+
+.comment-form {
+    margin-top: 2rem;
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid $border-color;
+        border-radius: 3px;
+        margin-bottom: 1rem;
+        font-family: inherit;
+    }
+textarea {
+        min-height: 150px;
+}
+    input[type="submit"] {
+        padding: 0.75rem 1.5rem;
+        background-color: $primary-color;
+        color: $bg-color;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-weight: 500;
+        @include transition(background-color);
+
+        &:hover {
+            background-color: $primary-dark;
+        }
+    }
+}
+
+// Navigation - Mobile First
+.post-navigation {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid $border-color;
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+// Tablet and up: Horizontal navigation
+@media (min-width: $breakpoint-tablet) {
+    .post-navigation .nav-links {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
+
+.nav-subtitle {
+    display: block;
+    font-size: 0.875rem;
+    color: $text-light;
+    margin-bottom: 0.25rem;
+}
+
+.nav-title {
+    font-weight: 600;
+}
+
+// Note: Site header, branding, and navigation styles are in _header.scss
+
+// Footer (basic styles - detailed in _footer.scss)
+.site-footer {
+    background-color: $bg-lighter;
+    border-top: 1px solid $border-color;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    font-size: 0.875rem;
+    color: $text-light;
+}
+
+.footer-widgets {
+    margin-bottom: 2rem;
+}
+
+.site-info {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid $border-color;
+
+    p {
+        margin: 0;
+    }
+}

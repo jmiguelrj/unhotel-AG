@@ -1,0 +1,33 @@
+{
+  "name": "unhotel-theme",
+  "version": "1.0.0",
+  "description": "Unhotel WordPress Theme with Gulp build process",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --max-old-space-size=8192 ./node_modules/gulp/bin/gulp.js",
+    "build": "node --max-old-space-size=8192 ./node_modules/gulp/bin/gulp.js build",
+    "watch": "node --max-old-space-size=8192 ./node_modules/gulp/bin/gulp.js watch",
+    "blockStyles": "node --max-old-space-size=8192 ./node_modules/gulp/bin/gulp.js blockStyles"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "gulp",
+    "sass"
+  ],
+  "author": "Unhotel",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.69.5"
+  }
+}

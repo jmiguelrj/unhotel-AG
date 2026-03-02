@@ -1,0 +1,5133 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Jet Appointments Booking\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-19 13:46+0300\n"
+"PO-Revision-Date: 2025-08-19 13:46+0300\n"
+"Last-Translator: \n"
+"Language-Team: Croco\n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;_ex:1,2c;_n:1,2;_nx:4c,1,2;_n_noop:1,2;"
+"_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: cherry-framework\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+
+#: assets/gutenberg/node_modules/@wordpress/a11y/build-module/script/add-intro-text.js:18
+#, fuzzy
+#| msgid "Actions"
+msgid "Notifications"
+msgstr "Дії"
+
+#: assets/gutenberg/node_modules/@wordpress/api-fetch/build-module/index.js:122
+#: assets/gutenberg/node_modules/@wordpress/api-fetch/src/index.js:131
+msgid "You are probably offline."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/api-fetch/build-module/middlewares/media-upload.js:71
+#: assets/gutenberg/node_modules/@wordpress/api-fetch/src/middlewares/media-upload.js:84
+msgid ""
+"Media upload failed. If this is a photo or a large image, please scale it "
+"down and try again."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/api-fetch/build-module/utils/response.js:34
+#: assets/gutenberg/node_modules/@wordpress/api-fetch/src/utils/response.js:36
+msgid "The response is not a valid JSON response."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/api-fetch/build-module/utils/response.js:70
+#: assets/gutenberg/node_modules/@wordpress/api-fetch/src/utils/response.js:80
+msgid "An unknown error occurred."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/alignment-matrix-control/index.js:25
+msgid "Alignment Matrix Control"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/alignment-matrix-control/utils.js:14
+msgid "Top Left"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/alignment-matrix-control/utils.js:15
+msgid "Top Center"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/alignment-matrix-control/utils.js:16
+msgid "Top Right"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/alignment-matrix-control/utils.js:17
+msgid "Center Left"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/alignment-matrix-control/utils.js:18
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/alignment-matrix-control/utils.js:19
+msgid "Center"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/alignment-matrix-control/utils.js:20
+msgid "Center Right"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/alignment-matrix-control/utils.js:21
+msgid "Bottom Left"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/alignment-matrix-control/utils.js:22
+msgid "Bottom Center"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/alignment-matrix-control/utils.js:23
+msgid "Bottom Right"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/angle-picker-control/index.js:25
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/custom-gradient-picker/index.native.js:90
+#: assets/gutenberg/node_modules/@wordpress/components/src/custom-gradient-picker/index.native.js:98
+msgid "Angle"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/autocomplete/autocompleter-ui.js:95
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/combobox-control/index.js:247
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/form-token-field/index.js:448
+#, javascript-format
+msgid "%d result found, use up and down arrow keys to navigate."
+msgid_plural "%d results found, use up and down arrow keys to navigate."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/autocomplete/autocompleter-ui.js:98
+#, javascript-format
+msgid ""
+"Initial %d result loaded. Type to filter all available results. Use up and "
+"down arrow keys to navigate."
+msgid_plural ""
+"Initial %d results loaded. Type to filter all available results. Use up and "
+"down arrow keys to navigate."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/autocomplete/autocompleter-ui.js:101
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/combobox-control/index.js:247
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/form-token-field/index.js:448
+msgid "No results."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/autocomplete/autocompleter-ui.native.js:110
+#: assets/gutenberg/node_modules/@wordpress/components/src/autocomplete/autocompleter-ui.native.js:153
+msgid "Slash inserter results"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/autocomplete/autocompleter-ui.native.js:123
+#: assets/gutenberg/node_modules/@wordpress/components/src/autocomplete/autocompleter-ui.native.js:184
+#, javascript-format
+msgid "%s block"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-box-control/border-box-control-linked-button/component.js:22
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/box-control/linked-button.js:17
+msgid "Unlink sides"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-box-control/border-box-control-linked-button/component.js:22
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/box-control/linked-button.js:17
+msgid "Link sides"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-box-control/border-box-control-split-controls/component.js:66
+msgid "Top border"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-box-control/border-box-control-split-controls/component.js:73
+msgid "Left border"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-box-control/border-box-control-split-controls/component.js:81
+msgid "Right border"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-box-control/border-box-control-split-controls/component.js:89
+msgid "Bottom border"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-box-control/border-box-control/component.js:90
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/box-control/utils.js:130
+msgid "Mixed"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-control/border-control-dropdown/component.js:54
+#, javascript-format
+msgid ""
+"Border color and style picker. The currently selected color is called "
+"\"%1$s\" and has a value of \"%2$s\". The currently selected style is "
+"\"%3$s\"."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-control/border-control-dropdown/component.js:56
+#, javascript-format
+msgid ""
+"Border color and style picker. The currently selected color is called "
+"\"%1$s\" and has a value of \"%2$s\"."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-control/border-control-dropdown/component.js:62
+#, javascript-format
+msgid ""
+"Border color and style picker. The currently selected color has a value of "
+"\"%1$s\". The currently selected style is \"%2$s\"."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-control/border-control-dropdown/component.js:64
+#, javascript-format
+msgid ""
+"Border color and style picker. The currently selected color has a value of "
+"\"%s\"."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-control/border-control-dropdown/component.js:66
+msgid "Border color and style picker."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-control/border-control-dropdown/component.js:71
+#, javascript-format
+msgid ""
+"Border color picker. The currently selected color is called \"%1$s\" and has "
+"a value of \"%2$s\"."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-control/border-control-dropdown/component.js:76
+#, javascript-format
+msgid ""
+"Border color picker. The currently selected color has a value of \"%s\"."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-control/border-control-dropdown/component.js:78
+msgid "Border color picker."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-control/border-control-dropdown/component.js:116
+msgid "Border color and style picker"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-control/border-control-dropdown/component.js:145
+msgid "Style"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-control/border-control-dropdown/component.js:160
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/box-control/index.js:157
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/combobox-control/index.js:300
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.js:205
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/color-settings/palette.screen.native.js:106
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/range-control/index.js:299
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/tools-panel/tools-panel-header/component.js:34
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/color-settings/palette.screen.native.js:118
+#: templates/admin/jet-apb-settings/set-up.php:250
+msgid "Reset"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-control/border-control-style-picker/component.js:14
+msgid "Solid"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-control/border-control-style-picker/component.js:18
+msgid "Dashed"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-control/border-control-style-picker/component.js:22
+msgid "Dotted"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-control/border-control/component.js:93
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/border-control/border-control/component.js:104
+msgid "Border width"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/box-control/index.js:61
+msgid "Box Control"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/box-control/utils.js:125
+msgid "All sides"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/box-control/utils.js:126
+msgid "Top side"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/box-control/utils.js:127
+msgid "Bottom side"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/box-control/utils.js:128
+msgid "Left side"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/box-control/utils.js:129
+msgid "Right side"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/box-control/utils.js:131
+msgid "Top and bottom sides"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/box-control/utils.js:132
+msgid "Left and right sides"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-palette/index.js:52
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-palette/index.js:62
+#, javascript-format
+msgid "Color code: %s"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-palette/index.js:60
+#, fuzzy, javascript-format
+#| msgid "Provider name"
+msgid "Color: %s"
+msgstr "Назва Провайдера"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-palette/index.js:175
+#, javascript-format
+msgid ""
+"Custom color picker. The currently selected color is called \"%1$s\" and has "
+"a value of \"%2$s\"."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-palette/index.js:175
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-palette/index.js:210
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/duotone-picker/duotone-picker.js:133
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/gradient-picker/index.js:132
+msgid "Custom color picker."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-palette/index.js:185
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/duotone-picker/duotone-picker.js:146
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/gradient-picker/index.js:214
+#: includes/admin/pages/appointments.php:159
+#: includes/admin/pages/appointments.php:166
+#: templates/admin/jet-apb-appointments/appointments-filter.php:91
+#: templates/admin/jet-apb-settings/settings-tools.php:12
+msgid "Clear"
+msgstr "Очистити"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-palette/index.js:243
+msgid "No color selected"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-palette/index.native.js:66
+#: assets/gutenberg/node_modules/@wordpress/components/src/color-palette/index.native.js:106
+msgid "Navigates to customize the gradient"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-palette/index.native.js:66
+#: assets/gutenberg/node_modules/@wordpress/components/src/color-palette/index.native.js:107
+msgid "Navigates to custom color picker"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-palette/index.native.js:67
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-palette/utils.js:57
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/font-size-picker-select.js:20
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.js:62
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.js:149
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.native.js:133
+#: assets/gutenberg/node_modules/@wordpress/components/src/color-palette/index.native.js:108
+#: assets/gutenberg/node_modules/@wordpress/components/src/font-size-picker/index.native.js:166
+#, fuzzy
+#| msgid "Custom Schedule"
+msgid "Custom"
+msgstr "Касомний Розклад"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-palette/index.native.js:136
+#: assets/gutenberg/node_modules/@wordpress/components/src/color-palette/index.native.js:192
+#, javascript-format
+msgid "Unlabeled color. %s"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-picker/color-copy-button.js:56
+msgid "Copied!"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-picker/color-copy-button.js:56
+msgid "Copy"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-picker/component.js:76
+#, fuzzy
+#| msgid "Provider name"
+msgid "Color format"
+msgstr "Назва Провайдера"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-picker/hex-input.js:55
+msgid "Hex color"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-picker/index.native.js:152
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/confirm-dialog/component.js:58
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/nav-bar/back-button.native.js:75
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/picker/index.android.js:88
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/picker/index.ios.js:37
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/search-control/index.native.js:178
+#: assets/gutenberg/node_modules/@wordpress/components/src/color-picker/index.native.js:172
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/nav-bar/back-button.native.js:83
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/picker/index.ios.js:35
+#: assets/gutenberg/node_modules/@wordpress/components/src/search-control/index.native.js:242
+#: templates/admin/common/wc-details-builder.php:93
+#: templates/admin/jet-apb-appointments/appointments-filter.php:118
+#: templates/admin/jet-apb-appointments/popup.php:279
+#: templates/admin/jet-apb-appointments/popup.php:298
+#: templates/admin/jet-apb-appointments/popup.php:308
+#: templates/admin/jet-apb-settings/settings-working-hours.php:491
+#: templates/admin/jet-apb-settings/settings-working-hours.php:531
+msgid "Cancel"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/color-picker/index.native.js:172
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/nav-bar/apply-button.native.js:28
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/nav-bar/apply-button.native.js:33
+#: assets/gutenberg/node_modules/@wordpress/components/src/color-picker/index.native.js:199
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/nav-bar/apply-button.native.js:34
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/nav-bar/apply-button.native.js:39
+#: templates/admin/jet-apb-settings/settings-macros-inserter.php:37
+msgid "Apply"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/combobox-control/index.js:107
+msgid "Item selected."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/confirm-dialog/component.js:59
+msgid "OK"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/custom-gradient-picker/constants.js:13
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/color-settings/utils.native.js:10
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/color-settings/utils.native.js:12
+msgid "Linear"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/custom-gradient-picker/constants.js:16
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/color-settings/utils.native.js:13
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/color-settings/utils.native.js:13
+msgid "Radial"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/custom-gradient-picker/gradient-bar/control-points.js:39
+#, javascript-format
+msgid "Gradient control point at position %1$s%% with color code %2$s."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/custom-gradient-picker/gradient-bar/control-points.js:50
+msgid ""
+"Use your left or right arrow keys or drag and drop with the mouse to change "
+"the gradient position. Press the button to change the color or remove the "
+"control point."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/custom-gradient-picker/gradient-bar/control-points.js:192
+msgid "Remove Control Point"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/custom-gradient-picker/index.js:80
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:195
+#: templates/admin/common/wc-details-builder.php:21
+msgid "Type"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/custom-gradient-picker/index.native.js:81
+#: assets/gutenberg/node_modules/@wordpress/components/src/custom-gradient-picker/index.native.js:88
+#, fuzzy
+#| msgid "Service name"
+msgid "Gradient Type"
+msgstr "Назва Сервісу"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/custom-select-control-v2/custom-select.js:26
+#, fuzzy
+#| msgid "Select..."
+msgid "Select an item"
+msgstr "Обрати…"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/custom-select-control-v2/custom-select.js:31
+#, javascript-format
+msgid "%s items selected"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/custom-select-control/index.js:49
+#, fuzzy, javascript-format
+#| msgid "Current Post ID"
+msgid "Currently selected: %s"
+msgstr "ІД поточного Поста"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/date/index.js:85
+#: assets/js/admin/appointments.js:124
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:61
+msgid "Calendar"
+msgstr "Календар"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/date/index.js:90
+msgid "View previous month"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/date/index.js:105
+msgid "View next month"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/date/index.js:226
+#, javascript-format
+msgid "%1$s. Selected. There is %2$d event"
+msgid_plural "%1$s. Selected. There are %2$d events"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/date/index.js:230
+#, javascript-format
+msgid "%1$s. Selected"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/date/index.js:234
+#, javascript-format
+msgid "%1$s. There is %2$d event"
+msgid_plural "%1$s. There are %2$d events"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:66
+#: includes/form.php:484
+#: templates/admin/jet-apb-settings/settings-labels.php:67
+msgid "January"
+msgstr "Січень"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:69
+#: includes/form.php:485
+#: templates/admin/jet-apb-settings/settings-labels.php:75
+msgid "February"
+msgstr "Лютий"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:72
+#: includes/form.php:486
+#: templates/admin/jet-apb-settings/settings-labels.php:83
+msgid "March"
+msgstr "Березень"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:75
+#: includes/form.php:487
+#: templates/admin/jet-apb-settings/settings-labels.php:91
+msgid "April"
+msgstr "Квітень"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:78
+#: includes/form.php:488
+#: templates/admin/jet-apb-settings/settings-labels.php:99
+msgid "May"
+msgstr "Травень"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:81
+#: includes/form.php:489
+#: templates/admin/jet-apb-settings/settings-labels.php:107
+msgid "June"
+msgstr "Червень"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:84
+#: includes/form.php:490
+#: templates/admin/jet-apb-settings/settings-labels.php:115
+msgid "July"
+msgstr "Липень"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:87
+#: includes/form.php:491
+#: templates/admin/jet-apb-settings/settings-labels.php:123
+msgid "August"
+msgstr "Серпень"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:90
+#: includes/form.php:492
+#: templates/admin/jet-apb-settings/settings-labels.php:131
+msgid "September"
+msgstr "Вересень"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:93
+#: includes/form.php:493
+#: templates/admin/jet-apb-settings/settings-labels.php:139
+msgid "October"
+msgstr "Жовтень"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:96
+#: includes/form.php:494
+#: templates/admin/jet-apb-settings/settings-labels.php:147
+msgid "November"
+msgstr "Листопад"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:99
+#: includes/form.php:495
+#: templates/admin/jet-apb-settings/settings-labels.php:155
+msgid "December"
+msgstr "Грудень"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:147
+#: includes/admin/settings.php:220 includes/time-recurring.php:67
+msgid "Day"
+msgstr "День"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:165
+#: includes/admin/settings.php:228 includes/time-recurring.php:69
+msgid "Month"
+msgstr "Місяць"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:181
+#: includes/admin/settings.php:232 includes/time-recurring.php:70
+msgid "Year"
+msgstr "Рік"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:216
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:221
+#: includes/wc-integration.php:515
+msgid "Time"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:237
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/index.js:242
+#: includes/admin/pages/appointments.php:111
+#: includes/admin/pages/appointments.php:158
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:148
+#: includes/listings.php:237 includes/wc-integration.php:510
+#: includes/wc-order-details-builder.php:353
+#: templates/admin/common/wc-details-builder.php:26
+#: templates/admin/jet-apb-appointments/appointments-timeline.php:5
+msgid "Date"
+msgstr "Дата"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/time-input/index.js:84
+#, fuzzy
+#| msgid "Hour"
+msgid "Hours"
+msgstr "Година"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/time-input/index.js:107
+#, fuzzy
+#| msgid "Minute"
+msgid "Minutes"
+msgstr "Хвилина"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/time-input/index.js:130
+msgid "Select AM or PM"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/time-input/index.js:138
+#, fuzzy
+#| msgid "Mo"
+msgid "AM"
+msgstr "Пн"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/time-input/index.js:141
+#, fuzzy
+#| msgid "Mo"
+msgid "PM"
+msgstr "Пн"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/date-time/time/timezone.js:36
+msgid "Coordinated Universal Time"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/dimension-control/index.js:93
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/font-size-picker-select.js:15
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.native.js:74
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.native.js:98
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/color-cell.native.js:28
+#: assets/gutenberg/node_modules/@wordpress/components/src/font-size-picker/index.native.js:85
+#: assets/gutenberg/node_modules/@wordpress/components/src/font-size-picker/index.native.js:112
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/color-cell.native.js:27
+msgid "Default"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/dimension-control/sizes.js:28
+msgctxt "Size of a UI element"
+msgid "None"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/dimension-control/sizes.js:31
+msgctxt "Size of a UI element"
+msgid "Small"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/dimension-control/sizes.js:34
+msgctxt "Size of a UI element"
+msgid "Medium"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/dimension-control/sizes.js:37
+msgctxt "Size of a UI element"
+msgid "Large"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/dimension-control/sizes.js:40
+msgctxt "Size of a UI element"
+msgid "Extra Large"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/drop-zone/index.js:119
+msgid "Drop files to upload"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/duotone-picker/color-list-picker/index.js:55
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/palette-edit/index.js:360
+#, fuzzy
+#| msgid "Provider name"
+msgid "Color options"
+msgstr "Назва Провайдера"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/duotone-picker/duotone-picker.js:72
+msgid "Unset"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/duotone-picker/duotone-picker.js:94
+#, javascript-format
+msgid "Duotone code: %s"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/duotone-picker/duotone-picker.js:97
+#, javascript-format
+msgid "Duotone: %s"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/duotone-picker/duotone-picker.js:156
+msgid "Shadows"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/duotone-picker/duotone-picker.js:156
+msgid "Highlights"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/external-link/index.js:52
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/external-link/index.native.js:19
+#: assets/gutenberg/node_modules/@wordpress/components/src/external-link/index.native.js:17
+msgid "Open link in a browser"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/focal-point-picker/controls.js:44
+msgid "Left"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/focal-point-picker/controls.js:45
+msgid "Focal point left position"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/focal-point-picker/controls.js:50
+msgid "Top"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/focal-point-picker/controls.js:51
+msgid "Focal point top position"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/focal-point-picker/index.js:262
+msgid "Media preview"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/focal-point-picker/index.native.js:225
+#: assets/gutenberg/node_modules/@wordpress/components/src/focal-point-picker/index.native.js:243
+msgid "Drag to adjust focal point"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/focal-point-picker/index.native.js:236
+msgid "X-Axis Position"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/focal-point-picker/index.native.js:244
+msgid "Y-Axis Position"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/constants.js:13
+#, fuzzy
+#| msgid "Sa"
+msgid "S"
+msgstr "Сб"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/constants.js:14
+#: assets/gutenberg/node_modules/moment/min/locales.min.js:1
+#, fuzzy
+#| msgid "Mo"
+msgid "M"
+msgstr "Пн"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/constants.js:15
+msgid "L"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/constants.js:16
+msgid "XL"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/constants.js:17
+msgid "XXL"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/constants.js:25
+msgid "Small"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/constants.js:25
+msgid "Medium"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/constants.js:25
+msgid "Large"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/constants.js:25
+msgid "Extra Large"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/constants.js:25
+msgid "Extra Extra Large"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/font-size-picker-select.js:55
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/font-size-picker-toggle-group.js:24
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.js:98
+msgid "Font size"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/font-size-picker-select.js:59
+#, fuzzy, javascript-format
+#| msgid "Current Post ID"
+msgid "Currently selected font size: %s"
+msgstr "ІД поточного Поста"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.js:103
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.js:104
+msgid "Size"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.js:109
+msgid "Use size preset"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.js:109
+#, fuzzy
+#| msgid "Custom Schedule"
+msgid "Set custom size"
+msgstr "Касомний Розклад"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.js:175
+#, fuzzy
+#| msgid "Custom Schedule"
+msgid "Custom Size"
+msgstr "Касомний Розклад"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.native.js:61
+#: assets/gutenberg/node_modules/@wordpress/components/src/font-size-picker/index.native.js:59
+#, fuzzy
+#| msgid "Custom Schedule"
+msgid "Font Size"
+msgstr "Касомний Розклад"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.native.js:67
+#: assets/gutenberg/node_modules/@wordpress/components/src/font-size-picker/index.native.js:67
+#, javascript-format
+msgid "Font Size, %s"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.native.js:74
+#: assets/gutenberg/node_modules/@wordpress/components/src/font-size-picker/index.native.js:81
+#, javascript-format
+msgctxt "font size"
+msgid "%1$s (%2$s)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.native.js:80
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet-select-control/index.native.js:62
+#: assets/gutenberg/node_modules/@wordpress/components/src/font-size-picker/index.native.js:92
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet-select-control/index.native.js:74
+#, javascript-format
+msgid "Navigates to select %s"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.native.js:102
+#: assets/gutenberg/node_modules/@wordpress/components/src/font-size-picker/index.native.js:117
+#, fuzzy
+#| msgid "Select..."
+msgid "Selected: Default"
+msgstr "Обрати…"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.native.js:103
+#: assets/gutenberg/node_modules/@wordpress/components/src/font-size-picker/index.native.js:119
+msgid "Double tap to select default font size"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.native.js:124
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet-select-control/index.native.js:88
+#: assets/gutenberg/node_modules/@wordpress/components/src/font-size-picker/index.native.js:147
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet-select-control/index.native.js:106
+#, fuzzy, javascript-format
+#| msgid "Select..."
+msgid "Selected: %s"
+msgstr "Обрати…"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/font-size-picker/index.native.js:125
+#: assets/gutenberg/node_modules/@wordpress/components/src/font-size-picker/index.native.js:153
+msgid "Double tap to select font size"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/form-token-field/index.js:47
+msgid "Add item"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/form-token-field/index.js:61
+msgid "Item added."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/form-token-field/index.js:62
+msgid "Item removed."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/form-token-field/index.js:63
+msgid "Remove item"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/form-token-field/index.js:64
+msgid "Invalid item"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/form-token-field/index.js:555
+msgid "Separate with commas, spaces, or the Enter key."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/form-token-field/index.js:555
+msgid "Separate with commas or the Enter key."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/form-token-field/suggestions-list.js:115
+msgid "No items found"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/form-token-field/token.js:47
+#, javascript-format
+msgid "%1$s (%2$s of %3$s)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/gradient-picker/index.js:40
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/gradient-picker/index.js:50
+#, fuzzy, javascript-format
+#| msgid "Service name"
+msgid "Gradient code: %s"
+msgstr "Назва Сервісу"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/gradient-picker/index.js:48
+#, fuzzy, javascript-format
+#| msgid "Service name"
+msgid "Gradient: %s"
+msgstr "Назва Сервісу"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/guide/index.js:56
+#: templates/admin/jet-apb-settings/set-up.php:232
+msgid "Finish"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/guide/index.js:131
+msgid "Previous"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/guide/index.js:137
+#: templates/admin/jet-apb-settings/set-up.php:235
+msgid "Next"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/guide/page-control.js:19
+msgid "Guide controls"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/guide/page-control.js:29
+#, javascript-format
+msgid "Page %1$d of %2$d"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet-select-control/index.native.js:59
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet-select-control/index.native.js:68
+#, javascript-format
+msgid "%1$s. Currently selected: %2$s"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet-select-control/index.native.js:89
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet-select-control/index.native.js:111
+msgid "Double tap to select"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/cell.native.js:215
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/cell.native.js:294
+#, javascript-format
+msgctxt "inline textinput cell"
+msgid "%s. Empty"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/cell.native.js:218
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/cell.native.js:300
+#, javascript-format
+msgctxt "inline textinput cell"
+msgid "%1$s, %2$s. Empty"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/cell.native.js:221
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/cell.native.js:308
+#, javascript-format
+msgctxt "inline textinput cell"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/cell.native.js:223
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/cell.native.js:314
+#, javascript-format
+msgctxt "inline textinput cell"
+msgid "%1$s, %2$s, %3$s"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/cell.native.js:239
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/cell.native.js:354
+msgid "Double tap to edit this value"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/color-cell.native.js:25
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/color-cell.native.js:23
+msgid "Double tap to go to color settings"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/link-cell.native.js:24
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/link-picker/index.native.js:92
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/link-cell.native.js:24
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/link-picker/index.native.js:102
+msgid "Link to"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/link-cell.native.js:27
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/link-picker/index.native.js:103
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/link-cell.native.js:26
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/link-picker/index.native.js:111
+msgid "Search or type URL"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/link-suggestion-item-cell.native.js:30
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/link-suggestion-item-cell.native.js:31
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/link-settings/test/edit.native.js:263
+msgid "From clipboard"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/link-suggestion-item-cell.native.js:32
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/link-suggestion-item-cell.native.js:33
+msgid "Add this email link"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/link-suggestion-item-cell.native.js:34
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/link-suggestion-item-cell.native.js:35
+msgid "Add this telephone link"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/link-suggestion-item-cell.native.js:36
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/link-suggestion-item-cell.native.js:37
+msgid "Add this link"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/nav-bar/apply-button.native.js:29
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/nav-bar/apply-button.native.js:35
+#, fuzzy
+#| msgid "Appointment Settings"
+msgid "Applies the setting"
+msgstr "Налаштування Зустрічі"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/nav-bar/back-button.native.js:30
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/nav-bar/back-button.native.js:30
+msgid "Go back"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/nav-bar/back-button.native.js:31
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/nav-bar/back-button.native.js:32
+msgid "Navigates to the previous content sheet"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/nav-bar/back-button.native.js:53
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/navigation/back-button/index.js:49
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/nav-bar/back-button.native.js:63
+msgid "Back"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/radio-cell.native.js:26
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/radio-cell.native.js:28
+msgid "Double tap to select the option"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/range-cell.native.js:179
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/stepper-cell/index.native.js:152
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/range-cell.native.js:163
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/stepper-cell/index.native.js:158
+msgid "double-tap to change unit"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/range-cell.native.js:183
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/stepper-cell/index.native.js:155
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/range-cell.native.js:169
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/stepper-cell/index.native.js:163
+#, javascript-format
+msgid "%1$s. %2$s is %3$s %4$s."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/range-text-input.native.js:163
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/range-text-input.native.js:169
+#, fuzzy, javascript-format
+#| msgid "Current Post ID"
+msgid "Current value is %s"
+msgstr "ІД поточного Поста"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/switch-cell.native.js:29
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/switch-cell.native.js:29
+#, javascript-format
+msgctxt "switch control"
+msgid "%s. On"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/switch-cell.native.js:30
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/switch-cell.native.js:34
+#, javascript-format
+msgctxt "switch control"
+msgid "%s. Off"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/switch-cell.native.js:33
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/switch-cell.native.js:41
+#, javascript-format
+msgctxt "switch control"
+msgid "%1$s, %2$s. On"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/switch-cell.native.js:34
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/switch-cell.native.js:47
+#, javascript-format
+msgctxt "switch control"
+msgid "%1$s, %2$s. Off"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/bottom-sheet/switch-cell.native.js:41
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/bottom-sheet/switch-cell.native.js:60
+msgid "Double tap to toggle setting"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/color-settings/gradient-picker-screen.native.js:31
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/color-settings/palette.screen.native.js:182
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/color-settings/gradient-picker-screen.native.js:26
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/color-settings/palette.screen.native.js:219
+#, fuzzy
+#| msgid "Custom Schedule"
+msgid "Customize Gradient"
+msgstr "Касомний Розклад"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/color-settings/palette.screen.native.js:99
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/color-settings/palette.screen.native.js:113
+msgid "Clear selected color"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/color-settings/palette.screen.native.js:140
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/color-settings/palette.screen.native.js:166
+msgid "Select a color above"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/color-settings/utils.native.js:30
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/color-settings/utils.native.js:31
+#: includes/form-widget.php:167 includes/form-widget.php:223
+#: includes/form-widget.php:334 includes/form-widget.php:365
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:196
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:253
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:362
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:389
+msgid "Color"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/color-settings/utils.native.js:30
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/color-settings/utils.native.js:31
+#, fuzzy
+#| msgid "Service name"
+msgid "Gradient"
+msgstr "Назва Сервісу"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/focal-point-settings-panel/index.native.js:47
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/focal-point-settings-panel/index.native.js:52
+msgid "Edit focal point"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/html-text-input/index.native.js:95
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/html-text-input/index.native.js:114
+msgid "Add title"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/html-text-input/index.native.js:108
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/html-text-input/index.native.js:128
+msgid "Start writing…"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/image/image-editing-button.native.js:19
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/image/image-editing-button.native.js:22
+msgid "Double tap to open Action Sheet to edit, replace, or clear the image"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/image/image-editing-button.native.js:19
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/image/image-editing-button.native.js:25
+msgid "Double tap to open Bottom Sheet to edit, replace, or clear the image"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/image/image-editing-button.native.js:37
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/image/image-editing-button.native.js:42
+msgid "Edit image"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/image/index.native.js:197
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/image/index.native.js:285
+msgid "Double tap and hold to edit"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/link-picker/index.native.js:124
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/link-picker/index.native.js:139
+#, javascript-format
+msgid "Copy URL from the clipboard, %s"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/media-edit/index.native.js:18
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/media-edit/index.native.js:23
+#: templates/admin/jet-apb-appointments/popup.php:332
+msgid "Edit"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/media-edit/index.native.js:25
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/media-edit/index.native.js:31
+msgid "Replace"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/mobile/media-edit/index.native.js:89
+#: assets/gutenberg/node_modules/@wordpress/components/src/mobile/media-edit/index.native.js:113
+msgid "Media options"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/modal/index.js:247
+msgid "Scrollable section"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/modal/index.js:270
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/notice/index.js:136
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/popover/index.js:297
+msgid "Close"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/navigation/menu/menu-title-search.js:50
+#, javascript-format
+msgid "%d result found."
+msgid_plural "%d results found."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/navigation/menu/menu-title-search.js:67
+#, fuzzy, javascript-format
+#| msgid "Search"
+msgid "Search %s"
+msgstr "Пошук"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/navigation/menu/menu-title.js:44
+#, fuzzy, javascript-format
+#| msgid "Search"
+msgid "Search in %s"
+msgstr "Пошук"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/navigation/menu/search-no-results-found.js:26
+msgid "No results found."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/notice/index.js:48
+msgid "Warning notice"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/notice/index.js:50
+msgid "Information notice"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/notice/index.js:52
+msgid "Error notice"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/notice/index.js:55
+msgid "Notice"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/number-control/index.js:199
+msgid "Increment"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/number-control/index.js:205
+msgid "Decrement"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/palette-edit/index.js:96
+#, fuzzy, javascript-format
+#| msgid "Provider name"
+msgid "Color %s"
+msgstr "Назва Провайдера"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/palette-edit/index.js:177
+#, javascript-format
+msgid "Edit: %s"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/palette-edit/index.js:186
+#, fuzzy
+#| msgid "Service name"
+msgid "Gradient name"
+msgstr "Назва Сервісу"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/palette-edit/index.js:186
+#, fuzzy
+#| msgid "Provider name"
+msgid "Color name"
+msgstr "Назва Провайдера"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/palette-edit/index.js:203
+#, javascript-format
+msgid "Remove color: %s"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/palette-edit/index.js:330
+#, fuzzy
+#| msgid "Done!"
+msgid "Done"
+msgstr "Готово!"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/palette-edit/index.js:336
+msgid "Add gradient"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/palette-edit/index.js:336
+msgid "Add color"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/palette-edit/index.js:360
+#, fuzzy
+#| msgid "Service name"
+msgid "Gradient options"
+msgstr "Назва Сервісу"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/palette-edit/index.js:377
+msgid "Show details"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/palette-edit/index.js:388
+msgid "Remove all gradients"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/palette-edit/index.js:388
+msgid "Remove all colors"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/palette-edit/index.js:398
+msgid "Reset gradient"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/palette-edit/index.js:398
+msgid "Reset colors"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/progress-bar/index.js:33
+msgid "Loading …"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.js:73
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.native.js:55
+#: assets/gutenberg/node_modules/@wordpress/components/src/query-controls/index.native.js:69
+msgid "Order by"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.js:76
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.native.js:17
+#: assets/gutenberg/node_modules/@wordpress/components/src/query-controls/index.native.js:19
+msgid "Newest to oldest"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.js:79
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.native.js:20
+#: assets/gutenberg/node_modules/@wordpress/components/src/query-controls/index.native.js:23
+msgid "Oldest to newest"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.js:83
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.native.js:24
+#: assets/gutenberg/node_modules/@wordpress/components/src/query-controls/index.native.js:28
+msgid "A → Z"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.js:87
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.native.js:28
+#: assets/gutenberg/node_modules/@wordpress/components/src/query-controls/index.native.js:33
+msgid "Z → A"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.js:105
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.native.js:62
+msgid "Category"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.js:106
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.native.js:63
+msgctxt "categories"
+msgid "All"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.js:112
+msgid "Categories"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.js:127
+msgid "Author"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.js:128
+msgctxt "authors"
+msgid "All"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.js:134
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/query-controls/index.native.js:69
+msgid "Number of items"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/search-control/index.js:45
+#, fuzzy
+#| msgctxt "Order status"
+#| msgid "Cancelled"
+msgid "Close search"
+msgstr "Відмінено"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/search-control/index.js:45
+#, fuzzy
+#| msgctxt "Order status"
+#| msgid "Cancelled"
+msgid "Reset search"
+msgstr "Відмінено"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/search-control/index.js:54
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/search-control/index.js:55
+#: includes/admin/pages/appointments.php:165
+msgid "Search"
+msgstr "Пошук"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/search-control/index.native.js:53
+#: assets/gutenberg/node_modules/@wordpress/components/src/search-control/index.native.js:76
+#, fuzzy
+#| msgid "Search"
+msgid "Search blocks"
+msgstr "Пошук"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/search-control/index.native.js:132
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/search-control/index.native.js:176
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/search-control/index.native.js:177
+#: assets/gutenberg/node_modules/@wordpress/components/src/search-control/index.native.js:186
+#: assets/gutenberg/node_modules/@wordpress/components/src/search-control/index.native.js:239
+#: assets/gutenberg/node_modules/@wordpress/components/src/search-control/index.native.js:240
+#, fuzzy
+#| msgctxt "Order status"
+#| msgid "Cancelled"
+msgid "Cancel search"
+msgstr "Відмінено"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/search-control/index.native.js:154
+#: assets/gutenberg/node_modules/@wordpress/components/src/search-control/index.native.js:213
+#, fuzzy
+#| msgctxt "Order status"
+#| msgid "Cancelled"
+msgid "Clear search"
+msgstr "Відмінено"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/snackbar/index.js:112
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/snackbar/index.js:134
+msgid "Dismiss this notice"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/tools-panel/tools-panel-header/component.js:44
+#, javascript-format
+msgid "Reset %s"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/tools-panel/tools-panel-header/component.js:49
+#, javascript-format
+msgid "%s reset to default"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/tools-panel/tools-panel-header/component.js:77
+#, javascript-format
+msgid "Hide and reset %s"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/tools-panel/tools-panel-header/component.js:79
+#, javascript-format
+msgctxt "input control"
+msgid "Show %s"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/tools-panel/tools-panel-header/component.js:88
+#, javascript-format
+msgid "%s hidden and reset to default"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/tools-panel/tools-panel-header/component.js:92
+#, javascript-format
+msgid "%s is now visible"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/tools-panel/tools-panel-header/component.js:125
+#, javascript-format
+msgctxt "Button label to reveal tool panel options"
+msgid "%s options"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/tools-panel/tools-panel-header/component.js:126
+msgid "All options are currently hidden"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/tools-panel/tools-panel-header/component.js:168
+msgid "All options reset"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/tools-panel/tools-panel-header/component.js:171
+msgid "Reset all"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/index.js:126
+#, fuzzy
+#| msgid "Select..."
+msgid "Select unit"
+msgstr "Обрати…"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/index.native.js:51
+#: assets/gutenberg/node_modules/@wordpress/components/src/unit-control/index.native.js:65
+#, fuzzy, javascript-format
+#| msgid "Current Post ID"
+msgid "Current unit is %s"
+msgstr "ІД поточного Поста"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/index.native.js:52
+#: assets/gutenberg/node_modules/@wordpress/components/src/unit-control/index.native.js:69
+msgid "Double tap to open Action Sheet with available options"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/index.native.js:52
+#: assets/gutenberg/node_modules/@wordpress/components/src/unit-control/index.native.js:70
+msgid "Double tap to open Bottom Sheet with available options"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:15
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:16
+msgid "Pixels (px)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:21
+#, fuzzy
+#| msgid "Parent ID"
+msgid "Percentage (%)"
+msgstr "ІД Батьківської Зустрічі"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:22
+#, fuzzy
+#| msgid "Parent ID"
+msgid "Percent (%)"
+msgstr "ІД Батьківської Зустрічі"
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:27
+msgid "Relative to parent font size (em)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:28
+msgctxt "Relative to parent font size (em)"
+msgid "ems"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:33
+msgid "Relative to root font size (rem)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:34
+msgctxt "Relative to root font size (rem)"
+msgid "rems"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:39
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:40
+msgid "Viewport width (vw)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:45
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:46
+msgid "Viewport height (vh)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:51
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:52
+msgid "Viewport smallest dimension (vmin)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:57
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:58
+msgid "Viewport largest dimension (vmax)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:63
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:64
+msgid "Width of the zero (0) character (ch)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:69
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:70
+msgid "x-height of the font (ex)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:75
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:76
+msgid "Centimeters (cm)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:81
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:82
+msgid "Millimeters (mm)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:87
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:88
+msgid "Inches (in)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:93
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:94
+msgid "Picas (pc)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:99
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:100
+msgid "Points (pt)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:105
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:106
+msgid "Small viewport width (svw)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:111
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:112
+msgid "Small viewport height (svh)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:117
+msgid "Viewport smallest size in the inline direction (svi)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:118
+msgid "Small viewport width or height (svi)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:123
+msgid "Viewport smallest size in the block direction (svb)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:124
+msgid "Small viewport width or height (svb)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:129
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:130
+msgid "Small viewport smallest dimension (svmin)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:135
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:136
+msgid "Large viewport width (lvw)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:141
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:142
+msgid "Large viewport height (lvh)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:147
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:148
+msgid "Large viewport width or height (lvi)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:153
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:154
+msgid "Large viewport width or height (lvb)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:159
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:160
+msgid "Large viewport smallest dimension (lvmin)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:165
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:166
+msgid "Dynamic viewport width (dvw)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:171
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:172
+msgid "Dynamic viewport height (dvh)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:177
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:178
+msgid "Dynamic viewport width or height (dvi)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:183
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:184
+msgid "Dynamic viewport width or height (dvb)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:189
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:190
+msgid "Dynamic viewport smallest dimension (dvmin)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:195
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:196
+msgid "Dynamic viewport largest dimension (dvmax)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:201
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:202
+msgid "Small viewport largest dimension (svmax)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:207
+#: assets/gutenberg/node_modules/@wordpress/components/build-module/unit-control/utils.js:208
+msgid "Large viewport largest dimension (lvmax)"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/i18n/benchmark/index.js:15
+msgid "Translate"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/i18n/build-module/create-i18n.js:348
+#: assets/gutenberg/node_modules/@wordpress/i18n/build/create-i18n.js:355
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/create-i18n.js:436
+msgctxt "text direction"
+msgid "ltr"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:51
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:61
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:62
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:68
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:186
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:271
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:309
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:312
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:317
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:481
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:484
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:505
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:508
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:511
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:514
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/default-i18n.js:14
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/default-i18n.js:29
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/default-i18n.js:30
+msgid "hello"
+msgid_plural "hellos"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:75
+msgctxt "verb"
+msgid "feed"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:85
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:92
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:157
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:201
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:242
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:286
+#, javascript-format
+msgid "%d banana"
+msgid_plural "%d bananas"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:101
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:108
+#, javascript-format
+msgctxt "fruit"
+msgid "%d apple"
+msgid_plural "%d apples"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:191
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:276
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:320
+msgid "cheeseburger"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:208
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:215
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:293
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:300
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:325
+#, javascript-format
+msgid "%d cat"
+msgid_plural "%d cats"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:332
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:352
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:355
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:358
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:374
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:377
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:380
+msgid "singular"
+msgid_plural "plural"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:493
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:496
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:523
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:526
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:529
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/create-i18n.js:532
+msgctxt "ctx"
+msgid "hello"
+msgid_plural "hellos"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/default-i18n.js:18
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/default-i18n.js:41
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/default-i18n.js:42
+msgctxt "context"
+msgid "hello"
+msgid_plural "hellos"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: assets/gutenberg/node_modules/@wordpress/i18n/src/test/subscribe-i18n.js:19
+msgid "original"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/keycodes/build-module/index.js:290
+#: assets/gutenberg/node_modules/@wordpress/keycodes/src/index.js:326
+#, fuzzy
+#| msgid "Comments"
+msgid "Comma"
+msgstr "Коментарі"
+
+#: assets/gutenberg/node_modules/@wordpress/keycodes/build-module/index.js:292
+#: assets/gutenberg/node_modules/@wordpress/keycodes/src/index.js:328
+msgid "Period"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/keycodes/build-module/index.js:294
+#: assets/gutenberg/node_modules/@wordpress/keycodes/src/index.js:330
+msgid "Backtick"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/keycodes/build-module/index.js:296
+#: assets/gutenberg/node_modules/@wordpress/keycodes/src/index.js:332
+msgid "Tilde"
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/rich-text/build-module/toggle-format.js:32
+#: assets/gutenberg/node_modules/@wordpress/rich-text/src/toggle-format.js:32
+#, javascript-format
+msgid "%s removed."
+msgstr ""
+
+#: assets/gutenberg/node_modules/@wordpress/rich-text/build-module/toggle-format.js:39
+#: assets/gutenberg/node_modules/@wordpress/rich-text/src/toggle-format.js:39
+#, javascript-format
+msgid "%s applied."
+msgstr ""
+
+#: assets/gutenberg/node_modules/moment/min/locales.min.js:1
+msgid "s"
+msgstr ""
+
+#: assets/gutenberg/node_modules/moment/min/locales.min.js:1
+msgid "m"
+msgstr ""
+
+#: assets/gutenberg/node_modules/moment/min/locales.min.js:1
+#, fuzzy
+#| msgid "Th"
+msgid "h"
+msgstr "Чт"
+
+#: assets/gutenberg/node_modules/moment/min/locales.min.js:1
+msgid "d"
+msgstr ""
+
+#: assets/gutenberg/node_modules/moment/min/locales.min.js:1
+msgid "y"
+msgstr ""
+
+#: assets/gutenberg/src/actions.v2/InsertAppointment/index.js:7
+#: includes/form.php:307
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:70
+msgid "Insert appointment"
+msgstr ""
+
+#: assets/gutenberg/src/blocks/appointment-date/edit.js:63
+#: assets/gutenberg/src/blocks/appointment-provider/edit.js:59
+msgid "Field Settings"
+msgstr "Налаштування поля"
+
+#: assets/gutenberg/src/blocks/appointment-date/index.js:16
+#: includes/insert-appointment.php:214
+msgid "Appointment Date"
+msgstr "Дата Зустрічі"
+
+#: assets/gutenberg/src/blocks/appointment-date/source.js:6
+#: templates/admin/form/edit-fields.php:45
+msgid "Get Provider ID From:"
+msgstr "Отримати ІД Провайдера з:"
+
+#: assets/gutenberg/src/blocks/appointment-date/source.js:7
+msgid "Select Provider Field:"
+msgstr "Поле Провайдера:"
+
+#: assets/gutenberg/src/blocks/appointment-date/source.js:8
+msgid "Set Provider ID:"
+msgstr "Задати ІД Провайдера:"
+
+#: assets/gutenberg/src/blocks/appointment-date/source.js:9
+msgid "Auto-Select Single Slot"
+msgstr ""
+
+#: assets/gutenberg/src/blocks/appointment-date/source.js:14
+msgid "Skip the slot selection step when only one time slot is available."
+msgstr ""
+
+#: assets/gutenberg/src/blocks/appointment-provider/index.js:16
+msgid "Appointment Provider"
+msgstr "Провайдер Зустрічі"
+
+#: assets/gutenberg/src/blocks/appointment-provider/source.js:6
+#: templates/admin/form/edit-fields.php:115
+msgid "Use Custom Template For Items:"
+msgstr "Свій Шаблон:"
+
+#: assets/gutenberg/src/blocks/appointment-provider/source.js:7
+#: templates/admin/form/edit-fields.php:127
+msgid "Custom Template ID:"
+msgstr "ІД Шаблону:"
+
+#: assets/gutenberg/src/blocks/appointment-provider/source.js:8
+#: templates/admin/form/edit-fields.php:139
+msgid "Switch Page on Change:"
+msgstr "Переключити Сторніку при виборі:"
+
+#: assets/gutenberg/src/blocks/source.js:7
+#: templates/admin/form/edit-fields.php:18
+#: templates/admin/form/edit-fields.php:50
+#: templates/admin/form/edit-fields.php:88
+msgid "Current Post ID"
+msgstr "ІД поточного Поста"
+
+#: assets/gutenberg/src/blocks/source.js:11
+#: templates/admin/form/edit-fields.php:19
+#: templates/admin/form/edit-fields.php:51
+#: templates/admin/form/edit-fields.php:89
+msgid "Form Field"
+msgstr "Поле Форми"
+
+#: assets/gutenberg/src/blocks/source.js:15
+#: templates/admin/form/edit-fields.php:20
+#: templates/admin/form/edit-fields.php:52
+#: templates/admin/form/edit-fields.php:90
+#: templates/admin/form/notification-fields.php:14
+#: templates/admin/form/notification-fields.php:27
+msgid "Manual Input"
+msgstr "Ручний Ввод"
+
+#: assets/gutenberg/src/blocks/source.js:21
+#: templates/admin/form/edit-fields.php:13
+#: templates/admin/form/edit-fields.php:83
+msgid "Get Service ID From:"
+msgstr "Отримати ІД Сервіса з:"
+
+#: assets/gutenberg/src/blocks/source.js:22
+msgid "Select Service Field:"
+msgstr "Поле Сервіса:"
+
+#: assets/gutenberg/src/blocks/source.js:23
+msgid "Set Service ID:"
+msgstr "Задати ІД Сервіса:"
+
+#: assets/js/admin/appointments.js:120
+msgid "List"
+msgstr "Список"
+
+#: assets/js/admin/appointments.js:128
+msgid "Timeline"
+msgstr "Таймлайн"
+
+#: assets/js/admin/appointments.js:350 assets/js/admin/settings.js:505
+msgid "Done!"
+msgstr "Готово!"
+
+#: assets/js/admin/appointments.js:774 assets/js/admin/appointments.js:1403
+#: assets/js/admin/appointments.js:2101 includes/admin/settings.php:238
+#: includes/admin/settings/pages/advanced.php:60
+#: includes/admin/settings/pages/appointment-settings-base.php:86
+#: includes/form-fields/provider-field-template-trait.php:66
+#: templates/admin/form/edit-fields.php:119
+#: templates/admin/form/edit-fields.php:143
+msgid "Select..."
+msgstr "Обрати…"
+
+#: assets/js/admin/appointments.js:1143
+msgid "15 minutes"
+msgstr "15 хвилин"
+
+#: assets/js/admin/appointments.js:1147
+msgid "30 minutes"
+msgstr "30 хвилин"
+
+#: assets/js/admin/appointments.js:1151
+msgid "1 hours"
+msgstr "1 година"
+
+#: assets/js/admin/appointments.js:1833
+msgid "Sorry. This appointment has already been added!"
+msgstr "Вибачте. Зустріч вже було призначено!"
+
+#: assets/js/admin/appointments.js:1839
+msgid "Sorry. You have the max number of appointments!"
+msgstr "Вибачте. Ви не можете призначити більше зустрічей!"
+
+#: assets/js/admin/appointments.js:2018
+msgid "No service assigned!"
+msgstr "Сервіс не призначено!"
+
+#: assets/js/admin/appointments.js:2027
+msgid "No provider assigned!"
+msgstr "Провайдер не призначено!"
+
+#: assets/js/admin/appointments.js:2073
+#, javascript-format
+msgid "Empty fields: %s"
+msgstr "Порожні поля: %s"
+
+#: assets/js/admin/appointments.js:2089 includes/insert-appointment.php:78
+#, javascript-format, php-format
+msgid "Sorry. You have not selected enough slots, minimum quantity: %s"
+msgstr ""
+
+#: assets/js/admin/settings.js:63
+msgid "The slot duration cannot be less than one minute!"
+msgstr "Тривалість слоту не може бути менше однієї хвилини!"
+
+#: assets/js/admin/settings.js:104
+msgid "Date is not correct"
+msgstr "Дата не коректна"
+
+#: assets/js/admin/settings.js:239
+msgid "Time is not correct"
+msgstr "Час задано не вірно"
+
+#: assets/js/admin/settings.js:363
+msgid ""
+"Users can book the same time slot for the service with multiple providers."
+msgstr ""
+
+#: assets/js/admin/settings.js:365
+msgid ""
+"Users can book the same time slot for the service with only one provider. "
+"The slot will be unavailable for others once booked."
+msgstr ""
+
+#: assets/js/admin/settings.js:536 assets/js/admin/settings.js:755
+msgid ""
+"You cannot use the \"-\" or \"space\" character in the table name, it was "
+"automatically changed to the \"_\" character!"
+msgstr ""
+"Назва колонки не може містити «-» чи « » символи, їх буде автоматично "
+"замінено на «_»!"
+
+#: assets/js/admin/settings.js:546
+msgid "This column already exists in the table!"
+msgstr "Колонка вже їснує!"
+
+#: assets/js/admin/settings.js:556
+msgid ""
+"Are you sure? If you change or remove any columns, all data stored in this "
+"columns will be lost!"
+msgstr ""
+"Ви впевнені? Якщо змінити або видалити будь-яку колонку, інформацію з неї "
+"буде втрачено!"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:87
+#: includes/admin/settings.php:206
+msgid "Slot"
+msgstr "Слот"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:91
+msgid "Hour"
+msgstr "Година"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:95
+msgid "Minute"
+msgstr "Хвилина"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:157
+msgid "Slot Duration"
+msgstr "Тривалість Слота"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:163
+msgid "Buffer Before Slot"
+msgstr "Буфер до Слоту"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:169
+msgid "Buffer After Slot"
+msgstr "Буфер після Слоту"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:364
+msgid "Access denied"
+msgstr "Доступ заборонено"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:383
+msgid "Empty data or post ID not found!"
+msgstr "Немає даних або ІД Поста!"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:406
+msgid "Failed to save data!"
+msgstr "Помилка збереження даних!"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:411
+#: includes/admin/settings.php:425
+msgid "Settings saved!"
+msgstr "Налаштування збережено!"
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:471
+#: includes/admin/settings/pages/working-hours.php:43
+msgid "Limited range from current date"
+msgstr ""
+
+#: includes/admin/cpt-meta-box/base-vue-meta-box.php:472
+#: includes/admin/settings/pages/working-hours.php:44
+msgid "Any date in the future"
+msgstr ""
+
+#: includes/admin/cpt-meta-box/providers-meta.php:46
+msgid "Inherit Service Price"
+msgstr "Успадкувати Ціну з Сервіса"
+
+#: includes/admin/cpt-meta-box/providers-meta.php:98
+#: includes/admin/cpt-meta-box/services-meta.php:70
+msgid "Appointment Settings"
+msgstr "Налаштування Зустрічі"
+
+#: includes/admin/cpt-meta-box/providers-meta.php:107
+#: includes/admin/cpt-meta-box/services-meta.php:79
+#: templates/admin/jet-apb-settings/custom-day-schedule.php:3
+msgid "Custom Schedule"
+msgstr "Касомний Розклад"
+
+#: includes/admin/dashboard.php:163 includes/admin/dashboard.php:164
+#: templates/admin/jet-apb-appointments/appointments-timeline.php:53
+msgid "Services"
+msgstr "Сервіси"
+
+#: includes/admin/dashboard.php:179 includes/admin/dashboard.php:180
+msgid "Providers"
+msgstr "Провайдери"
+
+#: includes/admin/dashboard.php:193 includes/admin/dashboard.php:194
+msgid "Settings"
+msgstr "Налаштування"
+
+#: includes/admin/dashboard.php:208 includes/admin/dashboard.php:209
+#: includes/admin/settings/pages/set-up.php:34
+msgid "Set Up"
+msgstr "Старт Роботи"
+
+#: includes/admin/pages/appointments.php:28
+#: templates/admin/jet-apb-appointments/appointments.php:3
+msgid "Appointments"
+msgstr "Зустрічі"
+
+#: includes/admin/pages/appointments.php:104
+#: templates/admin/jet-apb-appointments/appointments-filter.php:169
+msgid "ID"
+msgstr "ІД"
+
+#: includes/admin/pages/appointments.php:105 includes/listings.php:215
+msgid "User ID"
+msgstr "ІД Юзера"
+
+#: includes/admin/pages/appointments.php:106
+msgid "Parent ID"
+msgstr "ІД Батьківської Зустрічі"
+
+#: includes/admin/pages/appointments.php:107
+msgid "User e-mail"
+msgstr "Пошта Юзера"
+
+#: includes/admin/pages/appointments.php:108
+msgid "User Name"
+msgstr "Ім’я"
+
+#: includes/admin/pages/appointments.php:109
+#: includes/admin/pages/appointments.php:146
+#: includes/insert-appointment.php:220 includes/insert-appointment.php:244
+msgid "Provider"
+msgstr "Провайдер"
+
+#: includes/admin/pages/appointments.php:110
+#: includes/admin/pages/appointments.php:140
+#: includes/insert-appointment.php:215 includes/insert-appointment.php:242
+#: includes/wc-order-details-builder.php:349
+msgid "Service"
+msgstr "Сервіс"
+
+#: includes/admin/pages/appointments.php:112
+#: templates/admin/jet-apb-settings/settings-working-hours.php:565
+msgid "End Date"
+msgstr "Дата Завершення"
+
+#: includes/admin/pages/appointments.php:113
+#: templates/admin/jet-apb-appointments/popup.php:123
+msgid "Start Time"
+msgstr "Час Початку"
+
+#: includes/admin/pages/appointments.php:114 includes/wc-integration.php:520
+#: templates/admin/jet-apb-appointments/popup.php:139
+msgid "End Time"
+msgstr "Час Завершення"
+
+#: includes/admin/pages/appointments.php:115
+#: includes/admin/pages/appointments.php:152 includes/listings.php:227
+msgid "Status"
+msgstr "Статус"
+
+#: includes/admin/pages/appointments.php:116
+msgid "Related Order"
+msgstr "Замовлення"
+
+#: includes/admin/pages/appointments.php:117
+msgid "Phone"
+msgstr "Телефон"
+
+#: includes/admin/pages/appointments.php:118
+msgid "Comments"
+msgstr "Коментарі"
+
+#: includes/admin/pages/appointments.php:119
+msgid "Actions"
+msgstr "Дії"
+
+#: includes/admin/pages/appointments.php:120
+msgid "Appointment List"
+msgstr "Список Зустрічей"
+
+#: includes/admin/settings.php:195
+#: templates/admin/jet-apb-settings/settings-labels.php:19
+msgid "Monday"
+msgstr "Понеділок"
+
+#: includes/admin/settings.php:196
+#: templates/admin/jet-apb-settings/settings-labels.php:27
+msgid "Tuesday"
+msgstr "Вівторок"
+
+#: includes/admin/settings.php:197
+#: templates/admin/jet-apb-settings/settings-labels.php:35
+msgid "Wednesday"
+msgstr "Середа"
+
+#: includes/admin/settings.php:198
+#: templates/admin/jet-apb-settings/settings-labels.php:43
+msgid "Thursday"
+msgstr "Четвер"
+
+#: includes/admin/settings.php:199
+#: templates/admin/jet-apb-settings/settings-labels.php:51
+msgid "Friday"
+msgstr "П’ятниця"
+
+#: includes/admin/settings.php:200
+#: templates/admin/jet-apb-settings/settings-labels.php:59
+msgid "Saturday"
+msgstr "Субота"
+
+#: includes/admin/settings.php:201
+#: templates/admin/jet-apb-settings/settings-labels.php:11
+msgid "Sunday"
+msgstr "Неділя"
+
+#: includes/admin/settings.php:210
+msgid "Time Picker"
+msgstr "Вибір Часу"
+
+#: includes/admin/settings.php:214
+msgid "Recurring"
+msgstr "Повторити"
+
+#: includes/admin/settings.php:224 includes/time-recurring.php:68
+msgid "Week"
+msgstr "Тиждень"
+
+#: includes/admin/settings/manager.php:100
+msgid "JetAppointments"
+msgstr ""
+
+#: includes/admin/settings/pages/advanced.php:27
+msgid "Advanced"
+msgstr "Розширені"
+
+#: includes/admin/settings/pages/general.php:27
+msgid "General Settings"
+msgstr "Загальні"
+
+#: includes/admin/settings/pages/integrations.php:29
+msgid "Integrations"
+msgstr "Інтеграції"
+
+#: includes/admin/settings/pages/labels.php:27
+msgid "Labels"
+msgstr "Назви"
+
+#: includes/admin/settings/pages/layout.php:27
+msgid "Layout"
+msgstr "Макет"
+
+#: includes/admin/settings/pages/tools.php:27
+msgid "Tools"
+msgstr "Інструменти"
+
+#: includes/admin/settings/pages/workflows.php:28
+msgid "Workflows"
+msgstr "Процеси"
+
+#: includes/admin/settings/pages/workflows.php:50
+msgid "Select trigger event..."
+msgstr "Запускати після…"
+
+#: includes/admin/settings/pages/workflows.php:51
+msgid "Select action to run..."
+msgstr "Виконати дію…"
+
+#: includes/admin/settings/pages/workflows.php:98
+msgid "Immediately"
+msgstr "Негайно"
+
+#: includes/admin/settings/pages/workflows.php:102
+#, fuzzy
+#| msgid "Scheduled before appoinment"
+msgid "Scheduled before appointment"
+msgstr "За певний час до зустрічі"
+
+#: includes/admin/settings/pages/working-hours.php:28
+msgid "Working Hours"
+msgstr "Робочі Години"
+
+#: includes/db-upgrader.php:39
+msgid "Start Update"
+msgstr "Оновити"
+
+#: includes/db-upgrader.php:40
+msgid "Data Update"
+msgstr "Оновлення Даних"
+
+#: includes/db-upgrader.php:42
+#, php-format
+msgid ""
+"Module DB Updater init error in %s - version and slug is required arguments"
+msgstr ""
+
+#: includes/db-upgrader.php:43
+msgid "We need to update your database to the latest version."
+msgstr ""
+
+#: includes/db-upgrader.php:44
+msgid "DB Update complete, thank you for updating to the latest version!"
+msgstr ""
+
+#: includes/elementor-integration/manager.php:23
+msgid "Jet Appointments Booking: add booking to Google calendar"
+msgstr ""
+
+#: includes/export.php:24
+msgid "You don`t have access to this URL"
+msgstr ""
+
+#: includes/export.php:24 includes/export.php:28 includes/export.php:67
+#: includes/google-calendar.php:162 includes/google-calendar.php:169
+#: includes/google-calendar.php:175 includes/google-calendar.php:181
+msgid "Error"
+msgstr "Помилка"
+
+#: includes/export.php:28
+msgid "Link is expired. Please reload appointments page and try again."
+msgstr ""
+
+#: includes/export.php:67
+msgid "Incorrect request data"
+msgstr ""
+
+#: includes/form-widget.php:31
+msgid "Appointment Calendar"
+msgstr "Календар Зустрічей"
+
+#: includes/form-widget.php:40
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:68
+msgid "Calendar Width"
+msgstr "Ширина Календаря"
+
+#: includes/form-widget.php:58 includes/form-widget.php:405
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:97
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:422
+msgid "Padding"
+msgstr ""
+
+#: includes/form-widget.php:70 includes/form-widget.php:418
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:107
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:433
+msgid "Margin"
+msgstr ""
+
+#: includes/form-widget.php:90
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:119
+msgid "Header"
+msgstr ""
+
+#: includes/form-widget.php:98
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:127
+msgid "Header Background Color"
+msgstr ""
+
+#: includes/form-widget.php:109
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:137
+msgid "Header Text Color"
+msgstr ""
+
+#: includes/form-widget.php:128
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:158
+msgid "Arrows default color"
+msgstr ""
+
+#: includes/form-widget.php:139
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:167
+msgid "Arrows hover color"
+msgstr ""
+
+#: includes/form-widget.php:150
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:178
+msgid "Weekdays/Names"
+msgstr ""
+
+#: includes/form-widget.php:178 includes/form-widget.php:268
+#: includes/form-widget.php:345 includes/form-widget.php:376
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:206
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:295
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:372
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:398
+msgid "Background Color"
+msgstr ""
+
+#: includes/form-widget.php:189 includes/form-widget.php:279
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:215
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:304
+msgid "Vertical Gap"
+msgstr ""
+
+#: includes/form-widget.php:206
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:236
+msgid "Weekdays/Dates"
+msgstr ""
+
+#: includes/form-widget.php:235
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:264
+msgid "Hover Color"
+msgstr ""
+
+#: includes/form-widget.php:246
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:274
+msgid "Active Color"
+msgstr ""
+
+#: includes/form-widget.php:257
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:284
+msgid "Today Color"
+msgstr ""
+
+#: includes/form-widget.php:296
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:325
+msgid "Slots"
+msgstr ""
+
+#: includes/form-widget.php:305
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:333
+msgid "Container Padding"
+msgstr ""
+
+#: includes/form-widget.php:327
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:355
+msgid "Normal"
+msgstr ""
+
+#: includes/form-widget.php:358
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:382
+#: templates/admin/jet-apb-settings/settings-workflows.php:4
+msgid "Active"
+msgstr ""
+
+#: includes/form-widget.php:387
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:408
+msgid "Border Color"
+msgstr ""
+
+#: includes/form-widget.php:431
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:443
+msgid "Border"
+msgstr ""
+
+#: includes/form-widget.php:440
+msgid "Border Radius"
+msgstr ""
+
+#: includes/form-widget.php:452
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:454
+msgid "Slots Close Button Color"
+msgstr ""
+
+#: includes/form-widget.php:463
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:464
+msgid "Slots Close Button Hover Color"
+msgstr ""
+
+#: includes/form-widget.php:474
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:473
+msgid "Close Button Size"
+msgstr ""
+
+#: includes/form-widget.php:495
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:498
+msgid "Close Button Vertical Position"
+msgstr ""
+
+#: includes/form-widget.php:516
+#: includes/formbuilder-plugin/blocks/appointment-date-field.php:523
+msgid "Close Button Horizontal Position"
+msgstr ""
+
+#: includes/form.php:142 includes/form.php:157
+msgid "Appointment Macros:"
+msgstr ""
+
+#: includes/form.php:145
+msgid ""
+"The macro returns the appointment price. This macro works with any "
+"appointment settings, multi-bookings, recurring bookings and more."
+msgstr ""
+
+#: includes/form.php:146
+msgid ""
+" - this is the name of the field, the type of which is \"appointment date\"."
+msgstr ""
+
+#: includes/form.php:160
+msgid "Name of the appointment service."
+msgstr ""
+
+#: includes/form.php:163
+msgid "Name of the appointment provider."
+msgstr ""
+
+#: includes/form.php:166
+msgid "Link of the appointment service."
+msgstr ""
+
+#: includes/form.php:169
+msgid "Link of the appointment provider."
+msgstr ""
+
+#: includes/form.php:172
+#, php-format
+msgid ""
+"Displays the date and time the appointment started. You can set the format "
+"for the date. %1$sRead more%2$s about the time format. For example: "
+"%3$s%%appointment_start|format_date(F j, Y g:i)%%%4$s"
+msgstr ""
+
+#: includes/form.php:175
+msgid ""
+"Displays the date and time the appointment end. Also accepts date format."
+msgstr ""
+
+#: includes/form.php:178
+msgid ""
+"Displays the time of the appointment in the user timezone. If timezones "
+"management are enabled."
+msgstr ""
+
+#: includes/form.php:181
+msgid ""
+"Displays the date of the appointment in the user timezone. If timezones "
+"management are enabled."
+msgstr ""
+
+#: includes/form.php:184
+msgid "Displays the user`s timezone. If timezones management are enabled."
+msgstr ""
+
+#: includes/form.php:188
+msgid "Displays the individual price of the appointment booked."
+msgstr ""
+
+#: includes/form.php:193
+msgid ""
+"The macro displays a list of booked appointments if multi-booking is enabled "
+"in the settings. Other macros can be used within this macro."
+msgstr ""
+
+#: includes/form.php:344 includes/listings.php:117
+msgid "Appointment date"
+msgstr ""
+
+#: includes/form.php:345
+msgid "Appointment provider"
+msgstr ""
+
+#: includes/form.php:474
+msgid "Sun"
+msgstr "Нд"
+
+#: includes/form.php:475
+msgid "Mon"
+msgstr "Пн"
+
+#: includes/form.php:476
+msgid "Tue"
+msgstr "Вт"
+
+#: includes/form.php:477
+msgid "Wed"
+msgstr "Ср"
+
+#: includes/form.php:478
+msgid "Thu"
+msgstr "Чт"
+
+#: includes/form.php:479
+msgid "Fri"
+msgstr "Пт"
+
+#: includes/form.php:480
+msgid "Sat"
+msgstr "Сб"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:140
+#: templates/admin/common/wc-details-builder.php:24
+msgid "Service name"
+msgstr "Назва Сервісу"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:144
+#: templates/admin/common/wc-details-builder.php:25
+msgid "Provider name"
+msgstr "Назва Провайдера"
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:152
+#: templates/admin/common/wc-details-builder.php:27
+msgid "Time slot start"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:156
+#: templates/admin/common/wc-details-builder.php:28
+msgid "Time slot end"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:160
+#: templates/admin/common/wc-details-builder.php:29
+msgid "Full time slot"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:164
+#: templates/admin/common/wc-details-builder.php:30
+msgid "Full date and time"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:168
+#: templates/admin/common/wc-details-builder.php:31
+msgid "Form field"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:172
+#: templates/admin/common/wc-details-builder.php:32
+msgid "Add to Google calendar link"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:183
+msgid "Service ID field"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:184
+msgid "Manual input Service ID"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:185
+msgid "Provider ID field"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:186
+msgid "Manual input Provider ID"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:187
+msgid "Appointment date field"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:188
+msgid "User e-mail field"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:189
+msgid "User name field"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:190
+msgid "Fields Map"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:191
+msgid "WooCommerce Price field"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:192
+msgid "WooCommerce order details"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:193
+msgid "WooCommerce checkout fields map"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:194
+msgid "DB columns map:"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:196
+#: templates/admin/common/wc-details-builder.php:36
+msgid "Label"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:197
+#: includes/macros.php:132 includes/macros.php:143
+#: templates/admin/common/wc-details-builder.php:40
+msgid "Date format"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:198
+#: templates/admin/common/wc-details-builder.php:50
+msgid "Time format"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:199
+#: templates/admin/common/wc-details-builder.php:73
+msgid "Select form field"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:200
+#: templates/admin/common/wc-details-builder.php:80
+msgid "Link text"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:207
+msgid ""
+"Select field to get total price from. If not selectedprice will be get from "
+"post meta value."
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:211
+#: templates/admin/form/notification-fields.php:105
+msgid ""
+"Set up booking-related info you want to add to the WooCommerce orders and e-"
+"mails"
+msgstr ""
+
+#: includes/formbuilder-plugin/actions/insert-appointment-action.php:215
+msgid ""
+"Connect WooCommerce checkout fields to appropriate form fields.\n"
+"\t\t\t\tThis allows you to pre-fill WooCommerce checkout fields after "
+"redirect to checkout."
+msgstr ""
+
+#: includes/formbuilder-plugin/form-builder.php:48
+#: includes/formbuilder-plugin/form-builder.php:68
+msgid "Sorry, you are not allowed to install plugins on this site."
+msgstr ""
+
+#: includes/formbuilder-plugin/form-builder.php:124
+msgid "JetFormBuilder has been installed."
+msgstr ""
+
+#: includes/google-calendar.php:162 includes/google-calendar.php:169
+msgid "Appointment ID not found in the request"
+msgstr ""
+
+#: includes/google-calendar.php:175
+msgid "Appointment not found in the database"
+msgstr ""
+
+#: includes/google-calendar.php:181
+msgid "Can`t build add to calendar URL"
+msgstr ""
+
+#: includes/google-calendar.php:218
+#, php-format
+msgid "Your appointment at \"%1$s\" with %2$s - %3$s "
+msgstr ""
+
+#: includes/insert-appointment.php:74
+msgid ""
+" info is missing in the form request. Please check your Appointment action "
+"settings according to the documentation."
+msgstr ""
+
+#: includes/insert-appointment.php:89
+msgid "The entered email adderess is incorrect."
+msgstr ""
+
+#: includes/insert-appointment.php:97
+msgid "Guest"
+msgstr ""
+
+#: includes/insert-appointment.php:168
+msgid "Selected time is not allowed to book"
+msgstr ""
+
+#: includes/insert-appointment.php:174
+#: includes/rest-api/endpoint-add-appointment.php:83
+msgid "Appointment time already taken"
+msgstr ""
+
+#: includes/insert-appointment.php:216
+msgid "Email"
+msgstr ""
+
+#: includes/insert-appointment.php:230 includes/listings.php:552
+#: includes/wc-integration.php:677
+msgid "Appointment"
+msgstr ""
+
+#: includes/integrations/google-calendar/calendar-meta-box.php:87
+msgid "Google Calendar Sync"
+msgstr ""
+
+#: includes/integrations/google-calendar/integration.php:87
+#, fuzzy
+#| msgid "Calendar"
+msgid "Google Calendar"
+msgstr "Календар"
+
+#: includes/integrations/google-calendar/integration.php:92
+#, php-format
+msgid ""
+"Allow to set up 2-way sync with Google Calendar globally, per service or per "
+"provider. <a href=\"%s\">Full guide</a>"
+msgstr ""
+
+#: includes/integrations/google-calendar/rest-api/google-auth.php:52
+msgid "Please provide Client ID and Client Secret"
+msgstr ""
+
+#: includes/integrations/google-calendar/rest-api/google-auth.php:72
+msgid "Google Calendar disconnected"
+msgstr ""
+
+#: includes/integrations/google-calendar/rest-api/google-calendars-list.php:45
+msgid "Google Calendar API client not initialized"
+msgstr ""
+
+#: includes/integrations/google-calendar/rest-api/google-calendars-list.php:55
+msgid "No calendars found"
+msgstr ""
+
+#: includes/integrations/google-calendar/rest-api/google-calendars-meta.php:42
+msgid "Post ID or meta value is missing"
+msgstr ""
+
+#: includes/integrations/google-calendar/rest-api/google-calendars-meta.php:50
+msgid "Meta value updated successfully"
+msgstr ""
+
+#: includes/integrations/google-calendar/synch-create.php:43
+msgid "Google Calendar Event ID"
+msgstr ""
+
+#: includes/integrations/google-calendar/synch-create.php:48
+msgid "Google Calendar Event Link"
+msgstr ""
+
+#: includes/integrations/google-calendar/synch-create.php:55
+msgid "Google Meet Link"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:5
+msgid "Connect Google Account"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:6
+msgid "Log in with your Google Account to get the list of available calendars"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:14
+msgid "Connect"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:21
+msgid "Select Calendar to sync events with"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:22
+msgid ""
+"The Calendar to put events into and get busy slots from (if this option is "
+"enabled)"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:33
+msgid "Disconnect"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:37
+msgid "Create Meet"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:38
+msgid "Add Google Meet link for created calendar event"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:45
+msgid "Sync events from Google Calendar"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:46
+msgid "Sync your Google Calendar events to exclude reserved slots"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:53
+msgid "Calendar synchronization interval"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/connect-calendar.php:54
+msgid "Choose the interval for calendar synchronization"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/data-component.php:3
+msgid ""
+"Google integration requires a page reload to get the latest data from your "
+"website. Please wait a moment..."
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/data-component.php:7
+#: includes/integrations/zoom/templates/data-component.php:17
+msgid "Client ID"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/data-component.php:8
+msgid "Client ID field of your Google Calendar"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/data-component.php:15
+#: includes/integrations/zoom/templates/data-component.php:25
+msgid "Client secret"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/data-component.php:16
+msgid "Client secret field of your Google Calendar"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/data-component.php:24
+msgid "Redirect URL"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/data-component.php:25
+msgid "Use this URL in Google console settings"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/data-component.php:32
+msgid "Use global Calendar connection"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/data-component.php:33
+msgid ""
+"Enable this toggle to use a single Google Calendar account for all providers/"
+"services"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/data-component.php:51
+#: includes/integrations/google-calendar/templates/meta-box.php:47
+msgid ""
+"Please note: This calendar is already being used in another post. This may "
+"cause unexpected behavior"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/meta-box.php:4
+msgid "Current connection type:"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/meta-box.php:8
+msgid "Not Connected"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/meta-box.php:11
+msgid "Global"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/meta-box.php:14
+msgid "Local"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/meta-box.php:20
+msgid "Use local connection"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/meta-box.php:21
+msgid ""
+"Enable this toggle to use a local Google Calendar account for this provider/"
+"service"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/meta-box.php:28
+msgid "Use local calendar"
+msgstr ""
+
+#: includes/integrations/google-calendar/templates/meta-box.php:29
+msgid ""
+"Enable this toggle to use another calendar from the existing global "
+"connection"
+msgstr ""
+
+#: includes/integrations/zoom/actions/create-meeting-action.php:16
+msgid "Create Zoom Meeting"
+msgstr ""
+
+#: includes/integrations/zoom/actions/create-meeting-action.php:22
+msgid "Agenda"
+msgstr ""
+
+#: includes/integrations/zoom/actions/create-meeting-action.php:23
+msgid "The meeting`s agenda. Support appointment macros"
+msgstr ""
+
+#: includes/integrations/zoom/actions/create-meeting-action.php:32
+msgid "Password Length"
+msgstr ""
+
+#: includes/integrations/zoom/actions/create-meeting-action.php:33
+msgid ""
+"The length of the meeting password. By default is 8. Password itself will be "
+"generated automatically and stored in Appointment Meta Data"
+msgstr ""
+
+#: includes/integrations/zoom/integration.php:86
+msgid "Zoom"
+msgstr ""
+
+#: includes/integrations/zoom/integration.php:90
+msgid "Create Zoom meeting and attach it to appointment"
+msgstr ""
+
+#: includes/integrations/zoom/integration.php:141
+msgid "Zoom Start Meeting URL"
+msgstr ""
+
+#: includes/integrations/zoom/integration.php:148
+msgid "Zoom Join Meeting URL"
+msgstr ""
+
+#: includes/integrations/zoom/integration.php:155
+#: includes/integrations/zoom/macros.php:32
+msgid "Zoom Meeting Password"
+msgstr ""
+
+#: includes/integrations/zoom/macros.php:22
+msgid "Zoom Meeting Start URL (for admin)"
+msgstr ""
+
+#: includes/integrations/zoom/macros.php:27
+msgid "Zoom Meeting Join URL (for user)"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:5
+msgid "Note!"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:6
+msgid ""
+"You didn`t set your website timezone settings. To create Zoom Meetings with "
+"correct date/time, please set your timezone"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:6
+msgid "here"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:9
+msgid "Account ID"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:10
+msgid "Account ID field of your Zoom App"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:18
+msgid "Client ID field of your Zoom App"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:26
+msgid "Client secret field of your Zoom App"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:33
+msgid "Authenticate"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:34
+msgid "Get an access token by given credentials"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:43
+msgid "Auth"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:55
+msgid "Where to get these credentials?"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:56
+msgid ""
+"To get Zoom API credentials you need to create App at Zoom Developer portal. "
+"Here you can find detailed instructions"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:56
+msgid "Create a Server-to-Server OAuth app"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:56
+msgid ""
+"Also please make sure you enabled <b>meeting:master</b> and <b>meeting:write:"
+"admin</b> scopes for your App"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:60
+#, fuzzy
+#| msgid "Sorry. You have the max number of appointments!"
+msgid "Share the same meeting for grouped appointments"
+msgstr "Вибачте. Ви не можете призначити більше зустрічей!"
+
+#: includes/integrations/zoom/templates/data-component.php:61
+msgid "Create same zoom link for the same slot"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:68
+msgid "Delete meeting on appointment  cancel"
+msgstr ""
+
+#: includes/integrations/zoom/templates/data-component.php:69
+msgid ""
+"Delete previously created meeting if appropriate appointment status was "
+"changed to Cancelled, Refunded or Failed"
+msgstr ""
+
+#: includes/listings.php:188
+msgid "Any status"
+msgstr ""
+
+#: includes/listings.php:193
+msgid "Appointments Query"
+msgstr ""
+
+#: includes/listings.php:200
+msgid "User"
+msgstr ""
+
+#: includes/listings.php:204
+#: templates/admin/jet-apb-appointments/appointments-filter.php:10
+msgid "All"
+msgstr ""
+
+#: includes/listings.php:205
+msgid "Current User"
+msgstr ""
+
+#: includes/listings.php:206
+msgid "Specific User ID"
+msgstr ""
+
+#: includes/listings.php:207
+msgid "Queried User"
+msgstr ""
+
+#: includes/listings.php:241
+msgid "Any"
+msgstr ""
+
+#: includes/listings.php:242
+msgid "Future appointments"
+msgstr ""
+
+#: includes/listings.php:243
+msgid "Past appointments"
+msgstr ""
+
+#: includes/listings.php:244
+msgid "After date"
+msgstr ""
+
+#: includes/listings.php:245
+msgid "Up to date"
+msgstr ""
+
+#: includes/listings.php:253
+msgid "Custom date"
+msgstr ""
+
+#: includes/listings.php:530
+msgid "User Appointments"
+msgstr ""
+
+#: includes/macros.php:26
+msgid "Custom DB Column Value"
+msgstr ""
+
+#: includes/macros.php:30
+msgid "Column"
+msgstr ""
+
+#: includes/macros.php:58 includes/macros.php:66
+msgid "Appointments List Start"
+msgstr ""
+
+#: includes/macros.php:62 includes/macros.php:70
+msgid "Appointments List End"
+msgstr ""
+
+#: includes/macros.php:74
+#, fuzzy
+#| msgid "Appointments"
+msgid "Appointments Group Count"
+msgstr "Зустрічі"
+
+#: includes/macros.php:78
+msgid "Service Title"
+msgstr ""
+
+#: includes/macros.php:82
+msgid "Service Link"
+msgstr ""
+
+#: includes/macros.php:86
+msgid "Service Meta Field"
+msgstr ""
+
+#: includes/macros.php:90 includes/macros.php:109
+msgid "Meta Field to Get"
+msgstr ""
+
+#: includes/macros.php:97
+msgid "Provider Title"
+msgstr ""
+
+#: includes/macros.php:101
+msgid "Provider Link"
+msgstr ""
+
+#: includes/macros.php:105
+msgid "Provider Meta Field"
+msgstr ""
+
+#: includes/macros.php:116
+msgid "Appointment ID"
+msgstr ""
+
+#: includes/macros.php:120
+msgid "Appointment Price"
+msgstr ""
+
+#: includes/macros.php:124
+msgid "Appointment User Email"
+msgstr ""
+
+#: includes/macros.php:128
+msgid "Appointment Start Date/Time"
+msgstr ""
+
+#: includes/macros.php:139
+msgid "Appointment End Date/Time"
+msgstr ""
+
+#: includes/macros.php:150
+msgid "Appointment Meta"
+msgstr ""
+
+#: includes/macros.php:154
+msgid "Meta Key"
+msgstr ""
+
+#: includes/macros.php:161
+msgid "Appointment Time in Timezone of the User"
+msgstr ""
+
+#: includes/macros.php:165
+msgid "Appointment Date in Timezone of the User"
+msgstr ""
+
+#: includes/macros.php:169
+msgid "Timezone selected by the User"
+msgstr ""
+
+#: includes/modules/google-calendar-synch/controller.php:69
+msgid ""
+"Google Calendar Sync requires the Google API PHP Client library. Please "
+"install it or make sure it is included properly."
+msgstr ""
+
+#: includes/plugin.php:81
+msgid ""
+"<b>WARNING!</b> <b>JetAppointmentsBooking</b> plugin requires <b>JetEngine</"
+"b> plugin to work properly!"
+msgstr ""
+
+#: includes/plugin.php:175
+msgid "Go to settings"
+msgstr ""
+
+#: includes/public-actions/actions/cancel.php:38
+msgid ""
+"Appointments Group cancelled! If you cancelled it by mistake, you need to "
+"book this appointment again."
+msgstr ""
+
+#: includes/public-actions/actions/cancel.php:46
+msgid ""
+"Appointment cancelled! If you cancelled it by mistake, you need to book this "
+"appointment again."
+msgstr ""
+
+#: includes/public-actions/actions/cancel.php:71
+msgid "Cancel Appointment URL"
+msgstr ""
+
+#: includes/public-actions/actions/cancel.php:84
+msgid "Cancel URL"
+msgstr ""
+
+#: includes/public-actions/actions/confirm.php:56
+#, fuzzy
+#| msgid "Appointments"
+msgid "Appointments Group confirmed!"
+msgstr "Зустрічі"
+
+#: includes/public-actions/actions/confirm.php:64
+msgid "Appointment confirmed!"
+msgstr ""
+
+#: includes/public-actions/actions/confirm.php:78
+msgid "Confirm Appointment URL"
+msgstr ""
+
+#: includes/public-actions/actions/confirm.php:121
+msgid "Confirm URL"
+msgstr ""
+
+#: includes/public-actions/manager.php:63
+msgid "Token"
+msgstr ""
+
+#: includes/public-actions/manager.php:186
+msgid "Token is invalid or was already used."
+msgstr ""
+
+#: includes/rest-api/endpoint-add-appointment.php:34
+msgid "The appointment could not be added."
+msgstr ""
+
+#: includes/rest-api/endpoint-add-appointment.php:92
+#, php-format
+msgid "Success! New appointments group ID:%s has been added"
+msgstr ""
+
+#: includes/rest-api/endpoint-add-appointment.php:94
+#, php-format
+msgid "Success! New appointment ID:%s has been added"
+msgstr ""
+
+#: includes/rest-api/endpoint-appointment-meta.php:65
+msgid "User Local Date"
+msgstr ""
+
+#: includes/rest-api/endpoint-appointment-meta.php:69
+msgid "User Local Time"
+msgstr ""
+
+#: includes/rest-api/endpoint-appointment-meta.php:73
+msgid "User Timezone"
+msgstr ""
+
+#: includes/rest-api/endpoint-delete-appointment.php:31
+msgid "Appointment ID is not found in request"
+msgstr ""
+
+#: includes/rest-api/endpoint-generate-zoom-token.php:40
+msgid "Access token created. Now you can create meetings with Zoom API"
+msgstr ""
+
+#: includes/rest-api/endpoint-update-appointment.php:54
+msgid "No data to update"
+msgstr ""
+
+#: includes/set-up.php:281
+msgid "Booking Form"
+msgstr ""
+
+#: includes/set-up.php:288
+msgid "Single Service Booking Form"
+msgstr ""
+
+#: includes/set-up.php:302
+msgid "Static Page Booking Form"
+msgstr ""
+
+#: includes/statuses.php:16
+msgctxt "Order status"
+msgid "Pending payment"
+msgstr "Очікування Платежу"
+
+#: includes/statuses.php:17
+msgctxt "Order status"
+msgid "Processing"
+msgstr "Обробка"
+
+#: includes/statuses.php:18
+msgctxt "Order status"
+msgid "On hold"
+msgstr "Утримано"
+
+#: includes/statuses.php:19
+msgctxt "Order status"
+msgid "Completed"
+msgstr "Завершено"
+
+#: includes/statuses.php:20
+msgctxt "Order status"
+msgid "Cancelled"
+msgstr "Відмінено"
+
+#: includes/statuses.php:21
+msgctxt "Order status"
+msgid "Refunded"
+msgstr "Повернуто"
+
+#: includes/statuses.php:22
+msgctxt "Order status"
+msgid "Failed"
+msgstr "Невадча"
+
+#: includes/time-range.php:135
+#: templates/admin/jet-apb-appointments/popup.php:110
+msgid "Work time:"
+msgstr ""
+
+#: includes/time-range.php:143
+msgid "Already booked:"
+msgstr ""
+
+#: includes/time-range.php:152
+#: templates/admin/jet-apb-appointments/popup.php:118
+msgid "Start:"
+msgstr ""
+
+#: includes/time-range.php:153
+msgid "Set start time"
+msgstr ""
+
+#: includes/time-range.php:163
+#: templates/admin/jet-apb-appointments/popup.php:130
+msgid "End:"
+msgstr ""
+
+#: includes/time-range.php:164
+msgid "Set end time"
+msgstr ""
+
+#: includes/time-recurring.php:89
+msgid "Mo"
+msgstr "Пн"
+
+#: includes/time-recurring.php:90
+msgid "Tu"
+msgstr "Вт"
+
+#: includes/time-recurring.php:91
+msgid "We"
+msgstr "Ср"
+
+#: includes/time-recurring.php:92
+msgid "Th"
+msgstr "Чт"
+
+#: includes/time-recurring.php:93
+msgid "Fr"
+msgstr "Пт"
+
+#: includes/time-recurring.php:94
+msgid "Sa"
+msgstr "Сб"
+
+#: includes/time-recurring.php:95
+msgid "Su"
+msgstr "Нд"
+
+#: includes/time-recurring.php:136
+msgid "Repeat this appointment"
+msgstr ""
+
+#: includes/time-recurring.php:195
+#: templates/admin/jet-apb-appointments/popup.php:208
+msgid "On:"
+msgstr ""
+
+#: includes/time-recurring.php:220
+#: templates/admin/jet-apb-appointments/popup.php:180
+msgid "Repeat Every:"
+msgstr ""
+
+#: includes/time-recurring.php:236
+msgid "Appointment Count:"
+msgstr ""
+
+#: includes/time-recurring.php:255
+msgid "Slot Capacity Count:"
+msgstr ""
+
+#: includes/time-types.php:53
+msgid "No available slots"
+msgstr ""
+
+#: includes/updater/changelog.php:129
+#, php-format
+msgid "More information about %s"
+msgstr ""
+
+#: includes/updater/changelog.php:131
+msgid "View details"
+msgstr ""
+
+#: includes/vendor/icalendar/includes/ical.php:553
+#: includes/vendor/icalendar/includes/ical.php:569
+msgid "Can't read iCal file structure, expecting "
+msgstr ""
+
+#: includes/wc-integration.php:160
+#, php-format
+msgid "Appointment #%d update."
+msgstr ""
+
+#: includes/wc-integration.php:382
+msgid "Appointments Date"
+msgstr ""
+
+#: includes/wc-integration.php:386
+msgid "Appointments Start Time"
+msgstr ""
+
+#: includes/wc-integration.php:390
+msgid "Appointments End Time"
+msgstr ""
+
+#: includes/wc-integration.php:492 includes/wc-order-details-builder.php:85
+msgid "Appointment Information"
+msgstr ""
+
+#: includes/wc-integration.php:493 includes/wc-order-details-builder.php:86
+#, php-format
+msgid "#%1$s"
+msgstr ""
+
+#: includes/wc-order-details-builder.php:230
+msgid "Add"
+msgstr ""
+
+#: includes/wc-order-details-builder.php:308
+msgid "Link is expired"
+msgstr ""
+
+#: includes/wc-order-details-builder.php:315
+msgid "You don`t have access to this post"
+msgstr ""
+
+#: includes/wc-order-details-builder.php:379
+#: templates/admin/jet-apb-settings/custom-day-schedule.php:46
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:10
+#: templates/admin/jet-apb-settings/settings-working-hours.php:299
+#: templates/admin/jet-apb-settings/settings-working-hours.php:386
+#: templates/admin/jet-apb-settings/settings-working-hours.php:465
+msgid "Are you sure?"
+msgstr ""
+
+#: includes/workflows/actions/send-email.php:21
+msgid "Email to"
+msgstr ""
+
+#: includes/workflows/actions/send-email.php:22
+msgid "Address to send email to. Support appointment macros"
+msgstr ""
+
+#: includes/workflows/actions/send-email.php:31
+msgid "Email subject"
+msgstr ""
+
+#: includes/workflows/actions/send-email.php:32
+msgid "Subject of email to sent. Support appointment macros"
+msgstr ""
+
+#: includes/workflows/actions/send-email.php:41
+msgid "Sent from email"
+msgstr ""
+
+#: includes/workflows/actions/send-email.php:42
+msgid "Email address to set as `From address`. Support appointment macros"
+msgstr ""
+
+#: includes/workflows/actions/send-email.php:51
+msgid "Sent from name"
+msgstr ""
+
+#: includes/workflows/actions/send-email.php:52
+msgid "Name to set as `From name`. Support appointment macros"
+msgstr ""
+
+#: includes/workflows/actions/send-email.php:61
+msgid "Email message"
+msgstr ""
+
+#: includes/workflows/actions/send-email.php:62
+msgid "Content of email to sent. Support appointment macros"
+msgstr ""
+
+#: includes/workflows/actions/send-email.php:75
+msgid "Send Email"
+msgstr ""
+
+#: includes/workflows/actions/webhook.php:14
+msgid "Call a Webhook"
+msgstr ""
+
+#: includes/workflows/actions/webhook.php:19
+msgid "Webhook URL"
+msgstr ""
+
+#: includes/workflows/actions/webhook.php:20
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:69
+msgid "Name of the action to visually identify it in the list"
+msgstr ""
+
+#: includes/workflows/events/appointment-created.php:20
+msgid "Appointment Created"
+msgstr ""
+
+#: includes/workflows/events/appointment-status-changed.php:23
+msgid "New Status"
+msgstr ""
+
+#: includes/workflows/events/appointment-status-changed.php:24
+msgid "Trigger event if appointment status changed to selected status"
+msgstr ""
+
+#: includes/workflows/events/appointment-status-changed.php:52
+msgid "Appointment Status Changed"
+msgstr ""
+
+#: includes/workflows/events/appointments-group-created.php:20
+msgid "Appointments Group Created (Multi Booking)"
+msgstr ""
+
+#: templates/admin/common/appointments-range.php:2
+msgid "When users can book appointments"
+msgstr ""
+
+#: templates/admin/common/appointments-range.php:3
+msgid "Set range of dates when you accept new appointments"
+msgstr ""
+
+#: templates/admin/common/appointments-range.php:30
+#: templates/admin/jet-apb-settings/settings-advanced.php:174
+#: templates/admin/jet-apb-settings/settings-advanced.php:256
+msgid "Day(s)"
+msgstr ""
+
+#: templates/admin/common/appointments-range.php:34
+msgid "Month(s)"
+msgstr ""
+
+#: templates/admin/common/appointments-range.php:38
+msgid "Year(s)"
+msgstr ""
+
+#: templates/admin/common/go-to-setup.php:4
+msgid "Start with some basic settings before using"
+msgstr ""
+
+#: templates/admin/common/go-to-setup.php:11
+msgid "Go to setup"
+msgstr ""
+
+#: templates/admin/common/wc-details-builder.php:7
+msgid "Set up WooCommerce order details"
+msgstr ""
+
+#: templates/admin/common/wc-details-builder.php:23
+msgid "Select type..."
+msgstr ""
+
+#: templates/admin/common/wc-details-builder.php:45
+#: templates/admin/common/wc-details-builder.php:55
+#: templates/admin/common/wc-details-builder.php:68
+msgid "Formatting docs"
+msgstr ""
+
+#: templates/admin/common/wc-details-builder.php:60
+msgid "Date/Time format"
+msgstr ""
+
+#: templates/admin/common/wc-details-builder.php:75
+msgid "Select field..."
+msgstr ""
+
+#: templates/admin/common/wc-details-builder.php:86
+msgid "Add new item"
+msgstr ""
+
+#: templates/admin/common/wc-details-builder.php:90
+#: templates/admin/jet-apb-appointments/popup.php:289
+#: templates/admin/jet-apb-settings/settings-working-hours.php:490
+#: templates/admin/jet-apb-settings/settings-working-hours.php:530
+msgid "Save"
+msgstr ""
+
+#: templates/admin/common/wc-details-builder.php:91
+msgid "Saving..."
+msgstr ""
+
+#: templates/admin/custom-schedule-meta-box.php:3
+msgid "Use Custom Schedule"
+msgstr ""
+
+#: templates/admin/custom-schedule-meta-box.php:4
+msgid "You can use a custom schedule for services or providers."
+msgstr ""
+
+#: templates/admin/form/edit-fields.php:8
+msgid "Appointment Specific Settings"
+msgstr ""
+
+#: templates/admin/form/edit-fields.php:17
+#: templates/admin/form/edit-fields.php:49
+#: templates/admin/form/edit-fields.php:87
+msgid "Not Selected"
+msgstr ""
+
+#: templates/admin/form/edit-fields.php:26
+#: templates/admin/form/edit-fields.php:96
+msgid "Select Service Field <i>(for <b>Form Field</b> option)</i>:"
+msgstr ""
+
+#: templates/admin/form/edit-fields.php:36
+#: templates/admin/form/edit-fields.php:106
+msgid "Set Service ID <i>(for <b>Manual Input</b> option)</i>:"
+msgstr ""
+
+#: templates/admin/form/edit-fields.php:58
+msgid "Select Provider Field <i>(for <b>Form Field</b> option)</i>:"
+msgstr ""
+
+#: templates/admin/form/edit-fields.php:68
+msgid "Set Provider ID <i>(for <b>Manual Input</b> option)</i>:"
+msgstr ""
+
+#: templates/admin/form/edit-fields.php:78
+msgid "Provider Specific Settings"
+msgstr ""
+
+#: templates/admin/form/edit-fields.php:120
+#: templates/admin/form/edit-fields.php:144
+#: templates/admin/jet-apb-settings/custom-day-schedule.php:58
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:14
+#: templates/admin/jet-apb-settings/settings-working-hours.php:311
+#: templates/admin/jet-apb-settings/settings-working-hours.php:398
+#: templates/admin/jet-apb-settings/settings-working-hours.php:477
+msgid "No"
+msgstr ""
+
+#: templates/admin/form/edit-fields.php:121
+#: templates/admin/form/edit-fields.php:145
+#: templates/admin/jet-apb-settings/custom-day-schedule.php:51
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:12
+#: templates/admin/jet-apb-settings/settings-working-hours.php:304
+#: templates/admin/jet-apb-settings/settings-working-hours.php:391
+#: templates/admin/jet-apb-settings/settings-working-hours.php:470
+msgid "Yes"
+msgstr ""
+
+#: templates/admin/form/notification-fields.php:8
+msgid "Service ID field:"
+msgstr ""
+
+#: templates/admin/form/notification-fields.php:16
+msgid "Service ID"
+msgstr ""
+
+#: templates/admin/form/notification-fields.php:21
+msgid "Provider ID field:"
+msgstr ""
+
+#: templates/admin/form/notification-fields.php:29
+msgid "Provider ID"
+msgstr ""
+
+#: templates/admin/form/notification-fields.php:34
+msgid "Appointment date field:"
+msgstr ""
+
+#: templates/admin/form/notification-fields.php:45
+msgid "User e-mail field:"
+msgstr ""
+
+#: templates/admin/form/notification-fields.php:56
+msgid "User name field:"
+msgstr ""
+
+#: templates/admin/form/notification-fields.php:62
+msgid "Use current user name / \"Guest\" for not logged-in users"
+msgstr ""
+
+#: templates/admin/form/notification-fields.php:72
+msgid " field:"
+msgstr ""
+
+#: templates/admin/form/notification-fields.php:88
+msgid "WooCommerce Price field:"
+msgstr ""
+
+#: templates/admin/form/notification-fields.php:90
+msgid ""
+"Select field to get total price from. If not selected price will be get from "
+"post meta value."
+msgstr ""
+
+#: templates/admin/form/notification-fields.php:103
+msgid "WooCommerce order details:"
+msgstr ""
+
+#: templates/admin/form/notification-fields.php:109
+msgid "Set up"
+msgstr ""
+
+#: templates/admin/form/notification-fields.php:115
+msgid "WooCommerce checkout fields map:"
+msgstr ""
+
+#: templates/admin/form/notification-fields.php:117
+msgid ""
+"Connect WooCommerce checkout fields to appropriate form fields. This allows "
+"you to pre-fill WooCommerce checkout fields after redirect to checkout."
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/add-new-appointment.php:6
+#: templates/admin/jet-apb-appointments/popup.php:270
+msgid "Add New"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-calendar.php:27
+msgid "more"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:17
+msgid "Upcoming"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:24
+msgid "Past"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:57
+msgid "Filters"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:67
+#: templates/admin/jet-apb-appointments/appointments-filter.php:117
+msgid "Export"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:84
+#: templates/admin/jet-apb-appointments/popup.php:85
+msgid "dd/mm/yyyy"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:111
+msgid "Clear Filters"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:123
+msgid "Export appointments"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:127
+msgid "Appointments to export"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:128
+msgid "Select what appointments to export - all or currently filtered"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:132
+msgid "All appointments"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:136
+msgid "Filtered appointments"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:145
+msgid "Export format"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:146
+msgid "Select format of exported data"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:150
+msgid "CSV"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:154
+msgid "iCal"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:163
+msgid "Service and Provider returns"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:164
+msgid "What information should be returned in service and provider columns"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:173
+msgid "Title"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:182
+msgid "Slot date format"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:183
+#: templates/admin/jet-apb-appointments/appointments-filter.php:192
+msgid "Documentation on date and time formatting"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-filter.php:191
+msgid "Slot time format"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-list.php:49
+msgid "Delete group"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-list.php:58
+msgid "Group"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-list.php:58
+msgid "appointments"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-timeline.php:17
+#: templates/admin/jet-apb-settings/custom-day-schedule.php:18
+#: templates/admin/jet-apb-settings/settings-working-hours.php:501
+msgid "From"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-timeline.php:24
+#: templates/admin/jet-apb-settings/custom-day-schedule.php:28
+#: templates/admin/jet-apb-settings/settings-working-hours.php:515
+msgid "To"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments-timeline.php:30
+msgid "Time Interval"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments.php:12
+msgid "Appointments is loading..."
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/appointments.php:17
+msgid "No appointments found."
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/config.php:20
+msgid "General settings"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/config.php:27
+msgid "Group items by days"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/config.php:35
+msgid "Group items by parents"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/config.php:40
+msgid "Date Format"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/config.php:50
+msgid "Allowed format options"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/config.php:56
+msgid "Filter Visibility"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/pagination.php:17
+msgid "Results per page"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/popup.php:11
+msgid "Are you sure? Deleted appointment can't be restored."
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/popup.php:14
+msgid ""
+"Do you want to delete ALL ITEMS IN THE GROUP? Deleted appointments can't be "
+"restored."
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/popup.php:17
+msgid "Edit Appointment:"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/popup.php:20
+msgid "Add New Appointment:"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/popup.php:23
+msgid "Appointment Details:"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/popup.php:114
+msgid "Busy time:"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/popup.php:178
+#: templates/public/appointment-calendar.php:12
+msgid "Repeat appointment:"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/popup.php:191
+msgid "Count:"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/popup.php:224
+#: templates/public/appointment-calendar.php:19
+msgid "Appointment details:"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/popup.php:228
+msgid "No appointments selected :("
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/popup.php:253
+msgid "Meta Data:"
+msgstr ""
+
+#: templates/admin/jet-apb-appointments/popup.php:319
+#: templates/admin/jet-apb-appointments/popup.php:344
+msgid "Delete"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:5
+msgid "Step 1 of 4. Connect post types"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:9
+#, php-format
+msgid ""
+"To start you need to create a post type for appointment services (and "
+"providers if you need it). If you have already created the required post "
+"types, please select it from the list below. If no - please go to <a "
+"href=\"%1$s\">Post Types</a> page and create it."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:12
+#: templates/admin/jet-apb-settings/settings-general.php:3
+msgid "Services post type"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:13
+#: templates/admin/jet-apb-settings/set-up.php:148
+#: templates/admin/jet-apb-settings/settings-general.php:4
+msgid "Select post type to fill services from"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:20
+msgid "Add providers"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:21
+msgid "Check this if you want to manage services providers"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:26
+#: templates/admin/jet-apb-settings/settings-general.php:12
+msgid "Provider post type"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:27
+#: templates/admin/jet-apb-settings/settings-general.php:13
+msgid "Select post type to fill providers from"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:44
+msgid "Step 2 of 4. Setup DB tables"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:50
+msgid "Required columns"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:53
+msgid "Minimum set of required DB columns"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:67
+#: templates/admin/jet-apb-settings/settings-tools.php:24
+msgid "New DB Column"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:83
+#: templates/admin/jet-apb-settings/settings-tools.php:40
+msgid "Column name"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:84
+#: templates/admin/jet-apb-settings/settings-tools.php:41
+msgid "Name for additional DB column"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:98
+msgid "Step 3 of 4. Setup working hours and days off"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:110
+msgid "Step 4 of 4. Setup additional options"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:114
+#: templates/admin/jet-apb-settings/set-up.php:175
+#: templates/admin/jet-apb-settings/settings-general.php:50
+#: templates/admin/jet-apb-settings/settings-general.php:66
+msgid "WooCommerce Integration"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:115
+#: templates/admin/jet-apb-settings/settings-general.php:51
+#: templates/admin/jet-apb-settings/settings-general.php:67
+msgid "Check this to connect appointments with WooCommerce checkout"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:122
+#: templates/admin/jet-apb-settings/settings-general.php:57
+msgid "Two-way WC orders synch"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:123
+msgid ""
+"If you enable this option, WC order status will be updated on appointment "
+"status change (by if you update WC order status, appointment status will be "
+"also updated, but not vice versa)"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:129
+msgid "Create a Single Service Booking Form"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:130
+msgid ""
+"Create a booking form for a single service page (without services select "
+"field). JetFormBuilder plugin or JetEngine forms module should be enabled"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:137
+msgid "Create Sample Page Booking Form"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:138
+msgid ""
+"Create booking form for any static page (with services select field). "
+"JetFormBuilder plugin or JetEngine forms module should be enabled"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:147
+msgid "Сreate a form in"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:159
+msgid "Congratulations! You're all set!"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:164
+msgid "Post Types"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:167
+msgid "Manage Services"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:170
+msgid "Manage Providers"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:178
+#: templates/admin/jet-apb-settings/settings-general.php:27
+msgid "Enabled"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:181
+#: templates/admin/jet-apb-settings/settings-general.php:31
+msgid "Disabled"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:184
+msgid "Related product"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:189
+msgid "Created Forms"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:196
+msgid ""
+"<b>Note:</b> If you added additional DB columns, you need to add "
+"corresponding fields to the forms and notification settings."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:201
+msgid ""
+"To make all settings safe, you can disable Set Up Wizard in plugin settings "
+"(<b>Advanced</b> tab)"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:209
+msgid "Go to plugin settings"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:223
+msgid "Prev"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:243
+msgid "Plugin is already set up."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/set-up.php:244
+msgid ""
+"If you want to reset current plugin data and set it again press the button "
+"below"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:3
+msgid "Availability check by"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:4
+msgid ""
+"Select type of slots availability check - through all services or "
+"independent by each service"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:8
+msgid "Through all services"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:12
+msgid "By each service"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:21
+msgid "How to process 'on-hold' appointments"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:22
+msgid ""
+"Select the way how 'on-hold' appointments slots will be handled in the "
+"calendar. 'on-hold' appointments used when you integrate appointments with "
+"some payment system from JetFormBuilder or WooCommerce"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:26
+msgid "Keep `on-hold` slots available"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:30
+msgid "Exclude `on-hold` slots from calendar"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:39
+msgid "Automatically switch appointments status"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:40
+msgid ""
+"Check this to automatically change status for 'pending' or 'on hold' "
+"appointments to 'failed' after selected period of time. This is may be "
+"useful if you want automatically make available not confirmed slots."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:46
+msgid "Switch interval"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:47
+msgid "Select switching appointments time interval"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:56
+msgid "Switch from"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:57
+msgid "Find appointments with this status"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:80
+msgid "Switch to"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:81
+msgid "Switch status to this"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:100
+msgid "Generate Confirmation URLs"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:101
+msgid ""
+"Generate for each appointments unique URLs to confirm or decline "
+"appointment. URLs are stored in the Appointment meta data and can be used "
+"inside emails or webhooks."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:108
+msgid "Generate Same Confirmation URLs for appointments in group"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:109
+msgid ""
+"For all appointments in the group, the confirmation and cancellation links "
+"will be the same."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:114
+#, fuzzy
+#| msgid "Scheduled before appoinment"
+msgid "Unique link for each appointment"
+msgstr "За певний час до зустрічі"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:118
+msgid "One link for group"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:128
+msgid "Confirm Page Shows"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:129
+msgid ""
+"How to present information on the Confirmation page - with plain text "
+"message or custom template"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:134
+#: templates/admin/jet-apb-settings/settings-advanced.php:216
+msgid "Text Message"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:138
+#: templates/admin/jet-apb-settings/settings-advanced.php:220
+#, fuzzy
+#| msgid "Custom Template ID:"
+msgid "Custom Template"
+msgstr "ІД Шаблону:"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:148
+#, fuzzy
+#| msgid "Appointment Date"
+msgid "Appointment confirmation deadline"
+msgstr "Дата Зустрічі"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:149
+msgid ""
+"Specify a confirmation time limit before the start of appointment. Once this "
+"deadline passes, confirmation URL will no longer be accepted."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:166
+#: templates/admin/jet-apb-settings/settings-advanced.php:248
+#, fuzzy
+#| msgid "Minute"
+msgid "Minute(s)"
+msgstr "Хвилина"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:170
+#: templates/admin/jet-apb-settings/settings-advanced.php:252
+#, fuzzy
+#| msgid "Hour"
+msgid "Hour(s)"
+msgstr "Година"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:178
+#: templates/admin/jet-apb-settings/settings-advanced.php:260
+#, fuzzy
+#| msgid "Week"
+msgid "Week(s)"
+msgstr "Тиждень"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:190
+msgid "Confirmed Message"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:191
+msgid "Message to show on appointment confirmation"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:199
+#, fuzzy
+#| msgid "Custom Template ID:"
+msgid "Confirm Page Template"
+msgstr "ІД Шаблону:"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:200
+msgid ""
+"Select template to use as confiramtion page. This template will replace "
+"whole page content."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:210
+msgid "Cancellation Page Shows"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:211
+msgid ""
+"How to present information on the Cancellation page - with plain text "
+"message or custom template"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:230
+#, fuzzy
+#| msgid "Appointment Calendar"
+msgid "Appointment cancellation deadline"
+msgstr "Календар Зустрічей"
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:231
+msgid ""
+"Specify a cancellation time limit before the start of appointment. Once this "
+"deadline passes, cancellation URL will no longer be accepted."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:272
+msgid "Cancelled Message"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:273
+msgid "Message to show on appointment cancel"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:281
+msgid "Cancellation Page Template"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:282
+msgid ""
+"Select template to use as cancellation page. This template will replace "
+"whole page content."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:291
+msgid "Hide Set Up Wizard"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:292
+msgid "Check this to hide Set Up page to avoid unnecessary plugin resets"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:298
+msgid "Access Capability"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-advanced.php:299
+msgid ""
+"The string to change access capability to appointments admin page and "
+"appointments actions."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-general.php:22
+msgid "Service Slot Duplicating Across Providers"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-general.php:43
+msgid ""
+"Please note:\n"
+"\t\tYou have providers with custom schedules, so slot sharing is always "
+"enabled. If you want to disable slot sharing, please disable the custom "
+"schedule for all providers."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-general.php:58
+msgid ""
+"If you enable this option, WC order status will be updated on appointment "
+"status change (by default, if you update an appointment status, related "
+"Order will remain the same)"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-general.php:70
+msgid "Please install and activate <b>WooCommerce</b> plugin"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-general.php:75
+msgid "Manage Capacity"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-general.php:76
+msgid "Allow to manage services capacity"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-general.php:82
+msgid "Show Capacity Counter"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-general.php:83
+msgid "Show service capacity count in slots"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-general.php:90
+msgid "User Can Manage Booked Capacity"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-general.php:91
+msgid "Allow user to change count of booked items for the selected slot"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-general.php:100
+msgid ""
+"Please note:\n"
+"\t\tYou have the \"Service Slot Duplicating Across Providers\" option "
+"disabled. This means the service capacity will define the total number of "
+"slots that can be booked across all providers, not the number of slots per "
+"provider."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:3
+msgid "Use custom labels"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:4
+msgid "Check this change default weekdays and month labels"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:12
+msgid "By default: Sun"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:20
+msgid "By default: Mon"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:28
+msgid "By default: Tue"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:36
+msgid "By default: Wed"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:44
+msgid "By default: Thu"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:52
+msgid "By default: Fri"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:60
+msgid "By default: Sat"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:68
+msgid "By default: January"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:76
+msgid "By default: February"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:84
+msgid "By default: March"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:92
+msgid "By default: April"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:100
+msgid "By default: May"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:108
+msgid "By default: June"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:116
+msgid "By default: July"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:124
+msgid "By default: August"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:132
+msgid "By default: September"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:140
+msgid "By default: October"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:148
+msgid "By default: November"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:156
+msgid "By default: December"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:163
+msgid "Form Error: Appointment time already taken"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:164
+msgid "By default: Appointment time already taken"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:171
+msgid "Form Error: Selected time is not allowed to book"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:172
+msgid "By default: Selected time is not allowed to book"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:179
+msgid "Form Error: You have not selected enough slots"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:180
+#, php-format
+msgid ""
+"By default: Sorry. You have not selected enough slots, minimum quantity: %s"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:187
+#, fuzzy
+#| msgid "Appointment Settings"
+msgid "Appointment details label"
+msgstr "Налаштування Зустрічі"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:188
+#, fuzzy
+#| msgid "Appointment Settings"
+msgid "By default: Appointment details"
+msgstr "Налаштування Зустрічі"
+
+#: templates/admin/jet-apb-settings/settings-labels.php:195
+msgid "Recurring Appointment Count label"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:196
+msgid "By default: Appointment Count"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:203
+msgid "Recurring Slot Capacity Count label"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:204
+msgid "By default: Slot Capacity Count"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:211
+msgid "Invalid Confirmation or Cancellation Token label"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-labels.php:212
+msgid "By default: Token is invalid or was already used."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-layout.php:4
+#: templates/admin/jet-apb-settings/settings-layout.php:38
+msgid "Calendar layout"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-layout.php:5
+#: templates/admin/jet-apb-settings/settings-layout.php:39
+msgid "Select layout of calendar for the front-end form"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-layout.php:22
+msgid "Scroll to Appointment details after select slot"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-layout.php:23
+msgid ""
+"Automatically scrolls page to Appointment details section after selecting "
+"slot in the calendar."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-layout.php:29
+#: templates/admin/jet-apb-settings/settings-layout.php:48
+msgid "Show timezones picker in calendar"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-layout.php:30
+#: templates/admin/jet-apb-settings/settings-layout.php:49
+msgid ""
+"Show timezones picker in appointment calendar. Allows users to show slots in "
+"selected timezone time."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-layout.php:43
+#: templates/admin/jet-apb-settings/settings-layout.php:53
+msgid "Available only for "
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-macros-inserter.php:16
+msgid "All Macros"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-tools.php:4
+msgid "Clear excluded dates cache"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-tools.php:5
+msgid "Remove all dates from excluded dates table"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-tools.php:20
+msgid "Additional table columns"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-tools.php:21
+msgid ""
+"You can add any columns you want to Appointments table. We recommend add "
+"cloumns only on plugin set up. When you added new columns, you need to map "
+"these columns to apopriate form field in related booking form."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-tools.php:50
+msgid "Warning:"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-tools.php:50
+msgid ""
+"If you change or remove any columns, all data stored in this columns will be "
+"lost!"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-tools.php:60
+msgid "Save and update appointments table"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:19
+msgid "Event"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:20
+msgid "Select event to trigger a workflow item"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:29
+msgid "Start"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:30
+msgid "Select when start to run current workflow"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:39
+msgid "Days before"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:40
+msgid "Run this item in selected number of days before appointment date."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:51
+msgid "+ New Action"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:68
+msgid "Action name"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:76
+msgid "Action"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-workflow-item.php:77
+msgid "Select action to run"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-workflows.php:5
+msgid "Enable/disable current workflow"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-workflows.php:22
+msgid "New Workflow Item"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-workflows.php:27
+msgid "Please note!"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-workflows.php:28
+msgid ""
+"New Workflow Item will affect only appointments created <b>after</b> adding "
+"this Item."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:3
+msgid "Booking Schedule"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:7
+msgid "Time Format"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:8
+msgid "Select time format for available slots list"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:17
+msgid "Schedule Type"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:20
+msgid "Choose one of these options for creating an appointment schedule."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:21
+msgid "Time slots - Set the fixed duration for appointments"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:22
+msgid "Time picker - Let the end-user specify the time of their appointment"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:23
+msgid ""
+"Recurring appointments - Let the end-user book regular appointments (uses "
+"time slots)"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:33
+msgid "Book every:"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:34
+msgid "Set the recurrence period to let the end-user book regular appointments"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:46
+msgid "Repeat Count"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:47
+msgid "Define min and max recurring appointments the end-user can book"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:50
+#: templates/admin/jet-apb-settings/settings-working-hours.php:134
+#: templates/admin/jet-apb-settings/settings-working-hours.php:230
+msgid "Min"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:61
+#: templates/admin/jet-apb-settings/settings-working-hours.php:145
+#: templates/admin/jet-apb-settings/settings-working-hours.php:241
+msgid "Max"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:76
+#: templates/admin/jet-apb-settings/settings-working-hours.php:113
+#: templates/admin/jet-apb-settings/settings-working-hours.php:129
+msgid "Duration"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:77
+msgid "Select the default duration for each service and provider time"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:91
+msgid "Several days"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:92
+msgid ""
+"The appointment time can include several days. For example, the start 10:00 "
+"- 02/05/21 end of 20:00 - 05/06/21."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:101
+msgid "Only start time"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:102
+msgid ""
+"The end-user will only be able to choose the start of the appointment, the "
+"duration will be set automatically"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:114
+msgid "Set the min and max duration for the appointments"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:130
+msgid "Select the min and max duration for each service and provider time"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:158
+msgid "Duration Step"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:159
+msgid "Set the duration step in time picker."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:173
+msgid "Buffer Time Before"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:186
+msgid "Buffer Time After"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:199
+msgid "Locked Time Before"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:200
+msgid "The appointment cannot be made if there is less than this time left."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:213
+msgid "Multi Booking"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:214
+msgid ""
+"The client can book several appointments at different times and different "
+"days."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:227
+msgid "Slot Count"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:262
+#: templates/admin/jet-apb-settings/settings-working-hours.php:496
+msgid "Work Hours"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:273
+msgid "+ Add"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:324
+msgid "Days Off"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:335
+msgid "Allow rewrite for service/provider"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:339
+msgid "Force global days off"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:347
+msgid "Days off inherited from the global settings."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:352
+msgid "Set the days that will be the weekend or holidays."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:358
+#: templates/admin/jet-apb-settings/settings-working-hours.php:439
+msgid "Add Days"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:410
+msgid "Working Days"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:420
+msgid "Override all schedule with new days"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:424
+msgid "Override only days added below"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:431
+msgid ""
+"Add dates when your availability is different from your regular weekly hours."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:432
+msgid "Set available days to book."
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:502
+msgid "Starts from time"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:516
+msgid "Work to time"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:536
+msgid "Select Days"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:539
+msgid "Days Label"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:540
+msgid "Name of the current day (eg. name of the holiday)"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:549
+msgid "Start Date *"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:550
+msgid "Pick a start day"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:555
+#: templates/admin/jet-apb-settings/settings-working-hours.php:571
+msgid "Select Date"
+msgstr ""
+
+#: templates/admin/jet-apb-settings/settings-working-hours.php:566
+msgid "Pick a end day"
+msgstr ""
+
+#: templates/admin/order/details.php:7
+#: templates/public/email-order-details-html.php:7
+#: templates/public/email-order-details-plain.php:6
+#: templates/public/order-details.php:6
+msgid "Appointment Details"
+msgstr ""
+
+#: templates/admin/settings-meta-box.php:4
+msgid "Capacity"
+msgstr ""
+
+#: templates/admin/settings-meta-box.php:5
+msgid "Name: _app_capacity."
+msgstr ""
+
+#: templates/admin/settings-meta-box.php:16
+msgid "Price per"
+msgstr ""
+
+#: templates/admin/settings-meta-box.php:25
+msgid "Price per slot"
+msgstr ""
+
+#: templates/admin/settings-meta-box.php:26
+msgid "Price for the entire slot time"
+msgstr ""
+
+#: templates/admin/settings-meta-box.php:38
+msgid "Price per hour"
+msgstr ""
+
+#: templates/admin/settings-meta-box.php:39
+msgid ""
+"Price for one hour. The price will be rounded up if a new hour has started. "
+"For example at 1:15, the price will be calculated as 2 hours"
+msgstr ""
+
+#: templates/admin/settings-meta-box.php:51
+msgid "Price per minute"
+msgstr ""
+
+#: templates/admin/settings-meta-box.php:52
+msgid "Price for one minute."
+msgstr ""
+
+#: templates/public/appointment-calendar.php:24
+msgid "Please, select the service first."
+msgstr ""
+
+#: templates/public/appointment-calendar.php:25
+msgid "Please, select the provider first."
+msgstr ""
+
+#: templates/public/appointment-calendar.php:26
+msgid "Please set service field for current calendar"
+msgstr ""
+
+#: templates/public/appointment-calendar.php:27
+msgid "Sorry. You have the max number of appointments."
+msgstr ""

@@ -1,0 +1,210 @@
+/* Score View */
+.vbo-modotareviews-globalscore {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid #eee;
+	padding: 30px;
+}
+.vbo-modotareviews-score-info-header {
+	flex: 100%;
+	margin-bottom: 15px;
+}
+.vbo-modotareviews-score-info-header .vbo-modotareviews-score-info {
+	display: inline-block;
+}
+.vbo-modotareviews-score-info-header .vbo-modotareviews-score-info {
+	float: right;
+}
+.vbo-modotareviews-score-info-header .vbo-modotareviews-score-info-property {
+	float: left;
+}
+.vbo-modotareviews-score-info-header .vbo-modotareviews-score-info-property .vbo-modotareviews-propname {
+	font-weight: bold;
+	font-size: 1.1em;
+	display: block;
+}
+.vbo-modotareviews-score-info-header .vbo-modotareviews-score-info-property .vbo-modotareviews-lastdate {
+	font-size: 12px;
+	color: #666;
+	font-weight: bold;
+}
+.vbo-modotareviews-globalscore .vbo-modotareviews-score-info-top {
+	width: 220px;
+	margin-right: 20px;
+}
+.vbo-modotareviews-score-info-top .vbo-modotareviews-score-info .vbo-modotareviews-score-wrap {
+	display: inline-block;
+	padding: 20px;
+	color: #fff;
+	border-radius: 6px;
+	text-align: center;
+}
+.vbo-modotareviews-score-info-top .vbo-modotareviews-score-info .vbo-modotareviews-score-wrap-bookingcom {
+	background: #204978;
+}
+.vbo-modotareviews-score-info-top .vbo-modotareviews-score-info .vbo-modotareviews-score-wrap-airbnbapi {
+	background: #ff5a5f;
+}
+.vbo-modotareviews-score-info-top .vbo-modotareviews-score-info .vbo-modotareviews-score-wrap-website {
+	background: #37859d;
+}
+.vbo-modotareviews-globalscore-website .vbo-modotareviews-subscore-progress-bar .vbo-modotareviews-subscore-progress {
+	background: #37859d;
+}
+.vbo-modotareviews-score-info-top .vbo-modotareviews-score-info .vbo-modotareviews-score-wrap .vbo-modotareviews-score-point {
+	font-weight: bold;
+	font-size: 36px;
+}
+.vbo-modotareviews-globalscore .vbo-modotareviews-score-info-bottom {
+	flex: 1;
+}
+.vbo-modotareviews-subscore {
+	margin: 5px 0;
+}
+.vbo-modotareviews-subscore .vbo-modotareviews-subscore-inner {
+	display: flex;
+}
+.vbo-modotareviews-subscore .vbo-modotareviews-subscore-inner .vbo-modotareviews-subscore-category {
+	flex-basis: 130px;
+	margin-right: 20px;
+}
+.vbo-modotareviews-subscore .vbo-modotareviews-subscore-inner .vbo-modotareviews-subscore-point {
+	font-weight: 500;
+}
+.vbo-modotareviews-subscore .vbo-modotareviews-subscore-inner .vbo-modotareviews-subscore-progress-inner {
+	flex: 1;
+	align-self: center;
+	margin-right: 25px;
+}
+.vbo-modotareviews-subscore-progress-bar {
+	background: #eee;
+	border-radius: 4px;
+	height: 10px;
+}
+.vbo-modotareviews-subscore-progress-bar .vbo-modotareviews-subscore-progress {
+	height: 100%;
+	border-radius: 4px;
+}
+.vbo-modotareviews-globalscore-bookingcom .vbo-modotareviews-subscore-progress-bar .vbo-modotareviews-subscore-progress {
+	background: #2e99d4;
+}
+.vbo-modotareviews-globalscore-airbnbapi .vbo-modotareviews-subscore-progress-bar .vbo-modotareviews-subscore-progress {
+	background: #ff5a5f;
+}
+.vbo-modotareviews-score-compact {
+	display: inline-block;
+}
+.vbo-modotareviews-score-compact .vbo-modotareviews-score-info-header {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.vbo-modotareviews-score-compact .vbo-modotareviews-score-info-header .vbo-modotareviews-score-info {
+	float: left;
+}
+.vbo-modotareviews-score-compact .vbo-modotareviews-score-info-top {
+	width: auto;
+	margin-right: 0;
+}
+
+/* Reviews */
+.vbo-modotareviews-reviews-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.vbo-modotareviews-introtxt {
+	flex: 100%;
+	padding: 15px;
+}
+.vbo-modotareviews-review-container {
+	border: 1px solid #eee;
+	padding: 30px;
+	margin: 5px;
+	flex-basis: 32%;
+}
+.vbo-modotareviews-review-inner-top {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.vbo-modotareviews-review-inner-top .vbo-modotareviews-star-full {
+	color: #ffbd3f;
+}
+.vbo-modotareviews-review-inner-top .vbo-modotareviews-review-score {
+	font-size: 1.2em;
+	font-weight: bold;
+	background: #eee;
+	padding: 10px 15px;
+	border-radius: 6px;
+	display: inline-block;
+}
+.vbo-modotareviews-review-inner-middle {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.vbo-modotareviews-review-inner-middle .vbo-modotareviews-review-negative {
+	margin-top: 10px;
+}
+.vbo-modotareviews-review-inner-bottom {
+	text-align: center;
+}
+.vbo-modotareviews-review-inner-bottom .vbo-modotareviews-review-reviewer {
+	display: inline-block;
+	font-weight: bold;
+}
+.vbo-modotareviews-review-inner-bottom .vbo-modotareviews-review-date {
+	font-size: 12px;
+	color: #666;
+	font-weight: bold;
+}
+.vbo-modotareviews-review-inner-messages .vbo-modotareviews-review-headline {
+	font-weight: bold;
+}
+.vbo-modotareviews-review-chlogo {
+	margin-top: 10px;
+}
+.vbo-modotareviews-review-chlogo img {
+	max-width: 100px;
+}
+.vbo-modotareviews-review-positive i {
+	color: #48b426;
+}
+.vbo-modotareviews-review-negative i {
+	color: #da0b0b;
+}
+
+@media screen and (max-width: 860px) {
+	.vbo-modotareviews-review-container {
+		flex-basis: 48%;
+	}
+	.vbo-modotareviews-globalscore .vbo-modotareviews-score-info-top {
+		width: auto;
+	}
+}
+@media screen and (max-width: 640px) {
+	.vbo-modotareviews-globalscore .vbo-modotareviews-score-info-top {
+		width: 100%;
+		margin: 0 0 15px;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 580px) {
+	.vbo-modotareviews-review-container {
+		flex-basis: 100%;
+		margin: 5px 0;
+	}
+	.vbo-modotareviews-score-info-header {
+		text-align: center;
+	}
+	.vbo-modotareviews-score-info-header .vbo-modotareviews-score-info-property {
+		float: none;
+		display: block;
+	}
+	.vbo-modotareviews-score-info-header .vbo-modotareviews-score-info {
+		float: none;
+		display: block;
+		margin-top: 5px;
+	}
+}

@@ -1,0 +1,57 @@
+@use "../../../css/_indeterminate-checkbox.scss";
+@use "../../../css/ui-constants";
+@use "../../../css/wp-admin-colors";
+
+input.ame-actor-feature-checkbox {
+	@include indeterminate-checkbox.ame-indeterminate-checkbox();
+}
+
+.ame-actor-feature-checkbox-control {
+	.description {
+		margin-left: ui-constants.$controlChildLeftMargin;
+
+		display: block;
+		line-height: 1.4em; //Reset to the WP default.
+
+		margin-bottom: (6/13) * 1em; //Emulates the classic "Tweaks" tab. May need adjustment for other contexts.
+	}
+
+	@media screen and (max-width: 782px) {
+		.description {
+			margin-left: ui-constants.$smControlChildLeftMargin;
+		}
+	}
+
+	.ws_tooltip_trigger .dashicons {
+		vertical-align: text-bottom;
+	}
+}
+
+.ame-afc-tweak-actions {
+	vertical-align: middle;
+	margin-left: 1em;
+	display: none;
+}
+
+.ame-actor-feature-checkbox-control:hover .ame-afc-tweak-actions {
+	display: inline-block;
+}
+
+.ame-afc-action {
+	text-decoration: none;
+	color: wp-admin-colors.wpColor(gray-50);
+	cursor: pointer;
+	padding: 0 0.5em;
+
+	& > .dashicons {
+		vertical-align: text-bottom;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&.ame-afc-delete:hover {
+		color: wp-admin-colors.wpColor(red-70);
+	}
+}

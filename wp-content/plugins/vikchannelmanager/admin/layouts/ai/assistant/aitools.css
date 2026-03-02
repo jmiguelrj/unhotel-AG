@@ -1,0 +1,820 @@
+/** 
+ * @package     VikChannelManager
+ * @subpackage  aitools
+ * @author      E4J s.r.l.
+ * @link        https://vikwp.com
+ */
+
+.aitools-messages-container {
+    border: 1px solid var(--vbo-config-border-color);
+    padding: 10px;
+    margin-top: 25px;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+}
+.vbo-sidepanel-active-widgets .aitools-messages-container, .vbo-dashboard-fullcontainer .aitools-messages-container {
+    max-height: 250px;
+    height: 100vh;
+
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -ms-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    transition: max-height 1s;
+}
+.vbo-sidepanel-active-widgets .aitools-messages-container.focused, .vbo-dashboard-fullcontainer .aitools-messages-container.focused {
+    max-height: 550px;
+}
+.container-popup .aitools-messages-container {
+    margin-top: 0;
+}
+
+.no-records-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-73%);
+    text-align: center;
+    color: #aaa;
+
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+}
+.vbo-sidepanel-active-widgets .aitools-messages-container.focused .no-records-placeholder, 
+.vbo-dashboard-fullcontainer .aitools-messages-container.focused .no-records-placeholder {
+    transform: translate(-50%,-50%);
+}
+
+.no-records-placeholder > i {
+    display: block;
+    font-size: 96px;
+    margin-bottom: 10px;
+}
+.no-records-placeholder .aitools-disclaimer-trigger {
+    cursor: pointer;
+}
+.no-records-placeholder .hint {
+    margin-top: 10px;
+}
+
+.aitools-messages-container .aitools-messages-list {
+    height: calc(100% - 68px);
+    overflow-y: scroll;
+}
+.aitools-messages-container .aitools-messages-list .aitools-message-row {
+    display: flex;
+    margin-bottom: 15px;
+}
+.aitools-messages-container .aitools-messages-list .aitools-message-row:last-child {
+    margin-bottom: 0;
+}
+.aitools-messages-container .aitools-messages-list .aitools-message-row.same-user {
+    margin-top: -10px;
+}
+.aitools-message-row.me {
+    justify-content: end;
+}
+.aitools-message-row.not-me {
+    justify-content: start;
+}
+
+.aitools-messages-container .aitools-messages-list .aitools-message-addon {
+    /*margin: -12px 0 15px 42px;*/
+    margin: -6px 0 16px 38px;
+}
+.aitools-messages-container .aitools-messages-list .aitools-message-addon .ai-message-addon-sources {
+    margin-top: -12px;
+}
+.aitools-messages-container .aitools-messages-list .aitools-message-addon .ai-message-addon-body {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: start;
+    padding-right: 8px;
+    margin-top: 6px;
+}
+
+.aitools-messages-container .aitools-message-addon .ai-message-addon-sources summary {
+    cursor: pointer;
+}
+.aitools-messages-container .aitools-message-addon .ai-message-addon-sources summary:hover {
+    color: var(--vbo-base-color);
+}
+.aitools-messages-container .aitools-message-addon .ai-message-addon-sources ul {
+    border: 1px solid var(--vbo-basic-btn);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+}
+.aitools-messages-container .aitools-message-addon .ai-message-addon-sources ul li:first-child {
+    margin-top: 0;
+}
+.aitools-messages-container .aitools-message-addon .ai-message-addon-sources ul li:last-child {
+    margin-bottom: 0;
+}
+
+.aitools-message-addon .btn.vbo-ai-assistant-addon-btn {
+	background: var(--vbo-config-title-color);
+	color: var(--vbo-contrast-text-color);
+	border: 1px solid var(--vbo-config-title-color);
+	padding: 4px 10px;
+}
+.aitools-message-addon .btn.vbo-ai-assistant-addon-btn:hover {
+	background: transparent;
+	border: 1px solid var(--vbo-config-title-color);
+	color: var(--vbo-config-title-color);
+}
+.aitools-message-addon .btn.vbo-ai-assistant-addon-btn:focus {
+	background: var(--vbo-config-titles-color-light);
+	color: var(--vbo-contrast-text-color);
+}
+.aitools-message-addon .ai-message-addon-sources .btn.vbo-ai-assistant-addon-btn {
+	padding: 4px 10px;
+}
+
+.aitools-message-addon .vbo-ai-source-badge-details {
+	background-color: var(--vbo-info-bg);
+	color: var(--vbo-blue-color);
+	padding: 4px 8px;
+	border-radius: 20px;
+}
+.aitools-message-addon .badge-primary {
+	background: transparent;
+	border: 1px solid var(--vbo-base-color);
+	color: var(--vbo-base-color);
+	padding: 4px 8px;
+	border-radius: 20px;
+}
+
+.aitools-message-row.same-user .aitools-message-author-avatar {
+    visibility: hidden;
+}
+.aitools-message-row .aitools-message-author-avatar {
+    /*background: #f1a517;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;*/
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aitools-message-row .aitools-message-author-avatar img {
+    /*width: 28px;
+    height: 28px;*/
+    width: 32px;
+    height: 32px;
+}
+
+.aitools-message-row .aitools-message-bubble {
+    border-radius: 6px;
+    max-width: calc(90% - 30px);
+    padding: 4px 8px;
+}
+.aitools-message-row.me .aitools-message-bubble {
+    background: var(--vcm-chat-bubble-host-background);
+    color: var(--vcm-chat-bubble-host-color);
+}
+.aitools-message-row.not-me .aitools-message-bubble {
+    margin-left: 4px;
+    background: var(--vcm-chat-bubble-guest-background);
+    color: var(--vcm-chat-bubble-guest-color);
+}
+
+.aitools-messages-container .aitools-message-addon .vcm-addon-modifyrates-channel img {
+    width: 20px;
+}
+
+.aitools-messages-container .aitools-messages-action-wrapper {
+    margin-top: 18px;
+    position: relative;
+}
+.aitools-messages-container .aitools-messages-action {
+    display: flex;
+    position: relative;
+}
+.aitools-messages-container .aitools-messages-action-wrapper .aitools-clear-btn {
+    position: absolute;
+    top: 4px;
+    font-size: smaller;
+
+    -webkit-transition: -webkit-transform 1.25s ease;
+    -moz-transition: -moz-transform 1.25s ease;
+    -o-transition: -o-transform 1.25s ease;
+    transition: transform 1.25s ease;
+}
+.aitools-messages-container .aitools-messages-action-wrapper .aitools-clear-btn.slide-in {
+    transform: translateY(-22px);
+    z-index: 0;
+}
+.aitools-messages-container .aitools-messages-action .aitools-message-area {
+    resize: none;
+    width: 100%;
+    z-index: 1;
+}
+
+.ai-thinking {
+    padding: 7px 20px 7px;
+}
+.dot-flashing {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    animation: dot-flashing 0.5s infinite linear alternate;
+    animation-delay: 0.25s;
+}
+.dot-flashing::before, .dot-flashing::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+.dot-flashing::before {
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    animation: dot-flashing 0.5s infinite alternate;
+    animation-delay: 0s;
+}
+.dot-flashing::after {
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    animation: dot-flashing 0.5s infinite alternate;
+    animation-delay: 0.5s;
+}
+
+@keyframes dot-flashing {
+    0% {
+        background-color: var(--vcm-chat-dot-flashing-on);
+    }
+    50%, 100% {
+        background-color: var(--vcm-chat-dot-flashing-off);
+    }
+}
+
+/* chat message HTML preview */
+
+.aitools-messages-container .aitools-message-text {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.aitools-messages-container .aitools-message-text h1,
+.aitools-messages-container .aitools-message-text h2,
+.aitools-messages-container .aitools-message-text h3,
+.aitools-messages-container .aitools-message-text h4,
+.aitools-messages-container .aitools-message-text h5,
+.aitools-messages-container .aitools-message-text h6 {
+    margin: 20px 0 5px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.aitools-messages-container .aitools-message-text h1 {
+    font-size: 20px;
+}
+.aitools-messages-container .aitools-message-text h2 {
+    font-size: 18px;
+}
+.aitools-messages-container .aitools-message-text h3 {
+    font-size: 16px;
+}
+.aitools-messages-container .aitools-message-text h4 {
+    font-size: 15px;
+}
+.aitools-messages-container .aitools-message-text h5 {
+    font-size: 14px;
+}
+.aitools-messages-container .aitools-message-text h6 {
+    font-size: 13px;
+}
+
+.aitools-messages-container .aitools-message-text > *:first-child {
+    margin-top: 0 !important;
+}
+.aitools-messages-container .aitools-message-text > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+.aitools-messages-container .aitools-message-bubble .aitools-message-text > hr {
+    margin: 15px 0 !important;
+    padding: 0;
+}
+
+.aitools-messages-container .aitools-message-text table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 100%;
+}
+.aitools-messages-container .aitools-message-text table th {
+    padding: 8px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+    background-color: var(--vbo-body-bg-color);
+    color: var(--vbo-body-text-color);
+    font-weight: bold;
+    text-align: left;
+}
+.aitools-messages-container .aitools-message-text table td {
+    padding: 8px;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    background-color: var(--vbo-body-bg-color);
+    color: var(--vbo-body-text-color);
+}
+
+.aitools-messages-container .aitools-message-text .katex-display {
+    overflow-x: auto;
+    margin: 0;
+    padding: 1em 0;
+}
+
+/* AI disclaimer tooltip */
+
+.aiassistant-disclaimer-wrap {
+    display: flex;
+    align-items: top;
+    gap: 12px;
+}
+.aiassistant-disclaimer-wrap .aiassistant-disclaimer-icn {
+    font-size: 16px;
+    padding-top: 2px;
+}
+
+/* search addon */
+
+.aitools-message-addon .search-addon-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+}
+.aitools-message-addon .search-addon-wrapper .search-terms {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+/* modify rates addon */
+
+.aitools-message-addon .modifyrates-addon-wrapper {
+    flex: 1;
+}
+.aitools-message-addon .modifyrates-addon-wrapper .modifyrates-addon-inner {
+    display: flex;
+    gap: 4px;
+    justify-content: space-between;
+    align-items: center;
+} 
+.aitools-message-addon .modifyrates-addon-wrapper .addon-modifyrate-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+}
+.aitools-message-addon .modifyrates-addon-wrapper .addon-modifyrate-info img {
+    max-width: 20px;
+}
+
+/* statistics addon */
+
+.aitools-message-addon .addon-statistics {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+}
+
+/* widget addon */
+
+.aitools-message-addon .ai-message-addon-widget {
+    background: var(--vbo-main-bg-color);
+    color: var(--vbo-body-text-color);
+    border-radius: 20px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.aitools-message-addon .ai-message-addon-widget .addon-widget-head {
+    padding: 15px 15px 5px;
+    display: flex;
+    align-items: center;
+}
+.aitools-message-addon .ai-message-addon-widget .addon-widget-head i {
+    margin-right: 6px;
+    font-size: 24px;
+}
+.aitools-message-addon .ai-message-addon-widget .addon-widget-head img {
+    margin-right: 6px;
+    height: 28px;
+}
+.aitools-message-addon .ai-message-addon-widget .addon-widget-head strong {
+    font-size: 16px;
+    line-height: 16px;
+}
+.aitools-message-addon .ai-message-addon-widget .addon-widget-summary {
+    padding: 15px 15px 0;
+}
+.aitools-message-addon .ai-message-addon-widget .addon-widget-summary:last-child {
+    padding: 15px;
+}
+.aitools-message-addon .ai-message-addon-widget .addon-widget-body {
+    padding: 15px 0 0;
+    overflow: hidden;
+}
+.aitools-message-addon .ai-message-addon-widget .addon-widget-body:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 0;
+}
+.aitools-message-addon .ai-message-addon-widget .addon-widget-body:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.aitools-message-addon .ai-message-addon-widget > hr {
+    border: 0;
+    border-top: 1px solid var(--vbo-body-text-color);
+    opacity: 0.25;
+    padding: 0;
+    margin: 10px 0 0;
+}
+.aitools-message-addon .ai-message-addon-widget .addon-widget-footer {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.aitools-message-addon .ai-message-addon-widget .addon-widget-footer > .btn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* widget reservation addon */
+
+.aitools-message-addon .ai-message-addon-widget .addon-reservation-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px 4px;
+}
+.aitools-message-addon .ai-message-addon-widget .addon-reservation-summary > * {
+    flex: calc(50% - 4px);
+}
+.aitools-message-addon .ai-message-addon-widget .addon-reservation-summary .addon-reservation-rooms {
+    flex: 100%;
+    margin: 20px 0 30px;
+    font-size: 120%;
+}
+.aitools-message-addon .ai-message-addon-widget .addon-reservation-summary .addon-reservation-checkin,
+.aitools-message-addon .ai-message-addon-widget .addon-reservation-summary .addon-reservation-nights,
+.aitools-message-addon .ai-message-addon-widget .addon-reservation-summary .addon-reservation-total {
+    text-align: right;
+}
+.aitools-message-addon .ai-message-addon-widget .addon-reservation-summary .addon-reservation-label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 80%;
+    font-weight: 500;
+}
+.aitools-message-addon .ai-message-addon-widget .addon-reservation-summary .addon-reservation-value {
+    display: block;
+    font-size: 110%;
+}
+
+.aitools-message-addon .ai-message-addon-widget .addon-reservation-customer .addon-reservation-value {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.aitools-message-addon .ai-message-addon-widget .addon-reservation-customer .addon-reservation-value img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 24px;
+    height: 24px;
+}
+
+/* booking.com reservation widget custom style */
+
+.aitools-message-addon .ai-message-addon-widget.bookingcom {
+    background: #0c3b7c;
+    color: #fff;
+}
+.aitools-message-addon .ai-message-addon-widget.bookingcom .addon-widget-head img {
+    border: 1px solid #fff8;
+    border-radius: 50%;
+}
+.aitools-message-addon .ai-message-addon-widget.bookingcom .addon-reservation-summary .addon-reservation-label {
+   color: #05bafc;
+}
+.aitools-message-addon .ai-message-addon-widget.bookingcom > hr {
+    border-color: #fff;
+}
+
+.aitools-message-addon .ai-message-addon-widget.bookingcom .btn.vbo-ai-assistant-addon-btn {
+    background: #05bafc;
+    color: #0c3b7c;
+    border-color: #05bafc;
+    font-weight: 500;
+}
+.aitools-message-addon .ai-message-addon-widget.bookingcom .btn.vbo-ai-assistant-addon-btn:hover {
+    background: transparent;
+    border-color: #05bafc;
+    color: #05bafc;
+}
+.aitools-message-addon .ai-message-addon-widget.bookingcom .btn.vbo-ai-assistant-addon-btn:focus {
+    background: transparent;
+    border-color: #05bafc;
+    color: #05bafc;
+}
+
+/* airbnbapi reservation widget custom style */
+
+.aitools-message-addon .ai-message-addon-widget.airbnbapi {
+    background: #810e24;
+    color: #fff;
+}
+.aitools-message-addon .ai-message-addon-widget.airbnbapi .addon-widget-head img {
+    border: 1px solid #fff8;
+    border-radius: 50%;
+}
+.aitools-message-addon .ai-message-addon-widget.airbnbapi .addon-reservation-summary .addon-reservation-label {
+   color: #ff375c;
+}
+.aitools-message-addon .ai-message-addon-widget.airbnbapi > hr {
+    border-color: #fff;
+}
+
+.aitools-message-addon .ai-message-addon-widget.airbnbapi .btn.vbo-ai-assistant-addon-btn {
+    background: #ff375c;
+    color: #810e24;
+    border-color: #ff375c;
+    font-weight: 500;
+}
+.aitools-message-addon .ai-message-addon-widget.airbnbapi .btn.vbo-ai-assistant-addon-btn:hover {
+    background: transparent;
+    border-color: #ff375c;
+    color: #ff375c;
+}
+.aitools-message-addon .ai-message-addon-widget.airbnbapi .btn.vbo-ai-assistant-addon-btn:focus {
+    background: transparent;
+    border-color: #ff375c;
+    color: #ff375c;
+}
+
+/* expedia reservation widget custom style */
+
+.aitools-message-addon .ai-message-addon-widget.expedia {
+    background: #0d214b;
+    color: #fff;
+}
+.aitools-message-addon .ai-message-addon-widget.expedia .addon-widget-head img {
+    border: 1px solid #fff8;
+    border-radius: 50%;
+}
+.aitools-message-addon .ai-message-addon-widget.expedia .addon-reservation-summary .addon-reservation-label {
+   color: #fcdb32;
+}
+.aitools-message-addon .ai-message-addon-widget.expedia > hr {
+    border-color: #fff;
+}
+
+.aitools-message-addon .ai-message-addon-widget.expedia .btn.vbo-ai-assistant-addon-btn {
+    background: #fcdb32;
+    color: #0d214b;
+    border-color: #fcdb32;
+    font-weight: 500;
+}
+.aitools-message-addon .ai-message-addon-widget.expedia .btn.vbo-ai-assistant-addon-btn:hover {
+    background: transparent;
+    border-color: #fcdb32;
+    color: #fcdb32;
+}
+.aitools-message-addon .ai-message-addon-widget.expedia .btn.vbo-ai-assistant-addon-btn:focus {
+    background: transparent;
+    border-color: #fcdb32;
+    color: #fcdb32;
+}
+
+/* error reservation widget custom style */
+
+.aitools-message-addon .ai-message-addon-widget.error {
+    border-width: 0;
+    background-color: var(--vbo-red-color);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* notification widget custom style */
+
+.aitools-message-addon .ai-message-addon-widget.notification .notification-wrapper {
+    padding: 5px 10px;
+    border-left: 4px solid #498fb3;
+    margin: 0 15px;
+    background: #498fb333;
+}
+.aitools-message-addon .ai-message-addon-widget.notification .notification-wrapper .notification-subject {
+    font-size: 125%;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.aitools-message-addon .ai-message-addon-widget.notification .notification-wrapper .notification-message {
+    font-style: italic;
+    word-break: break-word;
+}
+
+/* writer content widget custom style */
+
+.aitools-message-addon .ai-message-addon-widget.writercontent .notification-wrapper {
+    padding: 0 15px;
+}
+
+/* discover modal */
+
+.aitools-discover-card {
+    background-color: var(--vbo-main-bg-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.aitools-discover-card:last-child {
+    margin-bottom: 0;
+}
+.aitools-discover-card h3 i {
+    text-align: center;
+    width: 18px;
+}
+.aitools-discover-card > hr {
+    border: 0;
+    border-top: 1px solid var(--vbo-body-text-color);
+    opacity: 0.25;
+    padding: 0;
+    margin: 10px 50px;
+}
+.aitools-discover-card ul {
+    list-style: disc;
+    padding: 0 0 0 18px;
+    margin: 0;
+}
+.aitools-discover-example {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    align-items: start;
+    margin: 5px 0 10px;
+}
+.aitools-discover-example .aitools-message-row .aitools-message-bubble {
+    max-width: 100%;
+}
+
+/* Vik Booking Dashboard only */
+.vbo-dashboard-fullcontainer .vbo-admin-widgets-widget[data-vbowidgetid="aitools"] .aitools-messages-container {
+	border: 0;
+	margin-top: 0;
+}
+.vbo-dashboard-fullcontainer .vbo-admin-widgets-widget[data-vbowidgetid="aitools"] .no-records-placeholder > i {
+	font-size: 86px;
+}
+
+/* improved the textarea style */
+
+.aitools-messages-container.focused .aitools-messages-list {
+    height: calc(100% - 140px) !important;
+}
+.aitools-messages-action {
+    border: 1px solid var(--vbo-config-child-bg-color) !important;
+    border-radius: 8px;
+    padding: 4px 8px;
+    background: var(--vbo-config-child-bg-color) !important;
+
+    height: 100vh;
+    max-height: 40px;
+}
+.aitools-messages-container.focused .aitools-messages-action {
+    max-height: 112px;
+}
+.aitools-messages-action .aitools-message-area {
+    border: 0 !important;
+    padding: 0 !important;
+    background: var(--vbo-config-child-bg-color) !important;
+
+    height: 100vh;
+    max-height: 40px;
+}
+.vbo-sidepanel-active-widgets .aitools-messages-action .aitools-message-area {
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -ms-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    transition: max-height 1s;
+}
+.aitools-messages-container.focused .aitools-messages-action .aitools-message-area {
+    max-height: 80px;
+}
+.aitools-messages-container.focused .aitools-messages-action .aitools-message-area:focus {
+    outline: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+.aitools-messages-container:not(.focused) .aitools-messages-action .aitools-send-btn,
+.aitools-messages-container:not(.focused) .aitools-messages-action .aitools-upload-btn {
+    display: none;
+}
+.aitools-messages-container.focused .aitools-messages-action .aitools-send-btn {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    z-index: 1;
+}
+.aitools-messages-container.focused .aitools-messages-action .aitools-upload-btn {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    z-index: 1;
+}
+
+/* chat attachments */
+
+.aitools-messages-action-wrapper .aitools-uploaded-files {
+    position: absolute;
+    bottom: 5px;
+    left: 34px;
+    z-index: 1;
+    max-width: calc(100% - 68px);
+    display: flex;
+    gap: 4px;
+    overflow-x: scroll;
+}
+.aitools-messages-action-wrapper .aitools-uploaded-files .file-attachment {
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #ededed;
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: smaller;
+}
+.aitools-messages-action-wrapper .aitools-uploaded-files .file-attachment .attachment-remove-btn:hover {
+    cursor: pointer;
+    color: #777;
+}
+.aitools-messages-action-wrapper .aitools-uploaded-files .file-attachment progress {
+    position: absolute;
+    bottom: -6px;
+    left: -1px;
+    width: calc(100% + 2px);
+    font-size: 13px;
+}
+
+.aitools-messages-list .aitools-message-row.message-attachment img {
+    max-width: 100%;
+    max-height: 300px;
+    margin: 4px 0 0;
+}
+.aitools-messages-list .aitools-message-row.message-attachment i {
+    margin: 4px 0;
+    font-size: 96px;
+}
+
+.aitools-messages-container .aitools-dnd-target {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1e4160;
+    color: #fff;
+    z-index: -1;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.aitools-messages-container.drag-enter .aitools-dnd-target {
+    display: flex;
+    z-index: 9999;
+}
+.aitools-messages-container.drag-enter .aitools-dnd-target > i {
+    font-size: 128px;
+}
+.aitools-messages-container.drag-enter .aitools-dnd-target > p {
+    font-size: 1.5em;
+    margin: 0;
+}

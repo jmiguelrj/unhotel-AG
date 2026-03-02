@@ -1,0 +1,69 @@
+@use "variables" as *;
+
+// Mobile First Approach - Responsive padding adjustments
+// Base styles (mobile) are already set in _layout.scss
+// Note: .blog-container padding/some styling is handled in _blog.scss
+
+// Tablet and up: Ensure consistent padding for widgets and Gutenberg blocks
+@media (min-width: $breakpoint-tablet) {
+    // VikBooking widget needs padding since it's often in sidebars
+    .widget_mod_vikbooking_rooms {
+        padding-left: $container-padding-left;
+        padding-right: $container-padding-right;
+    }
+
+    .hero-section {
+        #custom_html-2 {
+            display: none;
+        }
+        #unhotel-viksearch-form{
+            top:160px;
+        }
+    }
+    .uh-mobile-menu {
+        display: none;
+    }
+}
+
+// Desktop and up: Additional desktop-specific responsive styles can go here
+@media (min-width: $breakpoint-desktop) {
+  
+    .container-heading-profile {
+        flex-direction: row !important;
+
+        .profile-page-left {
+            order: 1;
+        }
+        .profile-page-middle {
+            order: 2;
+        }
+        .profile-page-right {
+            order: 3;
+        }
+    }
+}
+
+@media(max-width: $breakpoint-desktop) {
+    body:not(.custom-vk_page) {
+        .unhotel-section:not(.fullwidth){
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+body:not(.custom-vk_page) {
+    #section-body {
+        .main-content-area {
+            .site-main {
+                .row {
+                    .col-12 {
+                        @media (max-width: $breakpoint-desktop) {
+                            padding-left: 0px;
+                            padding-right: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

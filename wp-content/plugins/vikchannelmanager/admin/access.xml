@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<access component="com_vikchannelmanager">
+	<section name="component">
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+		
+		<action name="core.vcm.cancel_booking" title="VCM_APP_CANCEL_BOOKING" description="VCM_APP_CANCEL_BOOKING_DESC" />
+		<action name="core.vcm.confirm_booking" title="VCM_APP_CONFIRM_BOOKING" description="VCM_APP_CONFIRM_BOOKING_DESC" />
+		<action name="core.vcm.modify_booking" title="VCM_APP_MODIFY_BOOKING" description="VCM_APP_MODIFY_BOOKING_DESC" />
+		<action name="core.vcm.create_booking" title="VCM_APP_CREATE_BOOKING" description="VCM_APP_CREATE_BOOKING_DESC" />
+		<action name="core.vcm.modify_room_rates" title="VCM_APP_MODIFY_ROOM_RATES" description="VCM_APP_MODIFY_ROOM_RATES_DESC" />
+		<action name="core.vcm.close_room" title="VCM_APP_CLOSE_ROOM" description="VCM_APP_CLOSE_ROOM_DESC" />
+		<action name="core.vcm.get_graphsdata" title="VCM_APP_GET_GRAPHS" description="VCM_APP_GET_GRAPHS_DESC" />
+	</section>
+</access>

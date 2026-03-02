@@ -1,0 +1,11 @@
+.jet-form-builder.layout-row .jet-form-builder-hr-select-level {
+    display: flex;
+}
+.jet-form-builder-hr-select-level:not(:last-child) {
+    margin-bottom: 0.7em;
+}
+
+.jet-form-builder-hr-select-level.is-loading {
+    opacity: .5;
+    pointer-events: none
+}

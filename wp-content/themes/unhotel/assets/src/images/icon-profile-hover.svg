@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.41" height="26.266" viewBox="0 0 20.41 26.266">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ff7f9b;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="ptofile-icon_Hover_State_" data-name="ptofile-icon (Hover State)" transform="translate(0.5 0.5)">
+    <g id="Layer_1">
+      <g id="Group_12" data-name="Group 12">
+        <circle id="Ellipse_7" data-name="Ellipse 7" class="cls-1" cx="5.983" cy="5.983" r="5.983" transform="translate(3.722)"/>
+        <path id="Path_20" data-name="Path 20" class="cls-1" d="M28.75,34.743v4.545H9.34V34.743c0-3.3,4.343-5.983,9.7-5.983S28.75,31.438,28.75,34.743Z" transform="translate(-9.34 -14.022)"/>
+      </g>
+    </g>
+  </g>
+</svg>

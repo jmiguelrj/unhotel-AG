@@ -1,0 +1,177 @@
+@use 'sass:color';
+@use "../../../css/ui-constants";
+@use "../../../css/wp-admin-colors";
+@use "../../../css/indeterminate-checkbox";
+
+$rmPositiveChangeColor: green;
+$rmNegativeChangeColor: red;
+
+.rex-rm-role-options {
+	.rex-rm-checkbox-col {
+		padding: 11px 0 0 3px;
+		width: 1.8em;
+		vertical-align: top;
+	}
+
+	thead .rex-rm-checkbox-col {
+		padding-top: 4px;
+		vertical-align: middle;
+	}
+
+	label {
+		vertical-align: baseline;
+	}
+
+	.rex-rm-name-col {
+		width: 35%;
+	}
+
+	#rex-rm-toggle-all[type=checkbox] {
+		@include indeterminate-checkbox.ame-indeterminate-checkbox();
+	}
+}
+
+.rex-rm-change {
+	font-weight: 600;
+}
+
+.rex-rm-positive-change, .rex-rm-added-caps li {
+	color: $rmPositiveChangeColor;
+}
+
+.rex-rm-negative-change, .rex-rm-removed-caps li {
+	color: $rmNegativeChangeColor;
+}
+
+.rex-rm-no-changes {
+	color: wp-admin-colors.wpColor(gray-30);
+	font-weight: normal;
+}
+
+//region General settings
+.rex-rm-section {
+	margin-bottom: 1em;
+}
+
+.rex-rm-role-merging-settings {
+	h4 {
+		margin: 0 0 6px 0;
+	}
+
+	p {
+		margin: 0 0 4px 0;
+	}
+}
+//endregion
+
+//region Capability details panel
+.rex-rm-has-details {
+	.rex-rm-change-texts {
+		cursor: pointer;
+	}
+}
+
+.rex-rm-change-expand-indicator {
+	color: wp-admin-colors.wpColor(gray-30);
+
+	line-height: 1;
+	font-size: #{12/13 * 100%};
+
+	.rex-rm-change-texts:hover & {
+		color: #23282d;
+	}
+
+	&:after {
+		content: "▶";
+	}
+
+	.rex-rm-panel-open & {
+		&:after {
+			content: "▲";
+		}
+	}
+}
+
+$rmCapabilityVerticalGap: 6px;
+$rmPanelHorizontalPadding: 12px;
+$rmPanelVerticalPadding: 8px;
+
+.rex-rm-cap-details-panel {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	column-gap: 2em;
+	row-gap: 4px;
+
+	border: 1px solid wp-admin-colors.wpColor(gray-5);
+	border-radius: 4px;
+	background: wp-admin-colors.$wp-color-white;
+
+	margin-top: ui-constants.$largeActorSelectorToUiGap;
+
+	h4 {
+		display: none; //Headings not shown right now.
+		margin-top: 0;
+	}
+
+	ul {
+		line-height: 1.5em;
+		list-style: none;
+		margin: 0;
+	}
+
+	li {
+		margin: 0 0 $rmCapabilityVerticalGap 0;
+	}
+}
+
+.rex-rm-removed-caps li:before {
+	content: "− "; //Note: This is a Unicode minus, not a hyphen.
+	font-weight: 600;
+}
+
+.rex-rm-added-caps li:before {
+	content: "+ ";
+	font-weight: 600;
+}
+
+.rex-rm-cap-details-section {
+	padding: $rmPanelVerticalPadding $rmPanelHorizontalPadding;
+}
+
+.rex-rm-other-change-list {
+	margin: 0;
+	border-spacing: 0;
+
+	td {
+		padding: 0 0 $rmCapabilityVerticalGap 0;
+		line-height: 1.5em;
+	}
+
+	td.rex-rm-cap-name {
+		padding-right: 1em;
+	}
+
+	.rex-rm-cap-old-state, .rex-rm-cap-new-state {
+		text-align: center;
+		font-variant: small-caps;
+	}
+
+	.rex-rm-cap-state-enabled {
+		color: $rmPositiveChangeColor;
+	}
+
+	.rex-rm-cap-state-denied {
+		color: $rmNegativeChangeColor;
+	}
+
+	.rex-rm-cap-change-indicator {
+		width: 1.5em;
+		text-align: center;
+		font-weight: 600;
+		font-size: 120%;
+		line-height: 1;
+		vertical-align: middle;
+	}
+}
+//endregion

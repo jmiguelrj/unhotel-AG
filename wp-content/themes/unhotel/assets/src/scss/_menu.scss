@@ -1,0 +1,315 @@
+@use "variables" as *;
+
+.site-header {
+    .right {
+        position: relative;
+        z-index: 10;
+
+        #right-inner-wrapper {
+            position: relative;
+            z-index: 10;
+            @media (min-width: $breakpoint-desktop) {
+                display: flex;
+                justify-content: flex-end;
+            }
+            > * {
+                overflow: visible;
+            }
+            #login-menu,
+            #primary-menu {
+                // display: block;
+                position: relative;
+                z-index: 9000;
+
+                > li {
+                    text-align: left;
+                    &::marker {
+                        display: none;
+                        font-size: 0;
+                    }
+                    &.wpml-ls-menu-item {
+                        order: 10;
+                        @media (min-width: $breakpoint-desktop) {
+                            &.menu-item-wpml-ls-7-pt-br {
+                                margin-right: 25px;
+                            }
+                        }
+                    }
+                    > a {
+                        line-height: 80px;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            width: 0;
+                            height: 3px;
+                            background-color: $primary-color;
+                            transition: width 0.3s ease;
+                            @media (min-width: $breakpoint-desktop) {
+                                top: 3px;
+                            }
+                        }
+                    }
+                }
+
+                li {
+                    position: relative;
+                    font-weight: 700;
+                    text-transform: none;
+                    font-family: $primary-font;
+
+                    a {
+                        font-weight: inherit;
+                        text-transform: inherit;
+                        font-family: inherit;
+                        // color: #333;
+                        color: #4f5962;
+                        position: relative;
+                        display: inline-block;
+                        text-decoration: none;
+                        transition: color 0.3s ease;
+                        padding-bottom: 0;
+                    }
+
+                    &:hover {
+                        > a {
+                            color: $primary-color;
+
+                            &::before {
+                                width: 100%;
+                                background-color: $primary-color;
+                            }
+
+                            &::after {
+                                background-color: $primary-color !important;
+                            }
+                        }
+                    }
+                }
+
+                li.menu-item-has-children {
+                    position: relative;
+                    z-index: 9999;
+
+                    > a {
+                        padding-right: 32px;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 22px;
+                            height: 24px;
+                            mask-image: url("../images/icon-angle-down.svg");
+                            mask-repeat: no-repeat;
+                            mask-position: center;
+                            mask-size: contain;
+                            background-color: #333;
+                            display: inline-block;
+                            padding-right: 10px;
+                            transition:
+                                transform 0.3s ease,
+                                background-color 0.3s ease;
+                        }
+                    }
+
+                    .sub-menu {
+                        max-height: 0;
+                        opacity: 0;
+                        overflow: hidden;
+                        position: absolute;
+                        display: inline-block;
+                        top: 0;
+                        left: 0;
+                        margin-top: -16px;
+                        background-color: #fff;
+                        min-width: 250px;
+                        z-index: 9000;
+                        margin: 0;
+                        padding: 0;
+                        text-align: left;
+                        @media (min-width: $breakpoint-desktop) {
+                            min-width: 235px;
+                            left: -20px;
+                            filter: drop-shadow(0px 0 6px rgba(0, 0, 0, 0.175));
+                        }
+
+                        a::before,
+                        a::after {
+                            display: none;
+                        }
+
+                        &:hover {
+                            top: 100%;
+                            height: auto;
+                            opacity: 1;
+                            max-height: 1000px;
+                            overflow: visible;
+                        }
+
+                        > li.menu-item-has-children:hover .sub-menu {
+                            left: 100%;
+                            top: 0;
+
+                            @media (min-width: $breakpoint-desktop) {
+                                filter: drop-shadow(0px 0 6px rgba(0, 0, 0, 0.175));
+                            }
+                        }
+
+                        @media (min-width: $breakpoint-desktop) {
+                            .sub-menu {
+                                filter: drop-shadow(10px 0 6px rgba(0, 0, 0, 0.01)) !important;
+                            }
+                        }
+                    }
+                    &:hover {
+                        > .sub-menu {
+                            top: 100%;
+                            height: auto;
+                            opacity: 1;
+                            max-height: 1000px;
+                            overflow: visible;
+
+                            li {
+                                @media (min-width: $breakpoint-desktop) {
+                                    a {
+                                        padding: 12px 15px;
+                                        font-size: 14px;
+                                        width: 100%;
+                                        border-bottom: 1px solid #f7f7f7;
+                                    }
+                                    &.menu-item-has-children {
+                                        > a {
+                                            &::after {
+                                                content: "";
+                                                position: absolute;
+                                                right: 0;
+                                                top: 15px;
+                                                width: 22px;
+                                                height: 24px;
+                                                mask-image: url("../images/icon-angle-down.svg");
+                                                mask-repeat: no-repeat;
+                                                mask-position: center;
+                                                mask-size: contain;
+                                                background-color: #333;
+                                                display: inline-block;
+                                                padding-right: 10px;
+                                                transform: rotate(-90deg);
+                                            }
+                                        }
+                                    }
+                                    &:hover {
+                                        > a {
+                                            color: $primary-color;
+                                            &::after {
+                                                background-color: $primary-color !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width: $breakpoint-desktop) {
+            #right-inner-wrapper {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                justify-content: flex-end;
+                margin-top: 6px;
+            }
+        }
+    }
+}
+@media (min-width: $breakpoint-desktop) {
+    .logged-in {
+        #right-inner-wrapper #site-navigation #primary-menu .menu-item-wpml-ls-7-pt-br {
+            margin-right: 10px;
+        }
+    }
+    .wpml-ls-menu-item .wpml-ls-flag {
+        margin-top: 35px;
+    }
+}
+
+// Home page menu styles (white text)
+.home {
+    .site-header {
+        .left {
+            @media (max-width: $breakpoint-tablet) {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+        #right-inner-wrapper {
+            @media (max-width: $breakpoint-tablet) {
+                display: none;
+            }
+            #login-menu,
+            #primary-menu {
+                > li > a {
+                    color: #fff;
+
+                    &::before {
+                        background-color: #fff;
+                    }
+                }
+
+                li {
+                    &::marker {
+                        display: none;
+                        font-size: 0;
+                    }
+                    .sub-menu {
+                        li a {
+                            border-bottom: 0 !important;
+                        }
+                    }
+                    &:hover {
+                        > a {
+                            color: #fff;
+                            &::before {
+                                width: 100%;
+                                background-color: #fff;
+                            }
+                            &::after {
+                                background-color: #fff !important;
+                            }
+                        }
+                    }
+
+                    &.menu-item-has-children {
+                        > a {
+                            &::after {
+                                background-color: #fff;
+                            }
+                        }
+
+                        &:hover {
+                            > a {
+                                color: #fff;
+
+                                &::before {
+                                    width: 100%;
+                                    background-color: #fff;
+                                }
+
+                                &::after {
+                                    background-color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
