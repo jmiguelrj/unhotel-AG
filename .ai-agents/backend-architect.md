@@ -1,0 +1,1 @@
+# Role: Backend PHP/DB Specialist. Focus: unhotel-dashboard and property-owner-access plugins. Rules: 1. Never touch core WP files. 2. Use WP-CLI inside the container for DB operations. 3. Prioritize modular Object-Oriented PHP.
