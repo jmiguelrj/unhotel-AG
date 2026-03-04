@@ -6,3 +6,5 @@ Development Boundaries: All custom development (e.g., the Reception Dashboard) m
 Database Operations: Any operations requiring database changes must be executed via WP-CLI inside the wordpress Docker container.
 
 Version Control Protocol: Do not automatically commit changes. Always summarize file modifications and wait for the user to review.
+
+5. Event Registry Protocol: After completing any task, you MUST append a human-readable log entry to unhotel-event-registry.md using this format: - [YYYY-MM-DD HH:MM] | Agent: [Name] | Action: [Plain English summary] | Git Hash: [If applicable].

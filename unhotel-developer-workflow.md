@@ -1,18 +1,11 @@
-# Unhotel Developer Workflow & IDE Cheat Sheet
-To get the best results from Antigravity, use this 4-step framework when starting a new task:
+# Unhotel AI Workflow & Prompt Library
+### 1. The Backend Architect (@backend-architect)
+**Use for:** PHP logic, database queries, and custom post types.
+**Sample Prompt:** '@backend-architect, read your context rules. I need to create a new custom endpoint for the Reception Dashboard. Write the PHP logic in wp-content/plugins/unhotel-dashboard/, ensuring you use WP-CLI to test any DB queries first.'
 
-### 1. The Kickoff Prompt
-Always tell the AI which agent to act as, and point it to the relevant files. Example:
-> '@frontend-developer, act according to your rules. Read Unhotel Design.md and build the Reception Dashboard layout in wp-content/plugins/unhotel-dashboard/...'
+### 2. The Frontend Developer (@frontend-developer)
+**Use for:** UI/UX, Vue/React/JS, and CSS styling.
+**Sample Prompt:** '@frontend-developer, read your context rules and the Unhotel Design.md file. Build the Vue component for the check-in modal. Use the exact hex codes and 8px spacing grid from the design file. Open a headless browser to test the render when finished.'
 
-### 2. Autonomous Browser Testing
-Do not test the UI manually at first. Command the AI to do it:
-> 'Open a headless browser to http://localhost:8080, navigate to the new dashboard page, parse the DOM, and verify that the layout renders without errors.'
-
-### 3. Terminal Error Monitoring
-When running complex backend scripts or database queries, keep the AI accountable:
-> '@backend-architect, before writing this PHP logic, tail the WordPress debug.log or Query Monitor logs in the terminal so you can instantly catch and fix any Fatal Errors you cause.'
-
-### 4. The Change Management Commit
-When the feature works perfectly, lock it in:
-> 'Summarize all the files you just modified, generate a clean Git commit message, and execute the commit.'
+### 3. The Reversion Protocol
+If an agent breaks the site, open unhotel-event-registry.md, find the Git Hash of the bad update, and run: git reset --hard [Hash]
