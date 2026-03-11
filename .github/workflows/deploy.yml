@@ -1,0 +1,25 @@
+name: Deploy wp-content to SiteGround
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'wp-content/**'
+
+jobs:
+  deploy-via-sftp:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout local repository
+        uses: actions/checkout@v4
+
+      - name: SFTP Deploy to SiteGround
+        uses: wlixcc/SFTP-Deploy-Action@v3.3.0
+        with:
+          username: ${{ secrets.SFTP_USERNAME }}
+          server: ${{ secrets.SFTP_HOST }}
+          port: ${{ secrets.SFTP_PORT }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          local_path: './wp-content/*'
+          remote_path: '/public_html/wp-content/'
+          sftpArgs: '-o ConnectTimeout=5'
