@@ -1,0 +1,6 @@
+node_modules/
+plugin-recovery/
+backup-300mb/
+*.sql
+*.zip
+.env

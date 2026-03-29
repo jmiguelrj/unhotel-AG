@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand Colors */
+  --color-brand-pink: #FF4F7C;
+  --color-text-primary: #222222; /* Charcoal */
+  --color-text-secondary: #666666; /* Muted */
+
+  /* Shapes */
+  --radius-pill: 50px;
+  --radius-card: 20px;
+
+  /* Shadows */
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Global Overrides */
+body {
+  color: var(--color-text-primary);
+}
+
+/* Component Classes */
+.btn-primary {
+  background-color: var(--color-brand-pink);
+  color: white;
+  border-radius: var(--radius-pill);
+  transition: opacity 0.2s;
+}
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.input-pill {
+  border-radius: var(--radius-pill);
+  border: 1px solid #E5E5E5;
+}
+.input-pill:focus {
+  border-color: var(--color-brand-pink);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 79, 124, 0.2);
+}
+
+.card-soft {
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  border: none;
+}

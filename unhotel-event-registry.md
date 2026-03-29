@@ -2,3 +2,32 @@
 
 - [2026-03-04 13:52] | Agent: Antigravity | Action: Paused development. Completed GitHub Secrets preparation for the SiteGround deployment pipeline. | Git Hash: N/A
 - [2026-03-11 19:39] | Agent: Antigravity | Action: Created GitHub Actions SFTP deployment pipeline for wp-content. | Git Hash: N/A
+- [2026-03-11 19:55] | Agent: Antigravity | Action: Created Git-ignored plugin-recovery workspace. | Git Hash: N/A
+- [2026-03-11 20:11] | Agent: Antigravity | Action: Generated forensic comparison and recovery plan for the Reception Dashboard plugin. | Git Hash: N/A
+- [2026-03-11 20:18] | Agent: Antigravity | Action: Executed de-minification and generated recovery-delta.md for the Reception Dashboard. | Git Hash: N/A
+- [2026-03-11 20:30] | Agent: Antigravity | Action: Paused development. Completed Phase 1 and 2 of plugin recovery (De-minification and Delta Analysis). CSS differences successfully isolated. | Git Hash: N/A
+- [2026-03-28 12:57] | Agent: Antigravity | Action: Restored CSS from live-minified back to backup-300mb src. | Git Hash: N/A
+- [2026-03-28 13:09] | Agent: Antigravity | Action: Completed JS porting, rebuilt Reception Dashboard, and deployed to active local environment. | Git Hash: N/A
+- [2026-03-28 13:30] | Agent: Antigravity | Action: Fixed frontend AbortError race condition and backend UTC timezone desync. | Git Hash: N/A
+- [2026-03-28 14:16] | Agent: Antigravity | Action: Generated plugin architecture blueprint. | Git Hash: N/A
+- [2026-03-28 14:19] | Agent: Antigravity | Action: Migrated unhotel-dashboard build system from npm to pnpm. | Git Hash: N/A
+- [2026-03-28 14:27] | Agent: Antigravity | Action: Fixed modal z-index, sidebar overflow, and mobile reservation card layout. | Git Hash: N/A
+- [2026-03-28 14:47] | Agent: Antigravity | Action: Restored desktop card layout hierarchy, added date to activity log, and implemented formatted clipboard copy. | Git Hash: N/A
+- [2026-03-28 15:02] | Agent: Antigravity | Action: Enforced strict CSS grid for desktop reservation cards and audited Activity Log component. | Git Hash: N/A
+- [2026-03-28 15:12] | Agent: Antigravity | Action: Upgraded to 4-column desktop grid, centered mobile data points, and patched Activity Log date format. | Git Hash: N/A
+- [2026-03-28 15:20] | Agent: Antigravity | Action: Fixed backend API payload to include full date in Activity Log notes. | Git Hash: N/A
+- [2026-03-28 15:30] | Agent: Antigravity | Action: Aligned Last Minute counter SQL to require valid customer records, filtering out room closures. | Git Hash: N/A
+- [2026-03-28 15:46] | Agent: Antigravity | Action: Restored main guest query customer JOINs and implemented global Last Minute visual alert. | Git Hash: N/A
+- [2026-03-28 16:25] | Agent: Antigravity | Action: Fixed main SQL JOINs to hide closures and wired backend alert payload. | Git Hash: N/A
+- [2026-03-28 16:48] | Agent: Antigravity | Action: Implemented backend logic and frontend UI for starred guest notes indicator. | Git Hash: N/A
+- [2026-03-28 17:02] | Agent: Antigravity | Action: Implemented defensive PHP parsing for starred notes and enforced frontend icon colors. | Git Hash: N/A
+- [2026-03-28 17:15] | Agent: Antigravity | Action: Fixed backend JSON decoding for notes_log to enable Star Indicator. | Git Hash: N/A
+- [2026-03-28 17:16] | Agent: Antigravity | Action: Enforced SQL SELECT for notes_log, verified API payload, positioned star next to name, and added console debug. | Git Hash: N/A
+- [2026-03-29 10:27] | Agent: Antigravity | Action: Consolidated workspace to live plugin directory and implemented filemtime cache busting. | Git Hash: N/A
+- [2026-03-29 10:43] | Agent: Antigravity | Action: Injected Star UI natively into live workspace and added JSON double-decode failsafe. | Git Hash: N/A
+- [2026-03-29 11:01] | Agent: Antigravity | Action: Implemented priority-based status sorting and sidebar status filters with live counts. | Git Hash: N/A
+- [2026-03-29 11:15] | Agent: Antigravity | Action: Polished sidebar status filters to match main UI and color-coded counter badges. | Git Hash: N/A
+- [2026-03-29 11:27] | Agent: Antigravity | Action: Refactored status colors to load dynamically from the reception_lookups database table. | Git Hash: N/A
+- [2026-03-29 12:15] | Agent: Antigravity | Action: Migrated CCT relational logic from volatile ordersrooms.id to stable composite booking_room_key. | Git Hash: N/A
+- [2026-03-29 12:45] | Agent: Antigravity | Action: Purged heavy development directories from Git tracking and regenerated lightweight deployment zip (unhotel-dashboard-clean-release.zip). | Git Hash: N/A
+- [2026-03-29 12:58] | Agent: Antigravity | Action: Initiated live SiteGround deployment by pushing clean consolidated local commits to trigger SFTP pipeline. | Git Hash: 2055037

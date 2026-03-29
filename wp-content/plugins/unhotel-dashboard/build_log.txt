@@ -1,0 +1,132 @@
+
+> unhotel-dashboard@1.0.0 build
+> wp-scripts build
+
+assets by status 39 KiB [1m[32m[cached][39m[22m 2 assets
+Entrypoint [1mindex[39m[22m = [1m[32mindex.js[39m[22m [1m[32mindex.asset.php[39m[22m
+orphan modules 878 KiB [1m[33m[orphan][39m[22m 1322 modules
+built modules 27.1 KiB [1m[33m[built][39m[22m
+  modules by path [1m./src/[39m[22m 26.4 KiB
+    [1m./src/index.js + 16 modules[39m[22m 26.4 KiB [1m[31m[not cacheable][39m[22m [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    [1m./src/index.css[39m[22m 39 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m [1m[31m[1 error][39m[22m
+  [1m./node_modules/react-dom/client.js[39m[22m 619 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+  [1mexternal "ReactDOM"[39m[22m 42 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/index.css[39m[22m (./src/index.css.webpack[javascript/auto]!=!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/index.css)
+[1mModule build [1m[31mfailed[39m[22m[1m (from ./node_modules/postcss-loader/dist/cjs.js):
+[1m[31mError[39m[22m[1m: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at lt (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\tailwindcss\dist\lib.js:38:1643)
+    at LazyResult.runOnRoot (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss\lib\lazy-result.js:361:16)
+    at LazyResult.runAsync (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss\lib\lazy-result.js:290:26)
+    at LazyResult.async (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss\lib\lazy-result.js:192:30)
+    at LazyResult.then (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss\lib\lazy-result.js:436:17)
+    at async Object.loader (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss-loader\dist\index.js:97:14)[39m[22m
+ @ ./src/index.css
+ @ ./src/index.js 4:0-21
+
+[1m[31mERROR[39m[22m in [1m./src/index.css[39m[22m
+[1mModule build [1m[31mfailed[39m[22m[1m (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
+HookWebpackError: Module build [1m[31mfailed[39m[22m[1m (from ./node_modules/postcss-loader/dist/cjs.js):
+[1m[31mError[39m[22m[1m: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at lt (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\tailwindcss\dist\lib.js:38:1643)
+    at LazyResult.runOnRoot (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss\lib\lazy-result.js:361:16)
+    at LazyResult.runAsync (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss\lib\lazy-result.js:290:26)
+    at LazyResult.async (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss\lib\lazy-result.js:192:30)
+    at LazyResult.then (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss\lib\lazy-result.js:436:17)
+    at async Object.loader (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss-loader\dist\index.js:97:14)
+    at tryRunOrWebpackError (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\HookWebpackError.js:114:9)
+    at __webpack_require_module__ (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5578:12)
+    at __webpack_require__ (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5525:18)
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5613:20
+    at symbolIterator (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3485:9)
+    at done (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3527:9)
+    at Hook.eval [as callAsync] (eval at create (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\tapable\lib\Hook.js:21:14)
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5500:43
+    at symbolIterator (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3482:9)
+    at timesSync (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:2297:7)
+    at Object.eachLimit (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3463:5)
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5463:16
+    at symbolIterator (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3485:9)
+    at timesSync (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:2297:7)
+    at Object.eachLimit (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3463:5)
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5431:15
+    at symbolIterator (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3485:9)
+    at done (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3527:9)
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5377:8
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:3781:6
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\HookWebpackError.js:95:2
+    at Hook.eval [as callAsync] (eval at create (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:6:1)
+    at Cache.store (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Cache.js:114:20)
+    at ItemCacheFacade.store (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\CacheFacade.js:141:15)
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:3780:11
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Cache.js:100:5
+    at Hook.eval [as callAsync] (eval at create (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:6:1)
+    at Cache.get (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Cache.js:82:18)
+    at ItemCacheFacade.get (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\CacheFacade.js:115:15)
+    at Compilation._codeGenerationModule (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:3747:9)
+    at codeGen (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5365:11)
+    at symbolIterator (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3482:9)
+    at timesSync (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:2297:7)
+    at Object.eachLimit (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3463:5)
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5395:14
+    at processQueue (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\util\processAsyncTree.js:61:4)
+    at process.processTicksAndRejections (node:internal/process/task_queues:84:11)
+-- inner [1m[31merror[39m[22m[1m --
+[1m[31mError[39m[22m[1m: Module build [1m[31mfailed[39m[22m[1m (from ./node_modules/postcss-loader/dist/cjs.js):
+[1m[31mError[39m[22m[1m: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at lt (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\tailwindcss\dist\lib.js:38:1643)
+    at LazyResult.runOnRoot (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss\lib\lazy-result.js:361:16)
+    at LazyResult.runAsync (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss\lib\lazy-result.js:290:26)
+    at LazyResult.async (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss\lib\lazy-result.js:192:30)
+    at LazyResult.then (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss\lib\lazy-result.js:436:17)
+    at async Object.loader (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss-loader\dist\index.js:97:14)
+    at Object.<anonymous> (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\css-loader\dist\cjs.js??ruleSet[1].rules[1].use[1]!C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss-loader\dist\cjs.js??ruleSet[1].rules[1].use[2]!C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\src\index.css:1:7)
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\javascript\JavascriptModulesPlugin.js:551:10
+    at Hook.eval [as call] (eval at create (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\tapable\lib\HookCodeFactory.js:19:10), <anonymous>:7:1)
+    at Hook.CALL_DELEGATE [as _call] (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\tapable\lib\Hook.js:16:14)
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5580:39
+    at tryRunOrWebpackError (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\HookWebpackError.js:109:7)
+    at __webpack_require_module__ (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5578:12)
+    at __webpack_require__ (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5525:18)
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5613:20
+    at symbolIterator (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3485:9)
+    at done (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3527:9)
+    at Hook.eval [as callAsync] (eval at create (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\tapable\lib\Hook.js:21:14)
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5500:43
+    at symbolIterator (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3482:9)
+    at timesSync (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:2297:7)
+    at Object.eachLimit (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3463:5)
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5463:16
+    at symbolIterator (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3485:9)
+    at timesSync (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:2297:7)
+    at Object.eachLimit (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3463:5)
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5431:15
+    at symbolIterator (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3485:9)
+    at done (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3527:9)
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5377:8
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:3781:6
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\HookWebpackError.js:95:2
+    at Hook.eval [as callAsync] (eval at create (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:6:1)
+    at Cache.store (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Cache.js:114:20)
+    at ItemCacheFacade.store (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\CacheFacade.js:141:15)
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:3780:11
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Cache.js:100:5
+    at Hook.eval [as callAsync] (eval at create (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:6:1)
+    at Cache.get (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Cache.js:82:18)
+    at ItemCacheFacade.get (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\CacheFacade.js:115:15)
+    at Compilation._codeGenerationModule (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:3747:9)
+    at codeGen (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5365:11)
+    at symbolIterator (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3482:9)
+    at timesSync (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:2297:7)
+    at Object.eachLimit (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\neo-async\async.js:3463:5)
+    at C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\Compilation.js:5395:14
+    at processQueue (C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\webpack\lib\util\processAsyncTree.js:61:4)
+    at process.processTicksAndRejections (node:internal/process/task_queues:84:11)
+
+Generated code for C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\css-loader\dist\cjs.js??ruleSet[1].rules[1].use[1]!C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\node_modules\postcss-loader\dist\cjs.js??ruleSet[1].rules[1].use[2]!C:\Users\hazem\OneDrive\Desktop\Dev\Local Copy\unhotel.com.br\public_html\wp-content\plugins\unhotel-dashboard\src\index.css
+1 | throw new [1m[31mError[39m[22m[1m("Module build [1m[31mfailed[39m[22m[1m (from ./node_modules/postcss-loader/dist/cjs.js):\nError: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.\n    at lt (C:\\Users\\hazem\\OneDrive\\Desktop\\Dev\\Local Copy\\unhotel.com.br\\public_html\\wp-content\\plugins\\unhotel-dashboard\\node_modules\\tailwindcss\\dist\\lib.js:38:1643)\n    at LazyResult.runOnRoot (C:\\Users\\hazem\\OneDrive\\Desktop\\Dev\\Local Copy\\unhotel.com.br\\public_html\\wp-content\\plugins\\unhotel-dashboard\\node_modules\\postcss\\lib\\lazy-result.js:361:16)\n    at LazyResult.runAsync (C:\\Users\\hazem\\OneDrive\\Desktop\\Dev\\Local Copy\\unhotel.com.br\\public_html\\wp-content\\plugins\\unhotel-dashboard\\node_modules\\postcss\\lib\\lazy-result.js:290:26)\n    at LazyResult.async (C:\\Users\\hazem\\OneDrive\\Desktop\\Dev\\Local Copy\\unhotel.com.br\\public_html\\wp-content\\plugins\\unhotel-dashboard\\node_modules\\postcss\\lib\\lazy-result.js:192:30)\n    at LazyResult.then (C:\\Users\\hazem\\OneDrive\\Desktop\\Dev\\Local Copy\\unhotel.com.br\\public_html\\wp-content\\plugins\\unhotel-dashboard\\node_modules\\postcss\\lib\\lazy-result.js:436:17)\n    at async Object.loader (C:\\Users\\hazem\\OneDrive\\Desktop\\Dev\\Local Copy\\unhotel.com.br\\public_html\\wp-content\\plugins\\unhotel-dashboard\\node_modules\\postcss-loader\\dist\\index.js:97:14)");[39m[22m
+ @ ./src/index.js 4:0-21
+
+webpack 5.104.1 compiled with [1m[31m2 errors[39m[22m in 1295 ms

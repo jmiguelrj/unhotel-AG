@@ -1,0 +1,61 @@
+﻿{
+    "columns":  [
+                    {
+                        "Field":  "id",
+                        "Type":  "int unsigned",
+                        "Null":  "NO",
+                        "Key":  "PRI",
+                        "Default":  null,
+                        "Extra":  "auto_increment"
+                    },
+                    {
+                        "Field":  "name",
+                        "Type":  "varchar(128)",
+                        "Null":  "NO",
+                        "Key":  "",
+                        "Default":  "cat",
+                        "Extra":  ""
+                    },
+                    {
+                        "Field":  "descr",
+                        "Type":  "text",
+                        "Null":  "YES",
+                        "Key":  "",
+                        "Default":  null,
+                        "Extra":  ""
+                    }
+                ],
+    "raw_data":  [
+                     {
+                         "id":  "1",
+                         "name":  "Apartamento",
+                         "descr":  ""
+                     },
+                     {
+                         "id":  "2",
+                         "name":  "Studio",
+                         "descr":  ""
+                     },
+                     {
+                         "id":  "3",
+                         "name":  "@1 Quarto",
+                         "descr":  ""
+                     },
+                     {
+                         "id":  "4",
+                         "name":  "@2 Quartos",
+                         "descr":  ""
+                     },
+                     {
+                         "id":  "5",
+                         "name":  "@3 Quartos",
+                         "descr":  ""
+                     }
+                 ],
+    "tree_keys":  [
+                      "#",
+                      "@",
+                      "!",
+                      "^"
+                  ]
+}

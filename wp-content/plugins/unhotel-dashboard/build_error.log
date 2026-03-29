@@ -1,0 +1,71 @@
+
+> unhotel-dashboard@1.0.0 build
+> wp-scripts build
+
+assets by status 10.3 KiB [1m[32m[cached][39m[22m 2 assets
+Entrypoint [1mindex[39m[22m = [1m[32mindex.js[39m[22m [1m[32mindex.asset.php[39m[22m
+[1m./src/index.js[39m[22m 39 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m [1m[31m[1 error][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/index.js[39m[22m
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\src\index.js: Expected corresponding JSX closing tag for <div>. (1174:12)
+
+[0m [90m 1172 |[39m                 [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m 1173 |[39m               [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+[31m[1m>[22m[39m[90m 1174 |[39m             [33m<[39m[33m/[39m[33m>[39m
+ [90m      |[39m             [31m[1m^[22m[39m
+ [90m 1175 |[39m             ) [33m:[39m (
+ [90m 1176 |[39m             [33m<[39m[33mdiv[39m className[33m=[39m[32m"flex-1 flex flex-col items-center justify-center text-gray-400"[39m[33m>[39m[33m<[39m[33mSafeIcon[39m icon[33m=[39m{[33mUser[39m} size[33m=[39m{[35m48[39m} className[33m=[39m[32m"mb-4 opacity-20"[39m [33m/[39m[33m>[39m[33m<[39m[33mp[39m[33m>[39m[33mSelect[39m a guest to view details[33m<[39m[33m/[39m[33mp[39m[33m>[39m[33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m 1177 |[39m             )[0m
+    at constructor (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:367:19)
+    at JSXParserMixin.raise (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:6624:19)
+    at JSXParserMixin.jsxParseElementAt (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:4751:14)
+    at JSXParserMixin.jsxParseElementAt (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:4727:32)
+    at JSXParserMixin.jsxParseElement (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:4778:17)
+    at JSXParserMixin.parseExprAtom (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:4788:19)
+    at JSXParserMixin.parseExprSubscripts (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:11145:23)
+    at JSXParserMixin.parseUpdate (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:11130:21)
+    at JSXParserMixin.parseMaybeUnary (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:11110:23)
+    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10963:61)
+    at JSXParserMixin.parseExprOps (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10968:23)
+    at JSXParserMixin.parseMaybeConditional (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10945:23)
+    at JSXParserMixin.parseMaybeAssign (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10895:21)
+    at C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10864:39
+    at JSXParserMixin.allowInAnd (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:12500:12)
+    at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10864:17)
+    at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:12567:17)
+    at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:11747:28)
+    at JSXParserMixin.parseExprAtom (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:11395:23)
+    at JSXParserMixin.parseExprAtom (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:4793:20)
+    at JSXParserMixin.parseExprSubscripts (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:11145:23)
+    at JSXParserMixin.parseUpdate (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:11130:21)
+    at JSXParserMixin.parseMaybeUnary (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:11110:23)
+    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10963:61)
+    at JSXParserMixin.parseExprOps (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10968:23)
+    at JSXParserMixin.parseMaybeConditional (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10945:23)
+    at JSXParserMixin.parseMaybeAssign (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10895:21)
+    at C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10864:39
+    at JSXParserMixin.allowInAnd (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:12500:12)
+    at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10864:17)
+    at JSXParserMixin.parseConditional (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10955:30)
+    at JSXParserMixin.parseMaybeConditional (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10949:17)
+    at JSXParserMixin.parseMaybeAssign (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10895:21)
+    at JSXParserMixin.parseExpressionBase (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10848:23)
+    at C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10844:39
+    at JSXParserMixin.allowInAnd (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:12500:12)
+    at JSXParserMixin.parseExpression (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10844:17)
+    at JSXParserMixin.jsxParseExpressionContainer (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:4661:31)
+    at JSXParserMixin.jsxParseElementAt (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:4740:36)
+    at JSXParserMixin.jsxParseElementAt (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:4727:32)
+    at JSXParserMixin.jsxParseElement (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:4778:17)
+    at JSXParserMixin.parseExprAtom (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:4788:19)
+    at JSXParserMixin.parseExprSubscripts (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:11145:23)
+    at JSXParserMixin.parseUpdate (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:11130:21)
+    at JSXParserMixin.parseMaybeUnary (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:11110:23)
+    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10963:61)
+    at JSXParserMixin.parseExprOps (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10968:23)
+    at JSXParserMixin.parseMaybeConditional (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10945:23)
+    at JSXParserMixin.parseMaybeAssign (C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10895:21)
+    at C:\Users\hazem\Local Sites\unhotel\app\public\wp-content\plugins\unhotel-dashboard\node_modules\@babel\parser\lib\index.js:10864:39
+
+webpack 5.104.1 compiled with [1m[31m1 error[39m[22m in 641 ms

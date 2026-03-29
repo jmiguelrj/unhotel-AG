@@ -1,0 +1,77 @@
+﻿{
+    "tree_keys":  [
+                      "#",
+                      "@",
+                      "!",
+                      "^"
+                  ],
+    "Sample_Cats":  [
+                        {
+                            "id":  "1",
+                            "descr":  ""
+                        },
+                        {
+                            "id":  "2",
+                            "descr":  ""
+                        },
+                        {
+                            "id":  "3",
+                            "descr":  ""
+                        },
+                        {
+                            "id":  "4",
+                            "descr":  ""
+                        },
+                        {
+                            "id":  "5",
+                            "descr":  ""
+                        }
+                    ],
+    "First_Chars_Hex":  [
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+    "Filter_Keys_Hex":  [
+                            "23",
+                            "40",
+                            "21",
+                            "5e"
+                        ],
+    "Filters":  [
+                    {
+                        "id":  "#",
+                        "label":  "Area",
+                        "prefix":  "#",
+                        "items":  [
+
+                                  ]
+                    },
+                    {
+                        "id":  "@",
+                        "label":  "Rooms",
+                        "prefix":  "@",
+                        "items":  [
+
+                                  ]
+                    },
+                    {
+                        "id":  "!",
+                        "label":  "Bathrooms",
+                        "prefix":  "!",
+                        "items":  [
+
+                                  ]
+                    },
+                    {
+                        "id":  "^",
+                        "label":  "Reception",
+                        "prefix":  "^",
+                        "items":  [
+
+                                  ]
+                    }
+                ]
+}
