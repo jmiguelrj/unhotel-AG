@@ -1,3 +1,4 @@
+# v1.0.1 - Live Deployment Trigger
 name: Deploy wp-content to SiteGround
 on:
   push:
