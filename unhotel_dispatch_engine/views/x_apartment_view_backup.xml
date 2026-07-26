@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_x_apartment_form_3892_backup" model="ir.ui.view">
+            <field name="name">x_apartment.form.custom.backup</field>
+            <field name="model">x_apartment</field>
+            <field name="arch" type="xml">
+                <form string="Apartment">
+                    <!-- Header / Status Bar -->
+                    <header>
+                        <field name="x_cleaning_status" widget="statusbar" statusbar_visible="dirty,progress,clean,inspected"/>
+                    </header>
+                    
+                    <sheet>
+                        <!-- Smart Buttons (Button Box) -->
+                        <div class="oe_button_box" name="button_box">
+                            <button class="oe_stat_button" type="action" name="unhotel_reservation.action_x_reservation_line" icon="fa-calendar">
+                                <field string="Reservas" name="x_x_apartment_id_x_reservation_line_count" widget="statinfo"/>
+                            </button>
+                            <button class="oe_stat_button" type="action" name="unhotel_reservation.action_cleaning_ticket" icon="fa-ticket">
+                                <field string="Tickets" name="x_x_apartment_id_x_operation_ticket_count" widget="statinfo"/>
+                            </button>
+                        </div>
+
+                        <!-- Header / Core Visual Assets -->
+                        <field name="active" invisible="1"/>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger" invisible="active == True"/>
+                        
+                        <field name="x_studio_foto_do_apartamento" widget="image" class="oe_avatar"/>
+                        
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only" string="Apartment Name"/>
+                            <h1>
+                                <field name="name" placeholder="e.g. Copacabana Ocean View Retreat..."/>
+                            </h1>
+                        </div>
+
+                        <!-- Core Property Details -->
+                        <group>
+                            <group>
+                                <field name="x_code"/>
+                                <field name="x_studio_building"/>
+                                <field name="x_studio_apartment_no_1"/>
+                            </group>
+                            <group>
+                                <field name="x_owner_id"/>
+                                <field name="x_studio_unhotel"/>
+                                <field name="x_studio_archived" widget="boolean_toggle"/>
+                            </group>
+                        </group>
+
+                        <!-- Notebook for Categorized Operations -->
+                        <notebook>
+                            <!-- 1. Listing & Brand -->
+                            <page string="Listing &amp; Brand">
+                                <group>
+                                    <group string="Capacity &amp; Dimensions">
+                                        <field name="x_studio_rooms"/>
+                                        <field name="x_studio_bathrooms"/>
+                                        <field name="x_studio_size_m_1"/>
+                                    </group>
+                                    <group string="Brand Identity">
+                                        <field name="x_studio_amenities" widget="many2many_tags"/>
+                                        <field name="x_studio_vibe_persona" widget="many2many_tags"/>
+                                        <field name="x_studio_nome_da_imagem_vikbooking"/>
+                                    </group>
+                                </group>
+                            </page>
+
+                            <!-- 2. Housekeeping & Operations -->
+                            <page string="Housekeeping &amp; Operations">
+                                <group>
+                                    <group string="Cleaning Planning">
+                                        <field name="x_cleaning_zone_id"/>
+                                        <field name="x_cleaning_policy_id"/>
+                                        <field name="x_required_skill_ids" widget="many2many_tags"/>
+                                    </group>
+                                    <group string="Status &amp; Tracking">
+                                        <field name="x_last_cleaned_date"/>
+                                        <field name="x_last_deep_clean_date"/>
+                                        <field name="x_needs_retouch" widget="boolean_toggle"/>
+                                        <field name="x_needs_urgent_deep_clean" widget="boolean_toggle"/>
+                                    </group>
+                                </group>
+                            </page>
+
+                            <!-- 3. Maintenance & Access -->
+                            <page string="Maintenance &amp; Access">
+                                <group>
+                                    <group string="Access Credentials">
+                                        <field name="x_studio_cdigo_da_porta"/>
+                                        <field name="x_studio_rede_wi_fi"/>
+                                        <field name="x_studio_senha_do_wi_fi"/>
+                                    </group>
+                                    <group string="Maintenance Tracking">
+                                        <field name="x_active_ticket_id"/>
+                                    </group>
+                                </group>
+                                <separator string="Maintenance Equipment"/>
+                                <field name="x_studio_one2many_field_20n_1jndav0k7" context="{'default_apartment_id': id}"/>
+                            </page>
+
+                            <!-- 4. Financials & Channels -->
+                            <page string="Financials &amp; Channels">
+                                <field name="x_studio_currency_id" invisible="1"/>
+                                <group>
+                                    <group string="OTA Channels">
+                                        <field name="x_studio_airbnb_link" widget="url"/>
+                                        <field name="x_studio_booking_link" widget="url"/>
+                                        <field name="x_studio_expedia_link" widget="url"/>
+                                    </group>
+                                    <group string="Performance Metrics">
+                                        <field name="x_studio_taxa_de_ocupao_"/>
+                                        <field name="x_studio_roi_"/>
+                                        <!-- <field name="x_studio_estimated_investment" widget="monetary"/> -->
+                                        <!-- <field name="x_studio_receita_bruta_acumulada" widget="monetary"/> -->
+                                        <!-- <field name="x_studio_despesas_acumuladas_1" widget="monetary"/> -->
+                                    </group>
+                                </group>
+                                <separator string="Reservations"/>
+                                <field name="x_studio_one2many_field_25h_1jmk43lfo"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    
+                    <!-- Chatter for Mail & Activity Tracking -->
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
