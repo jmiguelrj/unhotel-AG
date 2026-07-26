@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_x_cleaning_ticket_search_3967_backup" model="ir.ui.view">
+            <field name="name">x_cleaning_ticket.search.custom.backup</field>
+            <field name="model">x_cleaning_ticket</field>
+            <field name="arch" type="xml">
+                <search string="Search Cleaning Tickets">
+                    <field name="name" string="Ticket / Ref"/>
+                    <field name="x_apartment_id" string="Apartamento"/>
+                    <field name="x_employee_id" string="Profissional"/>
+                    <field name="x_next_reservation_ref" string="Reserva Seguinte"/>
+
+                    <filter string="Ativos" name="filter_active" domain="[('x_status', '!=', 'done')]"/>
+                    <filter string="Concluídos" name="filter_done" domain="[('x_status', '=', 'done')]"/>
+                    <separator/>
+                    <filter string="Atrasados / Críticos" name="filter_late" domain="[('x_is_late_assignment', '=', True)]"/>
+                    <filter string="Sem Equipe (Órfãos)" name="filter_unassigned" domain="[('x_employee_id', '=', False)]"/>
+                    <separator/>
+                    <filter string="Hoje" name="filter_today" domain="[
+                        ('x_scheduled_date', '&gt;=', context_today().strftime('%Y-%m-%d 00:00:00')), 
+                        ('x_scheduled_date', '&lt;=', context_today().strftime('%Y-%m-%d 23:59:59'))
+                    ]"/>
+
+                    <group expand="0" string="Agrupar Por">
+                        <filter string="Data Agendada" name="group_date" context="{'group_by':'x_scheduled_date:day'}"/>
+                        <filter string="Apartamento" name="group_apartment" context="{'group_by':'x_apartment_id'}"/>
+                        <filter string="Equipe" name="group_employee" context="{'group_by':'x_employee_id'}"/>
+                        <filter string="Status" name="group_status" context="{'group_by':'x_status'}"/>
+                        <filter string="Prioridade" name="group_priority" context="{'group_by':'x_triage_priority'}"/>
+                        <filter string="Tipo de Ticket" name="group_type" context="{'group_by':'x_ticket_type'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>
